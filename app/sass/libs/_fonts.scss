@@ -1,0 +1,27 @@
+$GilroyRegular: 'GilroyRegular';
+$GilroyMedium: 'GilroyMedium';
+$GilroyMediumItalic: 'GilroyMediumItalic';
+$GilroySemibold: 'GilroySemibold';
+$GilroyExtrabold: 'GilroyExtrabold';
+
+@font-face {
+  font-family: 'GilroyRegular';
+  src: url('../fonts/Gilroy-Regular.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'GilroyMedium';
+  src: url('../fonts/Gilroy-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'GilroyMediumItalic';
+  src: url('../fonts/Gilroy-MediumItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'GilroySemibold';
+  src: url('../fonts/Gilroy-Semibold.woff') format('woff');
+}
+@font-face {
+  font-family: 'GilroyExtrabold';
+  src: url('../fonts/Gilroy-Extrabold.woff') format('woff');
+}

@@ -1,0 +1,118 @@
+.results {
+  position: relative;
+  width: 100%;
+  color: $black;
+  overflow: hidden;
+  padding: 85px 0 100px;
+  .paragraph {
+    top: 120px;
+    left: -120px;
+    //&:before {
+    //  content: '01';
+    //}
+  }
+  .tittle {
+    @include breakpoint(max-width 992px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    p {
+      width: 600px;
+      @include breakpoint(max-width 1200px) {
+        width: 450px;
+        margin: 0;
+      }
+      @include breakpoint(max-width 992px) {
+        max-width: 600px;
+        width: auto;
+      }
+    }
+  }
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    @include breakpoint(max-width 992px) {
+      flex-direction: column;
+    }
+    &--left {
+      position: relative;
+      width: 55%;
+      @include breakpoint(max-width 1200px) {
+        margin-top: 45px;
+      }
+      @include breakpoint(max-width 992px) {
+        width: 100%;
+      }
+      h3 {
+        font-family: $GilroyMedium;
+        font-size: 24px;
+        @include breakpoint(max-width 400px) {
+          font-size: 17px;
+        }
+        &:after {
+          content: '!';
+          color: $red;
+          margin-left: 5px;
+        }
+      }
+      p {
+        font-family: $GilroyRegular;
+        font-size: 14px;
+        color: $darkGrey;
+        line-height: 19px;
+        margin-bottom: 25px;
+        b {
+          font-family: $GilroyExtrabold;
+          color: $black;
+        }
+      }
+    }
+    &--right {
+      position: relative;
+      width: 36%;
+      padding: 0;
+      margin: 70px 0 0;
+      @include breakpoint(max-width 992px) {
+        width: 100%;
+      }
+      li {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        img {
+          width: 60px;
+          object-fit: cover;
+        }
+        p {
+          font-family: $GilroyMedium;
+          font-size: 23px;
+          color: $black;
+          width:calc(100% - 90px);
+          margin: 0;
+          line-height: 25px;
+          @include breakpoint(max-width 400px) {
+            font-size: 18px;
+            line-height: 24px;
+          }
+          span {
+            font-family: $GilroyExtrabold;
+            color: $red;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+  .animate-circle {
+    right: -250px;
+    top:50px;
+    @include breakpoint(max-width 1650px) {
+      display: none;
+    }
+  }
+
+}

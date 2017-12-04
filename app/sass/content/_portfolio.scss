@@ -1,0 +1,132 @@
+.portfolio {
+  position: relative;
+  overflow: hidden;
+  color: $black;
+  .animate-circle {
+    left: -250px;
+    bottom: 50px;
+    @include breakpoint(max-width 1400px) {
+      display: none;
+    }
+    p {
+      position: absolute;
+      right: -40%;
+      max-width: 340px;
+      z-index: 2;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: $GilroyMedium;
+      font-size: 16px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      @include breakpoint(max-width 1750px) {
+        right: -100px;
+      }
+      @include breakpoint(max-width 1600px) {
+        display: none;
+      }
+      img {
+        margin-right: 15px;
+      }
+    }
+  }
+  .paragraph {
+    top: 150px;
+    left: -40px;
+  }
+  .tittle {
+    P {
+      width: 475px;
+    }
+  }
+
+  &__gallery {
+    min-width: 2000px;
+    width:100%;
+    margin-top: 30px;
+    margin-left: 70px;
+    @include breakpoint(max-width 992px) {
+      min-width: 100%;
+      margin-left: 0;
+    }
+    &--scroller {
+      height: 790px;
+      transition: .5s;
+      @include breakpoint(max-width 992px) {
+        display: block;
+        columns: 2;
+        column-gap: 2px;
+        height: auto;
+        transform: translate(0px, 0px)!important;
+      }
+      @include breakpoint(max-width 750px) {
+        columns: 1!important;
+      }
+    }
+    &--item {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 470px;
+      width: 100%;
+      height: 790px;
+      margin-right: 5px;
+      box-sizing: border-box;
+
+      a {
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        transition: 0.4s;
+        &:hover {
+          opacity: 1;
+          transition: 0.4s;
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        @include breakpoint(max-width 992px) {
+          height: auto;
+        }
+      }
+    }
+
+    .two-items,
+    .three-items {
+      a {
+        height: 49.7%;
+      }
+    }
+
+    .three-items {
+      a {
+        height: 33%;
+      }
+    }
+    &--btns {
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+    }
+    &--btn {
+      height: 80px;
+      width: 80px;
+      margin: 10px 0;
+      cursor: pointer;
+      img {
+        width: 80px;
+        filter: drop-shadow(10px 10px 8px #111)
+      }
+      @include breakpoint(max-width 992px) {
+        display: none;
+      }
+    }
+  }
+}

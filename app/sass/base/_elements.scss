@@ -1,0 +1,203 @@
+$black: #282828;
+$grey: #e4e5e5;
+$darkGrey: #818080;
+$red: #ff5038;
+
+
+.paragraph {
+  position: absolute;
+  left: -100px;
+  margin: 0;
+  transform: rotate(-90deg);
+  font-family: $GilroySemibold;
+  font-size: 15.2px;
+  color: #ff4b39;
+  text-transform: uppercase;
+  @include breakpoint(max-width 500px) {
+    display: none;
+  }
+  &:before {
+    counter-increment: counter;
+    content: '0' counter(counter);
+    position: absolute;
+    left: -80px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    height: 1px;
+    width: 40px;
+    top: 50%;
+    background-color: #ccc;
+  }
+}
+.wrap {
+  position: relative;
+  width: 92%;
+  margin-left: 8%;
+  z-index: 2;
+  @include breakpoint(max-width 500px) {
+    width: 100%;
+    margin: 0;
+  }
+}
+.tittle {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  @include breakpoint(max-width 992px) {
+    flex-direction: column;
+    text-align: center;
+  }
+  h2 {
+    position: relative;
+    margin-left: 90px;
+    font-family: $GilroySemibold;
+    font-size: 36px;
+    color: $black;
+    text-transform: uppercase;
+    z-index: 2;
+    margin-top: 0px;
+    padding-top: 30px;
+    @include breakpoint(max-width 992px) {
+      margin-left: 0;
+      width: 100%;
+    }
+    @include breakpoint(max-width 500px) {
+      font-size: 20px;
+    }
+  }
+  span {
+    position: absolute;
+    top: 0;
+    font-family: $GilroyExtrabold;
+    font-size: 50px;
+    color: $grey;
+    text-transform: uppercase;
+    z-index: 1;
+    @include breakpoint(max-width 992px) {
+      display: block;
+      width: 100%;
+    }
+    @include breakpoint(max-width 500px) {
+      font-size: 32px;
+    }
+  }
+  p {
+    font-family: $GilroyRegular;
+    font-size: 16px;
+    color: $darkGrey;
+    font-style: italic;
+    @include breakpoint(max-width 992px) {
+      display: block;
+      width: 100%!important;
+      max-width: 100%!important;
+    }
+  }
+}
+.animate-circle {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  background-color: #f5f4f4;
+  border-radius: 50%;
+  z-index: 1;
+  &:before {
+    content: '';
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 50px 10px #cccccc;
+    background-color: #fff;
+  }
+}
+.red-dot {
+  display: block;
+  position: relative;
+  size: 40px;
+  border-radius: 50%;
+  background-color: #ee4635;
+  @include breakpoint(max-width 1200px) {
+    display: none;
+  }
+  &:before {
+    content: '';
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 2px solid #ee4635;
+    background-color: transparent;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    transition: 1s;
+    animation: small-round 1s linear infinite;
+  }
+  &:after {
+    content: '';
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 2px solid #ee4635;
+    background-color: transparent;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    transition: 1s;
+    animation: big-round 1s linear infinite;
+  }
+}
+
+
+@keyframes small-round {
+  100% {
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+  }
+}
+@keyframes big-round {
+  100% {
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+  }
+}
+@keyframes flying {
+  0% {
+    transform: translate(0px, 20px);
+  }
+  12% {
+    transform: translate(75px, 40px);
+  }
+  25% {
+    transform: translate(150px, 0px);
+  }
+  37% {
+    transform: translate(225px, 40px);
+  }
+  50% {
+    transform: translate(300px, 20px);
+  }
+  63% {
+    transform: translate(225px, 40px);
+  }
+  75% {
+    transform: translate(150px, 0px);
+  }
+  88% {
+    transform: translate(75px, 40px);
+  }
+  100% {
+    transform: translate(0px, 20px);
+  }
+}
