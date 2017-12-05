@@ -3,21 +3,35 @@
   width: 100%;
   color: $black;
   overflow: hidden;
-  padding: 85px 0 100px;
+  padding: 60px 0 100px;
+
   .paragraph {
-    top: 120px;
-    left: -120px;
-    //&:before {
-    //  content: '01';
-    //}
+    top: 137px;
+    left: -129px;
+    letter-spacing: 0.3px
   }
   .tittle {
     @include breakpoint(max-width 992px) {
       flex-direction: column;
       align-items: center;
     }
+
+    h2 {
+      margin-left: 88px;
+      letter-spacing: -0.9px;
+    }
+
+    span {
+
+    }
     p {
       width: 600px;
+      position: relative;
+      top: 2px;
+      left: 9px;
+      font-family: $GilroyRegularItalic;
+      font-style: normal;
+      line-height: 22px;
       @include breakpoint(max-width 1200px) {
         width: 450px;
         margin: 0;
@@ -30,15 +44,17 @@
   }
   &__content {
     position: relative;
+    top: 11px;
     display: flex;
-    justify-content: space-between;
     z-index: 2;
     @include breakpoint(max-width 992px) {
       flex-direction: column;
+      justify-content: space-around;
     }
     &--left {
       position: relative;
-      width: 55%;
+      width: 570px;
+      margin-right: 100px;
       @include breakpoint(max-width 1200px) {
         margin-top: 45px;
       }
@@ -48,6 +64,7 @@
       h3 {
         font-family: $GilroyMedium;
         font-size: 24px;
+        letter-spacing: -0.5px;
         @include breakpoint(max-width 400px) {
           font-size: 17px;
         }
@@ -58,22 +75,22 @@
         }
       }
       p {
-        font-family: $GilroyRegular;
+        font-family: $GilroyLight;
         font-size: 14px;
         color: $darkGrey;
-        line-height: 19px;
-        margin-bottom: 25px;
-        b {
-          font-family: $GilroyExtrabold;
+        line-height: 20px;
+        margin-bottom: 22px;
+        strong {
+          font-family: $GilroyBold;
           color: $black;
         }
       }
     }
     &--right {
       position: relative;
-      width: 36%;
+      width: 380px;
       padding: 0;
-      margin: 70px 0 0;
+      margin-top: 75px;
       @include breakpoint(max-width 992px) {
         width: 100%;
       }
@@ -82,9 +99,25 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 32px;
+
+        &:nth-child(2) {
+          img {
+            left: -6px;
+          }
+        }
+
+        &:nth-child(3) {
+          img {
+            left: -5px;
+          }
+        }
+
         img {
-          width: 60px;
+          position: relative;
+          width: 61px;
+          height: 61px;
+          margin-right: 40px;
           object-fit: cover;
         }
         p {
@@ -93,7 +126,8 @@
           color: $black;
           width:calc(100% - 90px);
           margin: 0;
-          line-height: 25px;
+          line-height: 28px;
+          letter-spacing: 0.57px;
           @include breakpoint(max-width 400px) {
             font-size: 18px;
             line-height: 24px;
@@ -108,8 +142,8 @@
     }
   }
   .animate-circle {
-    right: -250px;
-    top:50px;
+    right: -308px;
+    top: 40px;
     @include breakpoint(max-width 1650px) {
       display: none;
     }

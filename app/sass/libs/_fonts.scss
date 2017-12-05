@@ -1,12 +1,25 @@
 $GilroyRegular: 'GilroyRegular';
+$GilroyRegularItalic: 'GilroyRegularItalic';
 $GilroyMedium: 'GilroyMedium';
 $GilroyMediumItalic: 'GilroyMediumItalic';
+$GilroyBold: 'GilroyBold';
 $GilroySemibold: 'GilroySemibold';
 $GilroyExtrabold: 'GilroyExtrabold';
+$GilroyLight: 'GilroyLight';
 
+@font-face {
+  font-family: 'GilroyLight';
+  src: url('../fonts/Gilroy-Light.woff') format('woff');
+  font-weight: 400;
+}
 @font-face {
   font-family: 'GilroyRegular';
   src: url('../fonts/Gilroy-Regular.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'GilroyRegularItalic';
+  src: url('../fonts/Gilroy-RegularItalic.woff') format('woff');
   font-weight: 400;
 }
 @font-face {
@@ -16,6 +29,10 @@ $GilroyExtrabold: 'GilroyExtrabold';
 @font-face {
   font-family: 'GilroyMediumItalic';
   src: url('../fonts/Gilroy-MediumItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'GilroyBold';
+  src: url('../fonts/Gilroy-Bold.woff') format('woff');
 }
 @font-face {
   font-family: 'GilroySemibold';

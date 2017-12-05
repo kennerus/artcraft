@@ -31,7 +31,7 @@ $(function () {
 
     $('.blog__slider--wrap').slick({
         dots:false,
-        slidesToShow: 4,
+        variableWidth: true,
         infinite: true,
         autoplay: true,
         autoplaySpeed: 2000,

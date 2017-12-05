@@ -20,7 +20,8 @@ $red: #ff5038;
     counter-increment: counter;
     content: '0' counter(counter);
     position: absolute;
-    left: -80px;
+    top: 2px;
+    left: -84px;
   }
   &:after {
     content: '';
@@ -98,28 +99,28 @@ $red: #ff5038;
 }
 .animate-circle {
   position: absolute;
-  height: 500px;
-  width: 500px;
+  height: 600px;
+  width: 600px;
   background-color: #f5f4f4;
   border-radius: 50%;
   z-index: 1;
   &:before {
     content: '';
     position: absolute;
-    height: 350px;
-    width: 350px;
+    height: 370px;
+    width: 370px;
     border-radius: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 50px 10px #cccccc;
+    box-shadow: 0 0 54px rgba(0, 0, 0, 0.08);
     background-color: #fff;
   }
 }
 .red-dot {
   display: block;
   position: relative;
-  size: 40px;
+  size: 30px;
   border-radius: 50%;
   background-color: #ee4635;
   @include breakpoint(max-width 1200px) {

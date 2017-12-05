@@ -6,65 +6,51 @@
             <div class="tittle">
                 <span>заполните</span>
                 <h2>наш бриф</h2>
+                <p>
+                    Хорошо заполненный бриф - первый и очень важный этап успешно и вовремя завершённого проекта.
+                </p>
             </div>
         </div>
 
-        <form>
-            <div class="brief__col">
+        <form id="form" class="brief__form">
+            <div class="brief__form-head">
                 <div>
+                    <label for="name">Ваше имя, фамилия *</label>
                     <input type="text" required placeholder="Ваше имя" id="name">
                     <span class="error-box">*</span>
                 </div>
+
                 <div>
-                    <input type="text" required placeholder="Телефон" id="phone">
+                    <label for="phone">Ваш номер телефона</label>
+                    <input type="tel" required placeholder="Номер телефона" id="phone">
                     <span class="error-box">*</span>
                 </div>
-                <div>
-                    <p>Какие услуги Вас интересуют?</p>
-                    <input id="radio1" type="radio" name="radio">
-                    <label for="radio1"><span></span>Мобильное приложение</label>
-                    <input id="radio2" type="radio" name="radio">
-                    <label for="radio2"><span></span>Поддержка сайта</label>
-                    <input id="radio3" type="radio" name="radio">
-                    <label for="radio3"><span></span>Веб-сайт или проект</label>
-                    <input id="radio4" type="radio" name="radio">
-                    <label for="radio4"><span></span>Продвижение сайта</label>
-                </div>
             </div>
-            <div class="brief__col">
-                <div>
-                    <input type="text" placeholder="Ваш Email">
-                </div>
-                <div>
-                    <textarea placeholder="Сообщение"></textarea>
-                </div>
-                <div>
-                    <span><b>*</b>обязательные поля</span>
-                    <input type="file" id="add-file">
-                    <label for="add-file">Прикрепить файл</label>
-                </div>
-                <button>ОТПРАВИТЬ ЗАЯВКУ</button>
+
+            <div class="brief__form-message">
+                <label for="message">Сообщение</label>
+                <textarea id="message" placeholder="Ваше сообщение"></textarea>
+
+                <input type="file" id="add-file">
+                <label for="add-file">Прикрепить файл</label>
             </div>
+
+            <div >
+                <p>Какие услуги Вас интересуют?</p>
+                <input id="ckeckbox_mob" type="ckeckbox" name="ckeckbox_mob">
+                <label for="ckeckbox_mob"><span></span>Мобильное приложение</label>
+                <input id="ckeckbox_supp" type="ckeckbox" name="ckeckbox_supp">
+                <label for="ckeckbox_supp"><span></span>Поддержка сайта</label>
+                <input id="ckeckbox_site" type="ckeckbox" name="ckeckbox_site">
+                <label for="ckeckbox_site"><span></span>Веб-сайт или проект</label>
+                <input id="ckeckbox_seo" type="ckeckbox" name="ckeckbox_seo">
+                <label for="ckeckbox_seo"><span></span>Продвижение сайта</label>
+            </div>
+            <div class="brief__desc">
+                <span><b>*</b>обязательные поля</span>
+            </div>
+            <button>Отправить бриф</button>
         </form>
-
-        <div class="brief__text">
-            <p>Хорошо заполненный бриф – первый и
-                очень важный этап успешно
-                и вовремя завершённого проекта.</p>
-            <div class="red-dot"><span></span></div>
-        </div>
-        <div class="brief__text">
-            <div class="red-dot"><span></span></div>
-            <p>Мы вам ответим так быстро,
-                что даже слишком</p>
-        </div>
-        <div class="brief__text">
-            <div class="red-dot"><span></span></div>
-            <p>Постарайтесь ответить  на вопросы
-                брифа максимально подробно
-                и однозначно.</p>
-
-        </div>
 
     </div>
 

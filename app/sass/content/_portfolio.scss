@@ -1,25 +1,29 @@
 .portfolio {
   position: relative;
+  padding-bottom: 70px;
   overflow: hidden;
   color: $black;
+
   .animate-circle {
-    left: -250px;
-    bottom: 50px;
+    left: -355px;
+    bottom: 4px;
+    height: 607px;
     @include breakpoint(max-width 1400px) {
       display: none;
     }
     p {
       position: absolute;
-      right: -40%;
-      max-width: 340px;
-      z-index: 2;
+      right: -188px;
       top: 50%;
+      display: flex;
+      align-items: center;
+      max-width: 340px;
+      margin: 0;
       transform: translateY(-50%);
       font-family: $GilroyMedium;
       font-size: 16px;
-      margin: 0;
-      display: flex;
-      align-items: center;
+      line-height: 18px;
+      z-index: 2;
       @include breakpoint(max-width 1750px) {
         right: -100px;
       }
@@ -27,13 +31,23 @@
         display: none;
       }
       img {
+        width: 79px;
+        height: 79px;
         margin-right: 15px;
       }
     }
   }
+
+  .wrap {
+    margin-left: 7%;
+  }
   .paragraph {
-    top: 150px;
-    left: -40px;
+    top: 156px;
+    left: -46px;
+    letter-spacing: 0.5px;
+    &:before {
+      top: 0;
+    }
   }
   .tittle {
     P {
@@ -71,13 +85,13 @@
       max-width: 470px;
       width: 100%;
       height: 790px;
-      margin-right: 5px;
+      margin-right: 20px;
       box-sizing: border-box;
 
       a {
         width: 100%;
         height: 100%;
-        opacity: 0.6;
+        opacity: 0.8;
         transition: 0.4s;
         &:hover {
           opacity: 1;
@@ -98,13 +112,13 @@
     .two-items,
     .three-items {
       a {
-        height: 49.7%;
+        height: 49%;
       }
     }
 
     .three-items {
       a {
-        height: 33%;
+        height: 32.3%;
       }
     }
     &--btns {

@@ -111,12 +111,12 @@
     height: 28px;
 }
 .blog__slider--wrap .slick-prev {
-    left: 0;
-    top: 110%;
+    left: 8px;
+    top: 114%;
 }
 .blog__slider--wrap .slick-next {
-    left: 190px;
-    top: 110%;
+    left: 230px;
+    top: 114%;
 }
 .blog__slider--wrap .slick-next:before {
     position: absolute;

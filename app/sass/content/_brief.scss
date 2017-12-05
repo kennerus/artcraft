@@ -1,6 +1,6 @@
 .brief {
   width: 100%;
-  padding-top: 130px;
+  padding-top: 173px;
   position: relative;
   padding-bottom: 700px;
   background: url(../img/footer-bg.png) center bottom no-repeat;
@@ -8,34 +8,28 @@
   overflow: hidden;
 
   .paragraph {
-    margin-top: -50px;
-    left: -20px;
-    //&:before {
-    //  content: '04';
-    //}
+    left: -35px;
+    top: -65px;
+    letter-spacing: 0.5px;
   }
   .animate-circle {
-    top: 100px;
-    right: -250px;
+    top: 250px;
+    right: -293px;
     @include breakpoint(max-width 1550px) {
       display: none;
     }
   }
-  .balloon {
-    position: absolute;
-    bottom: 300px;
-    left: 200px;
-    animation: flying 50s linear infinite;
-    z-index: 2;
-    @include breakpoint(max-width 1250px) {
-      left: auto;
-      right: 40% ;
-      bottom: 100px;
-    }
-    @include breakpoint(max-width 600px) {
-      width: 200px;
-    }
+
+  .tittle h2 {
+    margin-left: 146px;
+    letter-spacing: -0.1px;
   }
+
+  .tittle p {
+    max-width: 445px;
+    width: 100%;
+  }
+
   >p {
     color: $black;
     position: absolute;
@@ -74,7 +68,7 @@
       top: 100%;
       left: 50%;
       width: 1px;
-      background-color: #f4dedc;
+      background-color: rgba(255, 80, 56, 0.2);
       @include breakpoint(max-width 1550px) {
         display: none;
       }
@@ -93,12 +87,23 @@
     }
   }
   form {
-    position: relative;
+    max-width: 745px;
+    box-shadow: 17px 22px 57px rgba(0, 0, 0, 0.43);
+    border-radius: 10px;
+    background-color: #ffffff;
+    opacity: 0.5;
+
+    /*position: relative;
     width: 65%;
     float: left;
     margin-top: 80px;
     @include breakpoint(max-width 1200px) {
       width: 100%;
+    }
+    .brief__desc {
+      display: flex;
+      justify-content: space-around;
+      width: 90%;
     }
     input,
     textarea {
@@ -122,9 +127,10 @@
       min-height:120px;
     }
     span {
-      color: #c5c7c6;
+      color: #9fa3a7;
       display: inline-block;
-      width: calc(100% - 200px);
+      width: calc(100% - 150px);
+      font-family: $GilroySemibold;
       @include breakpoint(max-width 755px) {
         padding-left: 5%;
         box-sizing: border-box;
@@ -166,14 +172,15 @@
       font-family:$GilroySemibold;
       font-size: 14px;
       color: #272e34;
+      cursor: pointer;
       @include breakpoint(max-width 600px) {
         padding-left: 5%;
         box-sizing: border-box;
       }
       span {
-        height: 12px;
-        width: 12px;
-        border: 1px solid #ccc;
+        height: 15px;
+        width: 15px;
+        border: 2px solid #9fa3a7;
         position: relative;
         display: inline-block;
         margin-right: 10px;
@@ -186,8 +193,8 @@
           position: absolute;
           top: 0;
           left: 0;
-          width: 80%;
-          height: 80%;
+          width: 9px;
+          height: 9px;
           margin-top: 10%;
           margin-left: 10%;
           border-radius: 50%;
@@ -220,6 +227,12 @@
       font-weight: 700;
       text-transform: uppercase;
       padding: 15px 30px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      &:hover {
+        opacity: 0.8;
+        transition: opacity 0.2s;
+      }
       @include breakpoint(max-width 500px) {
         margin: 30px auto 0;
         float: none;
@@ -229,72 +242,24 @@
       position: relative;
       font-family: $GilroyRegular;
       font-size: 14px;
-      color: #c5c7c6;
+      font-variant-caps: small-caps;
+      letter-spacing: 0.3px;
+      color: #7d8185;
       display: inline-block;
       text-decoration: underline;
       width: auto;
       cursor: pointer;
+      &:hover {
+        text-decoration: none;
+      }
       @include breakpoint(max-width 755px) {
         display: inline-block!important;
         margin-top: 20px;
         text-align: center;
       }
-    }
+    }*/
   }
-  &__text {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
-    @include breakpoint(max-width 1200px) {
-      display: none;
-    }
-    &:nth-of-type(2) {
-      top: 50px;
-      right: 100px;
-      text-align: right;
-      width: 365px;
-      .red-dot {
-        span {
-          height: 660px;
-        }
-      }
-    }
-    &:nth-of-type(3) {
-      top: 270px;
-      right: 20px;
-      width: 300px;
-      p {
-        width:calc(100% - 60px);
-      }
-      .red-dot {
-        span {
-          height: 470px;
-        }
-      }
-    }
-    &:nth-of-type(4) {
-      top: 480px;
-      right: 130px;
-      width: 340px;
-      p {
-        width: calc(100% - 60px);
-      }
-      .red-dot {
-        span {
-          height: 270px;
-        }
-      }
-    }
-    p {
-      font-family:$GilroySemibold;
-      font-size: 16px;
-      width:calc(100% - 70px);
-      line-height: 23px;
-    }
 
-  }
 
 
 }
