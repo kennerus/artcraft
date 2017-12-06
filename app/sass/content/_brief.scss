@@ -2,9 +2,9 @@
   width: 100%;
   padding-top: 164px;
   position: relative;
-  padding-bottom: 700px;
+  padding-bottom: 708px;
   background: url(../img/footer-bg.png) center bottom no-repeat;
-  background-size: cover;
+  background-size: contain;
   overflow: hidden;
 
   .paragraph {
@@ -36,14 +36,28 @@
     width: 100%;
   }
 
-  >p {
-    color: $black;
+  .landing-page {
     position: absolute;
+    bottom: 14.3%;
+    left: 21vw;
+    margin: 0;
+    font-family: $GilroyMedium;
+    font-size: 33px;
+    color: white;
+    letter-spacing: 2.44px;
+    text-transform: uppercase;
+    opacity: 0.75;
+  }
+
+  .fill-brief {
+    position: absolute;
+    bottom: 350px;
+    right: 385px;
     font-family: $GilroySemibold;
     font-size: 44px;
+    color: $black;
     text-transform: uppercase;
-    bottom: 300px;
-    right: 300px;
+    letter-spacing: -0.4px;
     @include breakpoint(max-width 1250px) {
       right: auto;
       left: 20px;
@@ -135,6 +149,7 @@
     justify-content: space-between;
 
     div {
+      position: relative;
       max-width: 290px;
       width: 100%;
 
@@ -173,9 +188,6 @@
     }
   }
 
-    .correctly {
-      background: url('../img/icons/correctly.png') center center no-repeat;
-    }
     
     .brief__form-services {
       display: flex;
@@ -339,5 +351,19 @@
       }
     }
   }
-
+  .balloon {
+    position: absolute;
+    bottom: 300px;
+    left: 200px;
+    animation: flying 50s linear infinite;
+    z-index: 2;
+    @include breakpoint(max-width 1250px) {
+      left: auto;
+      right: 40% ;
+      bottom: 100px;
+    }
+    @include breakpoint(max-width 600px) {
+      width: 200px;
+    }
+  }
 }

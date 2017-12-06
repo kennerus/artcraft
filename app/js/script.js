@@ -49,7 +49,7 @@ $(function () {
     });
 
 
-    $('.brief__col input[type="text"]').unbind().blur( function(){
+    $('.brief__form-head input').unbind().blur( function(){
 
         var id = $(this).attr('id');
         var val = $(this).val();
@@ -61,49 +61,32 @@ $(function () {
 
                 if (val.length > 2 && val != '' && rv_name.test(val)) {
                     $(this).addClass('not_error');
-                    $(this).next('.error-box').addClass('correctly')
-                        .css('color','transparent')
-                        .animate({'paddingLeft':'20px'},400)
-                        .animate({'paddingLeft':'10px'},400);
                     $(this).css({
                         'color': '#272e34',
-                        'border-bottom-color': '#ccc'
+                        'border-color': '#165EB8'
                     })
                 } else {
                     $(this).removeClass('not_error').addClass('error');
-                    $(this).next('.error-box').html('*').removeClass('correctly')
-                        .css('color', 'red')
-                        .animate({'paddingLeft':'20px'},400)
-                        .animate({'paddingLeft':'10px'},400);
                     $(this).css({
                         'color': 'red',
-                        'border-bottom-color': '#eb4534'
+                        'border-color': '#eb4534'
                     })
                 }
                 break;
 
-            // Проверка email
+            // Проверка phone
             case 'phone':
                 var rv_phone = /^[0-9]+$/;
                 if (val != '' && rv_phone.test(val)) {
                     $(this).addClass('not_error');
-                    $(this).next('.error-box').addClass('correctly')
-                        .css('color','transparent')
-                        .animate({'paddingLeft':'10px'},400)
-                        .animate({'paddingLeft':'5px'},400);
                     $(this).css({
                         'color': '#272e34',
-                        'border-bottom-color': '#ccc'
                     })
                 } else {
                     $(this).removeClass('not_error').addClass('error');
-                    $(this).next('.error-box').html('*').removeClass('correctly')
-                        .css('color', 'red')
-                        .animate({'paddingLeft':'20px'},400)
-                        .animate({'paddingLeft':'10px'},400);
                     $(this).css({
                         'color': 'red',
-                        'border-bottom-color': '#eb4534'
+                        'border-color': '#eb4534'
                     })
                 }
                 break;

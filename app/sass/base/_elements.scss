@@ -158,6 +158,10 @@ $red: #ff5038;
   }
 }
 
+.not_error {
+  border-color: #165EB8;
+}
+
 
 @keyframes small-round {
   100% {
@@ -173,7 +177,7 @@ $red: #ff5038;
     opacity: 0;
   }
 }
-@keyframes flying {
+/*@keyframes flying {
   0% {
     transform: translate(0px, 20px);
   }
@@ -201,4 +205,4 @@ $red: #ff5038;
   100% {
     transform: translate(0px, 20px);
   }
-}
+}*/

@@ -1,12 +1,12 @@
 .portfolio {
   position: relative;
-  padding-bottom: 70px;
+  padding-bottom: 135px;
   overflow: hidden;
   color: $black;
 
   .animate-circle {
     left: -355px;
-    bottom: 4px;
+    bottom: 72px;
     height: 607px;
     @include breakpoint(max-width 1400px) {
       display: none;
