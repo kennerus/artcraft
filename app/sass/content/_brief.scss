@@ -1,6 +1,6 @@
 .brief {
   width: 100%;
-  padding-top: 173px;
+  padding-top: 164px;
   position: relative;
   padding-bottom: 700px;
   background: url(../img/footer-bg.png) center bottom no-repeat;
@@ -8,10 +8,15 @@
   overflow: hidden;
 
   .paragraph {
-    left: -35px;
-    top: -65px;
+    left: -32px;
+    top: -60px;
     letter-spacing: 0.5px;
   }
+
+  .wrap {
+    margin-left: 7%;
+  }
+
   .animate-circle {
     top: 250px;
     right: -293px;
@@ -21,8 +26,9 @@
   }
 
   .tittle h2 {
-    margin-left: 146px;
-    letter-spacing: -0.1px;
+    margin-left: 141px;
+    padding-top: 36px;
+    letter-spacing: -1px;
   }
 
   .tittle p {
@@ -60,90 +66,58 @@
       }
     }
   }
-  .red-dot {
-    position: relative;
-    span {
-      display: block;
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      width: 1px;
-      background-color: rgba(255, 80, 56, 0.2);
-      @include breakpoint(max-width 1550px) {
-        display: none;
-      }
-    }
+
+
+  .brief__content {
+    display: flex;
+    align-items: center;
+    margin-left: 7%;
   }
 
-  &__col {
-    position: relative;
-    float: left;
-    width: 50%;
-    @include breakpoint(max-width 600px) {
-      width: 100%;
-    }
-    div {
-      position: relative;
-    }
-  }
-  form {
-    max-width: 745px;
+  .brief__form {
+    max-width: 735px;
+    margin-right: 76px;
+    padding: 55px 61px 45px 61px;
+    box-sizing: border-box;
     box-shadow: 17px 22px 57px rgba(0, 0, 0, 0.43);
     border-radius: 10px;
     background-color: #ffffff;
-    opacity: 0.5;
 
-    /*position: relative;
-    width: 65%;
-    float: left;
-    margin-top: 80px;
-    @include breakpoint(max-width 1200px) {
+    ::placeholder {
+      color: #4f5362;
+      opacity: 0.3;
+    }
+
+    #name,
+    #phone,
+    textarea {
+      max-width: 244px;
       width: 100%;
-    }
-    .brief__desc {
-      display: flex;
-      justify-content: space-around;
-      width: 90%;
-    }
-    input,
-    textarea {
-      font-family: $GilroySemibold;
+      margin-top: 10px;
+      padding: 10px 22px;
       font-size: 14px;
-      color: #272e34;
-      font-weight: 600;
-      width: 90%;
-      background-color: transparent;
+      color: #4f5362;
       border: none;
-      border-bottom: 1px solid #ccc;
-      padding: 10px 5px;
-      box-sizing: border-box;
-      resize: none;
-      margin-bottom: 10px;
-      @include breakpoint(max-width 600px) {
-        margin-left: 5%;
+      border-radius: 20px;
+      background-color: #eff0f4;
+      transition: all 0.2s;
+
+      &:focus {
+        box-shadow: 5px 7px 18px rgba(173, 178, 199, 0.62);
+        border-radius: 20px;
+        background-color: #ffffff;
+        transition: all 0.2s;
       }
     }
-    textarea {
-      min-height:120px;
-    }
-    span {
-      color: #9fa3a7;
-      display: inline-block;
-      width: calc(100% - 150px);
+
+    label {
+      padding-left: 22px;
+      font-size: 14px;
+      color: #282828;
       font-family: $GilroySemibold;
-      @include breakpoint(max-width 755px) {
-        padding-left: 5%;
-        box-sizing: border-box;
-      }
-      @include breakpoint(max-width 755px) {
-        width: 100%;
-      }
-      b {
-        font-size: 20px;
-        margin-right: 10px;
-        color:#eb4534;
-      }
+      font-weight: normal;
     }
+
     span.error-box {
       display: block;
       height: 10px;
@@ -154,112 +128,216 @@
       right: 30px;
       color: #eb4534;
     }
-    p {
-      font-family: $GilroyExtrabold;
-      text-transform: uppercase;
-      color: $red;
-      font-size: 16px;
-      @include breakpoint(max-width 600px) {
-        padding-left: 5%;
-        box-sizing: border-box;
+  }
+
+  .brief__form-head {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      max-width: 290px;
+      width: 100%;
+
+      label {
+        width: 100%;
       }
     }
-    label {
-      position: relative;
-      width: 100%;
-      display: block;
-      padding: 5px 0;
-      font-family:$GilroySemibold;
-      font-size: 14px;
-      color: #272e34;
+  }
+
+  .brief__form-message {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+
+    textarea {
+      max-width: 100%;
+      min-height: 104px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      resize: none;
+    }
+
+    #add-file {
+      display: none;
+    }
+
+    label[for="add-file"] {
+      position: absolute;
+      bottom: 15px;
+      right: 39px;
+      font-family: $GilroyRegular;
+      font-size: 11px;
+      color: #4f5362;
       cursor: pointer;
-      @include breakpoint(max-width 600px) {
-        padding-left: 5%;
-        box-sizing: border-box;
+      opacity: 0.5;
+    }
+  }
+
+    .correctly {
+      background: url('../img/icons/correctly.png') center center no-repeat;
+    }
+    
+    .brief__form-services {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 20px;
+
+      h3 {
+        width: 100%;
+        margin: 0;
+        padding-left: 20px;
+        font-family: $GilroyBold;
+        font-size: 16px;
+        color: #282828;
+        letter-spacing: 0.16px;
       }
+
       span {
-        height: 15px;
-        width: 15px;
-        border: 2px solid #9fa3a7;
         position: relative;
         display: inline-block;
+        height: 9px;
+        width: 9px;
         margin-right: 10px;
+        padding: 0;
+        border: 1px solid #9fa3a7;
         border-radius: 50%;
         box-sizing: border-box;
-        padding: 0;
+        cursor: pointer;
+        transition: all 0.2s;
         &:before {
           display: block;
           content: '';
           position: absolute;
           top: 0;
           left: 0;
-          width: 9px;
-          height: 9px;
-          margin-top: 10%;
-          margin-left: 10%;
+          width: 0;
+          height: 0;
           border-radius: 50%;
+          background-color: #eb4534;
+        }
+      }
+
+      label {
+        margin-top: 15px;
+        padding-left: 20px;
+        cursor: pointer;
+      }
+
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      input[type="checkbox"]:checked + label > span {
+        height: 13px;
+        width: 13px;
+        transition: all 0.2s;
+
+        &:before {
+          top: 2px;
+          left: 2px;
+          width: 7px;
+          height: 7px;
+          background-color: #eb4534;
         }
       }
     }
-    input[type="radio"],
-    input[type="file"]{
-      display: none;
-    }
-    input[type="radio"]:checked + label span {
-      &:before {
-        background-color: #eb4534;
+
+    .brief__form-desc {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+
+      #submit {
+        padding: 10px 45px;
+        font-size: 14px;
+        color: white;
+        background-color: #ee4635;
+        border: 1px solid #ee4635;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover, &:focus, &:active {
+          background-color: transparent;
+          color: #ee4635;
+          transition: all 0.2s;
+        }
+      }
+
+      p {
+        margin: 0;
+        padding-left: 20px;
+        font-family: $GilroySemibold;
+        font-size: 13px;
+        color: #9fa3a7;
+
+        span {
+          vertical-align: bottom;
+          color: #ee4635;
+        }
       }
     }
-    .correctly {
-      background: url('../img/icons/correctly.png') center center no-repeat;
-    }
-    button {
-      display: block;
-      position: relative;
-      float: left;
-      margin: 60px 30px 0 0;
-      background-color: $red;
-      border: none;
-      border-radius: 30px;
-      color: #fff;
+
+  .brief__contacts {
+    color: #282828;
+
+    h3 {
+      margin: 0;
       font-family: $GilroyRegular;
-      font-size: 16px;
-      font-weight: 700;
-      text-transform: uppercase;
-      padding: 15px 30px;
-      cursor: pointer;
-      transition: opacity 0.2s;
-      &:hover {
-        opacity: 0.8;
-        transition: opacity 0.2s;
+      font-size: 30px;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+
+      strong {
+        margin-right: 10px;
+        font-family: $GilroyMedium;
       }
-      @include breakpoint(max-width 500px) {
-        margin: 30px auto 0;
-        float: none;
+
+      img {
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 20px;
+        }
+      }
+
+    }
+    
+    .brief__tel {
+      margin-top: 62px;
+
+      strong {
+        font-size: 23px;
+        letter-spacing: 0.2px;
       }
     }
-    label[for="add-file"] {
-      position: relative;
-      font-family: $GilroyRegular;
-      font-size: 14px;
-      font-variant-caps: small-caps;
-      letter-spacing: 0.3px;
-      color: #7d8185;
-      display: inline-block;
-      text-decoration: underline;
-      width: auto;
-      cursor: pointer;
-      &:hover {
-        text-decoration: none;
+
+    .brief__social,
+    .brief__messengers,
+    .brief__email {
+      letter-spacing: -0.4px;
+    }
+
+    .brief__email {
+      margin-right: 25px;
+
+      a {
+        font-family: $GilroySemibold;
+        color: #ee4635;
+        text-decoration: underline;
+
+        &:hover, &:active, &:focus {
+          text-decoration: none;
+        }
       }
-      @include breakpoint(max-width 755px) {
-        display: inline-block!important;
-        margin-top: 20px;
-        text-align: center;
-      }
-    }*/
+    }
   }
-
-
 
 }

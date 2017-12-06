@@ -332,56 +332,88 @@
 <section class="brief" id="brief">
 
     <div class="container">
-        <p class="paragraph">наш бриф</p>
-        <div class="wrap">
-            <div class="tittle">
-                <span>заполните</span>
-                <h2>наш бриф</h2>
-                <p>
-                    Хорошо заполненный бриф - первый и очень важный этап успешно и вовремя завершённого проекта.
-                </p>
+        <div class="brief__head">
+            <p class="paragraph">наш бриф</p>
+            <div class="wrap">
+                <div class="tittle">
+                    <span>заполните</span>
+                    <h2>наш бриф</h2>
+                    <p>
+                        Хорошо заполненный бриф - первый и очень важный этап успешно и вовремя завершённого проекта.
+                    </p>
+                </div>
             </div>
         </div>
+        <div class="brief__content">
+            <form id="form" class="brief__form">
+                <div class="brief__form-head">
+                    <div>
+                        <label for="name">Ваше имя, фамилия *</label>
+                        <input id="name" type="text" placeholder="Ваше имя" required >
+                        <span class="error-box">*</span>
+                    </div>
 
-        <form id="form" class="brief__form">
-            <div class="brief__form-head">
-                <div>
-                    <label for="name">Ваше имя, фамилия *</label>
-                    <input type="text" required placeholder="Ваше имя" id="name">
-                    <span class="error-box">*</span>
+                    <div>
+                        <label for="phone">Ваш номер телефона *</label>
+                        <input id="phone" type="tel" placeholder="Номер телефона" required>
+                        <span class="error-box">*</span>
+                    </div>
                 </div>
 
-                <div>
-                    <label for="phone">Ваш номер телефона</label>
-                    <input type="tel" required placeholder="Номер телефона" id="phone">
-                    <span class="error-box">*</span>
+                <div class="brief__form-message">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" placeholder="Ваше сообщение"></textarea>
+
+                    <label for="add-file"><img src="img/clip.png" width="13" height="13" alt=""> Прикрепить файл</label>
+                    <input type="file" id="add-file">
+                </div>
+
+                <div class="brief__form-services">
+                    <h3>Какие услуги Вас интересуют?</h3>
+
+                    <input id="ckeckbox_mob" type="checkbox" name="ckeckbox_mob">
+                    <label for="ckeckbox_mob"><span></span>Дизайн сайта или дизайн landing-page</label>
+
+                    <input id="ckeckbox_supp" type="checkbox" name="ckeckbox_supp">
+                    <label for="ckeckbox_supp"><span></span> Дизайн печатной продукции (все виды)</label>
+
+                    <input id="ckeckbox_site" type="checkbox" name="ckeckbox_site">
+                    <label for="ckeckbox_site"><span></span>Посадка сайта на WordPress</label>
+
+                    <input id="ckeckbox_seo" type="checkbox" name="ckeckbox_seo">
+                    <label for="ckeckbox_seo"><span></span>Разработка интернет-магазина на платформе YI2</label>
+                </div>
+                <div class="brief__form-desc">
+                    <p><span>*</span> обязательные поля</p>
+                    <input id="submit" type="submit" value="Отправить бриф">
+                </div>
+            </form>
+            <div class="brief__contacts">
+                <h3>Наши контакты</h3>
+                <div class="brief__tel">
+                    <img src="img/phone-ico.png" alt="">
+                    <strong>+7 (950) 815-57-50</strong>
+                </div>
+                <div class="brief__social">
+                    <strong>Соц. сети</strong>
+                    <img src="img/vk-ico.png" alt="">
+                    <img src="img/fb-ico.png" alt="">
+                </div>
+                <div class="brief__messengers">
+                    <strong>Мессенджеры</strong>
+                    <img src="img/telegram-ico.png" alt="">
+                    <img src="img/003-whatsapp.png" alt="">
+                    <img src="img/wu-ico.png" alt="">
+                </div>
+                <div class="brief__email">
+                    <strong>E-mail</strong>
+                    <a href="mailto:info@artcraft.ru">info@artcraft.ru</a>
                 </div>
             </div>
+        </div>
+        
 
-            <div class="brief__form-message">
-                <label for="message">Сообщение</label>
-                <textarea id="message" placeholder="Ваше сообщение"></textarea>
-
-                <input type="file" id="add-file">
-                <label for="add-file">Прикрепить файл</label>
-            </div>
-
-            <div >
-                <p>Какие услуги Вас интересуют?</p>
-                <input id="ckeckbox_mob" type="ckeckbox" name="ckeckbox_mob">
-                <label for="ckeckbox_mob"><span></span>Мобильное приложение</label>
-                <input id="ckeckbox_supp" type="ckeckbox" name="ckeckbox_supp">
-                <label for="ckeckbox_supp"><span></span>Поддержка сайта</label>
-                <input id="ckeckbox_site" type="ckeckbox" name="ckeckbox_site">
-                <label for="ckeckbox_site"><span></span>Веб-сайт или проект</label>
-                <input id="ckeckbox_seo" type="ckeckbox" name="ckeckbox_seo">
-                <label for="ckeckbox_seo"><span></span>Продвижение сайта</label>
-            </div>
-            <div class="brief__desc">
-                <span><b>*</b>обязательные поля</span>
-            </div>
-            <button>Отправить бриф</button>
-        </form>
+        
 
     </div>
 
