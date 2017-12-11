@@ -11,6 +11,10 @@
   }
   .wrap {
     margin-left: 7%;
+
+    @include breakpoint(max-width 576px) {
+      margin: 0 auto;
+    }
   }
   .tittle {
     p {
@@ -22,7 +26,7 @@
       margin-top: 30px;
       margin-left: 70px;
       @include breakpoint(max-width 768px) {
-        margin: 0;
+        margin: 0 auto;
         .slick-list {
           padding: 30px 0 !important;
           width: auto !important;
@@ -36,6 +40,7 @@
       margin-right: 38px;
       @include breakpoint(max-width 768px) {
         margin: 0;
+        height: auto;
       }
       &:focus {
         outline:none;

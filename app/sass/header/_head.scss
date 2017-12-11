@@ -9,6 +9,10 @@
   @include breakpoint(max-width 700px) {
     min-height: 57vh;
   }
+
+  @include breakpoint(max-width 450px) {
+     background-size: 180%;
+  }
   &__nav {
     margin: 0;
     padding: 52px 0;

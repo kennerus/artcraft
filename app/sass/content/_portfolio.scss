@@ -40,6 +40,10 @@
 
   .wrap {
     margin-left: 7%;
+
+    @include breakpoint(max-width 576px) {
+      margin: 0 auto;
+    }
   }
   .paragraph {
     top: 156px;
@@ -65,9 +69,8 @@
       margin-left: 0;
     }
     &--scroller {
-      height: 790px;
       transition: .5s;
-      @include breakpoint(max-width 992px) {
+      /*@include breakpoint(max-width 992px) {
         display: block;
         columns: 2;
         column-gap: 2px;
@@ -76,7 +79,7 @@
       }
       @include breakpoint(max-width 750px) {
         columns: 1!important;
-      }
+      }*/
     }
     &--item {
       display: flex !important;
@@ -87,6 +90,14 @@
       height: 790px;
       margin-right: 20px;
       box-sizing: border-box;
+
+      @include breakpoint(max-width 992px) {
+        height: 550px;
+      }
+
+      @include breakpoint(max-width 576px) {
+        height: 400px;
+      }
 
       a {
         width: 100%;
@@ -102,10 +113,6 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-
-        @include breakpoint(max-width 992px) {
-          height: auto;
-        }
       }
     }
 

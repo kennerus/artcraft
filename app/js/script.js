@@ -24,24 +24,53 @@ $(function () {
 
     $('.portfolio__gallery--scroller').slick({
         dots: false,
-        slidesToShow: 4,
         infinite: true,
-        variableWidth: true
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1680,
+                settings: {
+                    variableWidth: false,
+                    slidesToShow: 3
+                }
+            },
+
+            {
+                breakpoint: 992,
+                settings: {
+                    variableWidth: false,
+                    slidesToShow: 2
+                }
+            },
+
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('.blog__slider--wrap').slick({
         dots:false,
         variableWidth: true,
         infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
         responsive: [
             {
                 breakpoint: 768,
                 settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
+                    variableWidth: false,
+                    slidesToShow: 2
+                }
+            },
+
+            {
+                breakpoint: 576,
+                settings: {
+                    variableWidth: false,
                     slidesToShow: 1
                 }
             }

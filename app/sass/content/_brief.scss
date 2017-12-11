@@ -3,9 +3,13 @@
   padding-top: 164px;
   position: relative;
   padding-bottom: 708px;
-  background: url(../img/footer-bg.png) center bottom no-repeat;
+  background: url(../img/footer-bg.jpg) center bottom no-repeat;
   background-size: contain;
   overflow: hidden;
+
+  @include breakpoint(max-width 576px) {
+    background-size: 155%;
+  }
 
   .paragraph {
     left: -32px;
@@ -36,19 +40,6 @@
     width: 100%;
   }
 
-  .landing-page {
-    position: absolute;
-    bottom: 14.3%;
-    left: 21vw;
-    margin: 0;
-    font-family: $GilroyMedium;
-    font-size: 33px;
-    color: white;
-    letter-spacing: 2.44px;
-    text-transform: uppercase;
-    opacity: 0.75;
-  }
-
   .fill-brief {
     position: absolute;
     bottom: 350px;
@@ -58,10 +49,15 @@
     color: $black;
     text-transform: uppercase;
     letter-spacing: -0.4px;
-    @include breakpoint(max-width 1250px) {
-      right: auto;
-      left: 20px;
-      top: 750px;
+    @include breakpoint(max-width 1200px) {
+      top: 1100px;
+      right: 0;
+      left: 0;
+      text-align: center;
+    }
+
+    @include breakpoint(max-width 992px) {
+      top: 1300px;
     }
     @include breakpoint(max-width 930px) {
       font-size: 27px;
@@ -86,6 +82,12 @@
     display: flex;
     align-items: center;
     margin-left: 7%;
+
+    @include breakpoint(max-width 1200px) {
+      margin: 0 auto;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
 
   .brief__form {
@@ -96,6 +98,18 @@
     box-shadow: 17px 22px 57px rgba(0, 0, 0, 0.43);
     border-radius: 10px;
     background-color: #ffffff;
+
+    @include breakpoint(max-width 1200px) {
+      margin: 0;
+    }
+
+    @include breakpoint(max-width 768px) {
+      padding: 20px;
+    }
+
+    @include breakpoint(max-width 576px) {
+      padding: 10px;
+    }
 
     ::placeholder {
       color: #4f5362;
@@ -147,11 +161,18 @@
   .brief__form-head {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     div {
       position: relative;
       max-width: 290px;
       width: 100%;
+
+      &:nth-child(2) {
+        @include breakpoint(max-width 768px) {
+          margin-top: 20px;
+        }
+      }
 
       label {
         width: 100%;
@@ -261,6 +282,11 @@
       align-items: center;
       margin-top: 20px;
 
+      @include breakpoint(max-width 500px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
       #submit {
         padding: 10px 45px;
         font-size: 14px;
@@ -270,6 +296,10 @@
         border-radius: 20px;
         cursor: pointer;
         transition: all 0.2s;
+
+        @include breakpoint(max-width 500px) {
+          margin-top: 10px;
+        }
 
         &:hover, &:focus, &:active {
           background-color: transparent;
@@ -285,6 +315,10 @@
         font-size: 13px;
         color: #9fa3a7;
 
+        @include breakpoint(max-width 500px) {
+          padding: 0;
+        }
+
         span {
           vertical-align: bottom;
           color: #ee4635;
@@ -294,6 +328,10 @@
 
   .brief__contacts {
     color: #282828;
+
+    @include breakpoint(max-width 1200px) {
+      margin-top: 50px;
+    }
 
     h3 {
       margin: 0;

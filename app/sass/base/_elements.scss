@@ -92,8 +92,8 @@ $red: #ff5038;
     font-style: italic;
     @include breakpoint(max-width 992px) {
       display: block;
-      width: 100%!important;
-      max-width: 100%!important;
+      width: 100%;
+      max-width: 100%;
     }
   }
 }
