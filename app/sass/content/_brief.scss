@@ -12,8 +12,8 @@
   }
 
   .paragraph {
+    top: 47px;
     left: -32px;
-    top: -60px;
     letter-spacing: 0.5px;
   }
 
@@ -26,11 +26,7 @@
   }
 
   .animate-circle {
-    top: 250px;
-    right: -293px;
-    @include breakpoint(max-width 1550px) {
-      display: none;
-    }
+    display: none;
   }
 
   .tittle {
