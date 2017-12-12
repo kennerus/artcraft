@@ -150,7 +150,12 @@
     left: 30%;
     width: 15%;
     animation: flying 50s linear infinite;
+
+    @include breakpoint(max-width 992px) {
+      animation: none;
+    }
   }
+  
   .clouds {
     display: block;
     position: absolute;

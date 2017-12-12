@@ -77,6 +77,10 @@ $(function () {
         ]
     });
 
+    $('.blog__slider--slide span').dotdotdot({
+        height: 80
+    })
+
 
     $('.brief__form-head input').unbind().blur( function(){
 

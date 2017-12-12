@@ -162,22 +162,7 @@ $red: #ff5038;
   border-color: #165EB8;
 }
 
-
-@keyframes small-round {
-  100% {
-    width: 60px;
-    height: 60px;
-    opacity: 0;
-  }
-}
-@keyframes big-round {
-  100% {
-    width: 80px;
-    height: 80px;
-    opacity: 0;
-  }
-}
-/*@keyframes flying {
+@keyframes flying {
   0% {
     transform: translate(0px, 20px);
   }
@@ -205,4 +190,4 @@ $red: #ff5038;
   100% {
     transform: translate(0px, 20px);
   }
-}*/
+}
