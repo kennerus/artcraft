@@ -6,6 +6,9 @@
   background: url(../img/header-bg.png) center top no-repeat;
   background-size: cover;
   overflow: hidden;
+  @include breakpoint(max-height 900px) {
+    padding-bottom: 100px
+  }
   @include breakpoint(max-width 700px) {
     min-height: 57vh;
   }
@@ -32,7 +35,7 @@
       height: 100%;
       width: 100%;
       padding: 0;
-      background-color: rgba(0,0,0, .6);
+      background-color: rgba(0,0,0, 0.6);
       z-index: 10;
       li {
         position: relative;
@@ -96,10 +99,10 @@
   &__mobile-btn {
     display: none;
     position: fixed;
-    right: 20px;
+    left: 35px;
     top: 35px;
-    background-color: #cccccc;
-    box-shadow: 0 0 20px 0 #000;
+    background-color: rgba(0,0,0,0.4);
+    box-shadow: 0 0 20px 0 rgba(117, 117, 117, 0.2);
     height: 50px;
     width: 50px;
     border-radius: 50%;

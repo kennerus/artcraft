@@ -18,43 +18,51 @@
   &__content {
     position: relative;
     width: 100%;
+    margin-top: 55px;
     color: $black;
-    >h2 {
+
+    .blog__content--img {
+      width: 40%;
+      float: right;
+      margin-left: 20px;
+
+      @include breakpoint(max-width 1200px) {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+    h2 {
       font-family: $GilroyExtrabold;
       font-size: 44px;
       margin: 0;
       display: inline-block;
+
+      @include breakpoint(max-width 1200px) {
+        margin-top: 20px;
+      }
     }
-    >p {
+    p {
+      position: relative;
+      margin: 0px 0px 20px;
       font-family: $GilroyMediumItalic;
       font-size: 16px;
-      margin: 0px 0px 30px;
-      position: relative;
+      line-height: 1.5;
     }
-    >span {
+    span {
       display: block;
       font-size: 18px;
       font-family: $GilroySemibold;
       padding: 35px 0;
       color: #828181;
     }
-    b {
+    strong {
       display: block;
       font-family: $GilroyExtrabold;
       font-size: 16px;
-    }
-    &--img {
-      position: relative;
-      float: right;
-      width: 525px;
-      height: 300px;
-      @include breakpoint(max-width 1200px) {
-        width: 100%;
-        height: auto;
-        img {
-          width: 100%;
-        }
-      }
     }
   }
 }

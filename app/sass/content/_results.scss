@@ -8,7 +8,11 @@
   .paragraph {
     top: 140px;
     left: -129px;
-    letter-spacing: 0.3px
+    letter-spacing: 0.3px;
+
+    @include breakpoint(max-width 768px) {
+      display: none;
+    }
   }
   .tittle {
     @include breakpoint(max-width 992px) {
@@ -19,6 +23,10 @@
     h2 {
       margin-left: 88px;
       letter-spacing: -0.9px;
+
+      @include breakpoint(max-width 576px) {
+        margin-left: 0;
+      }
     }
 
     span {

@@ -13,7 +13,7 @@ $red: #ff5038;
   font-size: 15.2px;
   color: #ff4b39;
   text-transform: uppercase;
-  @include breakpoint(max-width 500px) {
+  @include breakpoint(max-width 768px) {
     display: none;
   }
   &:before {
@@ -61,7 +61,7 @@ $red: #ff5038;
     z-index: 2;
     margin-top: 0px;
     padding-top: 30px;
-    @include breakpoint(max-width 992px) {
+    @include breakpoint(max-width 1200px) {
       margin-left: 0;
       width: 100%;
     }
