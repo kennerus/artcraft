@@ -193,6 +193,34 @@ $(function () {
         });
     }
 
+    // smooth scroll 
+
+        $(".scroll").on("click", function(e){
+            var anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top
+            }, 777);
+            e.preventDefault();
+            return false;
+        });
+
+        // scroll to top
+
+         $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        });
+
+        $('.scrollup').click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 600);
+            return false;
+        });
+
 });
 
 

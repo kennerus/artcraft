@@ -1,20 +1,12 @@
-
-.inside-blog-brief {
-  .paragraph {
-    //&:before {
-    //  content: '02';
-    //}
-  }
-}
 .inside-blog {
   padding-top: 100px;
-  .paragraph {
-    //&:before {
-    //  content: '01';
-    //}
+
+  .blog__slider {
+    padding-top: 50px;
   }
+
   .blog__slider .tittle {
-    margin-left: 70px;
+    margin-left: 0;
     margin-top: 30px;
     @include breakpoint(max-width 992px) {
       margin-left: 0;
@@ -63,6 +55,21 @@
           width: 100%;
         }
       }
+    }
+  }
+}
+
+.tags {
+  color: #9E9E9E;
+
+  &:after {
+    content: ',';
+  }
+
+  &:last-child {
+
+    &:after {
+      content: '';
     }
   }
 }
