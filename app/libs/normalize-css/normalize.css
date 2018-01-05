@@ -276,7 +276,7 @@ optgroup {
  */
 
 button,
-input { /* 1 */
+input { 
   overflow: visible;
 }
 

@@ -13,8 +13,8 @@ $(function () {
     }, 70);
 
     $("[data-fancybox]").fancybox({
-        arrows : true,
-        buttons : [
+        arrows: true,
+        buttons: [
             'thumbs',
             'close'
         ],
@@ -53,7 +53,7 @@ $(function () {
     });
 
     $('.blog__slider--wrap').slick({
-        dots:false,
+        dots: false,
         variableWidth: true,
         infinite: true,
         // autoplay: true,
@@ -82,12 +82,12 @@ $(function () {
     })
 
 
-    $('.brief__form-head input').unbind().blur( function(){
+    $('.brief__form-head input').unbind().blur(function () {
 
         var id = $(this).attr('id');
         var val = $(this).val();
 
-        switch(id) {
+        switch (id) {
             // Проверка поля "Имя"
             case 'name':
                 var rv_name = /^[a-zA-Zа-яА-Я]+$/;
@@ -128,9 +128,9 @@ $(function () {
     /* close contacts validation*/
 
 
-    $(document).on("click", ".header__nav a", function() {
+    $(document).on("click", ".header__nav a", function () {
         var href = $(this).attr('href');
-        if(~href.indexOf('#')) {
+        if (~href.indexOf('#')) {
             event.preventDefault();
             var t = $(this).attr("href"),
                 e = $(t),
@@ -143,7 +143,6 @@ $(function () {
     });
 
 
-
     $(document).on('click', '.header__mobile-btn', function () {
         $('.header__mobile-btn').toggleClass('header__mobile-btn--active');
         $('.header__nav').slideToggle().css('display', 'flex');
@@ -153,12 +152,12 @@ $(function () {
     $('.tittle span').addClass('animated').css('opacity', '0');
     $('.tittle h2').addClass('animated').css('opacity', '0');
 
-    if(window.innerWidth > 800) {
+    if (window.innerWidth > 800) {
         $(window).scroll(function () {
             $('.tittle span').each(function () {
                 var imgPos = $(this).offset().top;
                 var topOfWindow = $(window).scrollTop();
-                if(imgPos < topOfWindow + 500) {
+                if (imgPos < topOfWindow + 500) {
                     $(this).addClass('fadeInLeft').css('opacity', '1');
                 }
             })
@@ -167,7 +166,7 @@ $(function () {
             $('.tittle h2').each(function () {
                 var imgPos = $(this).offset().top;
                 var topOfWindow = $(window).scrollTop();
-                if(imgPos < topOfWindow + 500) {
+                if (imgPos < topOfWindow + 500) {
                     $(this).addClass('fadeInRight').css('opacity', '1');
                 }
             })
@@ -177,7 +176,7 @@ $(function () {
             $('.tittle span').each(function () {
                 var imgPos = $(this).offset().top;
                 var topOfWindow = $(window).scrollTop();
-                if(imgPos < topOfWindow + 400) {
+                if (imgPos < topOfWindow + 400) {
                     $(this).addClass('fadeInLeft').css('opacity', '1');
                 }
             })
@@ -186,7 +185,7 @@ $(function () {
             $('.tittle h2').each(function () {
                 var imgPos = $(this).offset().top;
                 var topOfWindow = $(window).scrollTop();
-                if(imgPos < topOfWindow + 400) {
+                if (imgPos < topOfWindow + 400) {
                     $(this).addClass('fadeInRight').css('opacity', '1');
                 }
             })
@@ -195,31 +194,31 @@ $(function () {
 
     // smooth scroll 
 
-        $(".scroll").on("click", function(e){
-            var anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $(anchor.attr('href')).offset().top
-            }, 777);
-            e.preventDefault();
-            return false;
-        });
+    $(".scroll").on("click", function (e) {
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
 
-        // scroll to top
+    // scroll to top
 
-         $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                $('.scrollup').fadeIn();
-            } else {
-                $('.scrollup').fadeOut();
-            }
-        });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
 
-        $('.scrollup').click(function () {
-            $("html, body").animate({
-                scrollTop: 0
-            }, 600);
-            return false;
-        });
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
 
 });
 

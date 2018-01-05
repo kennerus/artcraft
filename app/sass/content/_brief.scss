@@ -144,7 +144,7 @@
     textarea {
       max-width: 244px;
       width: 100%;
-      margin-top: 10px;
+      /*margin-top: 10px;*/
       padding: 10px 22px;
       font-size: 14px;
       color: #4f5362;
@@ -216,20 +216,7 @@
       resize: none;
     }
 
-    #add-file {
-      display: none;
-    }
 
-    label[for="add-file"] {
-      position: absolute;
-      bottom: 15px;
-      right: 39px;
-      font-family: $GilroyRegular;
-      font-size: 11px;
-      color: #4f5362;
-      cursor: pointer;
-      opacity: 0.5;
-    }
   }
 
     
@@ -380,9 +367,6 @@
           margin-right: 20px;
         }
       }
-
-      
-
     }
 
     .brief__social a {
@@ -438,4 +422,36 @@
       width: 200px;
     }
   }
+}
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    display: inline-block;
+    max-width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    opacity: 0.5;
+}
+.inputfile + label span {
+    font-family: $GilroyRegular;
+    font-size: 11px;
+    color: #4f5362;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
 }

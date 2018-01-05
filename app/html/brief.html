@@ -27,12 +27,14 @@
                     </div>
                 </div>
 
-                <div class="brief__form-message">
+                <div class="brief__form-message" lang="ru">
                     <label for="message">Сообщение</label>
                     <textarea id="message" placeholder="Ваше сообщение"></textarea>
 
-                    <label for="add-file"><img src="img/clip.png" width="13" height="13" alt=""> Прикрепить файл</label>
-                    <input type="file" id="add-file">
+                    <!-- <input type="file" name="file" id="add-file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+                    <label for="add-file"><img src="img/clip.png" width="13" height="13" alt=""> Прикрепить файл</label> -->
+                    <input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} файла(ов) выбрано" multiple />
+                    <label for="file-2"><img src="img/clip.png" width="13" height="13" alt=""> <span>Прикрепить файл&hellip;</span></label>
                 </div>
 
                 <div class="brief__form-services">
@@ -68,9 +70,9 @@
                 </div>
                 <div class="brief__messengers">
                     <strong>Мессенджеры</strong>
-                    <img src="img/telegram-ico.png" alt="">
-                    <img src="img/003-whatsapp.png" alt="">
-                    <img src="img/wu-ico.png" alt="">
+                    <a href="#"><img src="img/telegram-ico.png" alt=""></a>
+                    <a href="#"><img src="img/003-whatsapp.png" alt=""></a>
+                    <a href="#"><img src="img/wu-ico.png" alt=""></a>
                 </div>
                 <div class="brief__email">
                     <strong>E-mail</strong>
