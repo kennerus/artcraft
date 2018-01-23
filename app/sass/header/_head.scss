@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  background: url(../img/header-bg.png) center top no-repeat;
+  background: url(../img/header-bg.jpg) center top no-repeat;
   background-size: cover;
   overflow: hidden;
   @include breakpoint(max-height 900px) {
@@ -18,7 +18,7 @@
   }
   &__nav {
     margin: 0;
-    padding: 52px 0;
+    padding: 35px 0;
     position: relative;
     display: flex;
     align-content: center;

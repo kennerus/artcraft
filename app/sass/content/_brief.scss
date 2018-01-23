@@ -62,7 +62,7 @@
   .fill-brief {
     position: absolute;
     bottom: 350px;
-    right: 385px;
+    left: 32vw;
     font-family: $GilroySemibold;
     font-size: 44px;
     color: $black;
@@ -140,11 +140,13 @@
     }
 
     #name,
-    #phone,
+    #phone,,
+    #mail,
+    #skype,
     textarea {
       max-width: 244px;
       width: 100%;
-      /*margin-top: 10px;*/
+      margin-top: 5px;
       padding: 10px 22px;
       font-size: 14px;
       color: #4f5362;
@@ -162,7 +164,7 @@
     }
 
     label {
-      padding-left: 15px;
+      padding-left: 22px;
       font-size: 14px;
       color: #282828;
       font-family: $GilroySemibold;
@@ -195,6 +197,11 @@
         @include breakpoint(max-width 768px) {
           margin-top: 20px;
         }
+      }
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        margin-top: 20px;
       }
 
       label {
@@ -433,11 +440,9 @@
 }
 
 .inputfile + label {
-    position: absolute;
-    bottom: 10px;
-    right: 25px;
     display: inline-block;
     max-width: 80%;
+    margin-top: 20px;
     text-overflow: ellipsis;
     white-space: nowrap;
     cursor: pointer;
@@ -446,7 +451,8 @@
 }
 .inputfile + label span {
     font-family: $GilroyRegular;
-    font-size: 11px;
+    font-size: 16px;
+    letter-spacing: 0.3px;
     color: #4f5362;
 }
 
