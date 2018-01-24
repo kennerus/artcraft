@@ -38,9 +38,12 @@ $red: #ff5038;
   width: 92%;
   margin-left: 8%;
   z-index: 2;
+
+  @include breakpoint(max-width 768px) {
+    margin: 0 auto
+  }
   @include breakpoint(max-width 500px) {
     width: 100%;
-    margin: 0;
   }
 }
 .tittle {
@@ -174,6 +177,7 @@ $red: #ff5038;
     background-position: center -57px;
     border-radius: 50px;
     opacity: 0.5;
+    z-index: 3;
 
     &:hover {
         background-position: center -6px;
