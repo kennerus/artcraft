@@ -90,11 +90,6 @@
 
   &__gallery {
     margin-top: 30px;
-    margin-left: 92px;
-
-    @include breakpoint(max-width 1919px) {
-      margin-left: 0;
-    }
     @include breakpoint(max-width 992px) {
       min-width: 100%;
     }
@@ -107,8 +102,8 @@
       /*max-height: 538px;*/
       display: -ms-grid;
       -ms-grid-row-gap: 8px;
-      -ms-grid-columns: 392px 265px 173px 92px 173px 265px;
-      -ms-grid-rows: 265px 265px;
+      -ms-grid-columns: 20.4vw 13.8vw 9vw 4.8vw 9vw 13.8vw;
+      -ms-grid-rows: 13.8vw 13.8vw;
 
       .portfolio-link {
         -ms-grid-row: 1;
@@ -176,8 +171,8 @@
       display: -ms-grid;
       display: grid;
       grid-gap: 8px 10px;
-      grid-template-columns: 392px 265px 173px 92px 173px 265px;
-      grid-template-rows: 265px 265px;
+      grid-template-columns: 20.4vw 13.8vw 9vw 4.8vw 9vw 13.8vw;
+      grid-template-rows: 13.8vw 13.8vw;
 
       img {
         width: 100%;
@@ -218,7 +213,7 @@
         grid-row: 2;
       }
 
-      @include breakpoint(max-width 1600px) {
+      @include breakpoint(max-width 1280px) {
         grid-template-columns: 392px 69px 196px 265px;
         grid-template-rows: 265px 265px 265px;
 

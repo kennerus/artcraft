@@ -13,6 +13,7 @@ $red: #ff5038;
   font-size: 15.2px;
   color: #ff4b39;
   text-transform: uppercase;
+  z-index: 2;
   @include breakpoint(max-width 768px) {
     display: none;
   }

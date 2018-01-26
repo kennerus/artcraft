@@ -21,37 +21,6 @@ $(function () {
         idleTime: false
     });
 
-
-    $('.portfolio__gallery--scroller').slick({
-        dots: false,
-        infinite: true,
-        variableWidth: true,
-        responsive: [
-            {
-                breakpoint: 1680,
-                settings: {
-                    variableWidth: false,
-                    slidesToShow: 3
-                }
-            },
-
-            {
-                breakpoint: 992,
-                settings: {
-                    variableWidth: false,
-                    slidesToShow: 2
-                }
-            },
-
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
-
     $('.blog__slider--wrap').slick({
         dots: false,
         variableWidth: true,
@@ -222,7 +191,30 @@ $(function () {
 
 });
 
+var viewportWidth = document.body.clientWidth;
+var gallery = document.querySelector('.portfolio__gallery');
+var portfolioBrief = document.querySelector('.portfolio__brief');
 
+function getCoords(elem) {
+    var box = elem.getBoundingClientRect();
+    return box.right;
+}
+
+// getCoords(portfolioBrief)
+
+
+function resize() {
+    if(viewportWidth > 1280) {
+        gallery.style.marginLeft = Math.round(viewportWidth - getCoords(portfolioBrief)) + 'px';
+    }
+    else {
+        gallery.style.marginLeft = '0px';
+    }
+}
+
+resize();
+
+// window.onresize = resize;
 
 
 
