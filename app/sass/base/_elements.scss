@@ -3,6 +3,26 @@ $grey: #e4e5e5;
 $darkGrey: #818080;
 $red: #ff5038;
 
+.grid-item img {
+  display: block;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1200px; /* 960 px */
+  margin: 0 auto;
+}
+.grid {
+  width: 103.125%; /* 990px */
+  overflow: hidden;
+  margin-left: -1%; /* 15px */
+  margin-bottom: -1.875em; /* 30px */
+}
+.grid-item {
+  width: 22%; /* 300px */
+  float: left;
+  margin: 0 1% 1.875em; /* 15px 30px */
+}
 
 .paragraph {
   position: absolute;

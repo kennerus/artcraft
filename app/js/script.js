@@ -188,7 +188,6 @@ $(function () {
         }, 600);
         return false;
     });
-
 });
 
 var viewportWidth = document.body.clientWidth;
