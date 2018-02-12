@@ -41,12 +41,3 @@ textarea{
     }
 }
 
-%clearfix {
-    *zoom: 1;
-    &:after {
-        content: '';
-        display: table;
-        line-height: 0;
-        clear: both;
-    }
-}

@@ -46,8 +46,13 @@ $(function () {
         ]
     });
 
-    $('.blog__slider--slide span').dotdotdot({
+    $('.dotdot').dotdotdot({
         height: 80
+    })
+
+    $('.dotdot-title').dotdotdot({
+        ellipsis: '...',
+        height: 23 * 2
     })
 
 

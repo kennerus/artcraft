@@ -7,9 +7,6 @@
     position: relative;
 }
 
-.container {
-    @extend %clearfix;
-}
 @media (min-width: 768px) {
     .container {
         width: 766px;

@@ -118,7 +118,7 @@
     margin-right: 76px;
     padding: 55px 61px 45px 61px;
     box-sizing: border-box;
-    box-shadow: 17px 22px 57px rgba(0, 0, 0, 0.43);
+    box-shadow: 0px 30px 63px rgba(0,0,0,.13);
     border-radius: 10px;
     background-color: #ffffff;
 
@@ -430,34 +430,7 @@
     }
   }
 }
-.inputfile {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-}
 
-.inputfile + label {
-    display: inline-block;
-    max-width: 80%;
-    margin-top: 20px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    cursor: pointer;
-    overflow: hidden;
-    opacity: 0.5;
-}
-.inputfile + label span {
-    font-family: $GilroyRegular;
-    font-size: 16px;
-    letter-spacing: 0.3px;
-    color: #4f5362;
-}
-
-.inputfile:focus + label,
-.inputfile.has-focus + label {
-    outline: 1px dotted #000;
-    outline: -webkit-focus-ring-color auto 5px;
+.uploader {
+  margin-top: 20px;
 }

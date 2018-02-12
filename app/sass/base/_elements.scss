@@ -9,19 +9,102 @@ $red: #ff5038;
 }
 
 .wrapper {
-  max-width: 1200px; /* 960 px */
+  width: 1200px; /* 1200 px */
   margin: 0 auto;
+  box-sizing: border-box;
+
+  @include breakpoint(max-width 1200px) {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  @include breakpoint(max-width 768px) {
+    padding: 10px;
+  }
 }
 .grid {
-  width: 103.125%; /* 990px */
+  width: 103.125%; 
   overflow: hidden;
-  margin-left: -1%; /* 15px */
-  margin-bottom: -1.875em; /* 30px */
+  margin-left: -1%;
+  margin-bottom: -1.875em;
+  @include breakpoint(max-width 768px) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 .grid-item {
-  width: 22%; /* 300px */
+  position: relative;
+  width: 22%;
   float: left;
   margin: 0 1% 1.875em; /* 15px 30px */
+  transition: background-color 0.2s ease-in-out;
+  @include breakpoint(max-width 1200px) {
+    width: 30%;
+  }
+
+  @include breakpoint(max-width 768px) {
+    width: 48%;
+  }
+
+  @include breakpoint(max-width 576px) {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.grid-item:hover .grid-item__watch,
+.grid-item:hover .grid-item__fancybox {
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.grid-item:hover {
+  background-color: #222222;
+  transition: background-color 0.2s;
+}
+
+.grid-item:hover .grid-item__img {
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.grid-item__img {
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.grid-item__watch,
+.grid-item__fancybox {
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
+}
+
+.grid-item__watch {
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  display: block;
+  max-width: 170px;
+  margin: 0 auto;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-family: $GilroyMedium;
+  color: white;
+  text-align: center;
+  background-color: #ff5038;
+  border-radius: 20px;
+}
+
+.grid-item__fancybox {
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  background-color:rgba(34, 34, 34, 0.7);
+  border-radius: 50%;
 }
 
 .paragraph {
