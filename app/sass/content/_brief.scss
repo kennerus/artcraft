@@ -319,8 +319,7 @@
         }
 
         &:hover, &:focus, &:active {
-          background-color: transparent;
-          color: #ee4635;
+          transform: scale(0.9);
           transition: all 0.2s;
         }
       }

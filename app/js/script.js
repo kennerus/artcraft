@@ -123,12 +123,12 @@ $(function () {
     });
 
 
-    $('.tittle span').addClass('animated').css('opacity', '0');
-    $('.tittle h2').addClass('animated').css('opacity', '0');
+    $('.tittle .block_span_title').addClass('animated').css('opacity', '0');
+    $('.tittle .block_title').addClass('animated').css('opacity', '0');
 
     if (window.innerWidth > 800) {
         $(window).scroll(function () {
-            $('.tittle span').each(function () {
+            $('.tittle .block_span_title').each(function () {
                 var imgPos = $(this).offset().top;
                 var topOfWindow = $(window).scrollTop();
                 if (imgPos < topOfWindow + 500) {
@@ -137,7 +137,7 @@ $(function () {
             })
         });
         $(window).scroll(function () {
-            $('.tittle h2').each(function () {
+            $('.tittle .block_title').each(function () {
                 var imgPos = $(this).offset().top;
                 var topOfWindow = $(window).scrollTop();
                 if (imgPos < topOfWindow + 500) {
@@ -147,7 +147,7 @@ $(function () {
         });
     } else {
         $(window).scroll(function () {
-            $('.tittle span').each(function () {
+            $('.tittle .block_span_title').each(function () {
                 var imgPos = $(this).offset().top;
                 var topOfWindow = $(window).scrollTop();
                 if (imgPos < topOfWindow + 400) {
@@ -156,7 +156,7 @@ $(function () {
             })
         });
         $(window).scroll(function () {
-            $('.tittle h2').each(function () {
+            $('.tittle .block_title').each(function () {
                 var imgPos = $(this).offset().top;
                 var topOfWindow = $(window).scrollTop();
                 if (imgPos < topOfWindow + 400) {
@@ -192,8 +192,9 @@ $(function () {
             scrollTop: 0
         }, 600);
         return false;
-    });
+    }); 
 });
+
 
 var viewportWidth = document.body.clientWidth;
 var gallery = document.querySelector('.portfolio__gallery');
@@ -217,14 +218,4 @@ function resize() {
 }
 
 resize();
-
-// window.onresize = resize;
-
-
-
-
-
-
-
-
 

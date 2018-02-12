@@ -3,6 +3,10 @@ $grey: #e4e5e5;
 $darkGrey: #818080;
 $red: #ff5038;
 
+.main-portfolio {
+  margin-top: 50px;
+}
+
 .grid-item img {
   display: block;
   width: 100%;
@@ -59,9 +63,14 @@ $red: #ff5038;
   transition: all 0.2s;
 }
 
+.grid-item__fancybox:hover {
+  transform: scale(0.8);
+}
+
 .grid-item:hover {
   background-color: #222222;
-  transition: background-color 0.2s;
+  box-shadow: 10px 8px 25px rgba(37, 37, 37, 0.25);
+  transition: all 0.2s;
 }
 
 .grid-item:hover .grid-item__img {
@@ -85,12 +94,12 @@ $red: #ff5038;
 
 .grid-item__watch {
   right: 0;
-  bottom: 10px;
+  bottom: 20px;
   left: 0;
   display: block;
   max-width: 170px;
   margin: 0 auto;
-  padding: 5px 15px;
+  padding: 10px 15px;
   font-size: 16px;
   font-family: $GilroyMedium;
   color: white;
@@ -99,12 +108,21 @@ $red: #ff5038;
   border-radius: 20px;
 }
 
+.grid-item__watch:hover {
+  color: white;
+  transform: scale(0.9);
+}
+
 .grid-item__fancybox {
-  top: 5px;
-  right: 5px;
-  padding: 5px;
+  top: 13px;
+  right: 13px;
+  padding: 10px;
   background-color:rgba(34, 34, 34, 0.7);
   border-radius: 50%;
+}
+
+.grid-item__fancybox .magnifier img {
+  width: 20px;
 }
 
 .paragraph {

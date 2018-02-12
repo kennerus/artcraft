@@ -83,7 +83,7 @@
     }
   }
   .tittle {
-    P {
+    p {
       width: 475px;
     }
   }
@@ -152,7 +152,8 @@
           transition: opacity 0.2s;
         }
         h2 {
-          margin: 0;
+          margin-right: auto;
+          margin-left: 15%;
         }
 
         a {

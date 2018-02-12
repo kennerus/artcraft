@@ -111,6 +111,7 @@
         background-color: rgba(40, 40, 40, 0.8);
         transition: .5s;
         opacity: 0;
+
         span {
           max-width: 270px;
           display: block;
@@ -132,7 +133,7 @@
           transition: all 0.2s;
 
           &:hover, &:active, &:focus {
-            filter: saturate(1.2);
+            transform: scale(0.9);
             transition: all 0.2s;
           }
         }
