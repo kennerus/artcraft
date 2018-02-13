@@ -13,7 +13,7 @@ $red: #ff5038;
 }
 
 .wrapper {
-  width: 1200px; /* 1200 px */
+  width: 1170px;
   margin: 0 auto;
   box-sizing: border-box;
 
@@ -63,7 +63,9 @@ $red: #ff5038;
   transition: all 0.2s;
 }
 
-.grid-item__fancybox:hover {
+.grid-item__fancybox:hover,
+.grid-item__fancybox:active,
+.grid-item__fancybox:focus {
   transform: scale(0.8);
 }
 
@@ -108,7 +110,9 @@ $red: #ff5038;
   border-radius: 20px;
 }
 
-.grid-item__watch:hover {
+.grid-item__watch:hover,
+.grid-item__watch:active,
+.grid-item__watch:focus {
   color: white;
   transform: scale(0.9);
 }

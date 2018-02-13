@@ -1,5 +1,5 @@
 .inside-blog {
-  padding-top: 100px;
+  padding-top: 0;
 
   .blog__slider {
     padding-top: 50px;
@@ -11,6 +11,14 @@
     @include breakpoint(max-width 992px) {
       margin-left: 0;
     }
+  }
+}
+
+.blog__single {
+  padding-top: 50px;
+
+  .blog__single-title {
+    line-height: 1;
   }
 }
 
