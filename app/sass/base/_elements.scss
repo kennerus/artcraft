@@ -3,18 +3,15 @@ $grey: #e4e5e5;
 $darkGrey: #818080;
 $red: #ff5038;
 
-.main-portfolio {
-  margin-top: 50px;
-}
-
 .grid-item img {
   display: block;
   width: 100%;
 }
 
 .wrapper {
-  width: 1170px;
+  width: 1100px;
   margin: 0 auto;
+  margin-top: 30px;
   box-sizing: border-box;
 
   @include breakpoint(max-width 1200px) {
@@ -94,7 +91,8 @@ $red: #ff5038;
   transition: all 0.2s ease-in-out;
 }
 
-.grid-item__watch {
+.grid-item__watch,
+.more_btn {
   right: 0;
   bottom: 20px;
   left: 0;
@@ -108,6 +106,21 @@ $red: #ff5038;
   text-align: center;
   background-color: #ff5038;
   border-radius: 20px;
+}
+
+.more_btn {
+  max-width: 220px;
+  width: 100%;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  will-change: contents;
+  transition: transform 0.2s;
+
+  &:hover, &:active, &:focus {
+    transform: scale(0.9);
+    transition: transform 0.2s;
+  }
 }
 
 .grid-item__watch:hover,

@@ -98,19 +98,23 @@
 }
 
 .portfolio__gallery {
-      /*min-width: 1360px;*/
-      /*max-height: 538px;*/
       display: -ms-grid;
       -ms-grid-row-gap: 8px;
       -ms-grid-columns: 20.4vw 13.8vw 9vw 4.8vw 9vw 13.8vw;
       -ms-grid-rows: 13.8vw 13.8vw;
 
       .portfolio-link {
+        position: relative;
         -ms-grid-row: 1;
         transition: opacity 0.2s;
+
         &:hover {
           opacity: 0.8;
           transition: opacity 0.2s;
+        }
+
+        &:first-child:hover {
+          opacity: 1;
         }
       }
 
@@ -167,8 +171,6 @@
 
 @supports (display: grid) {
   .portfolio__gallery {
-      /*min-width: 1360px;*/
-      /*max-height: 538px;*/
       display: -ms-grid;
       display: grid;
       grid-gap: 8px 10px;
@@ -181,6 +183,7 @@
       }
 
       .portfolio-link {
+        position: relative;
         grid-row: 1 / 3;
       }
 
@@ -312,3 +315,4 @@
       }
     }
 }
+

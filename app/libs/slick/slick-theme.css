@@ -125,6 +125,7 @@
     background-image: url(../img/right-arrow.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     z-index: 5
 }
 .slick-next:hover:before {
@@ -140,6 +141,7 @@
     background-image: url(../img/left-arrow.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 }
 .slick-prev:hover:before{
     background-image: url(../img/left-arrow-act.png);

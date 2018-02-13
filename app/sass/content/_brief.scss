@@ -332,7 +332,9 @@
         color: #9fa3a7;
 
         @include breakpoint(max-width 500px) {
+          width: 100%;
           padding: 0;
+          text-align: center;
         }
 
         span {
