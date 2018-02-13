@@ -144,6 +144,7 @@
     #mail,
     #skype,
     textarea {
+      position: relative;
       max-width: 244px;
       width: 100%;
       margin-top: 5px;
@@ -160,6 +161,7 @@
         border-radius: 20px;
         background-color: #ffffff;
         transition: all 0.2s;
+        z-index: 2;
       }
     }
 
@@ -380,6 +382,15 @@
     .brief__social a {
         img {
           margin-right: 10px;
+        }
+      }
+
+      .brief__messengers a,
+      .brief__social a {
+        transition: transform 0.2s;
+        &:hover, &:active, &:focus {
+          transform: scale(0.9);
+          transition: transform 0.2s;
         }
       }
     

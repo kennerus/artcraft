@@ -229,6 +229,13 @@
 		letter-spacing: 0.87px;
 		border-radius: 21px;
 		background-color: #ff4834;
+		transition: transform 0.2s;
+
+		&:hover, &:active, &:focus {
+			color: white;
+			transform: scale(0.9);
+			transition: transform 0.2s;
+		}
 
 		@include breakpoint(max-width 992px) {
 			margin-top: 10px;

@@ -334,6 +334,11 @@
   text-align: center;
 }
 
+.portfolio__block-caption {
+  display: flex;
+  justify-content: space-between;
+}
+
 .fancybox-caption a,
 .fancybox-caption button,
 .fancybox-caption select {
