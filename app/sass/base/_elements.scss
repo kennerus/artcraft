@@ -7,7 +7,6 @@ $red: #ff5038;
 .main-portfolio,
 .all-news,
 .single-post {
-
   .broadcrumbs {
     position: relative;
     top: -6px;
@@ -29,16 +28,53 @@ $red: #ff5038;
   }
 }
 
+.single-post {
+  .blog__slider {
+    margin-top: 70px;
+  }
+
+  .blog__slider--wrap {
+    margin-top: 0;
+    margin-left: 0;
+
+    .slick-list {
+      padding-top: 0;
+    }
+  }
+
+  
+}
+
 .all-news {
   .blog .paragraph {
     top: 87px;
+  }
+
+  .brief {
+    padding-top: 0;
   }
 }
 
 .main-portfolio,
 .main__single-p {
-  .blog .paragraph {
-    left: -46px;
+  .blog {
+    .paragraph {
+      left: -46px;
+    }
+  }
+
+  .brief .wrap {
+    margin-top: 0;
+  }
+}
+
+.main-portfolio {
+  .blog {
+    padding-bottom: 60px;
+  }
+
+  .brief {
+    padding-top: 0;
   }
 }
 
@@ -166,7 +202,7 @@ $red: #ff5038;
   max-width: 170px;
   margin: 0 auto;
   padding: 10px 15px;
-  font-size: 16px;
+  font-size: 15px;
   font-family: $GilroyMedium;
   color: white;
   text-align: center;
@@ -175,12 +211,15 @@ $red: #ff5038;
 }
 
 .more_btn {
-  max-width: 220px;
+  max-width: 170px;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 60px;
   border: none;
   cursor: pointer;
-  will-change: contents;
+  letter-spacing: 1px;
+  color: #ff5038;
+  background-color: transparent;
+  border: 1px solid #ff5038;
   transition: transform 0.2s;
 
   &:hover, &:active, &:focus {

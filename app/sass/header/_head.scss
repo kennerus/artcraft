@@ -30,6 +30,7 @@
 
       &:before {
         transform: translateX(0);
+        border-color: #ff4834;
       }
     }
 
@@ -271,7 +272,7 @@
       bottom: 0;
       width: 100%;
       transform: translateX(-100%);
-      border-bottom: 4px solid #ff4834;
+      border-bottom: 4px solid #9e9e9e;
       transition: all 0.3s;
 
       @include breakpoint(max-width 840px) {
