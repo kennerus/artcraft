@@ -21,11 +21,14 @@
         <div class="header__mobile-btn"><span></span></div>
 
         <ul class="header__nav">
-        	<li><a href="index.html"><img src="img/logo_header.svg" width="200" height="44" alt=""></a></li>
-            <li><a href="index.html">Главная</a></li>
-            <li><a class="active-page" href="portfolio.html">Портфолио</a></li>
-            <li><a href="index.html#brief">Контакты</a></li>
-            <li><a href="blog.html">Блог</a></li>
+        	<li><a href="index.html"><img src="img/logo_header_red.svg" width="180" height="35" alt=""></a></li>
+            
+            <div class="header__nav-container">
+                <li><a href="index.html">Главная</a></li>
+                <li class="active-page"><a href="portfolio.html">Портфолио</a></li>
+                <li><a href="index.html#brief">Контакты</a></li>
+                <li><a href="blog.html">Блог</a></li>
+            </div>
         </ul>
     </div>
 </header>
@@ -37,7 +40,15 @@
     <section class="blog blog__single" id="blog">
         <div class="container">
 
-            <p class="paragraph">наш блог</p>
+            <p class="paragraph">наши работы</p>
+
+            <nav class="broadcrumbs">
+                <a class="broadcrumbs__link" href="index.html">Главная</a>
+                <span class="broadcrumbs__divider"> / </span>
+                <a class="broadcrumbs__link" href="blog.html">Портфолио</a>
+                <span class="broadcrumbs__divider"> / </span>
+                <span class="broadcrumbs__curr">Landing page design "Geniuspark"</span>
+            </nav>
 
             <div class="wrap single-p">
                 <div class="single-p__layout">

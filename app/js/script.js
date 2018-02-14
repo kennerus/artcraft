@@ -102,7 +102,7 @@ $(function () {
     /* close contacts validation*/
 
 
-    $(document).on("click", ".header__nav a", function () {
+    $(document).on("click", ".header__nav a", function (event) {
         var href = $(this).attr('href');
         if (~href.indexOf('#')) {
             event.preventDefault();
@@ -121,7 +121,6 @@ $(function () {
         $('.header__mobile-btn').toggleClass('header__mobile-btn--active');
         $('.header__nav').slideToggle().css('display', 'flex');
     });
-
 
     $('.tittle .block_span_title').addClass('animated').css('opacity', '0');
     $('.tittle .block_title').addClass('animated').css('opacity', '0');
@@ -174,8 +173,18 @@ $(function () {
             scrollTop: $(anchor.attr('href')).offset().top
         }, 777);
         e.preventDefault();
-        return false;
     });
+
+    // close menu at mobile
+
+    if(window.innerWidth < 840){
+        console.log(321)
+        $(document).on('click', '.scroll', function () {
+            console.log(123)
+            $('.header__mobile-btn').removeClass('header__mobile-btn--active');
+            $('.header__nav').slideUp().css('display', 'none');
+        });
+    }
 
     // scroll to top
 
@@ -193,6 +202,7 @@ $(function () {
         }, 600);
         return false;
     }); 
+
 });
 
 

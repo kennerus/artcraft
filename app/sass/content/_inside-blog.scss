@@ -15,7 +15,11 @@
 }
 
 .blog__single {
-  padding-top: 50px;
+  padding-top: 30px;
+
+  @include breakpoint(max-width 768px) {
+    padding-top: 0;
+  }
 
   .blog__single-title {
     line-height: 1;
@@ -45,10 +49,11 @@
         object-fit: cover;
       }
     }
-    h2 {
+    .blog__single-title {
       font-family: $GilroyExtrabold;
       font-size: 44px;
       margin: 0;
+      margin-top: -12px;
       display: inline-block;
 
       @include breakpoint(max-width 1200px) {

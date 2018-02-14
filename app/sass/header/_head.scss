@@ -2,8 +2,9 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #ff5038;
+  background-color: transparent;
   overflow: hidden;
+  border-bottom: 1px solid #EEEEEE;
 
   @include breakpoint(max-height 900px) {
     padding-bottom: 0
@@ -14,14 +15,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 75px;
     margin: 0;
-    padding: 10px 0;
-    text-transform: uppercase;
     letter-spacing: 1px;
     z-index: 2;
 
     .active-page {
-        border-bottom: 1px solid white;
+      a {
+        font-family: $GilroyMedium;
+        color: #ff4834;
+        overflow-x: visible;
+      }
+      
+
+      &:before {
+        transform: translateX(0);
+      }
     }
 
     @include breakpoint(max-width 840px) {
@@ -38,39 +47,39 @@
       padding: 0;
       background-color: rgba(0,0,0, 0.6);
       z-index: 10;
-
-      li {
-        position: relative;
-        margin-right: 0 !important;
-        margin-bottom: 30px;
-        &:first-of-type {
-          display: none;
-        }
-      }
     }
+
     li {
+      display: flex;
+      height: 100%;
       list-style: none;
       align-items: center;
+      overflow-x: hidden;
 
-      &:nth-child(n + 2) {
-        position: relative;
-        top: 2px;
+      @include breakpoint(max-width 840px) {
+        height: auto;
       }
 
       a {
+        position: relative;
         display: flex;
         flex-flow: column;
         align-content: center;
         align-items: center;
-        font-family: $GilroySemibold;
-        font-size: 18px;
-        color: #fff;
-        text-shadow: 0 0 10px #8f97a5;
+        padding: 0 10px;
+        font-size: 16px;
+        color: #9E9E9E;
+        overflow-x: visible;
         transition: opacity 0.2s;
-        &:hover, &:active, &:focus {
-          opacity: 0.8;
-          transition: opacity 0.2s;
+
+        @include breakpoint(max-width 840px) {
+          padding: 20px 0;
+          font-size: 18px;
+          color: white;
+          text-transform: uppercase;
+          text-shadow: 0 0 10px #8f97a5;
         }
+
         span {
           display: block;
           height: 2px;
@@ -186,9 +195,10 @@
   background-color: transparent;
   background: url(../img/header-bg.jpg) center top no-repeat;
   background-size: cover;
+  border: none;
 
   @include breakpoint(max-height 900px) {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
   }
 
   @include breakpoint(max-width 700px) {
@@ -202,12 +212,77 @@
     justify-content: flex-start;
     padding: 20px 0;
 
+    @include breakpoint(max-width 840px) {
+      justify-content: center;
+      padding: 0;
+    }
+
     li {
       position: static;
       margin-right: 80px;
 
+      @include breakpoint(max-width 840px) {
+        margin-right: 0;
+      }
+
       &:last-child {
         margin-right: 0;
+      }
+
+      a {
+        font-family: $GilroySemibold;
+        color: white;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px #8f97a5;
+
+        @include breakpoint(max-width 840px) {
+          font-family: $GilroyMedium;
+        }
+      }
+    }
+  }
+}
+
+.header__nav-container {
+  display: flex;
+  height: 100%;
+
+  @include breakpoint(max-width 840px) {
+    height: auto;
+    flex-direction: column;
+  }
+
+  li {
+    position: relative;
+    margin-right: 40px;
+
+    @include breakpoint(max-width 840px) {
+      justify-content: center;
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      transform: translateX(-100%);
+      border-bottom: 4px solid #ff4834;
+      transition: all 0.3s;
+
+      @include breakpoint(max-width 840px) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      &:before {
+        transform: translateX(0);
+        transition: all 0.3s;
       }
     }
   }

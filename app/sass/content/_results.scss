@@ -5,6 +5,10 @@
   overflow: hidden;
   padding: 60px 0 75px;
 
+  @include breakpoint(max-width 1170px) {
+    padding-top: 0;
+  }
+
   .paragraph {
     top: 140px;
     left: -129px;
