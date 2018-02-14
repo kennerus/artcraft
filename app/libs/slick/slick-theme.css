@@ -115,6 +115,16 @@
     left: 230px;
     top: 114%;
 }
+
+@media (max-width: 576px) {
+    .slick-prev {
+        left: 32%
+    }
+    
+    .slick-next {
+        left: 60%
+    }
+}
 .slick-next:before {
     position: absolute;
     content: '';

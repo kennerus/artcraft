@@ -4,6 +4,10 @@
   overflow: hidden;
   color: $black;
 
+  @include breakpoint(max-width 768px) {
+    padding-bottom: 60px;
+  }
+
   .animate-circle {
     left: -355px;
     bottom: 72px;

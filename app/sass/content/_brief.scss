@@ -7,6 +7,11 @@
   background-size: contain;
   overflow: hidden;
 
+  @include breakpoint(max-width 600px) {
+    padding-top: 30px;
+    padding-bottom: 520px;
+  }
+
   @include breakpoint(max-width 576px) {
     background-size: 155%;
   }
@@ -31,12 +36,6 @@
 
   .animate-circle {
     display: none;
-  }
-
-  .tittle {
-    @include breakpoint(max-width 576px) {
-      text-align: left;
-    }
   }
 
   .tittle h2 {
@@ -69,29 +68,42 @@
     text-transform: uppercase;
     letter-spacing: -0.4px;
     @include breakpoint(max-width 1200px) {
-      top: 1100px;
+      top: 1350px;
       right: 0;
       left: 0;
       text-align: center;
     }
 
     @include breakpoint(max-width 992px) {
-      top: 1300px;
+      top: 1450px;
     }
+
     @include breakpoint(max-width 930px) {
       font-size: 27px;
     }
-    @include breakpoint(max-width 600px) {
-      bottom: 400px;
+
+    @include breakpoint(max-width 630px) {
+      bottom: 550px;
       top: auto;
     }
+
+    @include breakpoint(max-width 600px) {
+      bottom: 350px;
+      top: auto;
+      font-size: 5vw;
+    }
+
     span {
       display: block;
       font-family: $GilroyExtrabold;
       font-size: 65px;
+
       @include breakpoint(max-width 930px) {
         font-size: 40px;
+      }
 
+      @include breakpoint(max-width 576px) {
+        font-size: 7vw;
       }
     }
   }
@@ -145,8 +157,7 @@
     #skype,
     textarea {
       position: relative;
-      max-width: 244px;
-      width: 100%;
+      width: 244px;
       margin-top: 5px;
       padding: 10px 22px;
       font-size: 14px;
@@ -154,7 +165,12 @@
       border: none;
       border-radius: 20px;
       background-color: #eff0f4;
+      box-sizing: border-box;
       transition: all 0.2s;
+
+      @include breakpoint(max-width 630px) {
+        width: 100%
+      }
 
       &:focus {
         box-shadow: 5px 7px 18px rgba(173, 178, 199, 0.62);
@@ -192,11 +208,14 @@
 
     div {
       position: relative;
-      max-width: 290px;
-      width: 100%;
+      width: 290px;
+
+      @include breakpoint(max-width 630px) {
+        width: 100%
+      }
 
       &:nth-child(2) {
-        @include breakpoint(max-width 768px) {
+        @include breakpoint(max-width 630px) {
           margin-top: 20px;
         }
       }

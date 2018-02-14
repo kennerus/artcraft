@@ -38,9 +38,9 @@
       width: 395px;
       height: 270px;
       margin-right: 38px;
+
       @include breakpoint(max-width 768px) {
         margin: 0;
-        height: auto;
       }
       &:focus {
         outline:none;
@@ -271,6 +271,12 @@
     color: white;
     transform: scale(0.9);
     transition: transform 0.2s;
+  }
+
+  @include breakpoint(max-width 768) {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
   }
 }
 /*
