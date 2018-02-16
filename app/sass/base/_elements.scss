@@ -3,86 +3,6 @@ $grey: #e4e5e5;
 $darkGrey: #818080;
 $red: #ff5038;
 
-.main__single-p,
-.main-portfolio,
-.all-news,
-.single-post {
-  .broadcrumbs {
-    position: relative;
-    top: -6px;
-    margin-left: 7%;
-    line-height: 1;
-
-    @include breakpoint(max-width 768px) {
-      display: none;
-    }
-  }
-
-  .blog .paragraph {
-    top: 103px;
-  }
-
-  .wrap {
-    width: 93%;
-    margin-top: 25px;
-  }
-}
-
-.single-post {
-  .blog__slider {
-    margin-top: 70px;
-  }
-
-  .blog__slider--wrap {
-    margin-top: 0;
-    margin-left: 0;
-
-    .slick-list {
-      padding-top: 0;
-    }
-  }
-
-  
-}
-
-.all-news {
-  .blog .paragraph {
-    top: 87px;
-  }
-
-  .brief {
-    padding-top: 0;
-  }
-}
-
-.main-portfolio,
-.main__single-p {
-  .blog {
-    .paragraph {
-      left: -46px;
-    }
-  }
-
-  .brief .wrap {
-    margin-top: 0;
-  }
-}
-
-.main-portfolio {
-  .blog {
-    padding-bottom: 60px;
-  }
-
-  .brief {
-    padding-top: 35px;
-  }
-}
-
-.main__single-p  {
-  .wrap {
-    margin-top: 40px;
-  }
-}
 
 .broadcrumbs__link,
 .broadcrumbs__divider {
@@ -226,6 +146,10 @@ $red: #ff5038;
     transform: scale(0.9);
     transition: transform 0.2s;
   }
+
+  @include breakpoint(max-width 768px) {
+    margin-top: 0;
+  }
 }
 
 .grid-item__watch:hover,
@@ -294,10 +218,18 @@ $red: #ff5038;
   position: relative;
   display: flex;
   justify-content: space-between;
+
   @include breakpoint(max-width 992px) {
     flex-direction: column;
     text-align: center;
   }
+
+  @include breakpoint(max-width 768px) {
+    br {
+      display: none;
+    }
+  }
+
   h2 {
     position: relative;
     margin-left: 90px;
@@ -329,7 +261,7 @@ $red: #ff5038;
       width: 100%;
     }
     @include breakpoint(max-width 500px) {
-      font-size: 40px;
+      font-size: 36px;
     }
   }
   p {
@@ -337,10 +269,16 @@ $red: #ff5038;
     font-size: 16px;
     color: $darkGrey;
     font-style: italic;
+    
     @include breakpoint(max-width 992px) {
       display: block;
       width: 100%;
       max-width: 100%;
+    }
+
+    @include breakpoint(max-width 576px) {
+      font-size: 14px;
+      line-height: 1.2;
     }
   }
 }

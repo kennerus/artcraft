@@ -126,7 +126,7 @@
   }
 
   .brief__form {
-    max-width: 735px;
+    width: 735px;
     margin-right: 76px;
     padding: 55px 61px 45px 61px;
     box-sizing: border-box;
@@ -144,6 +144,7 @@
 
     @include breakpoint(max-width 576px) {
       padding: 10px;
+      padding-bottom: 30px;
     }
 
     ::placeholder {
@@ -157,7 +158,7 @@
     #skype,
     textarea {
       position: relative;
-      width: 244px;
+      width: 290px;
       margin-top: 5px;
       padding: 10px 22px;
       font-size: 14px;
@@ -237,7 +238,7 @@
     margin-top: 25px;
 
     textarea {
-      max-width: 100%;
+      width: 100%;
       min-height: 104px;
       box-sizing: border-box;
       border-radius: 10px;
@@ -376,6 +377,10 @@
       margin: 0;
       font-family: $GilroyRegular;
       font-size: 30px;
+
+      @include breakpoint(max-width 768px) {
+        text-align: center;
+      }
     }
 
     div {
@@ -429,7 +434,6 @@
     }
 
     .brief__email {
-      margin-right: 25px;
 
       a {
         font-family: $GilroySemibold;
@@ -464,4 +468,63 @@
 
 .uploader {
   margin-top: 20px;
+}
+
+.single-post {
+  .blog__slider {
+    margin-top: 70px;
+  }
+
+  .blog__slider--wrap {
+    margin-top: 0;
+    margin-left: 0;
+
+    .slick-list {
+      padding-top: 0;
+    }
+  }
+
+  
+}
+
+.all-news {
+  .blog .paragraph {
+    top: 87px;
+  }
+
+  .brief {
+    padding-top: 0;
+  }
+}
+
+.main-portfolio,
+.main__single-p {
+  .blog {
+    padding-bottom: 60px;
+    
+    .paragraph {
+      left: -46px;
+    }
+  }
+
+
+  .brief .wrap {
+    margin-top: 0;
+  }
+}
+
+.main-portfolio {
+  .brief {
+    padding-top: 35px;
+
+    @include breakpoint(max-width 768px) {
+      padding-top: 0;
+    }
+  }
+}
+
+.main__single-p  {
+  .wrap {
+    margin-top: 40px;
+  }
 }

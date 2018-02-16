@@ -319,9 +319,16 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 60px 30px 0 30px;
+  
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.8) 100%);
   pointer-events: none; }
+
+  @media (max-width: 576px) {
+    .fancybox-caption-wrap {
+      padding: 60px 0 0 0;
+    }
+    
+  }
 
 .fancybox-caption {
   padding: 30px 0;
@@ -337,6 +344,20 @@
 .portfolio__block-caption {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+  .portfolio__block-caption > span,
+  .portfolio__block-caption a {
+    display: block;
+    width: 100%;
+    line-height: 1.5;
+  }
+
+  .portfolio__block-caption {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .fancybox-caption a,

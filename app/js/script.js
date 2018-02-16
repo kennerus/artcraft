@@ -122,8 +122,8 @@ $(function () {
         $('.header__nav').slideToggle().css('display', 'flex');
     });
 
-    $('.tittle .block_span_title').addClass('animated').css('opacity', '0');
-    $('.tittle .block_title').addClass('animated').css('opacity', '0');
+        $('.tittle .block_span_title').addClass('animated').css('opacity', '0');
+        $('.tittle .block_title').addClass('animated').css('opacity', '0');
 
     if (window.innerWidth > 800) {
         $(window).scroll(function () {
@@ -227,5 +227,7 @@ function resize() {
     }
 }
 
-resize();
+if(gallery) {
+    resize();
+}
 
