@@ -201,10 +201,8 @@ $(function () {
             scrollTop: 0
         }, 600);
         return false;
-    }); 
-
+    });
 });
-
 
 var viewportWidth = document.body.clientWidth;
 var gallery = document.querySelector('.portfolio__gallery');
@@ -216,8 +214,6 @@ function getCoords(elem) {
 }
 
 // getCoords(portfolioBrief)
-
-
 function resize() {
     if(viewportWidth > 1280) {
         gallery.style.marginLeft = Math.round(viewportWidth - getCoords(portfolioBrief)) + 'px';

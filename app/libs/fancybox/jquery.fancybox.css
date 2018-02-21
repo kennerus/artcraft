@@ -343,7 +343,7 @@
 
 .portfolio__block-caption {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 @media (max-width: 576px) {

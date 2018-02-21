@@ -119,24 +119,34 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 			alert('Вы не заполнили все поля!');
 		}
 	});
+});
 
-	var $grid = $('.grid').masonry({
-        itemSelector: '.grid-item',
-        percentPosition: true
-    });
+var $grid = $('.grid').masonry({
+	itemSelector: '.grid-item',
+	percentPosition: true
+});
 
-	$('.grid').imagesLoaded( function() {
-        $grid;
-	});
-
-	$(document).on('click', '.more_btn', function(e) {
-		e.preventDefault();
-		$('.in_active_item').show();
-		$('.more_btn').hide();
-
-        $grid.masonry('layout');
+$('.grid').imagesLoaded( function() {
+	$('.grid-preloader').css('display', 'none');
+	$('.grid, .more_btn').css('display', 'block');
+	
+	$('.grid').masonry({
+		itemSelector: '.grid-item',
+		percentPosition: true
 	});
 });
+
+$(document).on('click', '.more_btn', function(e) {
+	e.preventDefault();
+	$('.in_active_item').show();
+	$('.more_btn').hide();
+
+	$grid.masonry('layout');
+});
+
+window.onload = function () {
+	$('.page-preloader').hide(400);
+}
 
 jQuery(function($){
 	$("#phone").mask("+9(999) 999-99-99");
