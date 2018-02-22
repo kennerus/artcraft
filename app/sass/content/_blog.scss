@@ -73,13 +73,16 @@
         transition: 0.5s;
 
         .slide__post-title {
-          position: absolute;
-          bottom: 58px;
+          position: relative;
+          top: 77%;
           margin: 0;
           font-family: $GilroyMedium;
           font-size: 20px;
           font-weight: normal;
           color: white;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
         }
 
         .slide__post-time {
