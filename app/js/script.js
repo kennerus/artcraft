@@ -46,6 +46,13 @@ $(function () {
         ]
     });
 
+    $('.feedback__slider').slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slideToScroll: 1
+    })
+
     $('.dotdot').dotdotdot({
         height: 80
     })
