@@ -88,7 +88,11 @@
   }
   .tittle {
     p {
-      width: 475px;
+      min-width: 475px;
+
+      @include breakpoint(max-width 992px) {
+        min-width: inherit;
+      }
     }
   }
 

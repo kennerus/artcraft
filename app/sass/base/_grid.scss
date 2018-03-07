@@ -11,15 +11,39 @@
     .container {
         width: 766px;
     }
+
+    .single-post .container,
+    .all-news .container,
+    .single-p .container,
+    .main-about .container,
+    .main-portfolio .container  {
+        width: 95%;
+    }
+
+    .header .container {
+        width: 100%;
+    }
 }
 @media (min-width: 992px) {
-    .container {
+    .container,
+    .single-post .container,
+    .all-news .container,
+    .single-p .container,
+    .main-about .container,
+    .main-portfolio .container,
+    .header .container {
         width: 990px;
     }
 }
 
 @media (min-width: 1200px) {
-    .container {
+    .container,
+    .single-post .container,
+    .all-news .container,
+    .single-p .container,
+    .main-about .container,
+    .main-portfolio .container,
+    .header .container {
         width: 1170px;
     }
 }

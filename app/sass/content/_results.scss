@@ -45,13 +45,15 @@
       font-family: $GilroyRegularItalic;
       font-style: normal;
       line-height: 22px;
+
       @include breakpoint(max-width 1200px) {
-        width: 450px;
+        min-width: 450px;
         margin: 0;
       }
       @include breakpoint(max-width 992px) {
         max-width: 600px;
         width: 100%;
+        min-width: inherit;
         left: 0;
       }
     }
@@ -72,10 +74,13 @@
       width: 570px;
 
       @include breakpoint(max-width 1200px) {
+        width: 550px;
         margin-top: 45px;
+        margin-right: 20px;
       }
       @include breakpoint(max-width 992px) {
         width: 100%;
+        margin-right: 0;
       }
       @include breakpoint(max-width 768px) {
         margin-top: 0;

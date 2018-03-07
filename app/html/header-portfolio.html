@@ -3,14 +3,22 @@
         <div class="header__mobile-btn"><span></span></div>
 
         <ul class="header__nav">
-        	<li><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a></li>
+        	<li class="header__nav-li logo"><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a></li>
             
-            <div class="header__nav-container">
-                <li><a href="index.html">Главная</a></li>
-                <li class="active-page"><a href="portfolio.html">Портфолио</a></li>
-                <li><a href="index.html#brief">Контакты</a></li>
-                <li><a href="blog.html">Блог</a></li>
-            </div>
+            <ul class="header__nav-container">
+                <li>
+                    <button class="dropdown" type="button">О компании</button>
+                    <ul class="header__submenu header__submenu_mob">
+                        <li><a class="scroll" href="about.html">О нас</a></li>
+                        <li><a class="scroll" href="feedback.html">Отзывы</a></li>
+                        <li><a class="scroll" href="#">Клиенты</a></li>
+                        <li><a class="scroll" href="#">Вакансии</a></li>
+                    </ul>
+                </li>
+                <li class="active-page header__nav-li"><a href="portfolio.html">Портфолио</a></li>
+                <li class="header__nav-li"><a href="#brief">Контакты</a></li>
+                <li class="header__nav-li"><a href="blog.html">Блог</a></li>
+            </ul>
         </ul>
     </div>
 </header>
