@@ -1,23 +1,29 @@
 $(document).ready(function() { // вся мaгия пoсле зaгрузки стрaницы
-		$(document).on('click', '.send', function(e){
+	$(document).on('click', '.send', function(e){
 		e.preventDefault();
 
 		//для отправки файла
 		// var file_data = $('#file-2').prop('files')[0];
 
-
 		//создаем экземпляр класс FormData, тут будем хранить всю информацию для отправки
 		var form_data = new FormData();
 		// присоединяем наш файл
-		/*jQuery.each(jQuery('#file')[0].files, function(i, file) {
-			data.append('file-'+i, file);
-		});*/
+		// var data = [];
+		// jQuery.each(jQuery('.fileUp')[0].files, function(i, file) {
+		// 	data.append('file-'+i, file);
+		// });
+		// console.log(); return false;
 
 		//для отправки файла
 		// form_data.append('file', file_data);
 
+
 		var name = $("input[name='name']").val();
 		var phone = $("input[name='phone']").val();
+		var file =  [];
+		$('.fileUp').each(function () {
+			file.push( $(this).val());
+		});
 		var service_mob = $("input[name='ckeckbox_mob']:checked");
 		var service_supp = $("input[name='ckeckbox_supp']:checked");
 		var service_site = $("input[name='ckeckbox_site']:checked");
@@ -30,14 +36,16 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 		//var re = /^\d[\d\(\)\ -]{4,14}\d$/;
 		//var valid_phone = re.test(phone);
 
+
+
 		if (name == '') {
 			alert('Введите Ваше имя!');
 			return false;
 		}
 		if (phone == '') {
 			alert('Введите номер телефона!');
-		 	return false;
-		 }
+			return false;
+		}
 		// if (valid_phone){
 		// 	output = 'Номер телефона введен правильно!';
 		// 	/*alert(output);*/
@@ -65,15 +73,15 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 			return false;
 		}
 
-		if (skype == '') {
-			alert('Введите номер телефона!');
-			return false;
-		}
-
-		if (text == '') {
-			alert('Введите Ваш текс!');
-			return false;
-		}
+		// if (skype == '') {
+		// 	alert('Введите номер skype!');
+		// 	return false;
+		// }
+		//
+		// if (text == '') {
+		// 	alert('Введите Ваш текс!');
+		// 	return false;
+		// }
 
 
 		if(name != '') {
@@ -83,6 +91,8 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 			form_data.append('email', email);
 			form_data.append('skype', phone);
 			form_data.append('text', text);
+			form_data.append('file', file);
+
 			if(service_mob.length != 0){
 				form_data.append('service_mob', service_mob.val());
 			}
@@ -111,6 +121,7 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 					if (response.result == 'success') {
 						/*form.reset();*/
 						$('#send_form').trigger('reset');
+						$('.qq-upload-success').remove();
 					}
 				}
 			});
@@ -119,11 +130,6 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 			alert('Вы не заполнили все поля!');
 		}
 	});
-});
-
-var $grid = $('.grid').masonry({
-	itemSelector: '.grid-item',
-	percentPosition: true
 });
 
 $('.grid').imagesLoaded( function() {
@@ -136,17 +142,47 @@ $('.grid').imagesLoaded( function() {
 	});
 });
 
+// $('.grid_feedback').imagesLoaded( function() {
+// 	$('.grid_feedback').masonry({
+// 		itemSelector: '.feedback',
+// 		percentPosition: true
+// 	});
+// });
+
 $(document).on('click', '.more_btn', function(e) {
 	e.preventDefault();
-	$('.in_active_item').show();
-	$('.more_btn').hide();
+	$('#countItems').remove();
+	//создаем экземпляр класс FormData, тут будем хранить всю информацию для отправки
+	var form_data = new FormData();
+	var inpage = $('.more_btn').data('inpage');
+	var count = parseInt($('.more_btn').attr('data-page'))+1;
+	$('.more_btn').attr('data-page', count);
+	form_data.append('action', 'get_more_works');
+	form_data.append('inpage', inpage);
+	form_data.append('page', count);
 
-	$grid.masonry('layout');
+	$.ajax({
+		url: myajax.url,
+		type: 'post',
+		data: form_data,
+		contentType: false,
+		processData: false,
+		success: function (response) {
+			var $response = $(response);
+			$('.more_btn').attr('data-page', count);
+			$('.grid').append($response).imagesLoaded(function() {
+				$('.grid').masonry('appended', $response, true);
+			});
+			if($('#countItems').val() == 0 ){
+				$('.more_btn').hide();
+			}
+		}
+	});
 });
 
 window.onload = function () {
-	$('.page-preloader').hide(400);
-}
+	$('.page-preloader').fadeOut(400);
+};
 
 jQuery(function($){
 	$("#phone").mask("+9(999) 999-99-99");

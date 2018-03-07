@@ -31,16 +31,26 @@
 <header class="header">
     <div class="container">
         <div class="header__mobile-btn"><span></span></div>
+
         <ul class="header__nav">
-        	<li><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a></li>
-            
-            <div class="header__nav-container">
-                <li><a href="index.html">Главная</a></li>
-                <li class="active-page"><a href="about.html">О нас</a></li>
-                <li><a href="portfolio.html">Портфолио</a></li>
-                <li><a href="index.html#brief">Контакты</a></li>
-                <li><a href="blog.html">Блог</a></li>
-            </div>
+            <li class="header__nav-li logo"><a href="index.html"><img src="img/favicon.svg" width="40" height="40" alt=""></a></li>
+
+            <ul class="header__nav-container">
+                <li class="header__nav-li"><a href="portfolio.html">Услуги</a></li>
+                <li class="header__nav-li"><a href="portfolio.html">Портфолио</a></li>
+                <li class="header__nav-li"><a href="#">Распродажи</a></li>
+                <li class="active-page">
+                    <a class="scroll" href="about.html">О нас</a>
+                    <ul class="header__submenu header__submenu_mob">
+                        <li><a class="scroll" href="feedback.html">Отзывы</a></li>
+                        <li><a class="scroll" href="#">Клиенты</a></li>
+                        <li><a class="scroll" href="#">Вакансии</a></li>
+                    </ul>
+                </li>
+                <li class="header__nav-li"><a href="#">Развеивание мифов</a></li>
+                <li class="header__nav-li"><a href="blog.html">Блог</a></li>
+                <li class="header__nav-li"><a href="#brief">Контакты</a></li>
+            </ul>
         </ul>
     </div>
 </header>
@@ -63,7 +73,7 @@
             <div class="wrap">
 				<div class="about">
 	            	<div class="tittle">
-		                <span>несколько слов </span>
+		                <span>немного</span>
 		                <h2>о компании</h2>
 		                <p>
 		                    Мы прекрасно понимаем, каким должен быть интернет-продукт и как этого добиться. 
@@ -121,7 +131,7 @@
 	            <div class="feedback">
 	            	<div class="tittle">
 		                <span>Отзывы</span>
-		                <h2>наши клиентов</h2>
+		                <h2>наших клиентов</h2>
 		                <p>
 		                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut atque eum, deserunt dolores, veritatis voluptatem sunt cum voluptas porro eaque temporibus voluptatibus obcaecati laudantium placeat a sed. Debitis, doloremque, voluptatibus?
 		                </p>
@@ -131,7 +141,7 @@
 		            	<div class="feedback__social">
 		            		<div class="soc__block soc__vk">
 		            			<div class="soc__icon">
-		            				<a href="https://vk.com">VK</a>
+		            				<a href="https://vk.com"><img src="img/vk.svg" width="19" height="19" alt=""></a>
 		            			</div>
 
 		            			<div class="soc__desc">
@@ -151,9 +161,9 @@
 		            			</div>
 		            		</div>
 
-		            		<div class="soc__block">
+		            		<div class="soc__block soc__ussr">
 		            			<div class="soc__icon">
-		            				<a href="#">Ч</a>
+		            				<a href="#"><img src="img/sickle-and-hammer.svg" width="19" height="19" alt=""></a>
 		            			</div>
 
 		            			<div class="soc__desc">
@@ -265,16 +275,16 @@
 						</ul>
 
 						<div class="vacancies__send">
-							<div class="vacancies__wrap">
-								<img class="vacancies__send-img" src="img/man.png" width="147" height="219" alt="">
-								
-								<div class="vacancies__desc">
-									<h2 class="vacancies__desc-title">Это будет лучшая  работа в вашей жизни!</h2>
-									<p class="vacancies__desc-comment">Направляя свое резюме и иные персональные данные по указанному адресу электронной почты, я даю свое согласие на обработку персональных данных.</p>
-								</div>
+							<img class="vacancies__send-img" src="img/man.png" width="147" height="219" alt="">
+
+							<div class="vacancies__desc">
+								<h2 class="vacancies__desc-title">Это будет лучшая  работа в вашей жизни!</h2>
+								<p class="vacancies__desc-comment">Направляя свое резюме и иные персональные данные по указанному адресу электронной почты, я даю свое согласие на обработку персональных данных.</p>
+								<a class="red_btn red_btn_hidden" href="#">Посмотреть все вакансии</a>
 							</div>
 
-							<a class="red_btn" href="#">Посмотреть все вакансии</a>
+							<a class="red_btn red_btn_shown" href="#">Посмотреть все вакансии</a>
+
 						</div>
 					</div>
 	            </div>

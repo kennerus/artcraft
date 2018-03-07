@@ -33,14 +33,24 @@
         <div class="header__mobile-btn"><span></span></div>
 
         <ul class="header__nav">
-        	<li><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a></li>
+            <li class="header__nav-li logo"><a href="index.html"><img src="img/favicon.svg" width="40" height="40" alt=""></a></li>
             
-            <div class="header__nav-container">
-                <li><a href="index.html">Главная</a></li>
-                <li class="active-page"><a href="portfolio.html">Портфолио</a></li>
-                <li><a href="index.html#brief">Контакты</a></li>
-                <li><a href="blog.html">Блог</a></li>
-            </div>
+            <ul class="header__nav-container">
+                <li class="header__nav-li"><a href="portfolio.html">Услуги</a></li>
+                <li class="header__nav-li active-page"><a href="portfolio.html">Портфолио</a></li>
+                <li class="header__nav-li"><a href="#">Распродажи</a></li>
+                <li>
+                    <a class="scroll active-page" href="about.html">О нас</a>
+                    <ul class="header__submenu header__submenu_mob">
+                        <li><a class="scroll" href="feedback.html">Отзывы</a></li>
+                        <li><a class="scroll" href="#">Клиенты</a></li>
+                        <li><a class="scroll" href="#">Вакансии</a></li>
+                    </ul>
+                </li>
+                <li class="header__nav-li"><a href="#">Развеивание мифов</a></li>
+                <li class="header__nav-li"><a href="blog.html">Блог</a></li>
+                <li class="header__nav-li"><a href="#brief">Контакты</a></li>
+            </ul>
         </ul>
     </div>
 </header>
