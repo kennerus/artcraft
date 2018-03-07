@@ -202,38 +202,37 @@ $(function () {
     }
 
 
-    $(document).on('click', '.dropdown', function() {
+    $(document).on('mouseenter', '.dropdown', function() {
         var submenu = $(this).next('.header__submenu');
         var headerParent = $(this).parents('.header');
         var elementsToHide = headerParent.find('.header__nav-li > a');
         var closeBtn = headerParent.find('.header__mobile-btn--active');
-        var logo = headerParent.find('.header__nav-li').hasClass('logo');
 
         if(window.innerWidth > 840) {
             submenu.slideToggle('fast');
             submenu.toggleClass('flex');
         }
-        else {
-            elementsToHide.addClass('hidden_links');
-            submenu.css('display', 'flex');
-            $(this).addClass('hidden_links');
-            closeBtn.addClass('header__mobile-btn--submenu');
-            closeBtn.removeClass('header__mobile-btn--active');
-        }
+        // else {
+        //     elementsToHide.addClass('hidden_links');
+        //     submenu.css('display', 'flex');
+        //     $(this).addClass('hidden_links');
+        //     closeBtn.addClass('header__mobile-btn--submenu');
+        //     closeBtn.removeClass('header__mobile-btn--active');
+        // }
     });
 
-    $(document).on('click', '.header__mobile-btn--submenu', function() {
-        var headerParent = $(this).parents('.header');
-        var hiddenElements = headerParent.find('.header__nav-li > a');
-        var submenu = headerParent.find('.header__submenu');
-        var dropdownBtn = headerParent.find('.dropdown');
+    // $(document).on('hove', '.header__mobile-btn--submenu', function() {
+    //     var headerParent = $(this).parents('.header');
+    //     var hiddenElements = headerParent.find('.header__nav-li > a');
+    //     var submenu = headerParent.find('.header__submenu');
+    //     var dropdownBtn = headerParent.find('.dropdown');
 
-        hiddenElements.removeClass('hidden_links');
-        dropdownBtn.removeClass('hidden_links');
-        submenu.css('display', 'none');
-        $(this).addClass('header__mobile-btn--active');
-        $(this).removeClass('header__mobile-btn--submenu');
-    })
+    //     hiddenElements.removeClass('hidden_links');
+    //     dropdownBtn.removeClass('hidden_links');
+    //     submenu.css('display', 'none');
+    //     $(this).addClass('header__mobile-btn--active');
+    //     $(this).removeClass('header__mobile-btn--submenu');
+    // })
 
     // scroll to top
 
