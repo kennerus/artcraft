@@ -18,7 +18,7 @@
   }
   .tittle {
     p {
-      max-width: 615px;
+      max-width: 600px;
     }
   }
   &__slider {
@@ -284,7 +284,9 @@
 .all-news,
 .single-post,
 .main-about,
-.main-feedback {
+.main-feedback,
+.main-vacancy,
+.main-service {
   .broadcrumbs {
     position: relative;
     top: -6px;

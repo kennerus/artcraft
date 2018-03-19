@@ -16,13 +16,20 @@
 
 	div {
 		width: 45%;
+
+		@include breakpoint(max-width 768px) {
+			width: 100%;
+		}
 	}
 
-	#name_feedback,
-    #site_feedback,
-    #mail_feedback,
-    #city_feedback {
+	input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
     	width: 100%;
+    }
+
+    textarea {
+    	min-height: 150px;
     }
 }
 
@@ -31,7 +38,7 @@
 	display: flex;
 }
 
-.feedback__title {
+.feedback-form__title {
 	position: absolute;
 	top: 195px;
 	left: -118px;
@@ -39,11 +46,19 @@
 	font-family: $GilroyMedium;
 	font-size: 26px;
 	transform: rotate(-90deg);
+
+	@include breakpoint(max-width 768px) {
+		display: none;
+	}
 }
 
 .form__feedback {
 	width: 100%;
 	margin-left: 40px;
+
+	@include breakpoint(max-width 768px) {
+		margin-left: 0;
+	}
 }
 
 .brief__form-message_nomargin {
@@ -119,6 +134,8 @@
 
 	&__text {
 		margin: 0;
+		font-size: 14px;
+		line-height: 1.5;
 	}
 	
 	// not vk feedback

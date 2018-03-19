@@ -1,3 +1,8 @@
+var uploader = new qq.FineUploader({
+    element: document.getElementById("uploader"),
+    allowedExtensions: ['jpeg', 'png']
+});
+
 $(function () {
 
     /*clouds animation*/
@@ -192,47 +197,68 @@ $(function () {
         e.preventDefault();
     });
 
-    // close menu at mobile
-    if(window.innerWidth < 840){
-        $(document).on('click', '.scroll', function () {
-            console.log(123)
-            $('.header__mobile-btn').removeClass('header__mobile-btn--active');
-            $('.header__nav').slideUp().css('display', 'none');
+
+    if($(window).width() > 992) {
+        $(document).on('click', '.header__wrapper', function () {
+            $('.header__nav').slideToggle().css('display', 'flex');
+            $('.header__overlay').slideToggle(100);
         });
-    }
+    };
 
 
     $(document).on('mouseenter', '.dropdown', function() {
-        var submenu = $(this).next('.header__submenu');
+        var submenu = $(this).find('.header__submenu');
         var headerParent = $(this).parents('.header');
         var elementsToHide = headerParent.find('.header__nav-li > a');
         var closeBtn = headerParent.find('.header__mobile-btn--active');
 
-        if(window.innerWidth > 840) {
-            submenu.slideToggle('fast');
+        if(window.innerWidth > 992) {
+            submenu.slideDown(0);
             submenu.toggleClass('flex');
         }
-        // else {
-        //     elementsToHide.addClass('hidden_links');
-        //     submenu.css('display', 'flex');
-        //     $(this).addClass('hidden_links');
-        //     closeBtn.addClass('header__mobile-btn--submenu');
-        //     closeBtn.removeClass('header__mobile-btn--active');
-        // }
     });
 
-    // $(document).on('hove', '.header__mobile-btn--submenu', function() {
-    //     var headerParent = $(this).parents('.header');
-    //     var hiddenElements = headerParent.find('.header__nav-li > a');
-    //     var submenu = headerParent.find('.header__submenu');
-    //     var dropdownBtn = headerParent.find('.dropdown');
+    $(document).on('mouseleave', '.dropdown', function() {
+        var submenu = $(this).find('.header__submenu');
+        var headerParent = $(this).parents('.header');
+        var elementsToHide = headerParent.find('.header__nav-li > a');
+        var closeBtn = headerParent.find('.header__mobile-btn--active');
 
-    //     hiddenElements.removeClass('hidden_links');
-    //     dropdownBtn.removeClass('hidden_links');
-    //     submenu.css('display', 'none');
-    //     $(this).addClass('header__mobile-btn--active');
-    //     $(this).removeClass('header__mobile-btn--submenu');
-    // })
+        if(window.innerWidth > 992) {
+            submenu.slideUp(0);
+            submenu.toggleClass('flex');
+        }
+
+    });
+
+    $(document).on('click', '.dropdown_mob', function () {
+        var headerParent = $(this).parents('.header');
+        var hiddenElements = headerParent.find('.header__nav-li > a');
+        var submenu = headerParent.find('.header__submenu');
+        var closeBtn = headerParent.find('.header__mobile-btn');
+        var dropdownBtn = headerParent.find('.dropdown_mob');
+
+        hiddenElements.addClass('hidden_links');
+        dropdownBtn.addClass('hidden_links');
+        submenu.css('display', 'flex');
+
+        closeBtn.removeClass('header__mobile-btn--active');
+        closeBtn.addClass('header__mobile-btn--submenu');
+    });
+
+    $(document).on('click', '.header__mobile-btn--submenu', function() {
+        var headerParent = $(this).parents('.header');
+        var hiddenElements = headerParent.find('.header__nav-li > a');
+        var submenu = headerParent.find('.header__submenu');
+        var dropdownBtn = headerParent.find('.dropdown_mob');
+
+        hiddenElements.removeClass('hidden_links');
+        dropdownBtn.removeClass('hidden_links');
+        submenu.css('display', 'none');
+
+        $(this).addClass('header__mobile-btn--active');
+        $(this).removeClass('header__mobile-btn--submenu');
+    });
 
     // scroll to top
 
@@ -249,6 +275,18 @@ $(function () {
             scrollTop: 0
         }, 600);
         return false;
+    });
+
+    // close menu at mobile
+    $(document).on('click', '.scroll', function () {
+        if($(window).width < 992){
+            $('.header__mobile-btn').removeClass('header__mobile-btn--active');
+            $('.header__nav').slideUp().css('display', 'none');
+        }
+        else {
+            $('.header__nav').slideUp();
+            $('.header__overlay').slideUp();
+        }
     });
 });
 

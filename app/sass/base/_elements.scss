@@ -666,15 +666,11 @@ svg {
       opacity: 0.3;
     }
 
-    #name,
-    #phone,
-    #mail,
-    #skype,
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
     textarea,
-    #name_feedback,
-    #site_feedback,
-    #mail_feedback,
-    #city_feedback {
+     {
       position: relative;
       width: 290px;
       margin-top: 5px;

@@ -1,0 +1,218 @@
+.main-vacancy {
+	.feedback-form__title {
+		left: -140px;
+	}
+}
+
+.main-vacancy .blog .paragraph {
+	top: 146px;
+	left: -87px;
+}
+
+.vacancies-p {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	padding-bottom: 20px;
+
+	&__wrap {
+		margin-top: 60px;
+	}
+
+	&__title {
+		margin: 0;
+		font-family: GilroySemibold,sans-serif;
+		font-size: 26px;
+		text-transform: uppercase;
+
+		&_small {
+			margin: 0;
+			font-size: 17px;
+			text-transform: uppercase;
+		}
+	}
+
+	&__vacancy {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 32%;
+		margin-top: 20px;
+		margin-right: 2%;
+
+		@include breakpoint(max-width 992px) {
+			width: 100%;
+			margin-right: 0;
+		}
+
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+
+		&-header {
+			display: flex;
+			align-items: center;
+		}
+
+		&-img {
+			margin-right: 15px;
+		}
+
+		&-title {
+			font-family: $GilroyBold;
+			font-weight: normal;
+			font-size: 17px;
+			color: $red;
+		}
+
+		.feedback-item__desc {
+			padding: 25px;
+		}
+
+		&-more {
+			position: absolute;
+			right: 35px;
+			bottom: -15px;
+			display: block;
+			width: 140px;
+			padding: 8px 0;
+			font-family: $GilroySemibold;
+			font-size: 12px;
+			color: white;
+			text-align: center;
+			letter-spacing: 1.45px;
+			background-color: $red;
+			border-radius: 15px;
+			transition: all 0.2s;
+
+			&:hover, &:active, &:focus {
+				color: white;
+				transform: scale(0.9);
+				transition: all 0.2s;
+			}
+		}
+	}
+
+	&__desc {
+		margin-top: 60px;
+
+		@include breakpoint(max-width 768px) {
+			margin-top: 30px;
+		}
+	}
+
+	&__text {
+		margin: 0;
+		margin-top: 20px;
+		font-size: 15px;
+
+		&:first-child {
+			margin-top: 36px;
+		}
+	}
+
+	&__conditions {
+		margin-top: 41px;
+
+		@include breakpoint(max-width 768px) {
+			margin-top: 20px;
+		}
+	}
+
+}
+
+.internships {
+	margin-top: 60px;
+
+	@include breakpoint(max-width 768px) {
+		margin-top: 30px;
+	}
+
+	&__desc-container {
+		display: flex;
+		margin-top: 30px;
+
+		@include breakpoint(max-width 768px) {
+			flex-wrap: wrap;
+		}
+
+		.vacancies-p__vacancy {
+			width: 45%;
+			margin-right: 5%;
+
+			@include breakpoint(max-width 768px) {
+				width: 100%;
+				margin-right: 0;
+			}
+		}
+	}
+
+	&__desc {
+		width: 49%;
+		margin-top: 75px;
+
+		@include breakpoint(max-width 768px) {
+			width: 100%;
+			margin-top: 20px;
+		}
+	}
+
+	&__text {
+		margin-top: 20px;
+		font-family: $GilroySemibold;
+		font-size: 13px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+.vacancies-p__vacancy-more_relative {
+	position: static;
+}
+
+/* vacancy single*/
+
+.vacancy__describe {
+	&-title {
+		font-family: $GilroyBold;
+		font-size: 18px;
+		font-weight: normal;
+	}
+
+	&-list {
+		margin: 0;
+		padding-left: 30px;
+		list-style: none;
+
+		&_demand {
+			padding-left: 17px;
+		}
+	}
+
+	&-elem {
+		margin-top: 10px;
+		font-size: 15px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&_marker {
+			position: relative;
+
+			&:before {
+				content: '-';
+				position: absolute;
+				left: -13px;
+				display: block;
+			}
+		}
+	}
+}
+
+.brief__content_vacancy {
+	margin-top: 50px;
+}

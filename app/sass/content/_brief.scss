@@ -12,10 +12,6 @@
     padding-bottom: 520px;
   }
 
-  @include breakpoint(max-width 576px) {
-    background-size: 155%;
-  }
-
   .paragraph {
     top: 47px;
     left: -32px;

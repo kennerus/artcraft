@@ -110,22 +110,29 @@
             <div class="header__mobile-btn"><span></span></div>
 
             <ul class="header__nav">
-                <li class="header__nav-li"><a href="portfolio.html">Услуги</a></li>
-                <li class="header__nav-li"><a href="portfolio.html">Портфолио</a></li>
-                <li class="header__nav-li"><a href="#">Распродажи</a></li>
-                <li class="header__nav-li"><a href="blog.html">Блог</a></li>
-                <li class="header__nav-li"><a href="#">Развеивание мифов</a></li>
-                <li>
-                    <a class="scroll dropdown" href="about.html">О нас</a>
-                    <ul class="header__submenu header__submenu_mob">
-                        <li><a class="scroll" href="feedback.html">Отзывы</a></li>
-                        <li><a class="scroll" href="#">Клиенты</a></li>
-                        <li><a class="scroll" href="#">Вакансии</a></li>
-                    </ul>
-                </li>
-                <li class="header__nav-li"><a href="#brief">Контакты</a></li>
+                <li class="header__nav-li logo"><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a></li>
+                
+                <ul class="header__nav-container">
+                    <li class="header__nav-li"><a href="service.html">Услуги</a></li>
+                    <li class="header__nav-li"><a class="scroll" href="#portfolio">Портфолио</a></li>
+                    <li class="header__nav-li"><a href="#">Распродажи</a></li>
+                    <li class="header__nav-li"><a class="scroll" href="#blog">Блог</a></li>
+                    <li class="header__nav-li"><a href="#">Развеивание мифов</a></li>
+                    <li class="header__nav-li dropdown">
+                        <a class="scroll" href="about.html">О нас</a>
+                        <button class="dropdown_mob">></button>
+                        <ul class="header__submenu header__submenu_mob">
+                            <li><a href="feedback.html">Отзывы</a></li>
+                            <li><a href="#">Клиенты</a></li>
+                            <li><a href="vacancy.html">Вакансии</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-li"><a class="scroll" href="#brief">Контакты</a></li>
+                </ul>
             </ul>
         </div>
+
+        <!-- <button class="header__open-btn" type="button">Узнать больше</button> -->
     </div>
     <div class="header__overlay"></div>
 
@@ -480,13 +487,7 @@
 <script src="js/fine-uploader.min.js"></script>
 <script src="js/script.min.js" type="text/javascript"></script>
 <a href="#" class="scrollup"></a>
-<script>
-    // Some options to pass to the uploader are discussed on the next page
-    var uploader = new qq.FineUploader({
-        element: document.getElementById("uploader"),
-        allowedExtensions: ['jpeg', 'png']
-    })
-</script>
+
 </body>
 </html>
 <!-- end html_close-index.html-->
