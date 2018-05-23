@@ -1,10 +1,4 @@
-var uploader = new qq.FineUploader({
-    element: document.getElementById("uploader"),
-    allowedExtensions: ['jpeg', 'png']
-});
-
 $(function () {
-
     /*clouds animation*/
     var x = 0;
     setInterval(function () {
@@ -63,16 +57,13 @@ $(function () {
     if($('.dotdot').length > 0 || $('.dotdot-title').length > 0) {
         $('.dotdot').dotdotdot({
             height: 80
-        })
+        });
 
         $('.dotdot-title').dotdotdot({
             ellipsis: '...',
             height: 23 * 2
-        })
+        });
     }
-
-    
-
 
     $('.brief__form-head input').unbind().blur(function () {
 
