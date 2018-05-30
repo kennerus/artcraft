@@ -38,6 +38,10 @@
       font-family: $GilroyBold;
       margin: 35px 0;
       color: #222;
+
+      @include breakpoint(max-width 1200px) {
+        margin-top: 20px;
+      }
     }
 
     .blog__content--img {
@@ -57,11 +61,16 @@
       }
     }
 
-    p {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    p, span, strong, em {
       position: relative;
       margin: 20px 0;
-      font-family: $GilroyMediumItalic;
-      font-size: 16px;
+      font-family: 'GilroyMedium', sans-serif!important;
+      font-size: 19px !important;
       line-height: 1.5;
     }
 
@@ -73,9 +82,14 @@
   font-size: 44px;
   margin: 0;
   margin-top: -12px;
+  margin-bottom: 20px;
 
   @include breakpoint(max-width 1200px) {
     margin-top: 20px;
+  }
+
+  @include breakpoint(max-width 768px) {
+    text-align: center;
   }
 }
 
@@ -83,6 +97,10 @@ h3 {
   margin-top: 20px;
   font-family: $GilroyBold;
   font-size: 21px;
+
+  @include breakpoint(max-width 768px) {
+    text-align: center;
+  }
 }
 
 .tags {
