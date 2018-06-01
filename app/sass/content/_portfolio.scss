@@ -173,6 +173,13 @@
           font-family: 'BebasNeueBold', sans-serif;
           color: white;
           text-transform: uppercase;
+          span {
+            display: inline-block;
+            background-image: url(../img/arrow.png);
+            background-repeat: no-repeat;
+            width: 38px;
+            height: 33px;
+          }
         }
       }
     }
