@@ -21,10 +21,25 @@
       max-width: 600px;
     }
   }
+  &__slider-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__block-link {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 42px;
+  }
   &__slider {
     &--wrap {
       margin-top: 30px;
       margin-left: 42px;
+      .slick-list {
+        margin-left: 437px;
+        @include breakpoint(max-width 1024px) {
+          margin: 300px auto 0;
+        }
+      }
       @include breakpoint(max-width 768px) {
         margin: 0 auto;
         .slick-list {
@@ -257,7 +272,7 @@
   }
 }
 
-.blog__slider--blog,
+.blog__link,
 .gallery__block-link {
   position: absolute;
   right: 0;
