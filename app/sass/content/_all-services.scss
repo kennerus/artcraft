@@ -1,0 +1,51 @@
+.all-services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.services-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  margin-right: 50px;
+}
+
+.services-bottom .btn_services {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  outline: none;
+}
+
+.services-bottom .btn_services.activeServices {
+  color: red;
+}
+
+.services-bottom .btn_services:after {
+  content: "\2192";
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  right: 18px;
+  color: red;
+}
+
+.services_item {
+  display: none;
+  flex-direction: column;
+}
+
+.services_item h4 {
+  margin: 0;
+  margin-top: 20px;
+}
