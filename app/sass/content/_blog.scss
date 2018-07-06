@@ -24,11 +24,18 @@
   &__slider-content {
     display: flex;
     justify-content: space-between;
+    @include breakpoint(max-width 770px) {
+      display: block;
+    }
   }
   &__block-link {
     position: absolute;
     margin-top: 60px;
     margin-left: 42px;
+    width: fit-content;
+    @include breakpoint(max-width 770px) {
+      position: relative;
+    }
   }
   &__slider {
     &--wrap {
@@ -38,6 +45,9 @@
         margin-left: 437px;
         @include breakpoint(max-width 1024px) {
           margin: 300px auto 0;
+        }
+        @include breakpoint(max-width 770px) {
+          margin-top: 80px;
         }
       }
       @include breakpoint(max-width 768px) {
@@ -290,6 +300,7 @@
   box-sizing: border-box;
   border-radius: 20px;
   transition: transform 0.2s;
+  z-index: 1;
 
   &:hover, &:active, &:focus {
     color: white;
