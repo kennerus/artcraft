@@ -24,9 +24,10 @@
 
 .services-bottom .btn_services.activeServices {
   color: red;
+  position: relative;
 }
 
-.services-bottom .btn_services:after {
+.services-bottom .activeServices:after {
   content: "\2192";
   font-size: 20px;
   display: -webkit-box;
@@ -36,7 +37,7 @@
   width: 20px;
   height: 20px;
   top: 2px;
-  right: 18px;
+  left: 100%;
   color: red;
 }
 
