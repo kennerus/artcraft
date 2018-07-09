@@ -291,111 +291,71 @@
 	</section>
 	
 <!-- start brief.html-->
-<section class="brief" id="brief">
+<section class="service-brief" id="brief">
 
-    <div class="container">
-        <div class="brief__head">
-            <p class="paragraph">наш бриф</p>
-            <div class="wrap">
-                <div class="tittle">
-                    <span class="block_span_title">заполните</span>
-                    <h2 class="block_title">наш бриф</h2>
-                    <p>
-                        Хорошо заполненный бриф - первый и очень важный этап успешно и вовремя завершённого проекта.
-                    </p>
+        <div class="container">
+            <div class="brief__head">
+                <p class="paragraph">наш бриф</p>
+                <div class="wrap">
+                    <div class="tittle">
+                        <span class="block_span_title">закажите</span>
+                        <h2 class="block_title">услугу</h2>
+                        <p>
+                            Перестаньте платить деньги за процесс. Получите гарантированный.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="brief__content">
-            <form id="form" class="brief__form">
-                <div class="brief__form-head">
-                    <div>
-                        <label for="name">Ваше имя, фамилия *</label>
-                        <input id="name" type="text" placeholder="Ваше имя" required >
+            <div class="brief__content">
+                <form id="form" class="service__form" enctype="multipart/form-data">
+                    <div class="service__form-head">
+                        <div class="service__form-head_item">
+                            <label for="name">Ваше имя, фамилия *</label>
+                            <input class="service__form_input" id="name" type="text" placeholder="Ваше имя" required >
+                        </div>
+
+                        <div class="service__form-head_item">
+                            <label for="phone">Ваш номер телефона *</label>
+                            <input class="service__form_input" id="phone" type="tel" placeholder="Номер телефона" required>
+                        </div>
+
+                        <div class="service__form-head_item">
+                            <label for="mail">Ваш e-mail *</label>
+                            <input class="service__form_input" id="mail" type="email" placeholder="Номер телефона" required>
+                        </div>
+
+                        <div class="service__form-head_item">
+                            <label for="skype">Ваш skype</label>
+                            <input class="service__form_input" id="skype" type="text" placeholder="Номер телефона">
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="phone">Ваш номер телефона *</label>
-                        <input id="phone" type="tel" placeholder="Номер телефона" required>
+                    <div class="service__form-message" lang="ru">
+                        <div class="service__form-textarea">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" placeholder="Напишите, что считаете нужным"></textarea>
+                        </div>
+                        <div class="service__form-file">
+                            <div class="btn-file__wrap">
+                                <input type="file" class="input-file">
+                                <div class="btn-input-file">
+                                    <img src="img/clip-black.png" alt="" width="25" height="25">
+                                    <span>Прикрепить файл</span>
+                                </div>
+                            </div>
+                            <span class="service__form-files">jpg, jpeg, png. gif, zip, rar, pdf, doc, xls</span>
+                        </div>
                     </div>
-
-                    <div>
-                        <label for="mail">Ваш e-mail *</label>
-                        <input id="mail" type="email" placeholder="Номер телефона" required>
+                    <div class="service__form-desc">
+                        <span class="service__form-desc_span">Нажимая кнопку «Отправить» я даю свое <span class="service__form-desc_red">согласие на обработку персональных данных</span></span>
+                        <input class="service__form-submit" id="submit" type="submit" value="Отправить бриф">
                     </div>
-
-                    <div>
-                        <label for="skype">Ваш skype</label>
-                        <input id="skype" type="text" placeholder="Номер телефона">
-                    </div>
-                </div>
-
-                <div class="brief__form-message" lang="ru">
-                    <label for="message">Сообщение</label>
-                    <textarea id="message" placeholder="Ваше сообщение"></textarea>
-
-                    <!-- <input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} файла(ов) выбрано" multiple />
-                    <label for="file-2"><img src="img/clip.png" width="13" height="13" alt=""> <span>Прикрепить файл&hellip;</span></label> -->
-                    <div id="uploader" class="uploader"></div>
-                </div>
-
-                <div class="brief__form-services">
-                    <h3>Какие услуги Вас интересуют?</h3>
-
-                    <input id="ckeckbox_mob" type="checkbox" name="ckeckbox_mob">
-                    <label for="ckeckbox_mob"><span></span>Дизайн сайта или дизайн landing-page</label>
-
-                    <input id="ckeckbox_supp" type="checkbox" name="ckeckbox_supp">
-                    <label for="ckeckbox_supp"><span></span> Дизайн печатной продукции (все виды)</label>
-
-                    <input id="ckeckbox_site" type="checkbox" name="ckeckbox_site">
-                    <label for="ckeckbox_site"><span></span>Посадка сайта на WordPress</label>
-
-                    <input id="ckeckbox_seo" type="checkbox" name="ckeckbox_seo">
-                    <label for="ckeckbox_seo"><span></span>Разработка интернет-магазина на платформе YI2</label>
-                </div>
-                <div class="brief__form-desc">
-                    <p><span>*</span> обязательные поля</p>
-                    <input id="submit" type="submit" value="Отправить бриф">
-                </div>
-            </form>
-            <div class="brief__contacts">
-                <h3>Наши контакты</h3>
-                <div class="brief__tel">
-                    <img src="img/phone-ico.png" alt="">
-                    <strong>+7 (950) 815-57-50</strong>
-                </div>
-                <div class="brief__social">
-                    <strong>Соц. сети</strong>
-                    <a href="https://vk.com"><img src="img/vk-ico.png" alt=""></a>
-                    <a href="https://facebook.com"><img src="img/fb-ico.png" alt=""></a>
-                </div>
-                <div class="brief__messengers">
-                    <strong>Мессенджеры</strong>
-                    <a href="#"><img src="img/telegram-ico.png" alt=""></a>
-                    <a href="#"><img src="img/003-whatsapp.png" alt=""></a>
-                    <a href="#"><img src="img/wu-ico.png" alt=""></a>
-                </div>
-                <div class="brief__email">
-                    <strong>E-mail</strong>
-                    <a href="mailto:info@artcraft.ru">info@artcraft.ru</a>
-                </div>
+                </form>
             </div>
+
         </div>
-        
 
-        
-
-    </div>
-
-    <div class="animate-circle"></div>
-
-    <img src="img/balloon.png" alt="" class="balloon">
-
-    <p class="fill-brief"><span>покорить вершины легко!</span>Осталось только заполнить бриф</p>
-
-</section>
-
+    </section>
 <!-- end brief.html-->
 </main>
 <!-- end content-service-landing.html-->
