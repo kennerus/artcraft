@@ -105,16 +105,16 @@
 
 <!-- start header-service.html-->
 <header class="header">
+    <div class="header__logo logo"><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a></div>
     <div class="container">
         <div class="header__mobile-btn"><span></span></div>
 
         <ul class="header__nav">
-        	<li class="header__nav-li logo"><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a></li>
-            
+
             <ul class="header__nav-container">
                 <li class="active-page header__nav-li"><a href="service.html">Услуги</a></li>
                 <li class="header__nav-li"><a class="scroll" href="../portfolio.html">Портфолио</a></li>
-                <li class="header__nav-li"><a href="#">Распродажи</a></li>
+                <li class="header__nav-li"><a href="#">Горячие предложения</a></li>
                 <li class="header__nav-li"><a class="scroll" href="../blog.html">Блог</a></li>
                 <li class="header__nav-li"><a href="#">Развеивание мифов</a></li>
                 <li class="header__nav-li dropdown">
@@ -130,13 +130,20 @@
             </ul>
         </ul>
     </div>
+    <div class="header__callback">
+        <img class="header__callback_img" src="img/phone-ico.png" alt="">
+        <div class="header__callback_text">
+            <span class="header__callback_top">+7 (918) 888-22-33</span>
+            <button class="header__callback_bottom">Заказать обратный звонок</button>
+        </div>
+    </div>
 </header>
 
 <!-- end header-service.html-->
 
 <!-- start content-service-smm.html-->
 <main class="main-service">
-	<section class="blog blog__single blog_about">
+	<section class="blog blog__single blog_about service-smm">
 		<div class="container">
 
 			<p class="paragraph">оформление группы вконтакте</p>
@@ -150,12 +157,10 @@
 			</nav>
 
 			<div class="wrap">
-				<div class="tittle">
-					<h2>Оформление группы Вконтакте</h2>
-				</div>
+				<h1>Оформление группы Вконтакте</h1>
 				<div class="service-smm__content">
 					<div class="service-smm__main">
-						<img src="img/imgsmm.png" alt="">
+						<img class="service-smm__main-img" src="img/imgsmm.png" alt="">
 						<div class="service-smm__text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totamrem aperiam, eaque ipsa quae ab illo inventore veritatis et quasiarchitecto beatae vitae dicta sunt explicabo.</p>
@@ -165,17 +170,25 @@
 					</div>
 					<div class="service-smm__aside">
 						<div class="service-smm__gallery">
-							<div class="gallery__row">
-								<div class="service-smm__gallery_text">
-									<span class="gallery__number">55<span class="color-red">+</span></span>
-									<span class="gallery__text">
-										<span class="color-red">Г</span>отовых<br>
-										<span class="color-red">р</span>ешений
-									</span>
-								</div>
-								<div class="service-smm__gallery_btn">
-									<a class="gallery__block-link" href="#">Посмотреть</a>
-								</div>
+							<a class="gallery__block-link" href="#">Посмотреть</a>
+						</div>
+						<div class="service-smm__other">
+							<h3 class="service-smm__other-title">Другие услуги нашей студии</h3>
+							<div class="other__item other__item_design">
+								<span class="other__item_desc">UX/UI дизайн</span>
+								<a class="gallery__block-link" href="#">Посмотреть</a>
+							</div>
+							<div class="other__item other__item_branding">
+								<span class="other__item_desc">Брендинг и айдентика</span>
+								<a class="gallery__block-link" href="#">Посмотреть</a>
+							</div>
+							<div class="other__item other__item_logo">
+								<span class="other__item_desc">Логотип</span>
+								<a class="gallery__block-link" href="#">Посмотреть</a>
+							</div>
+							<div class="other__item other__item_dev">
+								<span class="other__item_desc">Разработка сайта</span>
+								<a class="gallery__block-link" href="#">Посмотреть</a>
 							</div>
 						</div>
 					</div>
@@ -239,17 +252,17 @@
 							</div>
 							<span class="service__form-files">jpg, jpeg, png. gif, zip, rar, pdf, doc, xls</span>
 						</div>
-                    </div>
-                    <div class="service__form-desc">
-                    	<span class="service__form-desc_span">Нажимая кнопку «Отправить» я даю свое <span class="service__form-desc_red">согласие на обработку персональных данных</span></span>
-                    	<input class="service__form-submit" id="submit" type="submit" value="Отправить бриф">
-                    </div>
-                </form>
-            </div>
+					</div>
+					<div class="service__form-desc">
+						<span class="service__form-desc_span">Нажимая кнопку «Отправить» я даю свое <span class="service__form-desc_red">согласие на обработку персональных данных</span></span>
+						<input class="service__form-submit" id="submit" type="submit" value="Отправить бриф">
+					</div>
+				</form>
+			</div>
 
-        </div>
+		</div>
 
-    </section>
+	</section>
 
 
 <!-- start blog.html-->

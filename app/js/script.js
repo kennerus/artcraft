@@ -193,6 +193,8 @@ $(function () {
         $(document).on('click', '.js_header', function () {
             $('.header__nav').slideToggle().css('display', 'flex');
             $('.header__overlay').slideToggle(100);
+            $('.header__logo').toggleClass('header__logo_hidden');
+            $('.header__callback').toggleClass('header__logo_hidden');
         });
     };
 

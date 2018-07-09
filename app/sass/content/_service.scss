@@ -195,6 +195,13 @@
 	left: -20px;
 }
 
+.main-service,
+.main-about {
+	@include breakpoint(max-width 768px) {
+		padding-top: 35px;
+	}
+}
+
 .store {
 	display: flex;
 	margin-top: 50px;
@@ -703,71 +710,117 @@
 	}
 }
 
+.blog.service-smm {
+	.paragraph {
+		top: 200px;
+		left: -120px;
+	}
+}
+
 .service-smm {
 	&__content {
 		display: flex;
+		@include breakpoint(max-width 992px) {
+			flex-wrap: wrap;
+		}
 	}
 	&__main {
 		width: 66%;
+		.gallery__block-link {
+			margin-top: 50px;
+			width: 250px;
+		}
+		&-img {
+			max-width: 100%;
+		}
+		@include breakpoint(max-width 992px) {
+			width: 100%;
+		}
+	}
+	&__text {
+		p {
+			margin: 23px 0;
+			line-height: 1.5em;
+		}
 	}
 	&__aside {
 		width: 34%;
-		padding-left: 40px;
+		padding-left: 50px;
+		@include breakpoint(max-width 992px) {
+			width: 100%;
+			padding: 0;
+		}
 	}
 	&__gallery {
 		position: relative;
-		display: flex;
-		align-items: center;
-		height: 220px;
-		background-image: url(../img/discounts4.png);
+		height: 210px;
+		max-width: 350px;
+		background-image: url(../img/ssm-gallery.png);
 		background-repeat: no-repeat;
-		background-size: 100%;
+		background-size: cover;
 		background-position: center;
-		&:after {
-			position: absolute;
-			top: 0;
-			left: 0;
-			content: "";
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.7);
+		@include breakpoint(max-width 992px) {
+			margin: 50px auto 0;
 		}
-		&_text {
-			display: flex;
-			flex-direction: column;
-			width: 50%;
-			height: fit-content;
-		}
-		&_btn {
-			display: flex;
-			align-items: flex-end;
-			width: 50%;
-			.gallery__block-link {
-				position: relative;
-				bottom: unset;
-				width: fit-content;
-				padding: 10px 20px;
-			}
+		.gallery__block-link {
+			width: 140px;
+			left: 44%;
+			bottom: 13%;
 		}
 	}
 }
 
-.gallery__row {
-	display: flex;
-	width: 100%;
+.service-smm__other {
+	margin-top: 40px;
+	&-title {
+		text-align: center;
+		width: 100%;
+	}
+	@include breakpoint(max-width 992px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
 }
 
-.gallery__number,
-.gallery__text {
+.other__item {
 	position: relative;
-	color: #fff;
-	font-size: 40px;
-	font-weight: 700;
-	text-transform: uppercase;
-	z-index: 10;
-}
-.gallery__text {
-	font-size: 20px;
+	display: flex;
+	align-items: flex-end;
+	height: 170px;
+	max-width: 350px;
+	min-width: 300px;
+	margin-bottom: 20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	&_desc {
+		position: relative;
+		bottom: 10%;
+		left: 8%;
+		width: 50%;
+		color: #fff;
+		font-weight: 700;
+		font-size: 18px;
+	}
+	.gallery__block-link {
+		font-size: 14px;
+		width: 120px;
+		padding: 8px 0;
+		left: 50%;
+	}
+	&_design {
+		background-image: url(../img/service1.png);
+	}
+	&_branding {
+		background-image: url(../img/service2.png);
+	}
+	&_logo {
+		background-image: url(../img/service3.png);
+	}
+	&_dev {
+		background-image: url(../img/service4.png);
+	}
 }
 
 .service-brief {
