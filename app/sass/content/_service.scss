@@ -195,13 +195,6 @@
 	left: -45px;
 }
 
-.main-service,
-.main-about {
-	@include breakpoint(max-width 768px) {
-		padding-top: 35px;
-	}
-}
-
 .store {
 	display: flex;
 	margin-top: 50px;
@@ -715,6 +708,10 @@
 		top: 200px;
 		left: -120px;
 	}
+}
+
+.main-service-smm .service__form-radio {
+	display: none;
 }
 
 .service-smm {

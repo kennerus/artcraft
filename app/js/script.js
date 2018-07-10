@@ -20,6 +20,10 @@ $(function () {
         idleTime: false
     });
 
+    if($('.js_phone-mask').length > 0) {
+        $('.js_phone-mask').inputmask({ alias: "phoneru" });
+    }
+
     if($('.blog__slider--wrap').length > 0 || $('.feedback__slider').length > 0) {
         $('.blog__slider--wrap').slick({
             dots: false,
@@ -192,9 +196,8 @@ $(function () {
     if($(window).width() > 992) {
         $(document).on('click', '.js_header', function () {
             $('.header__nav').slideToggle().css('display', 'flex');
+            $('.header__logo, .header__callback').toggleClass('header__index-appear');
             $('.header__overlay').slideToggle(100);
-            $('.header__logo').toggleClass('header__logo_hidden');
-            $('.header__callback').toggleClass('header__logo_hidden');
         });
     };
 

@@ -111,7 +111,7 @@
         <div class="header__mobile-btn"><span></span></div>
 
         <ul class="header__nav">
-
+            <li class="header__logo header__logo_mobile logo"><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a></li>
             <ul class="header__nav-container">
                 <li class="active-page header__nav-li"><a href="service.html">Услуги</a></li>
                 <li class="header__nav-li"><a class="scroll" href="../portfolio.html">Портфолио</a></li>
@@ -129,6 +129,13 @@
                 </li>
                 <li class="header__nav-li"><a class="scroll" href="#brief">Контакты</a></li>
             </ul>
+            <li class="header__callback header__callback_mobile">
+                <img class="header__callback_img" src="img/phone-ico.png" alt="">
+                <div class="header__callback_text">
+                    <span class="header__callback_top">+7 (918) 888-22-33</span>
+                    <button class="header__callback_bottom">Заказать обратный звонок</button>
+                </div>
+            </li>
         </ul>
     </div>
     <div class="header__callback">
@@ -139,11 +146,10 @@
         </div>
     </div>
 </header>
-
 <!-- end header-service.html-->
 
 <!-- start content-service-smm.html-->
-<main class="main-service">
+<main class="main-service main-service-smm">
 	<section class="blog blog__single blog_about service-smm">
 		<div class="container">
 
@@ -199,72 +205,145 @@
 		</div>
 	</section>
 
-	<section class="service-brief" id="brief">
+<!-- start brief.html-->
+<section class="service-brief" id="brief">
 
-		<div class="container">
-			<div class="brief__head">
-				<p class="paragraph">наш бриф</p>
-				<div class="wrap">
-					<div class="tittle">
-						<span class="block_span_title">закажите</span>
-						<h2 class="block_title">услугу</h2>
-						<p>
-							Перестаньте платить деньги за процесс. Получите гарантированный.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="brief__content">
-				<form id="form" class="service__form" enctype="multipart/form-data">
-					<div class="service__form-head">
-						<div class="service__form-head_item">
-							<label for="name">Ваше имя, фамилия *</label>
-							<input class="service__form_input" id="name" type="text" placeholder="Ваше имя" required >
-						</div>
+        <div class="container">
+            <div class="brief__head">
+                <p class="paragraph">наш бриф</p>
+                <div class="wrap">
+                    <div class="tittle">
+                        <span class="block_span_title">закажите</span>
+                        <h2 class="block_title">услугу</h2>
+                        <p>
+                            Перестаньте платить деньги за процесс. Получите гарантированный.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="brief__content">
+                <form id="form" class="service__form" enctype="multipart/form-data">
+                    <div class="service__form-head">
+                        <div class="service__form-head_item">
+                            <label for="name">Ваше имя, фамилия *</label>
+                            <input class="service__form_input" id="name" type="text" placeholder="Ваше имя" required >
+                        </div>
 
-						<div class="service__form-head_item">
-							<label for="phone">Ваш номер телефона *</label>
-							<input class="service__form_input" id="phone" type="tel" placeholder="Номер телефона" required>
-						</div>
+                        <div class="service__form-head_item">
+                            <label for="phone">Ваш номер телефона *</label>
+                            <input class="service__form_input js_phone-mask" id="phone" type="tel" placeholder="Номер телефона" required>
+                        </div>
 
-						<div class="service__form-head_item">
-							<label for="mail">Ваш e-mail *</label>
-							<input class="service__form_input" id="mail" type="email" placeholder="Номер телефона" required>
-						</div>
+                        <div class="service__form-head_item">
+                            <label for="mail">Ваш e-mail *</label>
+                            <input class="service__form_input" id="mail" type="email" placeholder="Номер телефона" required>
+                        </div>
 
-						<div class="service__form-head_item">
-							<label for="skype">Ваш skype</label>
-							<input class="service__form_input" id="skype" type="text" placeholder="Номер телефона">
-						</div>
-					</div>
+                        <div class="service__form-head_item">
+                            <label for="skype">Ваш skype</label>
+                            <input class="service__form_input" id="skype" type="text" placeholder="Номер телефона">
+                        </div>
+                    </div>
 
-					<div class="service__form-message" lang="ru">
-						<div class="service__form-textarea">
-							<label for="message">Сообщение</label>
-							<textarea id="message" placeholder="Напишите, что считаете нужным"></textarea>
-						</div>
-						<div class="service__form-file">
-							<div class="btn-file__wrap">
-								<input type="file" class="input-file">
-								<div class="btn-input-file">
-									<img src="img/clip-black.png" alt="" width="25" height="25">
-									<span>Прикрепить файл</span>
-								</div>
-							</div>
-							<span class="service__form-files">jpg, jpeg, png. gif, zip, rar, pdf, doc, xls</span>
-						</div>
-					</div>
-					<div class="service__form-desc">
-						<span class="service__form-desc_span">Нажимая кнопку «Отправить» я даю свое <span class="service__form-desc_red">согласие на обработку персональных данных</span></span>
-						<input class="service__form-submit" id="submit" type="submit" value="Отправить бриф">
-					</div>
-				</form>
-			</div>
+                    <div class="service__form-radio">
+                        <div class="service__form-radio_text">
+                            <p>Какие услуги Вас интересуют?</p>
+                        </div>
+                        <div class="service__form-radio-button">
+                            <div class="service__form-radio-itemL">
+                                <div class="service__form-radio-item service__form-radio-item1">
+                                    <label class="container">Готовое решение
+                                        <input type="radio" checked="checked" name="radio" required>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">Интернет-магазин
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="service__form-radio-item service__form-radio-item2">
+                                    <label class="container">Индивидуальный проект
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">Корпоративные системы
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="service__form-radio-item service__form-radio-item3">
+                                <label class="container">Landing page
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">UI/UX Design
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            </div>
+                            <div class="service__form-radio-itemR">
+                                <div class="service__form-radio-item service__form-radio-item4">
+                                    <label class="container">Поддержка
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">Логотип
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="service__form-radio-item service__form-radio-item5">
+                                    <label class="container">Репутационный маркетинг
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">Полиграфическая продукция
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="service__form-radio-item service__form-radio-item6">
+                                <label class="container">Брендинг и айдентика
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Digital Design
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
 
-		</div>
+                    <div class="service__form-message" lang="ru">
+                        <div class="service__form-textarea">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" placeholder="Напишите, что считаете нужным"></textarea>
+                        </div>
+                        <div class="service__form-file">
+                            <div class="btn-file__wrap">
+                                <input type="file" class="input-file">
+                                <div class="btn-input-file">
+                                    <img src="img/clip-black.png" alt="" width="25" height="25">
+                                    <span>Прикрепить файл</span>
+                                </div>
+                            </div>
+                            <span class="service__form-files">jpg, jpeg, png. gif, zip, rar, pdf, doc, xls</span>
+                        </div>
+                    </div>
+                    <div class="service__form-desc">
+                        <span class="service__form-desc_span">Нажимая кнопку «Отправить» я даю свое <span class="service__form-desc_red">согласие на обработку персональных данных</span></span>
+                        <input class="service__form-submit" id="submit" type="submit" value="Отправить бриф">
+                    </div>
+                </form>
+            </div>
 
-	</section>
+        </div>
 
+    </section>
+<!-- end brief.html-->
 
 <!-- start blog.html-->
 <section class="blog" id="blog">
@@ -285,7 +364,7 @@
             </div>
 
             <div class="blog__slider-content">
-                <div class="blog__block-link">
+                <div class="blog__block-link_main">
                     <img src="img/current.jpg" alt="">
                     <a class="blog__link" href="blog.html">Посмотреть все новости</a>
                 </div>
@@ -360,7 +439,7 @@
 
     <img src="img/balloon.png" alt="" class="balloon">
 
-    <p class="fill-brief"><span>покорить вершины легко!</span>Осталось только заполнить бриф</p>
+    <p class="fill-brief">покорить вершины легко!</p>
 
 
     <div class="footer-copyright">
@@ -387,6 +466,9 @@
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.dotdotdot.js"></script>
 <script src="js/fine-uploader.min.js"></script>
+<script src="js/jquery.inputmask.bundle.js"></script>
+<script src="js/phone.js"></script>
+<script src="js/phone-ru.js"></script>
 <script src="js/script.min.js" type="text/javascript"></script>
 <a href="#" class="scrollup"></a>
 

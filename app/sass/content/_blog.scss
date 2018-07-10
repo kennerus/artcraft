@@ -28,7 +28,7 @@
       display: block;
     }
   }
-  &__block-link {
+  &__block-link_main {
     position: absolute;
     margin-top: 60px;
     margin-left: 42px;
@@ -190,7 +190,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 32.3%;
-    height: 350px;
+    height: 550px;
     margin-right: 1%;
     padding: 15px;
     box-sizing: border-box;
