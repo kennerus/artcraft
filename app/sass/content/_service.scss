@@ -705,7 +705,7 @@
 
 .blog.service-smm {
 	.paragraph {
-		top: 200px;
+		top: 170px;
 		left: -120px;
 	}
 }
@@ -752,7 +752,7 @@
 		position: relative;
 		height: 210px;
 		max-width: 350px;
-		background-image: url(../img/ssm-gallery.png);
+		//background-image: url(../img/ssm-gallery.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -807,16 +807,16 @@
 		left: 50%;
 	}
 	&_design {
-		background-image: url(../img/service1.png);
+		//background-image: url(../img/service1.png);
 	}
 	&_branding {
-		background-image: url(../img/service2.png);
+		//background-image: url(../img/service2.png);
 	}
 	&_logo {
-		background-image: url(../img/service3.png);
+		//background-image: url(../img/service3.png);
 	}
 	&_dev {
-		background-image: url(../img/service4.png);
+		//background-image: url(../img/service4.png);
 	}
 }
 

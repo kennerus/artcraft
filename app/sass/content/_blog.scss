@@ -35,6 +35,7 @@
     width: fit-content;
     @include breakpoint(max-width 770px) {
       position: relative;
+      margin-left: 0;
     }
   }
   &__slider {
