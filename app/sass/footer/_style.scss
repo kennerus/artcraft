@@ -5,6 +5,12 @@
     padding-bottom: 600px;
 }
 
+@media (max-width: 1200px) {
+	.brief_footer {
+		background-size: contain;
+	}
+}
+
 .footer-copyright {
 	position: absolute;
 	bottom: 0;
@@ -96,7 +102,7 @@
 
 @media (max-width: 900px) {
 	.footer-copyright {
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 	.footer-copyright-left, .footer-copyright-right {
 		justify-content: center;

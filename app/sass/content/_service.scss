@@ -791,6 +791,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	box-shadow: 0 -100px 90px -60px #000 inset;
 	&_desc {
 		position: relative;
 		bottom: 10%;
@@ -799,6 +800,7 @@
 		color: #fff;
 		font-weight: 700;
 		font-size: 18px;
+		z-index: 1;
 	}
 	.gallery__block-link {
 		font-size: 14px;
@@ -818,6 +820,11 @@
 	&_dev {
 		//background-image: url(../img/service4.png);
 	}
+}
+
+.smm-item-img {
+	position: absolute;
+	z-index: -1;
 }
 
 .service-brief {

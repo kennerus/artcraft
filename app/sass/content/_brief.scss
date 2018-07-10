@@ -64,14 +64,14 @@
     text-transform: uppercase;
     letter-spacing: -0.4px;
     @include breakpoint(max-width 1200px) {
-      top: 1350px;
+      top: 50px;
       right: 0;
       left: 0;
       text-align: center;
     }
 
     @include breakpoint(max-width 992px) {
-      top: 1450px;
+      top: 50px;
     }
 
     @include breakpoint(max-width 930px) {
@@ -84,7 +84,7 @@
     }
 
     @include breakpoint(max-width 600px) {
-      bottom: 350px;
+      bottom: 430px;
       top: auto;
       font-size: 5vw;
     }
