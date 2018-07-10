@@ -22,7 +22,7 @@ $time-step: $time/$max;
 .text {
   font-size: 130px;
   fill: none;
-  stroke-width: 2.5;
+  stroke-width: 2.5px;
   stroke-linejoin: round;
   stroke-dasharray: $dash $dash-space;
   stroke-dashoffset: 0;
