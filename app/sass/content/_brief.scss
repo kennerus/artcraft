@@ -343,6 +343,19 @@
   cursor: pointer;
 }
 
+.checkbox-item {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .checkmark {
   position: absolute;
   top: 4px;
@@ -355,13 +368,13 @@
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.checkbox-item:hover input ~ .checkmark {
   //background-color: #ccc;
   border: 1px solid #9fa3a7;
 }
 
 /* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.checkbox-item input:checked ~ .checkmark {
   //background-color: #2196F3;
   height: 13px;
   width: 13px;
@@ -378,17 +391,17 @@
 }
 
 /* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
+.checkbox-item input:checked ~ .checkmark:after {
   display: block;
   background-color: red;
 }
 
 /* Style the indicator (dot/circle) */
-.container .checkmark:after {
-  top: 18%;
-  left: 19%;
-  width: 8px;
-  height: 8px;
+.checkbox-item .checkmark:after {
+  top: 23%;
+  left: 24%;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: white;
 }
@@ -401,6 +414,9 @@
   .service__form-radio-itemL, .service__form-radio-itemR {
     width: 80%;
   }
+  .service__form-radio-item2 {
+    width: 36%;
+  }
   .service__form-radio-item4 {
     width: 31%;
   }
@@ -412,6 +428,9 @@
 @media (max-width: 1000px) {
   .service__form-radio-itemL, .service__form-radio-itemR {
     width: 100%;
+  }
+  .service__form-radio-item5 {
+    width: 36%;
   }
 }
 
