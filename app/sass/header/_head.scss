@@ -14,6 +14,58 @@
     border-bottom: none;
   }
 
+  &__logo {
+    position: absolute;
+    left: 40px;
+    top: 17px;
+    transition: all ease 0.4s;
+    @include breakpoint(max-width 1450px) {
+      display: none;
+    }
+    &_hidden {
+      top: -40px !important;
+    }
+  }
+
+  &__callback {
+    position: absolute;
+    right: 40px;
+    top: 17px;
+    display: flex;
+    z-index: 10;
+    transition: all ease 0.4s;
+    @include breakpoint(max-width 1200px) {
+      right: 20px;
+    }
+    &_img {
+      min-width: 35px;
+      height: 35px;
+      margin-right: 10px;
+    }
+    &_text {
+      display: flex;
+      flex-direction: column;
+    }
+    &_top {
+      font-size: 19px;
+      font-weight: 900;
+      @include breakpoint(max-width 1200px) {
+        font-size: 16px;
+      }
+    }
+    &_bottom {
+      font-weight: bold;
+      font-size: 12px;
+      color: #ff4834;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      @include breakpoint(max-width 1200px) {
+        font-size: 11px;
+      }
+    }
+  }
+
   &__wrapper {
     position: relative;
     z-index: 6;
@@ -67,10 +119,13 @@
     justify-content: space-between;
     height: 70px;
     margin: 0;
+    margin-left: 80px;
     padding-left: 0;
     letter-spacing: 1px;
     z-index: 2;
-
+    @include breakpoint(max-width 1200px) {
+      margin-left: 0;
+    }
     .active-page {      
       &:before {
         background-color: #ff5038;
@@ -369,6 +424,9 @@
 
   li {
     margin-right: 15px;
+    @include breakpoint(max-width 1200px) {
+      margin-right: 5px;
+    }
     @include breakpoint(max-width 992px) {
       justify-content: center;
       margin-right: 0;
