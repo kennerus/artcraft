@@ -9,7 +9,8 @@
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  margin-right: 50px;
+  border-right: 1px solid #eeeeee;
+  padding-right: 50px;
 }
 
 .services-bottom .btn_services {
@@ -17,7 +18,7 @@
   border: none;
   cursor: pointer;
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-weight: 700;
   outline: none;
 }
@@ -55,9 +56,23 @@
   color: #ff4834;
 }
 
+.novelty-black-title {
+  color: #282828;
+}
+
+.all-services-section .services_item-p {
+  font-family: GilroyMedium, sans-serif;
+  font-style: normal;
+}
+
 .services_item-ul {
   font-family: GilroySemibold, sans-serif;
   text-align: left;
+  padding-left: 20px;
+}
+
+.services_item-li {
+  margin-bottom: 15px;
 }
 
 .services_item-more {
@@ -84,8 +99,9 @@
   transition: all .2s;
 }
 
-//@media (max-width: 620px) {
-//  .services_item-more {
-//    margin-top: 10px;
-//  }
-//}
+@media (max-width: 1000px) {
+  .services-bottom {
+    align-items: center;
+    margin-right: 10px;
+  }
+}

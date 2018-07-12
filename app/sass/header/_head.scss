@@ -16,7 +16,7 @@
   }
 
   .header__index-appear {
-    margin-top: -40px;
+    margin-top: -50px;
   }
 
   &__logo {
@@ -69,7 +69,8 @@
     }
     &_img {
       min-width: 35px;
-      height: 35px;
+      height: 50px;
+      border-radius: 50%;
       margin-right: 10px;
     }
     &_text {
@@ -77,8 +78,9 @@
       flex-direction: column;
     }
     &_top {
-      font-size: 19px;
+      font-size: 20px;
       font-weight: 900;
+      font-family: GilroySemibold, sans-serif;
       @include breakpoint(max-width 1200px) {
         font-size: 16px;
       }
@@ -86,6 +88,7 @@
     &_bottom {
       font-weight: bold;
       font-size: 12px;
+      font-family: GilroySemibold, sans-serif;
       color: #ff4834;
       background-color: transparent;
       border: none;
@@ -102,26 +105,6 @@
     z-index: 6;
     background-color: white;
     border-bottom: 5px solid white;
-
-    &:before {
-      content: 'узнать больше';
-      position: absolute;
-      right: 0;
-      bottom: -30px;
-      left: 0;
-      width: 200px;
-      height: 25px;
-      margin: 0 auto;
-      font-family: $GilroyMedium;
-      text-align: center;
-      line-height: 1;
-      font-variant: small-caps;
-      letter-spacing: 1px;
-      background-color: white;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-      cursor: pointer;
-    }
 
     @include breakpoint(max-width 992px) {
       border: none;
@@ -147,7 +130,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 70px;
     margin: 0;
     padding-left: 0;
@@ -527,6 +510,53 @@
 
 .hidden_links {
   display: none !important;
+}
+
+.header-wrapper-down:before {
+  content: "^";
+  font-size: 25px;
+  transform: rotate(180deg);
+  color: #a8a8a8;
+  position: absolute;
+  right: 0;
+  bottom: -29px;
+  left: 0;
+  width: 50px;
+  height: 24px;
+  margin: 0 auto;
+  font-family: GilroyMedium,sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  background-color: #fff;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  box-shadow: 0px 0px 0px 10px rgba(255,255,255,.4);
+  cursor: pointer;
+}
+
+.header-wrapper-up:before {
+  content: "^";
+  font-size: 25px;
+  color: #a8a8a8;
+  position: absolute;
+  right: 0;
+  bottom: -29px;
+  left: 0;
+  width: 50px;
+  height: 24px;
+  margin: 0 auto;
+  font-family: GilroyMedium,sans-serif;
+  text-align: center;
+  line-height: 1;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  background-color: #fff;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  box-shadow: 0px 0px 0px 10px rgba(255,255,255,.4);
+  cursor: pointer;
 }
 
 @media (max-width: 992px) and (min-height: 400px) {

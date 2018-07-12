@@ -6,6 +6,8 @@
   background: url(../img/footer-bg.jpg) center bottom no-repeat;
   background-size: contain;
   overflow: hidden;
+  margin-top: 55px;
+  //box-shadow: inset 0px 10px 30px 0px rgba(255, 255, 255, 1);
 
   @include breakpoint(max-width 600px) {
     padding-top: 30px;
@@ -75,7 +77,7 @@
     }
 
     @include breakpoint(max-width 930px) {
-      font-size: 27px;
+      font-size: 40px;
     }
 
     @include breakpoint(max-width 630px) {
@@ -215,6 +217,7 @@
     }
     @include breakpoint(max-width 600px) {
       width: 200px;
+      bottom: 150px;
     }
   }
 }
@@ -399,7 +402,7 @@
 /* Style the indicator (dot/circle) */
 .checkbox-item .checkmark:after {
   top: 23%;
-  left: 24%;
+  left: 23%;
   width: 7px;
   height: 7px;
   border-radius: 50%;

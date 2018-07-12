@@ -309,3 +309,8 @@ if(gallery) {
     resize();
 }
 
+$(document).on('click', '.js_header', function () {
+    var themeBody = $('.js_header');
+    themeBody.toggleClass('header-wrapper-down');
+    themeBody.toggleClass('header-wrapper-up');
+});
