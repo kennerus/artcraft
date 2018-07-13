@@ -1,7 +1,7 @@
 .blog {
   position: relative;
   width: 100%;
-  padding: 0 0 100px;
+  padding: 0 0 60px;
   overflow: hidden;
 
   .paragraph {
@@ -42,6 +42,7 @@
     &--wrap {
       margin-top: 30px;
       margin-left: 42px;
+      margin-bottom: 120px;
       .slick-list {
         margin-left: 437px;
         @include breakpoint(max-width 1024px) {
@@ -193,7 +194,7 @@
     width: 32.3%;
     height: 550px;
     margin-right: 1%;
-    padding: 15px;
+    padding: 30px;
     box-sizing: border-box;
 
     &:nth-child(3n) {
@@ -202,6 +203,8 @@
 
     &:hover {
       box-shadow: 0 15px 33px 0 rgba(153,130,161,.18);
+      transform: scale(1.02);
+      transition: all 0.2s ease-out;
     }
 
     @include breakpoint(max-width 1200px) {
@@ -329,15 +332,19 @@
   }
 
   .blog .paragraph {
-    top: 103px;
+    top: 155px;
   }
 
   .wrap {
     width: 93%;
-    margin-top: 25px;
+    margin-top: 80px;
 
     @include breakpoint(max-width 576px) {
       margin-top: 25px;
     }
   }
+}
+
+.blog-main-link {
+  margin: 0;
 }

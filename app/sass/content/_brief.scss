@@ -1,12 +1,11 @@
 .brief {
   width: 100%;
-  padding-top: 220px;
+  padding-top: 30px;
   position: relative;
   padding-bottom: 708px;
-  background: url(../img/footer-bg.jpg) center bottom no-repeat;
+  background: url(../img/footer-bg-3.jpg) center bottom no-repeat;
   background-size: contain;
   overflow: hidden;
-  margin-top: 55px;
   //box-shadow: inset 0px 10px 30px 0px rgba(255, 255, 255, 1);
 
   @include breakpoint(max-width 600px) {
@@ -58,26 +57,55 @@
 
   .fill-brief {
     position: absolute;
-    bottom: 320px;
-    left: 28vw;
+    bottom: 300px;
+    left: 33vw;
     font-family: GilroyExtrabold,sans-serif;
-    font-size: 48px;
+    font-size: 50px;
     color: $black;
     text-transform: uppercase;
     letter-spacing: -0.4px;
+
+    //@media (max-width: 2000px) {
+      //  .brief .fill-brief {
+      //    bottom: 389px;
+      //    font-size: 66px;
+      //  }
+      //}
+      //
+      //@media (max-width: 6000px) {
+      //  .brief .fill-brief {
+      //    bottom: 600px;
+      //    font-size: 100px;
+      //  }
+      //}
+
+    @include breakpoint(max-width 6000px) {
+      bottom: 600px;
+      font-size: 100px;
+    }
+    @include breakpoint(max-width 2000px) {
+      bottom: 389px;
+      font-size: 66px;
+    }
+    @include breakpoint(max-width 1500px) {
+      bottom: 300px;
+      font-size: 50px;
+    }
     @include breakpoint(max-width 1200px) {
-      top: 50px;
+      bottom: 385px;
       right: 0;
       left: 0;
       text-align: center;
+      font-size: 50px;
     }
 
     @include breakpoint(max-width 992px) {
-      top: 50px;
+      bottom: 400px;
     }
 
     @include breakpoint(max-width 930px) {
       font-size: 40px;
+      bottom: 425px;
     }
 
     @include breakpoint(max-width 630px) {
@@ -222,6 +250,8 @@
   }
 }
 
+
+
 .uploader {
   margin-top: 20px;
 }
@@ -245,7 +275,7 @@
 
 .all-news {
   .blog .paragraph {
-    top: 87px;
+    top: 140px;
   }
 
   .brief {
@@ -304,6 +334,11 @@
   display: flex;
   flex-direction: row;
   width: 50%;
+}
+
+.service__form-radio-itemR {
+  position: relative;
+  right: 20px;
 }
 
 .service__form-radio-item {
@@ -416,6 +451,9 @@
   }
   .service__form-radio-itemL, .service__form-radio-itemR {
     width: 80%;
+  }
+  .service__form-radio-itemR {
+    right: 0;
   }
   .service__form-radio-item2 {
     width: 36%;

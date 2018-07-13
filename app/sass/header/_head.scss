@@ -88,11 +88,13 @@
     &_bottom {
       font-weight: bold;
       font-size: 12px;
-      font-family: GilroySemibold, sans-serif;
+      font-family: GilroyBold, sans-serif;
       color: #ff4834;
       background-color: transparent;
       border: none;
       cursor: pointer;
+      letter-spacing: 0.5px;
+      padding: 0;
       @include breakpoint(max-width 1200px) {
         font-size: 11px;
       }
@@ -513,7 +515,7 @@
 }
 
 .header-wrapper-down:before {
-  content: "^";
+  content: url("../img/arrow-point-to-right.png");
   font-size: 25px;
   transform: rotate(180deg);
   color: #a8a8a8;
@@ -523,10 +525,10 @@
   left: 0;
   width: 50px;
   height: 24px;
+  line-height: 1;
   margin: 0 auto;
   font-family: GilroyMedium,sans-serif;
   text-align: center;
-  line-height: 1.5;
   font-variant: small-caps;
   letter-spacing: 1px;
   background-color: #fff;
@@ -537,7 +539,7 @@
 }
 
 .header-wrapper-up:before {
-  content: "^";
+  content: url("../img/arrow-point-to-right.png");
   font-size: 25px;
   color: #a8a8a8;
   position: absolute;
@@ -546,10 +548,10 @@
   left: 0;
   width: 50px;
   height: 24px;
+  line-height: 0;
   margin: 0 auto;
   font-family: GilroyMedium,sans-serif;
   text-align: center;
-  line-height: 1;
   font-variant: small-caps;
   letter-spacing: 1px;
   background-color: #fff;

@@ -193,7 +193,7 @@
 }
 
 .main-service .blog .paragraph {
-	top: 75px;
+	top: 155px;
 	left: -45px;
 }
 
@@ -707,7 +707,7 @@
 
 .blog.service-smm {
 	.paragraph {
-		top: 170px;
+		top: 225px;
 		left: -120px;
 	}
 }
@@ -832,7 +832,7 @@
 
 .service-brief {
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 120px;
 	.brief__content {
 		margin-left: 7%;
 		@include breakpoint(max-width 1200px) {

@@ -107,6 +107,7 @@ svg {
   width: 1100px;
   margin: 0 auto;
   margin-top: 30px;
+  margin-bottom: 120px;
   box-sizing: border-box;
 
   @include breakpoint(max-width 1200px) {
@@ -257,6 +258,7 @@ svg {
   background-color: transparent;
   border: 1px solid #ff5038;
   transition: transform 0.2s;
+  outline: none;
 
   &:hover, &:active, &:focus {
     transform: scale(0.9);
@@ -266,6 +268,11 @@ svg {
   @include breakpoint(max-width 768px) {
     margin-top: 0;
   }
+}
+
+.more_btn:active, .more_btn:focus, .more_btn:hover {
+  background-color: red;
+  color: white;
 }
 
 .grid-item__watch:hover,

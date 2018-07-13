@@ -1,7 +1,7 @@
 .brief_footer {
 	padding-bottom: 100vh;
 	//background-image: url(../img/bgfooter2.png);
-	background-size: cover;
+	background-size: contain;
     padding-bottom: 600px;
 }
 
@@ -40,7 +40,7 @@
 
 @media (max-width: 1000px) {
 	.brief_footer {
-		padding-bottom: 500px;
+		padding-bottom: 600px;
 	}
 
 }
@@ -169,4 +169,8 @@
 	.fab {
 		margin: 2px 10px;
 	}
+}
+
+.fancybox-caption a {
+	padding-left: 5px;
 }

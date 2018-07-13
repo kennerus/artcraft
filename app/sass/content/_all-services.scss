@@ -1,7 +1,12 @@
+.all-services-section {
+  padding-bottom: 55px;
+}
+
 .all-services {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 100px;
 }
 
 .services-bottom {
@@ -10,7 +15,11 @@
   align-items: flex-start;
   position: relative;
   border-right: 1px solid #eeeeee;
-  padding-right: 50px;
+  padding-right: 100px;
+}
+
+.services-text {
+  margin-left: 80px;
 }
 
 .services-bottom .btn_services {
@@ -29,17 +38,19 @@
 }
 
 .services-bottom .activeServices:after {
-  content: "\2192";
-  font-size: 20px;
+  content: "";
+  background: url(../img/right-arrow-act.png) no-repeat;
+  font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 2px;
-  left: 100%;
+  width: 19px;
+  height: 14px;
+  top: 7px;
+  left: 110%;
   color: red;
+  background-size: contain;
 }
 
 .services_item {
@@ -61,8 +72,9 @@
 }
 
 .all-services-section .services_item-p {
-  font-family: GilroyMedium, sans-serif;
+  font-family: GilroyM, sans-serif;
   font-style: normal;
+  line-height: 1.5;
 }
 
 .services_item-ul {
