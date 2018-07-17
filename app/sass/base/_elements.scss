@@ -116,6 +116,7 @@ svg {
 
   @include breakpoint(max-width 768px) {
     padding: 10px;
+    margin-bottom: 0;
   }
 }
 .grid,

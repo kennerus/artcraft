@@ -30,11 +30,19 @@
   margin-bottom: 50px;
   font-weight: 700;
   outline: none;
+  transition: all .2s;
+}
+
+.services-bottom .btn_services:hover {
+  transform: scale(.95);
+  transition: all .2s;
 }
 
 .services-bottom .btn_services.activeServices {
   color: red;
   position: relative;
+  transform: scale(.95);
+  transition: all .2s;
 }
 
 .services-bottom .activeServices:after {
@@ -115,5 +123,44 @@
   .services-bottom {
     align-items: center;
     margin-right: 10px;
+  }
+  .all-services-section .services_item-p {
+    text-align: left;
+  }
+  .services_item-more {
+    margin-left: 0;
+    margin-right: 50%;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-bottom {
+    padding-right: 50px;
+  }
+  .services-text {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-bottom .activeServices:after {
+    left: 98%;
+  }
+  .services-bottom {
+    padding-right: 35px;
+  }
+}
+
+@media (max-width: 400px) {
+  .services-bottom {
+    padding-top: 50px;
+    padding-right: 20px;
+  }
+  .services-bottom .btn_services {
+    font-size: 18px;
+  }
+  .services-text {
+    margin-left: 10px;
   }
 }

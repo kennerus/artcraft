@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "sticky-sidebar": "^3.3.1"
+  },
   "devDependencies": {
     "autoprefixer": "^7.2.6",
     "browser-sync": "^2.24.4",

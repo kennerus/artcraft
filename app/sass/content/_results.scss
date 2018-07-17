@@ -142,3 +142,21 @@
   }
 
 }
+
+@media (max-width: 1200px) {
+  .results__content--images {
+    flex-direction: column;
+  }
+  .results__content--img {
+    width: 100%;
+  }
+  .results__content1 {
+    justify-content: flex-start;
+  }
+  .results__content2 {
+    justify-content: center;
+  }
+  .results__content3 {
+    justify-content: flex-end;
+  }
+}

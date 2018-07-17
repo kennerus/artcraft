@@ -69,6 +69,17 @@ $(function () {
         });
     }
 
+    if($('.dottext').length > 0 || $('.blog__block-text').length > 0) {
+        $('.dottext').dotdotdot({
+            height: 160
+        });
+
+        $('.blog__block-text').dotdotdot({
+            ellipsis: '...',
+            height: 70 * 2
+        });
+    }
+
     $('.brief__form-head input').unbind().blur(function () {
 
         var id = $(this).attr('id');

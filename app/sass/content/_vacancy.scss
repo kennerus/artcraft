@@ -74,11 +74,14 @@
 			position: absolute;
 			right: 35px;
 			bottom: -15px;
-			display: block;
-			width: 140px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 200px;
+			height: 30px;
 			padding: 8px 0;
 			font-family: $GilroySemibold;
-			font-size: 12px;
+			font-size: 16px;
 			color: white;
 			text-align: center;
 			letter-spacing: 1.45px;

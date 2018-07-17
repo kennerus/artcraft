@@ -68,6 +68,7 @@
 
       @include breakpoint(max-width 768px) {
         margin: 0;
+        margin-right: 30px;
       }
       &:focus {
         outline:none;
@@ -289,9 +290,9 @@
 .blog__link,
 .gallery__block-link {
   position: absolute;
-  right: 0;
+  right: 12%;
   left: 0;
-  bottom: 10%;
+  bottom: 20%;
   display: block;
   width: 220px;
   margin: 0 auto;
@@ -337,7 +338,7 @@
 
   .wrap {
     width: 93%;
-    margin-top: 80px;
+    //margin-top: 80px;
 
     @include breakpoint(max-width 576px) {
       margin-top: 25px;
@@ -347,4 +348,10 @@
 
 .blog-main-link {
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .blog .wrap {
+    margin-left: auto;
+  }
 }
