@@ -64,7 +64,7 @@
     position: relative;
     top: 11px;
     z-index: 2;
-    margin-left: 60px;
+    margin-left: 30px;
     @include breakpoint(max-width 992px) {
       flex-direction: column;
       justify-content: space-around;
@@ -152,11 +152,25 @@
   }
   .results__content1 {
     justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  .results__content2 {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .results__content3 {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .results__content1 {
+    justify-content: center;
   }
   .results__content2 {
     justify-content: center;
   }
   .results__content3 {
-    justify-content: flex-end;
+    justify-content: center;
   }
 }

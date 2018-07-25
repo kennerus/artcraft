@@ -37,6 +37,7 @@
 
 .single-p__desc {
 	width: 43%;
+	padding-top: 20px;
 
 	@include breakpoint(max-width 1200px) {
 		width: 50%;

@@ -333,7 +333,7 @@
   }
 
   .blog .paragraph {
-    top: 155px;
+    top: 135px;
   }
 
   .wrap {
@@ -344,6 +344,10 @@
       margin-top: 25px;
     }
   }
+}
+
+.single-post .blog .paragraph {
+  top: 100px;
 }
 
 .blog-main-link {

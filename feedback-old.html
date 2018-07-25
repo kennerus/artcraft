@@ -104,7 +104,7 @@
 </div>
 <!-- end html_open.html-->
 
-<!-- start header-service.html-->
+<!-- start header-feedback.html-->
 <header class="header">
     <div class="header__logo logo"><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a></div>
     <div class="container">
@@ -113,12 +113,12 @@
         <ul class="header__nav">
             <li class="header__logo header__logo_mobile logo"><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a></li>
             <ul class="header__nav-container">
-                <li class="active-page header__nav-li"><a href="services.html">Услуги</a></li>
+                <li class="header__nav-li"><a href="services.html">Услуги</a></li>
                 <li class="header__nav-li"><a class="scroll" href="portfolio.html">Портфолио</a></li>
                 <li class="header__nav-li"><a href="#">Горячие предложения</a></li>
                 <li class="header__nav-li"><a class="scroll" href="blog.html">Блог</a></li>
                 <li class="header__nav-li"><a href="#">Развеивание мифов</a></li>
-                <li class="header__nav-li dropdown">
+                <li class="header__nav-li active-page dropdown">
                     <a class="scroll" href="about.html">О нас</a>
                     <button class="dropdown_mob">></button>
                     <ul class="header__submenu header__submenu_mob">
@@ -146,123 +146,73 @@
         </div>
     </div>
 </header>
-<!-- end header-service.html-->
+<!-- end header-feedback.html-->
 
-<!-- start content-service-corp.html-->
-<main class="main-service">
-	<section class="blog blog__single blog_about">
-		<div class="container">
+<!-- start content-feedback-old.html-->
+<main class="main-feedback">
+	<section class="blog blog__single blog_feedback">
+      	<div class="container">
 
-			<p class="paragraph">Услуги</p>
+            <p class="paragraph">отзывы</p>
 
-			<nav class="broadcrumbs">
-				<a class="broadcrumbs__link" href="index.html">Главная</a>
-				<span class="broadcrumbs__divider"> / </span>
-				<span class="broadcrumbs__curr">О нас</span>
-			</nav>
+            <nav class="broadcrumbs">
+	           	<a class="broadcrumbs__link" href="index.html">Главная</a>
+	           	<span class="broadcrumbs__divider"> / </span>
+	          	<span class="broadcrumbs__curr">Отзывы</span>
+	        </nav>
 
-			<div class="wrap">
-				<div class="tittle">
-					<span>наши услуги</span>
-					<h2>Корпоративные системы</h2>
-				</div>
+            <div class="wrap">
+            	<div class="tittle">
+	                <span>отзывы </span>
+	                <h2>наших клиентов</h2>
+	                <p>
+	                    Мы ответственно относимся к любой работе и уделяем достаточно внимания
+	                    всем клиентам. Поэтому обратившись за продвижением вашего сайта к нам,
+	                    Вы можете быть уверены в том, что специалисты позаботятся о вашем ресурсе.
+	                </p>
+	            </div>
 
-				<div class="store__desc">
-					<p class="store__desc-text">Создание программного обеспечения для автоматизации бизнеса. Выявляем потребности, проектируем, программируем, внедряем и обучаем сотрудников. Вы сможете существенно повысить продуктивность работы сотрудников и отделов, расширить клиентскую базу и увеличить прибыльность предприятия.</p>
-				</div>
+				<div class="brief__content brief__content_feedback">
+					<p class="feedback-form__title">Оставить свой отзыв</p>
 
-				<div class="store">
-					<div class="store__list-wrap">
-						<div class="store__adv">
-							<h4 class="store__list-head">Работа под-ключ</h4>
+		            <form id="form_feedback" class="brief__form form__feedback">
+		            	<div class="brief__form-message brief__form-message_nomargin" lang="ru">
+		                    <label for="message_feedback">Текст вашего отзыва</label>
+		                    <textarea id="message_feedback" placeholder="Ваше сообщение"></textarea>
+		                </div>
 
-							<div class="store__adv-desc">
-								<img class="store__desc-img" src="img/lock.png" alt="">
-								<p class="store__desc-text">Мы осуществляем весь цикл работ от проектирования до публикации. Стоимость фиксируется один раз и не меняется;</p>
-							</div>
-						</div>
+		                <div class="brief__form-head brief__form-head_feedback">
+		                    <div>
+		                        <label for="name_feedback">Ваше имя, фамилия *</label>
+		                        <input id="name_feedback" type="text" placeholder="Ваше имя" required >
+		                    </div>
 
-						<div class="store__adv">
-							<h4 class="store__list-head">Собственное производство</h4>
+		                    <div>
+		                        <label for="site_feedback">Адрес вашего сайта *</label>
+		                        <input id="site_feedback" type="text" placeholder="Адрес вашего сайта" required>
+		                    </div>
 
-							<div class="store__adv-desc">
-								<img class="store__desc-img" src="img/prog.png" alt="">
-								<p class="store__desc-text">Мы — разработчики. Мы не отдаем проекты или часть проектов на суб-подряд. Поэтому мы работаем оперативнее и гибче агентств.</p>
-							</div>
-						</div>
+		                    <div>
+		                        <label for="mail_feedback">Ваш e-mail *</label>
+		                        <input id="mail_feedback" type="email" placeholder="Ваш e-mail" required>
+		                    </div>
 
-						<div class="store__adv">
-							<h4 class="store__list-head">Разрабатываем CRM системы для следующих сфер бизнеса:</h4>
+		                    <div>
+		                        <label for="city_feedback">Ваш город</label>
+		                        <input id="city_feedback" type="text" placeholder="Ваш город">
+		                    </div>
+		                </div>
 
-							<div class="store__adv-desc">
-								<ul class="store__adv-list">
-									<li class="store__adv-elem">Торговли</li>
-									<li class="store__adv-elem">Логистических компаний</li>
-									<li class="store__adv-elem">Застройщиков</li>
-									<li class="store__adv-elem">Служб такси</li>
-									<li class="store__adv-elem">Гостиниц</li>
-									<li class="store__adv-elem">Фармацевических компаний</li>
-									<li class="store__adv-elem">Юридических компаний</li>
-									<li class="store__adv-elem">Автобизнеса</li>
-									<li class="store__adv-elem">Салонов красоты</li>
-									<li class="store__adv-elem">Интернет магазинов</li>
-									<li class="store__adv-elem">Банков</li>
-									<li class="store__adv-elem">Транспортных компаний</li>
-									<li class="store__adv-elem">Турагенств</li>
-									<li class="store__adv-elem">Фитнес клубов</li>
-									<li class="store__adv-elem">Русторанов и кофеен</li>
-									<li class="store__adv-elem">Риэлторов и агенств</li>
-									<li class="store__adv-elem">Недвижимости</li>
-									<li class="store__adv-elem">Call центров</li>
-								</ul>
-							</div>
-						</div>
-						
-					</div>
+		                <div id="uploader" class="uploader"></div>
 
-					<div class="store__gallery">
-						<div class="store__gallery-row">
-							<div class="store__gallery-item store__gallery-item_portfolio store__gallery-item_bigger">
-								<img class="store__gallery-img" src="img/services-img.jpg" alt="">
-								<a class="gallery__block-link" href="service.html">Посмотреть все работы</a>
-							</div>
+		                <div class="brief__form-desc">
+		                    <p><span>*</span> обязательные поля</p>
+		                    <input id="submit_feedback" type="submit" value="Отправить отзыв">
+		                </div>
+		            </form>
+		        </div>
 
-							<div class="store__gallery-item store__gallery-item_smaller">
-								<a href="#">
-									<img class="store__gallery-img" src="img/portfolio-angel.jpg" alt="">
-								</a>
-							</div>
-
-							<div class="store__gallery-item store__gallery-item_hide">
-								<a href="#">
-									<img class="store__gallery-img" src="img/portfolio-scrubb.jpg" alt="">
-								</a>
-							</div>
-						</div>
-
-						<div class="store__gallery-row">
-							<div class="store__gallery-item store__gallery-item_smaller">
-								<a href="#">
-									<img class="store__gallery-img" src="img/portfolio-loft.jpg" alt="">
-								</a>
-							</div>
-
-							<div class="store__gallery-item store__gallery-item_hide">
-								<a href="#">
-									<img class="store__gallery-img" src="img/portfolio-chair.jpg" alt="">
-								</a>
-							</div>
-
-							<div class="store__gallery-item store__gallery-item_brief store__gallery-item_bigger">
-								<h2>
-									<a class="scroll" href="#brief">Заполните <br> бриф</a>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="feedbacks">
+		        <div class="feedbacks">
 		        	<h2 class="feedbacks__title">Благодарные отзывы наших клиентов</h2>
 
 		        	<div class="wrapper">
@@ -446,152 +396,12 @@
 		        	</div>
 		        </div>
 			</div>
-			
-
-		</div>
-	</section>
-	
-<!-- start brief.html-->
-<section class="service-brief" id="brief">
-
-        <div class="container">
-            <div class="brief__head">
-                <p class="paragraph">наш бриф</p>
-                <div class="wrap">
-                    <div class="tittle">
-                        <span class="block_span_title">закажите</span>
-                        <h2 class="block_title">услугу</h2>
-                        <p>
-                            Перестаньте платить деньги за процесс. Получите гарантированный.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="brief__content">
-                <form id="form" class="service__form" enctype="multipart/form-data">
-                    <div class="service__form-head">
-                        <div class="service__form-head_item">
-                            <label for="name">Ваше имя, фамилия *</label>
-                            <input class="service__form_input" id="name" type="text" placeholder="Ваше имя" required >
-                        </div>
-
-                        <div class="service__form-head_item">
-                            <label for="phone">Ваш номер телефона *</label>
-                            <input class="service__form_input js_phone-mask" id="phone" type="tel" placeholder="Номер телефона" required>
-                        </div>
-
-                        <div class="service__form-head_item">
-                            <label for="mail">Ваш e-mail *</label>
-                            <input class="service__form_input" id="mail" type="email" placeholder="Ваш e-mail" required>
-                        </div>
-
-                        <div class="service__form-head_item">
-                            <label for="skype">Ваш skype</label>
-                            <input class="service__form_input" id="skype" type="text" placeholder="Ваш Skype">
-                        </div>
-                    </div>
-
-                    <div class="service__form-radio">
-                        <div class="service__form-radio_text">
-                            <p>Какие услуги Вас интересуют?</p>
-                        </div>
-                        <div class="service__form-radio-button">
-                            <div class="service__form-radio-itemL">
-                                <div class="service__form-radio-item service__form-radio-item1">
-                                    <label class="checkbox-item">Готовое решение
-                                        <input type="checkbox" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-item">Интернет-магазин
-                                        <input type="checkbox" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="service__form-radio-item service__form-radio-item2">
-                                    <label class="checkbox-item">Индивидуальный проект
-                                        <input type="checkbox" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-item">Корпоративные системы
-                                        <input type="checkbox" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="service__form-radio-item service__form-radio-item3">
-                                <label class="checkbox-item">Landing page
-                                    <input type="checkbox" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="checkbox-item">UI/UX Design
-                                    <input type="checkbox" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            </div>
-                            <div class="service__form-radio-itemR">
-                                <div class="service__form-radio-item service__form-radio-item4">
-                                    <label class="checkbox-item">Поддержка
-                                        <input type="checkbox" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-item">Логотип
-                                        <input type="checkbox" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="service__form-radio-item service__form-radio-item5">
-                                    <label class="checkbox-item">Репутационный маркетинг
-                                        <input type="checkbox" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-item">Полиграфическая продукция
-                                        <input type="checkbox" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="service__form-radio-item service__form-radio-item6">
-                                <label class="checkbox-item">Брендинг и айдентика
-                                    <input type="checkbox" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="checkbox-item">Digital Design
-                                    <input type="checkbox" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="service__form-message" lang="ru">
-                        <div class="service__form-textarea">
-                            <label for="message">Сообщение</label>
-                            <textarea id="message" placeholder="Напишите, что считаете нужным"></textarea>
-                        </div>
-                        <div class="service__form-file">
-                            <div class="btn-file__wrap">
-                                <input type="file" class="input-file">
-                                <div class="btn-input-file">
-                                    <img src="img/clip-black.png" alt="" width="25" height="25">
-                                    <span>Прикрепить файл</span>
-                                </div>
-                            </div>
-                            <span class="service__form-files">jpg, jpeg, png. gif, zip, rar, pdf, doc, xls</span>
-                        </div>
-                    </div>
-                    <div class="service__form-desc">
-                        <span class="service__form-desc_span">Нажимая кнопку «Отправить» я даю свое <span class="service__form-desc_red">согласие на обработку персональных данных</span></span>
-                        <input class="service__form-submit" id="submit" type="submit" value="Отправить бриф">
-                    </div>
-                </form>
-            </div>
 
         </div>
-
     </section>
-<!-- end brief.html-->
+
 </main>
-<!-- end content-service-corp.html-->
+<!-- end content-feedback-old.html-->
 
 <!-- start blog.html-->
 <section class="brief brief_footer blog" id="brief">

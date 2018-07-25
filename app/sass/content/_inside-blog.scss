@@ -16,6 +16,7 @@
 
 .blog__single {
   padding-top: 30px;
+  margin-bottom: 60px;
 
   @include breakpoint(max-width 768px) {
     padding-top: 0;

@@ -139,7 +139,7 @@
     z-index: 5
 }
 .slick-next:hover:before {
-    background-image: url(../img/right-arrow.svg);
+    background-image: url(../img/right-arrow-act.png);
 }
 .slick-prev:before {
     position: absolute;
@@ -156,6 +156,55 @@
 .slick-prev:hover:before{
     background-image: url(../img/left-arrow-act.png);
 }
+
+.prevArrow-blog {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+}
+
+.prevArrow-blogsvg {
+  cursor: pointer;
+  width: 30px;
+  height: 27px;
+}
+
+.prevArrow-blogfill {
+  fill: black;
+}
+
+.prevArrow-blog:hover .prevArrow-blogfill {
+  fill: red;
+}
+
+.nextArrow-blog {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  bottom: -15%;
+  left: 7%;
+}
+
+.nextArrow-blogsvg {
+  cursor: pointer;
+  width: 30px;
+  height: 27px;
+}
+
+.nextArrow-blogfill {
+  fill: black;
+}
+
+.nextArrow-blog:hover .nextArrow-blogfill {
+  fill: red;
+}
+
 /* Dots */
 
 .slick-dotted.slick-slider {

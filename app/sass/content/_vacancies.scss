@@ -1,0 +1,128 @@
+.vacancies-section .vacancies-ul-span {
+  font-family: GilroyMedium, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  position: relative;
+  text-transform: none;
+}
+
+.main-service .vacancies-section .paragraph {
+  top: 148px;
+}
+
+.vacancies_item-ul {
+  padding-left: 0;
+}
+
+.vacancies-item-li {
+  list-style: none;
+  font-family: GilroyBold, sans-serif;
+}
+
+.vacancies_item-more {
+  margin-left: 0;
+}
+
+.novelty-text {
+  position: relative;
+  left: -16%;
+  font-family: GilroyRegular,sans-serif;
+  font-size: 16px;
+  color: #818080;
+}
+
+.vacancies-text {
+  position: relative;
+  left: -16%;
+  font-weight: 600;
+  color: #818080
+}
+
+.vacancies-novelty-more {
+  border-radius: 25px;
+}
+
+.vacancies-novelty {
+  position: relative;
+  width: 100%;
+  margin-top: 200px;
+  justify-content: flex-end;;
+}
+
+.vacancies-novelty-img {
+  position: absolute;
+  z-index: 2;
+  margin-right: 70px;
+  left: -32px;
+  top: -130px;
+}
+
+.vacancies-novelty-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50%;
+}
+
+.main-service .vacancies-brief .paragraph {
+  top: 37px;
+}
+
+.vacancies-section .tittle .vacancies-title-p {
+  max-width: 500px;
+}
+
+@media (max-width: 1200px) {
+  .vacancies-novelty-img {
+    left: -120px;
+  }
+  .vacancies-novelty-title {
+    left: -90px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .vacancies-title {
+    right: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .vacancies-novelty-desc {
+    width: 100%;
+    margin-top: 360px;
+  }
+  .vacancies-novelty-img {
+    left: 0;
+  }
+  .vacancies-novelty {
+    margin-bottom: 325px;
+  }
+  .vacancies-text {
+    top: 135%;
+  }
+  .vacancies-novelty-more {
+    top: 165%;
+  }
+  .novelty-text, .vacancies-text{
+    left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 590px) {
+  .vacancies-text {
+    top: 150%;
+  }
+  .vacancies-novelty {
+    margin-bottom: 400px;
+  }
+  .vacancies-novelty-more {
+    top: 173%;
+    left: 25%;
+  }
+  .vacancies-novelty-title {
+    left: 0;
+  }
+}

@@ -104,304 +104,388 @@
 </div>
 <!-- end html_open.html-->
 
-<!-- start header-feedback.html-->
+<!-- start header-vacancies.html-->
 <header class="header">
-    <div class="header__logo logo"><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a></div>
-    <div class="container">
-        <div class="header__mobile-btn"><span></span></div>
+  <div class="header__logo logo"><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a></div>
+  <div class="container">
+    <div class="header__mobile-btn"><span></span></div>
 
-        <ul class="header__nav">
-            <li class="header__logo header__logo_mobile logo"><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a></li>
-            <ul class="header__nav-container">
-                <li class="header__nav-li"><a href="services.html">Услуги</a></li>
-                <li class="header__nav-li"><a class="scroll" href="portfolio.html">Портфолио</a></li>
-                <li class="header__nav-li"><a href="#">Горячие предложения</a></li>
-                <li class="header__nav-li"><a class="scroll" href="blog.html">Блог</a></li>
-                <li class="header__nav-li"><a href="#">Развеивание мифов</a></li>
-                <li class="header__nav-li active-page dropdown">
-                    <a class="scroll" href="about.html">О нас</a>
-                    <button class="dropdown_mob">></button>
-                    <ul class="header__submenu header__submenu_mob">
-                        <li><a href="feedback.html">Отзывы</a></li>
-                        <li><a href="#">Клиенты</a></li>
-                        <li><a href="vacancy.html">Вакансии</a></li>
-                    </ul>
-                </li>
-                <li class="header__nav-li"><a class="scroll" href="#brief">Контакты</a></li>
-            </ul>
-            <li class="header__callback header__callback_mobile">
-                <img class="header__callback_img" src="img/phone-ico.png" alt="">
-                <div class="header__callback_text">
-                    <span class="header__callback_top">+7 (918) 888-22-33</span>
-                    <button class="header__callback_bottom">Заказать обратный звонок</button>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="header__callback">
-        <img class="header__callback_img" src="img/phone-ico2.png" width="50px" height="50px" alt="">
+    <ul class="header__nav">
+      <li class="header__logo header__logo_mobile logo"><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a></li>
+      <ul class="header__nav-container">
+        <li class="header__nav-li"><a href="services.html">Услуги</a></li>
+        <li class="header__nav-li"><a class="scroll" href="portfolio.html">Портфолио</a></li>
+        <li class="header__nav-li"><a href="#">Горячие предложения</a></li>
+        <li class="header__nav-li"><a class="scroll" href="blog.html">Блог</a></li>
+        <li class="header__nav-li"><a href="#">Развеивание мифов</a></li>
+        <li class="active-page header__nav-li dropdown">
+          <a class="scroll" href="about.html">О нас</a>
+          <button class="dropdown_mob">></button>
+          <ul class="header__submenu header__submenu_mob">
+            <li><a href="feedback.html">Отзывы</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="vacancies.html">Вакансии</a></li>
+          </ul>
+        </li>
+        <li class="header__nav-li"><a class="scroll" href="#brief">Контакты</a></li>
+      </ul>
+      <li class="header__callback header__callback_mobile">
+        <img class="header__callback_img" src="img/phone-ico.png" alt="">
         <div class="header__callback_text">
-            <span class="header__callback_top">+7 (918) 888-22-33</span>
-            <button class="header__callback_bottom">Заказать обратный звонок</button>
+          <span class="header__callback_top">+7 (918) 888-22-33</span>
+          <button class="header__callback_bottom">Заказать обратный звонок</button>
         </div>
+      </li>
+    </ul>
+  </div>
+  <div class="header__callback">
+    <img class="header__callback_img" src="img/phone-ico2.png" width="50px" height="50px" alt="">
+    <div class="header__callback_text">
+      <span class="header__callback_top">+7 (918) 888-22-33</span>
+      <button class="header__callback_bottom">Заказать обратный звонок</button>
     </div>
+  </div>
 </header>
-<!-- end header-feedback.html-->
+<!-- end header-vacancies.html-->
+<main class="main-service	">
+<!-- start feedback.html-->
+<section class="service-brief feedback-brief" id="brief">
 
-<!-- start content-feedback.html-->
-<main class="main-feedback">
-	<section class="blog blog__single blog_feedback">
-      	<div class="container">
+  <div class="container">
+    <div class="brief__head">
+      <p class="paragraph">резюме</p>
 
-            <p class="paragraph">отзывы</p>
+      <nav class="broadcrumbs">
+        <a class="broadcrumbs__link" href="index.html">Главная</a>
+        <span class="broadcrumbs__divider"> / </span>
+        <a class="broadcrumbs__link" href="about.html">О нас</a>
+        <span class="broadcrumbs__divider"> / </span>
+        <span class="broadcrumbs__curr">Отзывы</span>
+      </nav>
 
-            <nav class="broadcrumbs">
-	           	<a class="broadcrumbs__link" href="index.html">Главная</a>
-	           	<span class="broadcrumbs__divider"> / </span>
-	          	<span class="broadcrumbs__curr">Отзывы</span>
-	        </nav>
+      <div class="wrap feedback-wrap">
+        <div class="tittle">
+          <span>оставьте</span>
+          <h2>свой отзыв</h2>
+        </div>
+      </div>
+    </div>
+    <div class="brief__content">
+      <form id="form" class="service__form" enctype="multipart/form-data">
+        <div class="service__form-head">
+          <div class="service__form-head_item">
+            <label for="name">Ваше имя, фамилия *</label>
+            <input class="service__form_input" id="name" type="text" placeholder="Ваше имя" required >
+          </div>
 
-            <div class="wrap">
-            	<div class="tittle">
-	                <span>отзывы </span>
-	                <h2>наших клиентов</h2>
-	                <p>
-	                    Мы ответственно относимся к любой работе и уделяем достаточно внимания
-	                    всем клиентам. Поэтому обратившись за продвижением вашего сайта к нам,
-	                    Вы можете быть уверены в том, что специалисты позаботятся о вашем ресурсе.
-	                </p>
-	            </div>
+          <div class="service__form-head_item">
+            <label for="phone">Ваш номер телефона *</label>
+            <input class="service__form_input js_phone-mask" id="phone" type="tel" placeholder="Номер телефона" required>
+          </div>
 
-				<div class="brief__content brief__content_feedback">
-					<p class="feedback-form__title">Оставить свой отзыв</p>
+          <div class="service__form-head_item">
+            <label for="mail">Ваш e-mail *</label>
+            <input class="service__form_input" id="mail" type="email" placeholder="Ваш e-mail" required>
+          </div>
 
-		            <form id="form_feedback" class="brief__form form__feedback">
-		            	<div class="brief__form-message brief__form-message_nomargin" lang="ru">
-		                    <label for="message_feedback">Текст вашего отзыва</label>
-		                    <textarea id="message_feedback" placeholder="Ваше сообщение"></textarea>
-		                </div>
+          <div class="service__form-head_item">
+            <label for="skype">Ваш skype</label>
+            <input class="service__form_input" id="skype" type="text" placeholder="Ваш Skype">
+          </div>
+        </div>
 
-		                <div class="brief__form-head brief__form-head_feedback">
-		                    <div>
-		                        <label for="name_feedback">Ваше имя, фамилия *</label>
-		                        <input id="name_feedback" type="text" placeholder="Ваше имя" required >
-		                    </div>
+        <div class="service__form-message" lang="ru">
+          <div class="service__form-textarea">
+            <label for="message">Текст вашего отзыва</label>
+            <textarea id="message" placeholder="Ваш отзыв"></textarea>
+          </div>
+          <div class="service__form-file">
+            <div class="btn-file__wrap">
+              <input type="file" class="input-file">
+              <div class="btn-input-file">
+                <img src="img/clip-black.png" alt="" width="25" height="25">
+                <span>Прикрепить файл</span>
+              </div>
+            </div>
+            <span class="service__form-files">jpg, jpeg, png. gif, zip, rar, pdf, doc, xls</span>
+          </div>
+        </div>
+        <div class="service__form-desc">
+          <span class="service__form-desc_span">Нажимая кнопку «Отправить» я даю свое <span class="service__form-desc_red">согласие на обработку персональных данных</span></span>
+          <input class="service__form-submit" id="submit" type="submit" value="Опубликовать">
+        </div>
+      </form>
+    </div>
 
-		                    <div>
-		                        <label for="site_feedback">Адрес вашего сайта *</label>
-		                        <input id="site_feedback" type="text" placeholder="Адрес вашего сайта" required>
-		                    </div>
+  </div>
 
-		                    <div>
-		                        <label for="mail_feedback">Ваш e-mail *</label>
-		                        <input id="mail_feedback" type="email" placeholder="Ваш e-mail" required>
-		                    </div>
+</section>
 
-		                    <div>
-		                        <label for="city_feedback">Ваш город</label>
-		                        <input id="city_feedback" type="text" placeholder="Ваш город">
-		                    </div>
-		                </div>
 
-		                <div id="uploader" class="uploader"></div>
+<section class="blog blog__single blog_feedback feedback-section">
+  <div class="container">
 
-		                <div class="brief__form-desc">
-		                    <p><span>*</span> обязательные поля</p>
-		                    <input id="submit_feedback" type="submit" value="Отправить отзыв">
-		                </div>
-		            </form>
-		        </div>
+    <p class="paragraph paragraph-feedback">отзывы о нас</p>
 
-		        <div class="feedbacks">
-		        	<h2 class="feedbacks__title">Благодарные отзывы наших клиентов</h2>
 
-		        	<div class="wrapper">
-		        		<div class="grid grid_feedback">
-		        			<div class="feedback-item">
-		        				<header class="feedback-item__header">
-		        					<div class="feedback-item__site">
-		        						<a class="feedback-item__site-link" href="#">europa-fashion.ru</a>
-		        					</div>
+    <div class="wrap">
+      <div class="tittle">
+        <span>отзывы </span>
+        <h2>наших клиентов</h2>
+        <p>
+          Мы прекрасно понимаем каким должен быть интернет-продукт и как этого добиться.
+          Мы объединяем цифровое мастерство с новаторским мышлением, чтобы
+          реализовать все ваши идеи и пожелания.
+        </p>
+      </div>
+      <div class="feedback-block">
+        <div class="feedback-block-up slider-for">
+          <div class="feedback-up-item">
+            <img src="img/icons/icon-feedback.png">
+            <p class="feedback-p">Легко и приятно работать с командой компании Craft Group. Отдел технической поддержки оперативно
+            решает срочные вопросы по работе с сайтом, с легкостью вносят изменения в дизайн, корректируются и усовершенствуются
+            по необходимости внутренние механизмы нашего сайта.
+            Наш проект в надежных руках команды:)</p>
+          </div>
+          <div class="feedback-up-item">
+            <img src="img/icons/icon-feedback.png">
+            <p class="feedback-p">Легко и приятно работать с командой компании Craft Group. Отдел технической поддержки оперативно
+              решает срочные вопросы по работе с сайтом, с легкостью вносят изменения в дизайн, корректируются и усовершенствуются
+              по необходимости внутренние механизмы нашего сайта.
+              Наш проект в надежных руках</p>
+          </div>
+          <div class="feedback-up-item">
+            <img src="img/icons/icon-feedback.png">
+            <p class="feedback-p">Легко и приятно работать с командой компании Craft Group. Отдел технической поддержки оперативно
+              решает срочные вопросы по работе с сайтом, с легкостью вносят изменения в дизайн, корректируются и усовершенствуются
+              по необходимости внутренние механизмы нашего сайта.
+              Наш проект в надежных</p>
+          </div>
+          <div class="feedback-up-item">
+            <img src="img/icons/icon-feedback.png">
+            <p class="feedback-p">Легко и приятно работать с командой компании Craft Group. Отдел технической поддержки оперативно
+              решает срочные вопросы по работе с сайтом, с легкостью вносят изменения в дизайн, корректируются и усовершенствуются
+              по необходимости внутренние механизмы нашего сайта.
+              Наш проект в</p>
+          </div>
+          <div class="feedback-up-item">
+            <img src="img/icons/icon-feedback.png">
+            <p class="feedback-p">Легко и приятно работать с командой компании Craft Group. Отдел технической поддержки оперативно
+              решает срочные вопросы по работе с сайтом, с легкостью вносят изменения в дизайн, корректируются и усовершенствуются
+              по необходимости внутренние механизмы нашего сайта.
+              Наш проект</p>
+          </div>
+          <div class="feedback-up-item">
+            <img src="img/icons/icon-feedback.png">
+            <p class="feedback-p">Легко и приятно работать с командой компании Craft Group. Отдел технической поддержки оперативно
+              решает срочные вопросы по работе с сайтом, с легкостью вносят изменения в дизайн, корректируются и усовершенствуются
+              по необходимости внутренние механизмы нашего сайта.
+              Наш</p>
+          </div>
+          <div class="feedback-up-item">
+            <img src="img/icons/icon-feedback.png">
+            <p class="feedback-p">Легко и приятно работать с командой компании Craft Group. Отдел технической поддержки оперативно
+              решает срочные вопросы по работе с сайтом, с легкостью вносят изменения в дизайн, корректируются и усовершенствуются
+              по необходимости внутренние механизмы нашего сайта.</p>
+          </div>
+        </div>
+        <div class="feedback-block-down slider-nav">
+          <div class="feedback-down-item">
+            <img class="feedback-down-img" src="img/3.png">
+            <div class="feedback-down-wrap">
+              <p class="feedback-down-name">Олег Краснополяков</p>
+              <p class="feedback-down-site">www.site.ru</p>
+            </div>
+          </div>
+          <div class="feedback-down-item">
+            <img class="feedback-down-img" src="img/3.png">
+            <div class="feedback-down-wrap">
+              <p class="feedback-down-name">Олег Краснополяков</p>
+              <p class="feedback-down-site">www.site.ru</p>
+            </div>
+          </div>
+          <div class="feedback-down-item">
+            <img class="feedback-down-img" src="img/3.png">
+            <div class="feedback-down-wrap">
+              <p class="feedback-down-name">Олег Краснополяков</p>
+              <p class="feedback-down-site">www.site.ru</p>
+            </div>
+          </div>
+          <div class="feedback-down-item">
+            <img class="feedback-down-img" src="img/3.png">
+            <div class="feedback-down-wrap">
+              <p class="feedback-down-name">Олег Краснополяков</p>
+              <p class="feedback-down-site">www.site.ru</p>
+            </div>
+          </div>
+          <div class="feedback-down-item">
+            <img class="feedback-down-img" src="img/3.png">
+            <div class="feedback-down-wrap">
+              <p class="feedback-down-name">Олег Краснополяков</p>
+              <p class="feedback-down-site">www.site.ru</p>
+            </div>
+          </div>
+          <div class="feedback-down-item">
+            <img class="feedback-down-img" src="img/3.png">
+            <div class="feedback-down-wrap">
+              <p class="feedback-down-name">Олег Краснополяков</p>
+              <p class="feedback-down-site">www.site.ru</p>
+            </div>
+          </div>
+          <div class="feedback-down-item">
+            <img class="feedback-down-img" src="img/3.png">
+            <div class="feedback-down-wrap">
+              <p class="feedback-down-name">Олег Краснополяков</p>
+              <p class="feedback-down-site">www.site.ru</p>
+            </div>
+          </div>
+        </div>
+        <hr class="feedback-hr">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end feedback.html-->
 
-		        					<div class="feedback-item__name">
-		        						<p class="feedback-item__name-text">Лариса Мынова (Лоллар, Германия)</p>
-		        					</div>
-		        				</header>
+<!-- start brief.html-->
+<section class="service-brief" id="brief">
 
-		        				<div class="feedback-item__content">
-		        					<div class="feedback-item__desc">
-		        						<p class="feedback-item__text">Легко работать со студией Отдел технической поддержки оперативно решает срочные вопросы по работе с сайтом, с легкостью вносятся изменения в дизайн, корректируются и усовершенствуются по необходимости внутренние механизмы нашего сайта. Наш проект в надежных руках команды:)</p>
-		        					</div>
+        <div class="container">
+            <div class="brief__head">
+                <p class="paragraph">наш бриф</p>
+                <div class="wrap">
+                    <div class="tittle">
+                        <span class="block_span_title">закажите</span>
+                        <h2 class="block_title">услугу</h2>
+                        <p>
+                            Перестаньте платить деньги за процесс. Получите гарантированный.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="brief__content">
+                <form id="form" class="service__form" enctype="multipart/form-data">
+                    <div class="service__form-head">
+                        <div class="service__form-head_item">
+                            <label for="name">Ваше имя, фамилия *</label>
+                            <input class="service__form_input" id="name" type="text" placeholder="Ваше имя" required >
+                        </div>
 
-		        					<div class="feedback-item__from">
-		        						<a class="feedback-item__from-link" href="https://vk.com"><img class="feedback-item__from-img feedback-item__from-img_vk" src="img/vk.svg" alt="">отзыв в группе VK</a>
-		        					</div>
-		        				</div>
-		        			</div>
+                        <div class="service__form-head_item">
+                            <label for="phone">Ваш номер телефона *</label>
+                            <input class="service__form_input js_phone-mask" id="phone" type="tel" placeholder="Номер телефона" required>
+                        </div>
 
-		        			<div class="feedback-item">
-		        				<header class="feedback-item__header">
-		        					<div class="feedback-item__site">
-		        						<a class="feedback-item__site-link" href="#">europa-fashion.ru</a>
-		        					</div>
+                        <div class="service__form-head_item">
+                            <label for="mail">Ваш e-mail *</label>
+                            <input class="service__form_input" id="mail" type="email" placeholder="Ваш e-mail" required>
+                        </div>
 
-		        					<div class="feedback-item__name">
-		        						<p class="feedback-item__name-text">Лариса Мынова (Лоллар, Германия)</p>
-		        					</div>
-		        				</header>
+                        <div class="service__form-head_item">
+                            <label for="skype">Ваш skype</label>
+                            <input class="service__form_input" id="skype" type="text" placeholder="Ваш Skype">
+                        </div>
+                    </div>
 
-		        				<div class="feedback-item__content">
-		        					<div class="feedback-item__desc">
-		        						<p class="feedback-item__text">Легко работать со студией Отдел технической поддержки оперативно решает срочные вопросы по работе с сайтом, с легкостью вносятся изменения в дизайн, корректируются и усовершенствуются по необходимости внутренние механизмы нашего сайта. Наш проект в надежных руках команды:) Легко работать со студией Отдел технической поддержки оперативно решает срочные вопросы по работе с сайтом, с легкостью вносятся изменения в дизайн, корректируются и усовершенствуются по необходимости внутренние механизмы нашего сайта. Наш проект в надежных руках команды:)</p>
-		        					</div>
+                    <div class="service__form-radio">
+                        <div class="service__form-radio_text">
+                            <p>Какие услуги Вас интересуют?</p>
+                        </div>
+                        <div class="service__form-radio-button">
+                            <div class="service__form-radio-itemL">
+                                <div class="service__form-radio-item service__form-radio-item1">
+                                    <label class="checkbox-item">Готовое решение
+                                        <input type="checkbox" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-item">Интернет-магазин
+                                        <input type="checkbox" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="service__form-radio-item service__form-radio-item2">
+                                    <label class="checkbox-item">Индивидуальный проект
+                                        <input type="checkbox" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-item">Корпоративные системы
+                                        <input type="checkbox" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="service__form-radio-item service__form-radio-item3">
+                                <label class="checkbox-item">Landing page
+                                    <input type="checkbox" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-item">UI/UX Design
+                                    <input type="checkbox" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            </div>
+                            <div class="service__form-radio-itemR">
+                                <div class="service__form-radio-item service__form-radio-item4">
+                                    <label class="checkbox-item">Поддержка
+                                        <input type="checkbox" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-item">Логотип
+                                        <input type="checkbox" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="service__form-radio-item service__form-radio-item5">
+                                    <label class="checkbox-item">Репутационный маркетинг
+                                        <input type="checkbox" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-item">Полиграфическая продукция
+                                        <input type="checkbox" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="service__form-radio-item service__form-radio-item6">
+                                <label class="checkbox-item">Брендинг и айдентика
+                                    <input type="checkbox" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-item">Digital Design
+                                    <input type="checkbox" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
 
-		        					<div class="feedback-item__from">
-		        						<a class="feedback-item__from-link" href="https://vk.com"><img class="feedback-item__from-img feedback-item__from-img_vk" src="img/vk.svg" alt="">отзыв в группе VK</a>
-		        					</div>
-		        				</div>
-		        			</div>
-
-		        			<div class="feedback-item feedback_soc">
-		        				<header class="feedback-item__header">
-		        					<div class="feedback-item__site">
-		        						<a class="feedback-item__site-link" href="#">europa-fashion.ru</a>
-		        					</div>
-
-		        					<div class="feedback-item__name">
-		        						<p class="feedback-item__name-text">Лариса Мынова (Лоллар, Германия)</p>
-		        					</div>
-		        				</header>
-
-		        				<div class="feedback-item__content">
-		        					<div class="feedback-item__desc">
-		        						<p class="feedback-item__text">Легко работать со студией Отдел технической поддержки оперативно решает срочные вопросы по работе с сайтом, с легкостью вносятся изменения в дизайн, корректируются и усовершенствуются по необходимости внутренние механизмы нашего сайта. Наш проект в надежных руках команды:)</p>
-		        					</div>
-
-		        					<div class="feedback-item__from">
-		        						<a class="feedback-item__from-link" href="https://vk.com"><img class="feedback-item__from-img feedback-item__from-img_vk" src="img/vk.svg" alt="">отзыв в группе VK</a>
-		        					</div>
-		        				</div>
-		        			</div>
-
-		        			<div class="feedback-item">
-		        				<header class="feedback-item__header">
-		        					<div class="feedback-item__site">
-		        						<a class="feedback-item__site-link" href="#">europa-fashion.ru</a>
-		        					</div>
-
-		        					<div class="feedback-item__name">
-		        						<p class="feedback-item__name-text">Лариса Мынова (Лоллар, Германия)</p>
-		        					</div>
-		        				</header>
-
-		        				<div class="feedback-item__content">
-		        					<div class="feedback-item__desc">
-		        						<p class="feedback-item__text">Легко работать со студией Отдел технической поддержки оперативно решает срочные вопросы по работе с сайтом, с легкостью вносятся изменения в дизайн, корректируются и усовершенствуются по необходимости внутренние механизмы нашего сайта. Наш проект в надежных руках команды:)Легко работать со студией Отдел технической поддержки оперативно решает срочные вопросы по работе с сайтом, с легкостью вносятся изменения в дизайн, корректируются и усовершенствуются по необходимости внутренние механизмы нашего сайта. Наш проект в надежных руках команды:)Легко работать со студией Отдел технической поддержки оперативно решает срочные вопросы по работе с сайтом, с легкостью вносятся изменения в дизайн, корректируются и усовершенствуются по необходимости внутренние механизмы нашего сайта. Наш проект в надежных руках команды:)Легко работать со студией Отдел технической поддержки оперативно решает срочные вопросы по работе с сайтом, с легкостью вносятся изменения в дизайн, корректируются и усовершенствуются по необходимости внутренние механизмы нашего сайта. Наш проект в надежных руках команды:)Легко работать со студией Отдел технической поддержки оперативно решает срочные вопросы по работе с сайтом, с легкостью вносятся изменения в дизайн, корректируются и усовершенствуются по необходимости внутренние механизмы нашего сайта. Наш проект в надежных руках команды:)</p>
-		        					</div>
-
-		        					<div class="feedback-item__from">
-		        						<a class="feedback-item__from-link" href="https://vk.com"><img class="feedback-item__from-img feedback-item__from-img_vk" src="img/vk.svg" alt="">отзыв в группе VK</a>
-		        					</div>
-		        				</div>
-		        			</div>
-
-		        			<div class="feedback-item">
-		        				<header class="feedback-item__header">
-		        					<div class="feedback-item__site">
-		        						<a class="feedback-item__site-link" href="#">europa-fashion.ru</a>
-		        					</div>
-
-		        					<div class="feedback-item__name">
-		        						<p class="feedback-item__name-text">Лариса Мынова (Лоллар, Германия)</p>
-		        					</div>
-		        				</header>
-
-		        				<div class="feedback-item__content">
-		        					<div class="feedback-item__desc">
-		        						<img src="img/feedback-woman.jpg" alt="">
-		        					</div>
-
-		        					<div class="feedback-item__from">
-		        						<a class="feedback-item__from-link" href="https://vk.com"><img class="feedback-item__from-img feedback-item__from-img_vk" src="img/vk.svg" alt="">отзыв в группе VK</a>
-		        					</div>
-		        				</div>
-		        			</div>
-
-		        			<div class="feedback-item feedback_soc">
-		        				<header class="feedback-item__header">
-		        					<div class="feedback-item__site">
-		        						<a class="feedback-item__site-link" href="#">europa-fashion.ru</a>
-		        					</div>
-
-		        					<div class="feedback-item__name">
-		        						<p class="feedback-item__name-text">Лариса Мынова (Лоллар, Германия)</p>
-		        					</div>
-		        				</header>
-
-		        				<div class="feedback-item__content">
-		        					<div class="feedback-item__desc">
-		        						<img src="img/feedback-sert.jpg" alt="">
-		        					</div>
-
-		        					<div class="feedback-item__from">
-		        						<a class="feedback-item__from-link" href="https://vk.com"><img class="feedback-item__from-img feedback-item__from-img_vk" src="img/vk.svg" alt="">отзыв в группе VK</a>
-		        					</div>
-		        				</div>
-		        			</div>
-
-		        			<div class="feedback-item">
-		        				<header class="feedback-item__header">
-		        					<div class="feedback-item__site">
-		        						<a class="feedback-item__site-link" href="#">europa-fashion.ru</a>
-		        					</div>
-
-		        					<div class="feedback-item__name">
-		        						<p class="feedback-item__name-text">Лариса Мынова (Лоллар, Германия)</p>
-		        					</div>
-		        				</header>
-
-		        				<div class="feedback-item__content">
-		        					<div class="feedback-item__desc">
-		        						<p class="feedback-item__text">Легко работать со студией Отдел технической поддержки оперативно решает срочные вопросы по работе с сайтом, с легкостью вносятся изменения в дизайн, корректируются и усовершенствуются по необходимости внутренние механизмы нашего сайта. Наш проект в надежных руках команды:)</p>
-		        					</div>
-
-		        					<div class="feedback-item__from">
-		        						<a class="feedback-item__from-link" href="https://vk.com"><img class="feedback-item__from-img feedback-item__from-img_vk" src="img/vk.svg" alt="">отзыв в группе VK</a>
-		        					</div>
-		        				</div>
-		        			</div>
-
-		        			<div class="feedback-item">
-		        				<header class="feedback-item__header">
-		        					<div class="feedback-item__site">
-		        						<a class="feedback-item__site-link" href="#">europa-fashion.ru</a>
-		        					</div>
-
-		        					<div class="feedback-item__name">
-		        						<p class="feedback-item__name-text">Лариса Мынова (Лоллар, Германия)</p>
-		        					</div>
-		        				</header>
-
-		        				<div class="feedback-item__content">
-		        					<div class="feedback-item__desc">
-		        						<p class="feedback-item__text">Легко работать со студией Отдел технической поддержки оперативно решает срочные вопросы по работе с сайтом, с легкостью вносятся изменения в дизайн, корректируются и усовершенствуются по необходимости внутренние механизмы нашего сайта. Наш проект в надежных руках команды:) Легко работать со студией Отдел технической поддержки оперативно решает срочные вопросы по работе с сайтом, с легкостью вносятся изменения в дизайн, корректируются и усовершенствуются по необходимости внутренние механизмы нашего сайта. Наш проект в надежных руках команды:) Легко работать со студией Отдел технической поддержки оперативно решает срочные вопросы по работе с сайтом, с легкостью вносятся изменения в дизайн, корректируются и усовершенствуются по необходимости внутренние механизмы нашего сайта. Наш проект в надежных руках команды:)</p>
-		        					</div>
-
-		        					<div class="feedback-item__from">
-		        						<a class="feedback-item__from-link" href="https://vk.com"><img class="feedback-item__from-img feedback-item__from-img_vk" src="img/vk.svg" alt="">отзыв в группе VK</a>
-		        					</div>
-		        				</div>
-		        			</div>
-		        		</div>
-		        	</div>
-		        </div>
-			</div>
+                    <div class="service__form-message" lang="ru">
+                        <div class="service__form-textarea">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" placeholder="Напишите, что считаете нужным"></textarea>
+                        </div>
+                        <div class="service__form-file">
+                            <div class="btn-file__wrap">
+                                <input type="file" class="input-file">
+                                <div class="btn-input-file">
+                                    <img src="img/clip-black.png" alt="" width="25" height="25">
+                                    <span>Прикрепить файл</span>
+                                </div>
+                            </div>
+                            <span class="service__form-files">jpg, jpeg, png. gif, zip, rar, pdf, doc, xls</span>
+                        </div>
+                    </div>
+                    <div class="service__form-desc">
+                        <span class="service__form-desc_span">Нажимая кнопку «Отправить» я даю свое <span class="service__form-desc_red">согласие на обработку персональных данных</span></span>
+                        <input class="service__form-submit" id="submit" type="submit" value="Отправить бриф">
+                    </div>
+                </form>
+            </div>
 
         </div>
-    </section>
 
-</main>
-<!-- end content-feedback.html-->
+    </section>
+<!-- end brief.html-->
 
 <!-- start blog.html-->
 <section class="brief brief_footer blog" id="brief">
@@ -409,7 +493,7 @@
 
     <div class="container">
 
-        <p class="paragraph">наш блог</p>
+        <p class="paragraph paragraph-blog">наш блог</p>
 
         <div class="wrap">
 
@@ -515,28 +599,26 @@
 </section>
 <!-- end blog.html-->
 
-<!-- start html_close-feedback.html-->
+</main>
+
+<!-- start html_close.html-->
 <script src='js/jquery-3.2.1.min.js' type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 <script src="js/slick.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-<script src="js/fine-uploader.min.js"></script>
+<script src="js/jquery.dotdotdot.js"></script>
 <script src="js/fine-uploader.min.js"></script>
 <script src="js/jquery.inputmask.bundle.js"></script>
 <script src="js/phone.js"></script>
 <script src="js/phone-ru.js"></script>
-<script src="js/script.min.js"></script>
-<script>
-	$('.grid').imagesLoaded( function() {
-        $('.grid').masonry({
-            itemSelector: '.feedback-item',
-            percentPosition: true
-        });
-    });
-    
-</script>
+<script src="js/script.min.js" type="text/javascript"></script>
+<script src="js/jquery.sticky-sidebar.js"></script>
+<script src="js/sticky-script.js"></script>
+<script src="js/slick-feedback.js"></script>
 <a href="#" class="scrollup"></a>
+
+
+
 </body>
 </html>
-<!-- end html_close-feedback.html-->
+<!-- end html_close.html-->
+

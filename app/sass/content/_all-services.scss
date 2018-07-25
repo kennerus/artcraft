@@ -1,12 +1,17 @@
 .all-services-section {
   padding-bottom: 55px;
+  margin-bottom: 70px;
+}
+
+.wrap-services {
+  margin-top: 60px;
 }
 
 .all-services {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .services-bottom {
@@ -80,7 +85,7 @@
 }
 
 .all-services-section .services_item-p {
-  font-family: GilroyM, sans-serif;
+  font-family: GilroyRegular,sans-serif;
   font-style: normal;
   line-height: 1.5;
 }

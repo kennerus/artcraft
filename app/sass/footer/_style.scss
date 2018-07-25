@@ -14,30 +14,35 @@
 @media (max-width: 6000px) {
 	.brief_footer {
 		padding-bottom: 1435px;
+		background-size: cover;
 	}
 }
 
 @media (max-width: 2000px) {
 	.brief_footer {
 		padding-bottom: 700px;
+      background-size: contain;
 	}
 }
 
 @media (max-width: 1500px) {
 	.brief_footer {
 		padding-bottom: 620px;
+      background-size: contain;
 	}
 }
 
 @media (max-width: 1200px) {
 	.brief_footer {
 		padding-bottom: 480px;
+      background-size: contain;
 	}
 }
 
 @media (max-width: 1000px) {
 	.brief_footer {
 		padding-bottom: 600px;
+      background-size: contain;
 	}
 
 }
@@ -75,7 +80,7 @@
 }
 
 .fab {
-	border: 1px solid #4c5a60;
+	border: 1px solid #ffffff;
 	border-radius: 50%;
 	height: 25px;
 	width: 25px;
@@ -88,11 +93,12 @@
 	position: relative;
 	top: 5px;
 	left: 3px;
-	color: #65747c;
+	color: #ffffff;
 }
 
 .fab:hover {
-	border: 1px solid #ffffff;
+	border: 1px solid #ff4834;
+	background-color: #ff4834;
 }
 
 .fa-vk:hover:before {
@@ -103,7 +109,7 @@
 	position: relative;
 	top: 5px;
 	left: 8px;
-	color: #65747c;
+	color: #ffffff;
 }
 
 .fa-facebook-f:hover:before {
@@ -112,9 +118,9 @@
 
 .fa-instagram:before {
 	position: relative;
-	top: 5px;
-	left: 5px;
-	color: #65747c;
+	top: 4px;
+	left: 5.3px;
+	color: #ffffff;
 }
 
 .fa-instagram:hover:before {

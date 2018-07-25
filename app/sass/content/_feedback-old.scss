@@ -1,0 +1,185 @@
+.main-feedback {
+	.blog {
+		.paragraph {
+			top: 115px;
+			left: -22px;
+		}
+	}
+}
+
+.blog_feedback {
+	padding-bottom: 0;
+}
+
+.brief__form-head_feedback {
+	margin-top: 20px;
+
+	div {
+		width: 45%;
+
+		@include breakpoint(max-width 768px) {
+			width: 100%;
+		}
+	}
+
+	input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+    	width: 100%;
+    }
+
+    textarea {
+    	min-height: 150px;
+    }
+}
+
+.brief__content_feedback {
+	position: relative;
+	display: flex;
+}
+
+.feedback-form__title {
+	position: absolute;
+	top: 195px;
+	left: -118px;
+	margin: 0;
+	font-family: $GilroyMedium;
+	font-size: 26px;
+	transform: rotate(-90deg);
+
+	@include breakpoint(max-width 768px) {
+		display: none;
+	}
+}
+
+.form__feedback {
+	width: 100%;
+	margin-left: 40px;
+
+	@include breakpoint(max-width 768px) {
+		margin-left: 0;
+	}
+}
+
+.brief__form-message_nomargin {
+	margin-top: 0;
+}
+
+.feedbacks {
+	margin-top: 60px;
+
+	&__title {
+		margin: 0;
+		font-family: $GilroySemibold;
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+}
+
+.feedback-item {
+	margin-top: 0;
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__site-link {
+		display: inline-block;
+		font-size: 12px;
+		color: #282828;
+			
+		&:hover, &:active, &:focus {
+			text-decoration: underline;
+		}
+	}
+
+	&__name-text {
+		margin: 0;
+		font-family: $GilroyBold;
+		font-size: 12px;
+		color: $red;
+		line-height: 1;
+	}
+
+	&__desc {
+		position: relative;
+		padding: 15px;
+		background-color: #eff0f4;
+		border-radius: 10px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: -21px;
+			left: 50px;
+			width: 1px;
+			height: 1px;
+			border: 10px solid transparent;
+			border-bottom: 10px solid #eff0f4; 
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 20px;
+	}
+
+	&__text {
+		margin: 0;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	
+	// not vk feedback
+	&__from {
+		display: none;
+
+		&-img {
+			width: 15px;
+			height: 15px;
+			margin-right: 10px;
+			padding: 3px;
+			border-radius: 50%;
+			transition: all 0.2s;
+
+			&_vk {
+				background-color: #4a76a8;
+			}
+		}
+
+		&-link {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			font-size: 12px;
+			text-transform: uppercase;
+			line-height: 1;
+			color: #282828;
+
+			&:hover, &:active, &:focus {
+				text-decoration: underline;
+
+				.feedback__from-img {
+					transform: scale(0.9);
+					transition: all 0.2s;
+				}
+			}
+		}
+	}
+	
+	// vk feedback
+	&_soc {
+		.feedback__from {
+			display: block;
+			margin-top: 10px;
+		}
+	}
+}
