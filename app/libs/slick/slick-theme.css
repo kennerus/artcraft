@@ -270,3 +270,12 @@
     opacity: .75;
     color: black;
 }
+
+@media (max-width: 768px) {
+  .prevArrow-blog {
+    left: 13%;
+  }
+  .nextArrow-blog {
+    left: 73%;
+  }
+}

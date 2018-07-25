@@ -51,6 +51,9 @@
         @include breakpoint(max-width 770px) {
           margin-top: 80px;
         }
+        @include breakpoint(max-width 576px) {
+          margin-left: 30px;
+        }
       }
       @include breakpoint(max-width 768px) {
         margin: 0 auto;

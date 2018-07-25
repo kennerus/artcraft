@@ -254,11 +254,15 @@ $(function () {
         var headerParent = $(this).parents('.header');
         var hiddenElements = headerParent.find('.header__nav-li > a');
         var submenu = headerParent.find('.header__submenu');
+        var headLogo = headerParent.find('.header__logo');
+        var headerCallback = headerParent.find('.header__callback');
         var closeBtn = headerParent.find('.header__mobile-btn');
         var dropdownBtn = headerParent.find('.dropdown_mob');
 
         hiddenElements.addClass('hidden_links');
         dropdownBtn.addClass('hidden_links');
+        headLogo.addClass('hidden_links');
+        headerCallback.addClass('hidden_links');
         submenu.css('display', 'flex');
 
         closeBtn.removeClass('header__mobile-btn--active');
@@ -269,10 +273,14 @@ $(function () {
         var headerParent = $(this).parents('.header');
         var hiddenElements = headerParent.find('.header__nav-li > a');
         var submenu = headerParent.find('.header__submenu');
+        var headLogo = headerParent.find('.header__logo');
+        var headerCallback = headerParent.find('.header__callback');
         var dropdownBtn = headerParent.find('.dropdown_mob');
 
         hiddenElements.removeClass('hidden_links');
         dropdownBtn.removeClass('hidden_links');
+        headLogo.removeClass('hidden_links');
+        headerCallback.removeClass('hidden_links');
         submenu.css('display', 'none');
 
         $(this).addClass('header__mobile-btn--active');
@@ -338,7 +346,7 @@ $(document).on('click', '.js_header', function () {
     themeBody.toggleClass('header-wrapper-up');
 });
 
-$(document).on('click', '.js_headerIndex', function () {
+$(document).on('click', '.js_header', function () {
     var navMenu = $('.header__overlay');
     navMenu.toggleClass('js-nav-menu-down');
     navMenu.toggleClass('js-nav-menu-up');
