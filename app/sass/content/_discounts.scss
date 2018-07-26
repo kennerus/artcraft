@@ -44,7 +44,7 @@
   .discounts__gallery {
       display: -ms-grid;
       display: grid;  
-      grid-gap: 8px 0.5vw;
+      grid-gap: 8px 1vw;
       grid-template-columns: 25vw 18vw 18vw 18vw 16vw;
       grid-template-rows: 13.8vw 13.8vw; 
       @include breakpoint(max-width 1800px) {
@@ -65,8 +65,8 @@
          grid-template-rows: 58.8vw 33.8vw 33.8vw; 
       }
       @include breakpoint(max-width 600px) {
-         grid-template-columns: 6vw 86vw 6vw;
-         grid-template-rows: 100vw 100vw 60vw 60vw 130vw; 
+         grid-template-columns: 2vw 95vw 2vw;
+         grid-template-rows: 110vw 100vw 60vw 60vw 130vw;
       }
     }
     .discounts__block {

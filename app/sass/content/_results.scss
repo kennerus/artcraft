@@ -57,6 +57,7 @@
         width: 100%;
         min-width: inherit;
         left: 0;
+        margin: 14px;
       }
     }
   }
@@ -121,6 +122,8 @@
         }
       }
       p {
+        margin: 14px;
+        text-align: center;
         font-family: $GilroyLight;
         font-size: 15px;
         color: $darkGrey;
@@ -172,5 +175,8 @@
   }
   .results__content3 {
     justify-content: center;
+  }
+  .results__content--main p {
+    text-align: center;
   }
 }

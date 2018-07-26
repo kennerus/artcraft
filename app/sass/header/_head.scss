@@ -1,3 +1,11 @@
+body.fixedHeader {
+  overflow: hidden;
+}
+
+body.unFixedHeader {
+  overflow: visible;
+}
+
 .header {
   position: relative;
   z-index: 5;
@@ -573,6 +581,14 @@
   height: 100%;
   opacity: 1;
   transition: all .7s;
+}
+
+.header-phone {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 18px -4px red;
 }
 
 @media (max-width: 992px) and (min-height: 400px) {

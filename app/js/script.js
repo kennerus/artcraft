@@ -45,17 +45,25 @@ $(function () {
           '</svg></button>',
             responsive: [
                 {
-                    breakpoint: 768,
+                    breakpoint: 1000,
                     settings: {
-                        variableWidth: false,
-                        slidesToShow: 2
+                        variableWidth: true,
+                        slidesToShow: 1
                     }
                 },
+
+              {
+                breakpoint: 768,
+                settings: {
+                  variableWidth: false,
+                  slidesToShow: 2
+                }
+              },
 
                 {
                     breakpoint: 576,
                     settings: {
-                        variableWidth: false,
+                        variableWidth: true,
                         slidesToShow: 1
                     }
                 }
@@ -350,4 +358,10 @@ $(document).on('click', '.js_header', function () {
     var navMenu = $('.header__overlay');
     navMenu.toggleClass('js-nav-menu-down');
     navMenu.toggleClass('js-nav-menu-up');
+});
+
+$(document).on('click', '.header__mobile-btn', function () {
+  var fixedHeader = $('body');
+  fixedHeader.toggleClass('fixedHeader');
+  fixedHeader.toggleClass('unFixedHeader');
 });

@@ -46,13 +46,13 @@
       .slick-list {
         margin-left: 437px;
         @include breakpoint(max-width 1024px) {
-          margin: 300px auto 0;
+          margin: 0 auto 0 440px;
         }
         @include breakpoint(max-width 770px) {
-          margin-top: 80px;
+          margin-top: 30px;
         }
         @include breakpoint(max-width 576px) {
-          margin-left: 30px;
+          margin-left: 10px;
         }
       }
       @include breakpoint(max-width 768px) {
@@ -60,6 +60,7 @@
         .slick-list {
           padding: 30px 0 !important;
           width: auto !important;
+          margin: 0 10px;
         }
       }
     }

@@ -92,6 +92,7 @@
 
       @include breakpoint(max-width 992px) {
         min-width: inherit;
+        margin: 14px;
       }
     }
   }
@@ -320,6 +321,7 @@
 
         .portfolio-link {
           grid-row: 1;
+          margin: 0 9px;
         }
 
         .portfolio-loft {
