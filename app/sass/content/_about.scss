@@ -166,6 +166,7 @@
 		&-img {
 			padding-top: 15px;
 			padding-bottom: 5px;
+			width: 100%;
 			background-color: $red;
 		}
 
@@ -243,6 +244,8 @@
 			width: 51%;
 			margin: 0 auto;
 			margin-top: 20px;
+      display: flex;
+      justify-content: center;
 
 			&:last-child {
 				margin-right: auto;
