@@ -51,10 +51,10 @@
         grid-template-columns: 22vw 19vw 19vw 19vw 17vw;
       }
       @include breakpoint(max-width 1600px) {
-        grid-template-columns: 18vw 20vw 20vw 20vw 18vw;
+        grid-template-columns: 16vw 20vw 20vw 20vw 18vw;
       }
       @include breakpoint(max-width 1400px) {
-        grid-template-columns: 14.8vw 21vw 21vw 21vw 19vw;
+        grid-template-columns: 11.8vw 21vw 21vw 21vw 19vw;
       }
       @include breakpoint(max-width 1024px) {
         grid-template-columns: 15vw 27vw 13.5vw 13.5vw 27vw;

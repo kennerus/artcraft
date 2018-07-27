@@ -807,7 +807,7 @@
 		position: relative;
 		bottom: 10%;
 		left: 8%;
-		width: 50%;
+		width: 40%;
 		color: #fff;
 		font-weight: 700;
 		font-size: 18px;
@@ -845,8 +845,11 @@
 	.brief__content {
 		margin-left: 7%;
 		@include breakpoint(max-width 1200px) {
-			margin: 30px auto 0;
+			margin: 30px 70px 0;
 		}
+    @include breakpoint(max-width 768px) {
+      margin: 30px auto 0;
+    }
 	}
 	.paragraph {
 		top: 47px;
@@ -1124,6 +1127,18 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .service__form-file {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service__form-file {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 400px) {
   .novelty {
     margin-bottom: 180px;
@@ -1134,5 +1149,14 @@
     top: 135%;
     left: 20%;
     right: 20%;
+  }
+}
+
+@media (max-width: 376px) {
+  .blog__block-link_main {
+    margin-left: 10px;
+  }
+  .blog__block-link_main img {
+    width: 97%;
   }
 }

@@ -22,7 +22,7 @@ $time-step: $time/$max;
 .text {
   font-size: 130px;
   fill: none;
-  stroke-width: 2.5;
+  //stroke-width: 2.5;
   stroke-linejoin: round;
   stroke-dasharray: $dash $dash-space;
   stroke-dashoffset: 0;
@@ -315,7 +315,7 @@ svg {
     counter-increment: counter;
     content: '0' counter(counter);
     position: absolute;
-    top: 2px;
+    top: 0;
     left: -84px;
   }
   &:after {
@@ -689,8 +689,7 @@ svg {
     input[type="text"],
     input[type="tel"],
     input[type="email"],
-    textarea,
-     {
+    textarea {
       position: relative;
       width: 290px;
       margin-top: 5px;

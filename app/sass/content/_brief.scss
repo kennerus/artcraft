@@ -115,9 +115,9 @@
     }
 
     @include breakpoint(max-width 600px) {
-      bottom: 430px;
+      bottom: 350px;
       top: auto;
-      font-size: 5vw;
+      font-size: 10vw;
     }
 
     span {
@@ -246,7 +246,11 @@
     }
     @include breakpoint(max-width 600px) {
       width: 200px;
-      bottom: 150px;
+      bottom: 120px;
+    }
+    @include breakpoint(max-width 320px) {
+      bottom: 95px;
+      right: 25%;
     }
   }
 }

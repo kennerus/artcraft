@@ -14,3 +14,9 @@
 .wrap {
   margin-left: 7%;
 }
+
+@media (max-width: 768px) {
+  .wrap {
+    margin-left: 0;
+  }
+}
