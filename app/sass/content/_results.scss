@@ -186,3 +186,9 @@
     text-align: center;
   }
 }
+
+@media (max-width: 320px) {
+  .results__content--img img {
+    width: 100%;
+  }
+}
