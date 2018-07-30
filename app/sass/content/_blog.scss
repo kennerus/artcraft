@@ -361,5 +361,12 @@
 @media (max-width: 768px) {
   .blog .wrap {
     margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 376px) {
+  .blog__slider--slide .slide__title .slide__post-title {
+    width: 250px;
   }
 }

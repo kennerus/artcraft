@@ -33,6 +33,10 @@
       @include breakpoint(max-width 576px) {
         margin-left: 0;
       }
+      @include breakpoint(max-width 376px) {
+        height: 80px;
+        margin-top: 18px;
+      }
     }
 
     span {
@@ -54,7 +58,7 @@
       }
       @include breakpoint(max-width 992px) {
         max-width: 600px;
-        width: 100%;
+        width: 93%;
         min-width: inherit;
         left: 0;
         margin: 14px;
