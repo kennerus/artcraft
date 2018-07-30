@@ -380,6 +380,7 @@
 
   .balloon {
     position: absolute;
+    z-index: 1;
     left: 30%;
     width: 15%;
     animation: flying 50s linear infinite;
@@ -392,6 +393,7 @@
   .clouds {
     display: block;
     position: absolute;
+    z-index: 1;
     left: 0;
     width: 100%;
     bottom: 0;
@@ -580,15 +582,19 @@
 }
 
 .js-nav-menu-up {
-  //height: 100%;
-  opacity: 0;
-  transition: all .7s;
+  height: 100%;
+  //opacity: 0;
+  //z-index: -999;
+  visibility: hidden;
+  transition: all 0.5s;
 }
 
 .js-nav-menu-down {
   height: 100%;
-  opacity: 1;
-  transition: all .7s;
+  z-index: 5;
+  //opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
 }
 
 .header-phone {
