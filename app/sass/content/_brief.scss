@@ -323,6 +323,7 @@
 @media (max-width: 768px) {
   .main__single-p .wrap {
     margin-top: 60px;
+    flex-direction: column-reverse;
   }
 }
 
