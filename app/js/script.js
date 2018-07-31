@@ -229,14 +229,13 @@ $(function () {
   });
 
 
-  if ($(window).width() > 1024) {
-    $(document).on('click', '.js_header', function () {
-      $('.header__nav').slideToggle().css('display', 'flex');
-      $('.header__logo, .header__callback').toggleClass('header__index-appear');
-      // $('.header__overlay').slideToggle(100);
-    });
-  }
-  ;
+  // if ($(window).width() > 1024) {
+  //   $(document).on('click', '.js_header', function () {
+  //     $('.header__nav').slideToggle().css('display', 'flex');
+  //     // $('.header__logo, .header__callback').toggleClass('header__index-appear');
+  //     // $('.header__overlay').slideToggle(100);
+  //   });
+  // };
 
 
   $(document).on('mouseenter', '.dropdown', function () {
@@ -318,16 +317,33 @@ $(function () {
     return false;
   });
 
-  // close menu at mobile
-  $(document).on('click', '.scroll', function () {
+  // menu toggle
+  $(document).on('click', '.js_header', function () {
+    var themeBody = $('.js_header');
+    var overlay = $('.header__overlay');
+    var headNav = $('.header__nav');
+    headNav.slideToggle().css('display', 'flex');
+    themeBody.toggleClass(' header-wrapper-active');
+    // overlay.fadeIn("slow");
+    if ( $(".js_header").hasClass("header-wrapper-active") ) {
+      overlay.fadeIn("slow");
+    } else {
+      overlay.fadeOut("slow");
+    }
+  });
+
+  // close menu
+  $(document).on('click', '.scroll', function (event) {
+    event.preventDefault();
+    var themeBody = $('.js_header');
+    var overlay = $('.header__overlay');
+    var headNav = $('.header__nav');
     if ($(window).width < 992) {
       $('.header__mobile-btn').removeClass('header__mobile-btn--active');
-      $('.js_nav').slideUp().css('display', 'none');
     }
-    else {
-      $('.js_nav').slideUp();
-      $('.header__overlay').slideUp();
-    }
+    headNav.slideToggle().css('display', 'flex');
+    themeBody.removeClass(' header-wrapper-active');
+    overlay.fadeOut("slow");
   });
 });
 
@@ -353,12 +369,3 @@ function resize() {
 if (gallery) {
   resize();
 }
-
-$(document).on('click', '.js_header', function () {
-  var themeBody = $('.js_header');
-  var navMenu = $('.header__overlay');
-  themeBody.toggleClass('header-wrapper-down');
-  themeBody.toggleClass('header-wrapper-up');
-  navMenu.toggleClass('js-nav-menu-down');
-  navMenu.toggleClass('js-nav-menu-up');
-});

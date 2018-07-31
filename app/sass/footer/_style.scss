@@ -90,6 +90,7 @@
 
 .footer-copyright-left {
   margin-right: auto;
+	margin-left: 40px;
 }
 
 .footer-copyright-right {
@@ -172,6 +173,7 @@
 	flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-right: 40px;
 }
 
 .footer-phone {
@@ -186,6 +188,7 @@
 	}
 	.footer-copyright-left, .footer-copyright-right {
 		justify-content: center;
+    margin: 0;
 	}
 }
 

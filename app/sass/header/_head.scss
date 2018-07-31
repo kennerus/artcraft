@@ -24,9 +24,8 @@
   }
 
   &__logo {
-    margin-top: 17px;
     margin-left: 40px;
-    transition: all ease 0.4s;
+    transition: all ease 0.5s;
     @include breakpoint(max-width 1400px) {
       margin-left: 20px;
     }
@@ -46,11 +45,10 @@
 
   &__callback {
     display: flex;
-    width: 360px;
-    margin-top: 17px;
+    width: 17%;
     margin-right: 40px;
     z-index: 10;
-    transition: all ease 0.4s;
+    transition: all ease 0.5s;
     @include breakpoint(max-width 1400px) {
       margin-right: 20px;
     }
@@ -108,6 +106,8 @@
   &__wrapper {
     position: relative;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     z-index: 6;
     background-color: white;
     border-bottom: 5px solid white;
@@ -126,9 +126,9 @@
     top: 0;
     left: 0;
     z-index: 5;
-    display: block;
+    display: none;
     width: 100%;
-    //height: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
   }
 
@@ -137,7 +137,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70px;
+    height: 40px;
     margin: 0;
     padding-left: 0;
     letter-spacing: 1px;
@@ -425,9 +425,11 @@
 
   .header__wrapper {
     position: fixed;
-    top: 0;
+    transform: translate(0, -60px);
     left: 0;
     width: 100%;
+    height: 60px;
+    transition: all ease .5s;
   }
 
   .header__nav-container {
@@ -558,6 +560,11 @@
   cursor: pointer;
 }
 
+.header-index .header__wrapper.header-wrapper-active {
+  transform: translate(0, 0);
+  transition: all ease .5s;
+}
+
 .header-wrapper-up:before {
   content: url("../img/arrow-point-to-right.png");
   font-size: 25px;
@@ -581,7 +588,7 @@
   cursor: pointer;
 }
 
-.js-nav-menu-up {
+.nav-menu-up {
   height: 100%;
   //opacity: 0;
   //z-index: -999;
@@ -589,7 +596,7 @@
   transition: all 0.5s;
 }
 
-.js-nav-menu-down {
+.nav-menu-down {
   height: 100%;
   z-index: 5;
   //opacity: 1;
