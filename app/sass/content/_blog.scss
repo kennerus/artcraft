@@ -351,12 +351,137 @@
 }
 
 .single-post .blog .paragraph {
-  top: 100px;
+  top: 105px;
 }
 
 .blog-main-link {
   margin: 0;
 }
+
+//blog-single
+
+.blog-single-title {
+  font-family: GilroyExtrabold,sans-serif;
+  font-size: 36px;
+  margin: 0;
+  margin-top: -12px;
+  margin-bottom: 20px;
+}
+
+.blog-single {
+  &__content {
+    display: flex;
+    @include breakpoint(max-width 992px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__main {
+    width: 66%;
+    .gallery__block-link {
+      margin-top: 50px;
+      width: 250px;
+    }
+    &-img {
+      max-width: 100%;
+    }
+    @include breakpoint(max-width 992px) {
+      width: 100%;
+    }
+  }
+  &__text {
+    p {
+      margin: 23px 0;
+      line-height: 1.5em;
+    }
+  }
+  &__aside {
+    width: 34%;
+    padding-left: 50px;
+    @include breakpoint(max-width 992px) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  &__gallery {
+    position: relative;
+    height: 210px;
+    max-width: 350px;
+    //background-image: url(../img/ssm-gallery.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include breakpoint(max-width 992px) {
+      margin: 50px auto 0;
+    }
+    .gallery__block-link {
+      width: 140px;
+      left: 44%;
+      bottom: 13%;
+    }
+  }
+}
+
+.blog-single__other {
+  margin-top: 40px;
+  &-title {
+    text-align: center;
+    width: 100%;
+  }
+  @include breakpoint(max-width 992px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.blog__item {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 250px;
+  max-width: 350px;
+  min-width: 300px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 -100px 90px -60px #000 inset;
+  &_desc {
+    position: relative;
+    bottom: 10%;
+    left: 8%;
+    width: 40%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    z-index: 1;
+  }
+  .gallery__block-link {
+    font-size: 14px;
+    width: 120px;
+    padding: 8px 0;
+    left: 50%;
+  }
+  &_design {
+    //background-image: url(../img/service1.png);
+  }
+  &_branding {
+    //background-image: url(../img/service2.png);
+  }
+  &_logo {
+    //background-image: url(../img/service3.png);
+  }
+  &_dev {
+    //background-image: url(../img/service4.png);
+  }
+}
+
+.blog-item-img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
 
 @media (max-width: 768px) {
   .blog .wrap {

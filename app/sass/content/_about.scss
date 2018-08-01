@@ -448,3 +448,9 @@
 	font-family: $GilroyExtrabold;
 	color: #ff5038;
 }
+
+@media (max-width: 992px) {
+  .vacancies__desc-title, .vacancies__desc-comment {
+    text-align: center;
+  }
+}
