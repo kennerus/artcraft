@@ -164,7 +164,6 @@ $(function () {
   $(document).on('click', '.header__mobile-btn', function () {
     $('.header__mobile-btn').addClass('header__mobile-btn--active');
     $('.header__nav').slideDown().css('display', 'flex');
-
     var body = $('body');
     body.addClass('bodyOverflow');
   });
@@ -172,7 +171,8 @@ $(function () {
   $(document).on('click', '.header__mobile-btn--active', function () {
     $('.header__mobile-btn').removeClass('header__mobile-btn--active');
     $('.header__nav').slideUp().css('display', 'flex');
-    $('body').removeClass('bodyOverflow');
+    var body = $('body');
+    body.removeClass('bodyOverflow');
 
   });
 
@@ -322,14 +322,27 @@ $(function () {
     var themeBody = $('.js_header');
     var overlay = $('.header__overlay');
     var headNav = $('.header__nav');
-    headNav.slideToggle().css('display', 'flex');
-    themeBody.toggleClass(' header-wrapper-active');
-    // overlay.fadeIn("slow");
-    if ( $(".js_header").hasClass("header-wrapper-active") ) {
+    var body = $('body');
+    if ( $(".header__mobile-btn").hasClass("header__mobile-btn--active") ) {
       overlay.fadeIn("slow");
+    } else if( $(".header__mobile-btn").hasClass("header__mobile-btn--submenu") ){
+
     } else {
       overlay.fadeOut("slow");
     }
+    if(window.innerWidth > 1025) {
+      headNav.slideToggle().css('display', 'flex');
+      themeBody.toggleClass(' header-wrapper-active');
+      // overlay.fadeIn("slow");
+      if ( $(".js_header").hasClass("header-wrapper-active") ) {
+        overlay.fadeIn("slow");
+        // body.addClass('bodyOverflow');
+      } else {
+        overlay.fadeOut("slow");
+        // body.removeClass('bodyOverflow');
+      }
+    }
+
   });
 
   // close menu
@@ -338,12 +351,15 @@ $(function () {
     var themeBody = $('.js_header');
     var overlay = $('.header__overlay');
     var headNav = $('.header__nav');
+    var body = $('body');
     if ($(window).width < 992) {
       $('.header__mobile-btn').removeClass('header__mobile-btn--active');
     }
     headNav.slideToggle().css('display', 'flex');
     themeBody.removeClass(' header-wrapper-active');
     overlay.fadeOut("slow");
+    body.removeClass('bodyOverflow');
+    $('.header__mobile-btn').removeClass('header__mobile-btn--active');
   });
 });
 
