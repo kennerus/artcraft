@@ -35,19 +35,19 @@
   margin-bottom: 50px;
   font-weight: 700;
   outline: none;
-  transition: all .2s;
+  transition: all ease .2s;
 }
 
 .services-bottom .btn_services:hover {
   transform: scale(.95);
-  transition: all .2s;
+  transition: all ease .2s;
 }
 
 .services-bottom .btn_services.activeServices {
   color: red;
   position: relative;
   transform: scale(.95);
-  transition: all .2s;
+  transition: all ease .2s;
 }
 
 .services-bottom .activeServices:after {
@@ -167,5 +167,30 @@
   }
   .services-text {
     margin-left: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .services-text {
+    margin-left: 0;
+  }
+  .all-services-section .services_item-p {
+    margin-left: 0;
+  }
+  .services_item-ul {
+    padding-left: 10px;
+  }
+  .services_item-more {
+    margin-left: -16px;
+  }
+  .all-services-section {
+    padding-bottom: 100px;
+  }
+  .vacancies-p__vacancy-more_novelty {
+    top: 140%;
+    left: 15%;
+  }
+  .novelty__title_margin {
+    margin-left: 0;
   }
 }

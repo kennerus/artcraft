@@ -56,6 +56,9 @@
         min-width: 450px;
         margin: 0;
       }
+      @include breakpoint(max-width 1200px, min-width 993px) {
+        width: 477px;
+      }
       @include breakpoint(max-width 992px) {
         max-width: 600px;
         width: 93%;

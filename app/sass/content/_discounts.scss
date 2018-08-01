@@ -44,7 +44,7 @@
   .discounts__gallery {
       display: -ms-grid;
       display: grid;  
-      grid-gap: 8px 1vw;
+      grid-gap: 8px 0.5vw;
       grid-template-columns: 25vw 18vw 18vw 18vw 16vw;
       grid-template-rows: 13.8vw 13.8vw; 
       @include breakpoint(max-width 1800px) {
