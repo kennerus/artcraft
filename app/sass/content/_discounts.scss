@@ -45,19 +45,19 @@
       display: -ms-grid;
       display: grid;  
       grid-gap: 8px;
-      grid-template-columns: 27vw 18vw 18vw 18vw 18vw;
+      grid-template-columns: 25vw 18vw 18vw 18vw 18vw;
       grid-template-rows: 13.8vw 13.8vw; 
       @include breakpoint(max-width 1800px) {
-        grid-template-columns: 22vw 19vw 19vw 19vw 19vw;
+        grid-template-columns: 21vw 19vw 19vw 19vw 19vw;
       }
       @include breakpoint(max-width 1600px) {
-        grid-template-columns: 17vw 20vw 20vw 20vw 20vw;
+        grid-template-columns: 16.7vw 20vw 20vw 20vw 20vw;
       }
       @include breakpoint(max-width 1400px) {
-        grid-template-columns: 14vw 21vw 21vw 21vw 21vw;
+        grid-template-columns: 12vw 21vw 21vw 21vw 21vw;
       }
       @include breakpoint(max-width 1024px) {
-        grid-template-columns: 15vw 27vw 13.5vw 13.5vw 27vw;
+        grid-template-columns: 14vw 27vw 13.5vw 13.5vw 27vw;
         grid-template-rows: 33.8vw 23.8vw; 
       }
       @include breakpoint(max-width 800px) {
