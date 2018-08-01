@@ -482,11 +482,23 @@
   width: 100%;
 }
 
+@media (max-width: 992px) {
+  .blog__item {
+    width: 300px;
+    margin-right: 0;
+  }
+}
 
 @media (max-width: 768px) {
   .blog .wrap {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (max-width: 426px) {
+  .blog__item {
+    width: 350px;
   }
 }
 
