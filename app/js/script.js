@@ -244,7 +244,7 @@ $(function () {
     var elementsToHide = headerParent.find('.header__nav-li > a');
     var closeBtn = headerParent.find('.header__mobile-btn--active');
 
-    if (window.innerWidth > 1024) {
+    if (window.innerWidth > 1200) {
       submenu.slideDown(0);
       submenu.toggleClass('flex');
     }
@@ -256,7 +256,7 @@ $(function () {
     var elementsToHide = headerParent.find('.header__nav-li > a');
     var closeBtn = headerParent.find('.header__mobile-btn--active');
 
-    if (window.innerWidth > 1024) {
+    if (window.innerWidth > 1200) {
       submenu.slideUp(0);
       submenu.toggleClass('flex');
     }
@@ -330,7 +330,7 @@ $(function () {
     } else {
       overlay.fadeOut("slow");
     }
-    if(window.innerWidth > 1025) {
+    if(window.innerWidth > 1200) {
       headNav.slideToggle().css('display', 'flex');
       themeBody.toggleClass(' header-wrapper-active');
       // overlay.fadeIn("slow");
