@@ -176,8 +176,10 @@ $(function () {
 
   });
 
-  $('.tittle .block_span_title').addClass('animated').css('opacity', '0');
-  $('.tittle .block_title').addClass('animated').css('opacity', '0');
+  if(window.innerWidth > 992) {
+    $('.tittle .block_span_title').addClass('animated').css('opacity', '0');
+    $('.tittle .block_title').addClass('animated').css('opacity', '0');
+  }
 
   if (window.innerWidth > 800) {
     $(window).scroll(function () {
@@ -221,6 +223,13 @@ $(function () {
 
   // smooth scroll
   $(".scroll").on("click", function (e) {
+    var anchor = $(this);
+    $('html, body').stop().animate({
+      scrollTop: $(anchor.attr('href')).offset().top
+    }, 777);
+    e.preventDefault();
+  });
+  $(".portfolio-scroll").on("click", function (e) {
     var anchor = $(this);
     $('html, body').stop().animate({
       scrollTop: $(anchor.attr('href')).offset().top

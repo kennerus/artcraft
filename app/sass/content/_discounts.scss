@@ -57,7 +57,7 @@
         grid-template-columns: 12vw 21vw 21vw 21vw 21vw;
       }
       @include breakpoint(max-width 1024px) {
-        grid-template-columns: 14vw 27vw 13.5vw 13.5vw 27vw;
+        grid-template-columns: 15vw 27vw 13.5vw 13.5vw 27vw;
         grid-template-rows: 33.8vw 23.8vw; 
       }
       @include breakpoint(max-width 800px) {
@@ -65,8 +65,8 @@
          grid-template-rows: 58.8vw 33.8vw 33.8vw; 
       }
       @include breakpoint(max-width 600px) {
-         grid-template-columns: 1.5vw 95vw 2vw;
-         grid-template-rows: 110vw 100vw 60vw 60vw 130vw;
+        grid-template-columns: 0.5vw 95vw 2vw;
+        grid-template-rows: 0vw 0vw 0vw 60vw 130vw;
       }
     }
     .discounts__block {

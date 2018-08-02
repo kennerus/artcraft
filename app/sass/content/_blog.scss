@@ -78,14 +78,16 @@
         outline:none;
       }
       &:hover {
-        .slide__hover {
-          opacity: 1;
-          transition: .5s;
-        }
+        @include breakpoint(min-width 769px) {
+          .slide__hover {
+            opacity: 1;
+            transition: .5s;
+          }
 
-        .slide__title {
-          opacity: 0;
-          transition: 0.5s;
+          .slide__title {
+            opacity: 0;
+            transition: 0.5s;
+          }
         }
       }
       img {
@@ -115,6 +117,7 @@
           text-overflow: ellipsis;
           white-space: nowrap;
           overflow: hidden;
+          text-align: left;
         }
 
         .slide__post-time {
@@ -155,6 +158,10 @@
           font-family: $GilroyRegular !important;
           letter-spacing: 0.9px;
           color: #fff !important;
+
+          @include breakpoint(max-width 769px) {
+            display: none;
+          }
         }
 
         a {
@@ -169,6 +176,17 @@
           box-sizing: border-box;
           border-radius: 20px;
           transition: all 0.2s;
+
+            @include breakpoint(max-width 769px) {
+              display: block;
+              width: 100%;
+              height: 100%;
+              margin: 0;
+              padding: 0;
+              border: none;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+            }
 
           &:hover, &:active, &:focus {
             transform: scale(0.9);
@@ -413,6 +431,9 @@
     @include breakpoint(max-width 992px) {
       margin: 50px auto 0;
     }
+    @include breakpoint(max-width 426px) {
+      display: none;
+    }
     .gallery__block-link {
       width: 140px;
       left: 44%;
@@ -431,6 +452,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  @include breakpoint(max-width 426px) {
+    margin-top: 0;
   }
 }
 
@@ -482,6 +506,12 @@
   width: 100%;
 }
 
+@media (max-width: 1200px) and (min-width: 992px) {
+  .blog__item {
+    width: 310px;
+  }
+}
+
 @media (max-width: 992px) {
   .blog__item {
     width: 300px;
@@ -502,6 +532,10 @@
   }
   .blog-single-title {
     margin-top: 60px;
+    text-align: center;
+  }
+  .blog__link, .gallery__block-link {
+    bottom: 22%;
   }
 }
 

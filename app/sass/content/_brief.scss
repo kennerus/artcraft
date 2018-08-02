@@ -472,7 +472,7 @@
     right: 0;
   }
   .service__form-radio-item2 {
-    width: 36%;
+    width: 40%;
   }
   .service__form-radio-item4 {
     width: 31%;
@@ -503,7 +503,8 @@
   .service__form-radio-itemL,
   .service__form-radio-itemR {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 8px;
   }
   .service__form-radio-item1,
   .service__form-radio-item2,

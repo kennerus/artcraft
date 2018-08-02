@@ -916,3 +916,9 @@ svg {
   color: #e4e5e5;
   text-transform: uppercase;
 }
+
+@media (max-width: 992px) {
+  .tittle .title {
+    width: 100%;
+  }
+}
