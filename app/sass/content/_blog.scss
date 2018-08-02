@@ -225,9 +225,11 @@
     }
 
     &:hover {
-      box-shadow: 0 15px 33px 0 rgba(153,130,161,.18);
-      transform: scale(1.02);
-      transition: all 0.2s ease-out;
+      @include breakpoint(min-width 992px) {
+        box-shadow: 0 15px 33px 0 rgba(153, 130, 161, .18);
+        transform: scale(1.02);
+        transition: all 0.2s ease-out;
+      }
     }
 
     @include breakpoint(max-width 1200px) {
@@ -494,9 +496,15 @@
   }
   &_logo {
     //background-image: url(../img/service3.png);
+    @include breakpoint(max-width 660px) {
+      display: none;
+    }
   }
   &_dev {
     //background-image: url(../img/service4.png);
+    @include breakpoint(max-width 660px) {
+      display: none;
+    }
   }
 }
 
@@ -528,7 +536,8 @@
 
 @media (max-width: 426px) {
   .blog__item {
-    width: 350px;
+    width: 100%;
+    max-width: 100%;
   }
   .blog-single-title {
     margin-top: 60px;

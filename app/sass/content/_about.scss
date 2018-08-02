@@ -191,6 +191,9 @@
 			justify-content: space-between;
 			flex-wrap: wrap;
 		}
+    @include breakpoint(max-width 500px) {
+      justify-content: center;
+    }
 
 		.soc__block {
 			margin-top: 25px;

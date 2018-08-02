@@ -207,8 +207,16 @@ svg {
 
 .grid-item:hover .grid-item__watch,
 .grid-item:hover .grid-item__fancybox {
-  opacity: 1;
-  transition: all 0.2s;
+  @include breakpoint(min-width 992px) {
+    opacity: 1;
+    transition: all 0.2s;
+  }
+}
+
+.grid-item__fancybox {
+  @include breakpoint(max-width 992px) {
+    display: none;
+  }
 }
 
 .grid-item__fancybox:hover,
@@ -218,11 +226,12 @@ svg {
 }
 
 .grid-item:hover {
-  background-color: #222222;
-  //box-shadow: 10px 8px 25px rgba(37, 37, 37, 0.25);
-  transform: scale(.95);
-  transition: all .5s;
-  opacity: .8;
+  @include breakpoint(min-width 992px) {
+    background-color: #222222;
+    transform: scale(.95);
+    transition: all .5s;
+    opacity: .8;
+  }
 }
 
 .grid-item__watch,
@@ -248,6 +257,25 @@ svg {
   text-align: center;
   background-color: #ff5038;
   border-radius: 20px;
+}
+
+.grid-item__watch {
+  @include breakpoint(max-width 992px) {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    font-size: 15px;
+    font-family: GilroyMedium, sans-serif;
+    color: #fff;
+    text-align: center;
+    background-color: #ff5038;
+    border-radius: 20px;
+  }
 }
 
 .more_btn {

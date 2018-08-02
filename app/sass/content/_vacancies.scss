@@ -126,4 +126,31 @@
   .vacancies-novelty-title {
     left: 0;
   }
+  .vacancies-title {
+    right: 0;
+  }
+}
+
+@media (max-width: 426px) {
+  .vacancies-novelty-img {
+    left: -50px;
+  }
+}
+
+@media (max-width: 372px) {
+  .vacancies-novelty-img {
+    left: -85px;
+  }
+  .novelty__big-title {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 320px) {
+  .vacancies-novelty-img {
+    left: -111px;
+  }
+  .novelty__big-title {
+    font-size: 44px;
+  }
 }
