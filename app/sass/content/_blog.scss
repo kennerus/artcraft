@@ -525,6 +525,9 @@
     width: 300px;
     margin-right: 0;
   }
+  .blog-single__content, .blog-single-title {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {

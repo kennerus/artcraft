@@ -20,6 +20,7 @@
 
   @include breakpoint(max-width 768px) {
     padding-top: 0;
+    padding-bottom: 0;
   }
 
   .blog__single-title {
