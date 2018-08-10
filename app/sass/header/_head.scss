@@ -24,11 +24,11 @@
   }
 
   &__logo {
-    margin-left: 40px;
+    margin-left: 100px;
     display: flex;
     align-items: center;
     transition: all ease 0.5s;
-    @include breakpoint(max-width 1400px) {
+    @include breakpoint(max-width 1500px) {
       margin-left: 20px;
     }
     @include breakpoint(max-width 1200px) {
@@ -48,11 +48,11 @@
   &__callback {
     display: flex;
     align-items: center;
-    width: 270px;
-    margin-right: 40px;
+    min-width: 217px;
+    margin-right: 100px;
     z-index: 10;
     transition: all ease 0.5s;
-    @include breakpoint(max-width 1400px) {
+    @include breakpoint(max-width 1500px) {
       margin-right: 20px;
     }
     @include breakpoint(max-width 1200px) {

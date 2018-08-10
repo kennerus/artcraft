@@ -345,13 +345,26 @@ $(function () {
       // overlay.fadeIn("slow");
       if ( $(".js_header").hasClass("header-wrapper-active") ) {
         overlay.fadeIn("slow");
-        // body.addClass('bodyOverflow');
+        body.addClass('bodyOverflow');
       } else {
         overlay.fadeOut("slow");
-        // body.removeClass('bodyOverflow');
+        body.removeClass('bodyOverflow');
       }
     }
 
+  });
+
+  $(document).on('click', function(e) {
+    if ($('.header__overlay').is(e.target)) {
+      var themeBody = $('.js_header');
+      var overlay = $('.header__overlay');
+      var headNav = $('.header__nav');
+      var body = $('body');
+      headNav.slideToggle().css('display', 'flex');
+      themeBody.removeClass(' header-wrapper-active');
+      overlay.fadeOut("slow");
+      body.removeClass('bodyOverflow');
+    }
   });
 
   // close menu

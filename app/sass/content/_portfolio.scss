@@ -116,6 +116,23 @@
       -ms-grid-columns: 20.4vw 13.8vw 9vw 4.8vw 9vw 13.8vw;
       -ms-grid-rows: 13.8vw 13.8vw;
 
+      .gallery__block-link {
+        width: 60%;
+        bottom: 20%;
+        @media (max-width: 1600px) {
+          width: 210px;
+          left: 10%;
+          bottom: 18%;
+        }
+        @media (max-width: 1280px) {
+          width: 60%;
+          left: 0;
+        }
+        @media (max-width: 400px) {
+          width: 210px;
+        }
+      }
+
       .portfolio-link {
         position: relative;
         -ms-grid-row: 1;
