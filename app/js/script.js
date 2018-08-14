@@ -233,16 +233,6 @@ $(function () {
     e.preventDefault();
   });
 
-
-  // if ($(window).width() > 1024) {
-  //   $(document).on('click', '.js_header', function () {
-  //     $('.header__nav').slideToggle().css('display', 'flex');
-  //     // $('.header__logo, .header__callback').toggleClass('header__index-appear');
-  //     // $('.header__overlay').slideToggle(100);
-  //   });
-  // };
-
-
   $(document).on('mouseenter', '.dropdown', function () {
     var submenu = $(this).find('.header__submenu');
     var headerParent = $(this).parents('.header');
@@ -400,7 +390,6 @@ function resize() {
     gallery.style.marginLeft = '0px';
   }
 }
-
 if (gallery) {
   resize();
 }
