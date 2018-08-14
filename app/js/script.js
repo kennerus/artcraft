@@ -164,15 +164,11 @@ $(function () {
   $(document).on('click', '.header__mobile-btn', function () {
     $('.header__mobile-btn').addClass('header__mobile-btn--active');
     $('.header__nav').slideDown().css('display', 'flex');
-    var body = $('body');
-    body.addClass('bodyOverflow');
   });
 
   $(document).on('click', '.header__mobile-btn--active', function () {
     $('.header__mobile-btn').removeClass('header__mobile-btn--active');
     $('.header__nav').slideUp().css('display', 'flex');
-    var body = $('body');
-    body.removeClass('bodyOverflow');
 
   });
 
@@ -331,7 +327,8 @@ $(function () {
     var themeBody = $('.js_header');
     var overlay = $('.header__overlay');
     var headNav = $('.header__nav');
-    var body = $('body');
+
+
     if ( $(".header__mobile-btn").hasClass("header__mobile-btn--active") ) {
       overlay.fadeIn("slow");
     } else if( $(".header__mobile-btn").hasClass("header__mobile-btn--submenu") ){
@@ -344,11 +341,13 @@ $(function () {
       themeBody.toggleClass(' header-wrapper-active');
       // overlay.fadeIn("slow");
       if ( $(".js_header").hasClass("header-wrapper-active") ) {
+        themeBody.toggleClass('header-wrapper-down');
+        themeBody.toggleClass('header-wrapper-up');
         overlay.fadeIn("slow");
-        body.addClass('bodyOverflow');
       } else {
+        themeBody.toggleClass('header-wrapper-down');
+        themeBody.toggleClass('header-wrapper-up');
         overlay.fadeOut("slow");
-        body.removeClass('bodyOverflow');
       }
     }
 
@@ -359,11 +358,11 @@ $(function () {
       var themeBody = $('.js_header');
       var overlay = $('.header__overlay');
       var headNav = $('.header__nav');
-      var body = $('body');
       headNav.slideToggle().css('display', 'flex');
       themeBody.removeClass(' header-wrapper-active');
+      themeBody.toggleClass('header-wrapper-down');
+      themeBody.toggleClass('header-wrapper-up');
       overlay.fadeOut("slow");
-      body.removeClass('bodyOverflow');
     }
   });
 
@@ -373,14 +372,12 @@ $(function () {
     var themeBody = $('.js_header');
     var overlay = $('.header__overlay');
     var headNav = $('.header__nav');
-    var body = $('body');
     if ($(window).width < 992) {
       $('.header__mobile-btn').removeClass('header__mobile-btn--active');
     }
     headNav.slideToggle().css('display', 'flex');
     themeBody.removeClass(' header-wrapper-active');
     overlay.fadeOut("slow");
-    body.removeClass('bodyOverflow');
     $('.header__mobile-btn').removeClass('header__mobile-btn--active');
   });
 });
