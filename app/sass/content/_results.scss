@@ -12,7 +12,7 @@
   .paragraph {
     top: 140px;
     left: -129px;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.6px;
 
     @include breakpoint(max-width 768px) {
       display: none;

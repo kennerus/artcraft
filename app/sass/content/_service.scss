@@ -55,7 +55,7 @@
 	&__big-title {
 		position: relative;
 		top: 0;
-		left: -200px;
+		left: -205px;
 		margin: 0;
 		font-family: $GilroyExtrabold;
 		font-size: 94px;
@@ -136,6 +136,8 @@
 	&__text {
 		margin: 0;
 		margin-top: 35px;
+		color: #828181;
+		max-width: 366px;
 
 		@include breakpoint(max-width 576px) {
 			margin-top: 15px;
@@ -781,7 +783,7 @@
     }
 		.gallery__block-link {
 			width: 140px;
-			left: 44%;
+			left: 54%;
 			bottom: 13%;
 		}
 	}
@@ -831,7 +833,7 @@
 		font-size: 14px;
 		width: 120px;
 		padding: 8px 0;
-		left: 50%;
+		left: 59%;
 
     @include breakpoint(max-width 426px) {
       bottom: 7%;
@@ -1027,6 +1029,21 @@
 .service__form .btn-file__wrap:hover {
 	transform: scale(.9);
 	transition: all .2s;
+}
+
+.main-service .myths-section .paragraph {
+	top: 170px;
+	left: -94px;
+	letter-spacing: 1px;
+}
+
+.myths-section .services-bottom {
+	max-width: 450px;
+	width: 100%;
+}
+
+.myths-section .tittle p {
+	max-width: 450px;
 }
 
 @media (max-width: 1200px) {
