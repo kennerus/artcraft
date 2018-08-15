@@ -225,7 +225,7 @@ svg {
   transform: scale(0.8);
 }
 
-.grid-item:hover {
+.grid-item:hover img {
   @include breakpoint(min-width 992px) {
     background-color: #222222;
     transform: scale(.95);
@@ -302,10 +302,10 @@ svg {
   }
 }
 
-.more_btn:active, .more_btn:focus, .more_btn:hover {
-  background-color: red;
-  color: white;
-}
+//.more_btn:active, .more_btn:focus, .more_btn:hover {
+//  background-color: red;
+//  color: white;
+//}
 
 .grid-item__watch:hover,
 .grid-item__watch:active,
