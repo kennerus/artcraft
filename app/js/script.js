@@ -375,6 +375,8 @@ $(function () {
     var themeBody = $('.js_header');
     var overlay = $('.header__overlay');
     var headNav = $('.header__nav');
+    themeBody.toggleClass('header-wrapper-down');
+    themeBody.toggleClass('header-wrapper-up');
     if ($(window).width < 992) {
       $('.header__mobile-btn').removeClass('header__mobile-btn--active');
     }
