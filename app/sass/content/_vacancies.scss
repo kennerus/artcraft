@@ -73,6 +73,36 @@
   max-width: 500px;
 }
 
+.services_item-mob {
+  margin-top: 5px;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+}
+
+.services_more-mob {
+  color: #dd4938;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.mt-1 {
+  margin-top: 20px;
+}
+
+.mb-1 {
+  margin-bottom: 20px;
+}
+
+.services_item-mob p {
+  margin: 0;
+}
+
+.services_item-mob p:first-child {
+  font-weight: 600;
+}
+
 @media (max-width: 1200px) {
   .vacancies-novelty-img {
     left: -120px;

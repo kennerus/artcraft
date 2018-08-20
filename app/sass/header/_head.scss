@@ -87,6 +87,7 @@
       font-size: 20px;
       font-weight: 900;
       font-family: GilroySemibold, sans-serif;
+      white-space: nowrap;
       @include breakpoint(max-width 1200px) {
         font-size: 16px;
       }
@@ -101,6 +102,7 @@
       cursor: pointer;
       letter-spacing: 0.5px;
       padding: 0;
+      white-space: nowrap;
       @include breakpoint(max-width 1200px) {
         font-size: 11px;
       }
@@ -594,7 +596,7 @@
 
 .header-phone {
   width: 40px;
-  height: 40px;
+  height: auto;
   margin-right: 10px;
   border-radius: 25px;
   box-shadow: 3px 3px 18px -4px red;

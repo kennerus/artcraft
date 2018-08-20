@@ -408,3 +408,10 @@ function resize() {
 if (gallery) {
   resize();
 }
+
+$('.btn_services-mob').next().hide();
+$('.btn_services-mob').click(function(){
+  $('.btn_services-mob').removeClass('open-services-mob');
+  $(this).toggleClass(' open-services-mob').next().slideToggle();
+  $('.btn_services-mob').not(this).next().stop(true,true).slideUp();
+});

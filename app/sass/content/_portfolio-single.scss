@@ -20,7 +20,7 @@
 		width: 50%;
 	}
 
-	@include breakpoint(max-width 768px) {
+	@include breakpoint(max-width 992px) {
 		width: 100%;
 		margin-right: 0;
 	}
@@ -43,7 +43,7 @@
 		width: 50%;
 	}
 
-	@include breakpoint(max-width 768px) {
+	@include breakpoint(max-width 992px) {
 		width: 100%;
 		margin-top: 25px;
 		margin-bottom: 50px;

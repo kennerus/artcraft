@@ -439,6 +439,7 @@
   &__aside {
     width: 34%;
     padding-left: 50px;
+    height: max-content;
     @include breakpoint(max-width 992px) {
       width: 100%;
       padding: 0;
@@ -543,6 +544,13 @@
   .blog__item {
     width: 310px;
   }
+  .blog-single__gallery {
+    width: 310px;
+  }
+  .blog-single__aside {
+    max-width: 350px;
+    min-width: 310px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -552,6 +560,12 @@
   }
   .blog-single__content, .blog-single-title {
     text-align: center;
+  }
+  .blog-single__content .sidebarBlog {
+    max-width: 100%;
+  }
+  .blog-single__content .blog-item-img {
+    position: relative;
   }
 }
 
@@ -573,6 +587,9 @@
   }
   .blog__link, .gallery__block-link {
     bottom: 22%;
+  }
+  .blog-single__content .sidebarBlog {
+    max-width: 100%;
   }
 }
 

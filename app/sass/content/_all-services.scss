@@ -124,18 +124,122 @@
   transition: all .2s;
 }
 
+.services-mobile {
+  display: none;
+}
+
+$white: rgba(254,255,250,1);
+$grey: rgba(220,231,235,1);
+$red: rgba(255,104,115,1);
+$black: rgba(48,69,92,0.8);
+$sans: 'Titillium Web', sans-serif;
+
+.transition {
+  transition: all 0.25s ease-in-out
+}
+.flipIn {
+  animation: flipdown 0.5s ease both;
+}
+.no-select {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn_services-mob {
+  margin: 20px 0;
+  padding: 13px;
+  background-color: #e8e8e8;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #000000;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.open-services-mob {
+  background-color: #dd4938;
+  color: #ffffff;
+}
+
+.btn_services-mob h2 {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.services_item-mob {
+  color: rgba(48, 69, 92, 0.8);
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+}
+
+.services_item-mob .services_item-p {
+  padding: 0 20px;
+  text-align: center;
+  color: #8a8989;
+}
+
+.services_item-ul-mob {
+  margin-bottom: 25px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services_item-ul-mob li {
+  margin: 5px 0 10px;
+  width: 90%;
+  display: flex;
+}
+
+.services_item-more-mob {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0 0 50px -11px rgba(0, 0, 0, .6);
+}
+
 @media (max-width: 1000px) {
   .services-bottom {
     align-items: center;
     margin-right: 10px;
   }
-  .all-services-section .services_item-p {
+  .services_item .services_item-p {
     text-align: left;
   }
   .services_item-more {
     margin-left: 0;
     margin-right: 50%;
     margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .all-news .broadcrumbs, .main-about .broadcrumbs, .main-feedback .broadcrumbs, .main-portfolio .broadcrumbs, .main-service .broadcrumbs, .main-vacancy .broadcrumbs, .main__single-p .broadcrumbs, .single-post .broadcrumbs {
+    top: 22px;
+    margin-left: 9%;
   }
 }
 
@@ -157,6 +261,15 @@
   }
   .services_item-p {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .all-services {
+    display: none;
+  }
+  .services-mobile {
+    display: block;
   }
 }
 
