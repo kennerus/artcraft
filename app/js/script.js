@@ -418,3 +418,7 @@ $('.btn_services-mob').click(function(){
     $(this).addClass(' open-services-mob').next().slideToggle();
   }
 });
+
+// $('input').focus(function(event) {
+//   $(this).attr("placeholder", " ").val("");
+// });

@@ -437,25 +437,54 @@
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
   content: "";
-  position: absolute;
+  position: relative;
   display: none;
 }
 
 /* Show the indicator (dot/circle) when checked */
 .checkbox-item input:checked ~ .checkmark:after {
   display: block;
-  background: url(../img/icons/checkbox.png) no-repeat 50% 50%;
+  background: url(../img/icons/check.svg) no-repeat 50% 50%;
+  background-size: contain;
 }
 
 /* Style the indicator (dot/circle) */
 .checkbox-item .checkmark:after {
-  top: 50%;
-  left: 50%;
+  top: 2.3px;
+  left: 20%;
   width: 8px;
   height: 8px;
-  border-radius: 50%;
   background: white;
-  transform: translate(-50%, -50%);
+  //transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1500px) {
+  .checkbox-item .checkmark:after {
+    left: 2.3px;
+  }
+}
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+textarea::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+textarea:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+textarea:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.help-block {
+  position: relative;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
@@ -486,6 +515,12 @@
   }
   .service__form-radio-item5 {
     width: 36%;
+  }
+}
+
+@media (max-width: 992px) {
+  .help-block {
+    width: 80%;
   }
 }
 
