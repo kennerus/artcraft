@@ -387,7 +387,7 @@
     //margin-top: 80px;
 
     @include breakpoint(max-width 576px) {
-      margin-top: 25px;
+      margin-top: 60px;
     }
   }
 }
@@ -540,6 +540,10 @@
   width: 100%;
 }
 
+.blog-link-mob {
+  display: none;
+}
+
 @media (max-width: 1200px) and (min-width: 992px) {
   .blog__item {
     width: 310px;
@@ -591,11 +595,24 @@
   .blog-single__content .sidebarBlog {
     max-width: 100%;
   }
+  .blog-link-mob {
+    display: block;
+  }
+  .blog__link {
+    width: 140px;
+    right: 20%;
+  }
+  .blog__block-link_main .blog__link {
+    bottom: 13%;
+  }
+  .blog-link-pc {
+    display: none;
+  }
 }
 
 @media (max-width: 376px) {
   .blog__slider--slide .slide__title .slide__post-title {
-    width: 250px;
+    width: 220px;
   }
 }
 

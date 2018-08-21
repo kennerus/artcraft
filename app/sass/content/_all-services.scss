@@ -1,5 +1,5 @@
 .all-services-section {
-  padding-bottom: 55px;
+  padding-bottom: 20px;
   margin-bottom: 70px;
 }
 
@@ -163,7 +163,7 @@ $sans: 'Titillium Web', sans-serif;
 }
 
 .open-services-mob {
-  background-color: #dd4938;
+  background-color: #ff5038;
   color: #ffffff;
 }
 
@@ -212,13 +212,14 @@ $sans: 'Titillium Web', sans-serif;
 
 .services_item-more-mob {
   width: 100%;
-  padding: 15px 10px;
+  padding: 15px 20px;
   font-size: 16px;
   font-weight: 600;
   color: #000000;
   text-align: center;
   border-radius: 50px;
-  box-shadow: 0 0 50px -11px rgba(0, 0, 0, .6);
+  box-shadow: 0 0 40px -13px rgba(0, 0, 0, .6);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 @media (max-width: 1000px) {
@@ -262,6 +263,9 @@ $sans: 'Titillium Web', sans-serif;
   .services_item-p {
     margin-left: 0;
   }
+  .novelty__title_gray {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 460px) {
@@ -300,10 +304,10 @@ $sans: 'Titillium Web', sans-serif;
     margin-left: -16px;
   }
   .all-services-section {
-    padding-bottom: 100px;
+    padding-bottom: 10px;
   }
   .vacancies-p__vacancy-more_novelty {
-    top: 140%;
+    top: 126%;
     left: 15%;
   }
   .novelty__title_margin {

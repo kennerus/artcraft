@@ -1111,8 +1111,7 @@
   .novelty__text {
     position: absolute;
     top: 100%;
-    left: 20%;
-    right: 20%;
+		width: 100%;
   }
   .vacancies-p__vacancy-more_novelty {
     position: absolute;
@@ -1135,6 +1134,7 @@
 	}
   .novelty {
     flex-direction: column;
+		margin-top: 60px;
   }
   .novelty__desce {
     display: flex;
@@ -1157,12 +1157,13 @@
   }
   .novelty__title_bold {
     margin-bottom: 0;
+		margin: 0 10px;
   }
   .vacancies-p__vacancy-more_novelty {
     position: absolute;
     margin-top: 0;
-    top: 130%;
-    left: 26%;
+		top: 122%;
+		left: 25%;
     right: 20%;
   }
 }
@@ -1186,10 +1187,14 @@
   .vacancies-p__vacancy-more_novelty {
     position: absolute;
     margin-top: 0;
-    top: 135%;
+    top: 126%;
     left: 20%;
     right: 20%;
   }
+	.novelty__img {
+		width: auto;
+		height: 300px;
+	}
 }
 
 @media (max-width: 376px) {
@@ -1199,4 +1204,8 @@
   .blog__block-link_main img {
     width: 97%;
   }
+	.novelty__img {
+		width: auto;
+		height: 270px;
+	}
 }

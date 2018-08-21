@@ -411,7 +411,10 @@ if (gallery) {
 
 $('.btn_services-mob').next().hide();
 $('.btn_services-mob').click(function(){
-  $('.btn_services-mob').removeClass('open-services-mob');
-  $(this).toggleClass(' open-services-mob').next().slideToggle();
-  $('.btn_services-mob').not(this).next().stop(true,true).slideUp();
+  if ( $(this).hasClass("open-services-mob") ) {
+    $('.btn_services-mob').removeClass('open-services-mob').next().slideUp();
+  } else {
+    $('.btn_services-mob.open-services-mob').not(this).removeClass('open-services-mob').next().slideUp();
+    $(this).addClass(' open-services-mob').next().slideToggle();
+  }
 });
