@@ -4,6 +4,10 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "jquery-colorbox": "^1.6.4",
+    "jquery-zoom": "^1.7.21",
+    "jquery.photoswipe": "^1.1.1",
+    "photoswipe": "^4.1.2",
     "sticky-sidebar": "^3.3.1"
   },
   "devDependencies": {

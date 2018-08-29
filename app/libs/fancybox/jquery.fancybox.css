@@ -100,7 +100,7 @@
   right: 0; }
 
 .fancybox-stage {
-  overflow: hidden;
+  overflow: auto;
   direction: ltr;
   z-index: 99994;
   -webkit-transform: translate3d(0, 0, 0); }

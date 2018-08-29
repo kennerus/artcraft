@@ -218,13 +218,13 @@
       display: -ms-grid;
       display: grid;
       grid-gap: 8px 10px;
-      grid-template-columns: 20.4vw 13.8vw 9vw 4.8vw 9vw 13.8vw;
+      grid-template-columns: 20.4vw 13.8vw 9vw 4.3vw 9vw 13.8vw;
       grid-template-rows: 13.8vw 13.8vw;
 
       img {
         width: 100%;
         height: 100%;
-        object-fit: fill;
+        object-fit: cover;
         transition: all .2s;
       }
 
@@ -370,4 +370,12 @@
 
 .portfolio__gallery .portfolio-link:first-child img:hover {
   transform: none;
+}
+
+#cboxClose {
+  background:url(jquery-colorbox/images/controls1.png) no-repeat 50% 50%;
+}
+
+#cboxClose:hover {
+  background:url(jquery-colorbox/images/controls1.png) no-repeat 50% 50%;
 }

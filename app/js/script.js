@@ -11,14 +11,7 @@ $(function () {
     $('.cloud2').css('background-position', pos);
   }, 70);
 
-  $("[data-fancybox]").fancybox({
-    arrows: true,
-    buttons: [
-      'thumbs',
-      'close'
-    ],
-    idleTime: false
-  });
+  $('.grid-item').photoSwipe();
 
   if ($('.js_phone-mask').length > 0) {
     $('.js_phone-mask').inputmask({alias: "phoneru"});
