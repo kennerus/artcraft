@@ -67,6 +67,8 @@
 }
 
 .feedback-down-img {
+  width: 103px;
+  height: 105px;
   transform: scale(0.6);
   transition: transform 0.2s;
 }
@@ -74,14 +76,14 @@
 .slick-center .feedback-down-img {
   transform: scale(1);
   transition: transform 0.2s;
-  border-bottom: 2px solid red;
   padding-bottom: 30px;
 }
 
 .feedback-down-wrap {
   visibility: hidden;
   text-align: center;
-  margin-top: 35px;
+  padding-top: 35px;
+  border-top: 2px solid red;
 }
 
 .slick-center .feedback-down-wrap {
