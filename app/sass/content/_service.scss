@@ -864,6 +864,10 @@
 	margin-bottom: 120px;
 	.brief__content {
 		margin-left: 7%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 		@include breakpoint(max-width 1200px) {
 			margin: 30px 70px 0;
 		}

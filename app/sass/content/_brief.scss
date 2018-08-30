@@ -488,6 +488,77 @@ textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s 
   text-align: center;
 }
 
+.brief-massage {
+  padding: 30px;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  z-index: 999;
+  box-shadow: 0 10px 80px rgba(0,0,0,.13);
+}
+
+.brief-massage-active {
+  display: flex;
+}
+
+
+.brief-massage h2 {
+  font-family: GilroyBold,sans-serif;
+  font-size: 36px;
+}
+
+.brief-massage p {
+  margin: 0;
+  font-family: GilroyMedium,sans-serif;
+  font-size: 16px;
+}
+
+.brief-massage p a {
+  color: #ff7f6d;
+  text-decoration: none;
+}
+
+.brief-massage p a:hover {
+  color: #ff7f6d;
+  text-decoration: none;
+}
+
+.brief-massage-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 20px;
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.brief-massage-close span {
+  width: 20px;
+  height: 3px;
+  display: block;
+  background-color: #acacac;
+}
+
+.brief-massage-close span:first-child {
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.brief-massage-close span:last-child {
+  position: relative;
+  top: -3px;
+  transform: rotate(-45deg);
+}
+
 @media (max-width: 1200px) {
   .service__form-radio-button {
     flex-direction: column;

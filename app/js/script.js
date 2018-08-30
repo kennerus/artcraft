@@ -412,6 +412,14 @@ $('.btn_services-mob').click(function(){
   }
 });
 
-// $('input').focus(function(event) {
-//   $(this).attr("placeholder", " ").val("");
-// });
+$(document).on('click', '.service__form-submit', function () {
+  setTimeout(function() {
+    $('.brief-massage').addClass('brief-massage-active');
+  },2000);
+});
+
+$(document).on('click', '.brief-massage-close', function () {
+  setTimeout(function() {
+    $('.brief-massage').removeClass('brief-massage-active');
+  },500);
+});

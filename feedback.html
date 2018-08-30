@@ -129,7 +129,7 @@
             <li><a href="vacancies.html">Вакансии</a></li>
           </ul>
         </li>
-        <li class="header__nav-li"><a class="scroll" href="#brief">Контакты</a></li>
+        <li class="header__nav-li"><a class="portfolio-scroll" href="#brief">Контакты</a></li>
       </ul>
       <li class="header__callback header__callback_mobile">
         <svg class="header-phone" version="1.1" id="phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -379,151 +379,158 @@
 
 <!-- start brief.html-->
 <section class="service-brief" id="brief">
-
-        <div class="container">
-            <div class="brief__head">
-                <p class="paragraph">наш бриф</p>
-                <div class="wrap">
-                    <div class="tittle">
-                        <span class="block_span_title">закажите</span>
-                        <h2 class="block_title">услугу</h2>
-                        <p>
-                            Перестаньте платить деньги за процесс. Получите гарантированный результат.
-                        </p>
-                    </div>
+    <div class="container">
+        <div class="brief__head">
+            <p class="paragraph">наш бриф</p>
+            <div class="wrap">
+                <div class="tittle">
+                    <span class="block_span_title">закажите</span>
+                    <h2 class="block_title">услугу</h2>
+                    <p>
+                        Перестаньте платить деньги за процесс. Получите гарантированный результат.
+                    </p>
                 </div>
             </div>
-            <div class="brief__content">
-                <form id="form" class="service__form" enctype="multipart/form-data">
-                    <div class="service__form-head">
-                        <div class="service__form-head_item">
-                            <label for="name">Ваше имя, фамилия *</label>
-                            <input class="service__form_input" id="name" type="text" placeholder="Ваше имя" required >
-                            <div class="help-block">
-                                Неверно заполненное поле
-                            </div>
-                        </div>
-
-                        <div class="service__form-head_item">
-                            <label for="phone">Ваш номер телефона *</label>
-                            <input class="service__form_input js_phone-mask" id="phone" type="tel" placeholder="Номер телефона" autocomplete="off" required>
-                            <div class="help-block">
-                                Неверно заполненное поле
-                            </div>
-                        </div>
-
-                        <div class="service__form-head_item">
-                            <label for="mail">Ваш e-mail *</label>
-                            <input class="service__form_input" id="mail" type="email" placeholder="Ваш e-mail" autocomplete="off" required>
-                            <div class="help-block">
-                                Неверно заполненное поле
-                            </div>
-                        </div>
-
-                        <div class="service__form-head_item">
-                            <label for="skype">Ваш skype</label>
-                            <input class="service__form_input" id="skype" type="text" placeholder="Ваш Skype" autocomplete="off">
-                        </div>
-                    </div>
-
-                    <div class="service__form-radio">
-                        <div class="service__form-radio_text">
-                            <p>Какие услуги Вас интересуют?</p>
-                        </div>
-                        <div class="service__form-radio-button">
-                            <div class="service__form-radio-itemL">
-                                <div class="service__form-radio-item service__form-radio-item1">
-                                    <label class="checkbox-item">Готовое решение
-                                        <input type="checkbox" name="radio" value="Готовое решение">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-item">Интернет-магазин
-                                        <input type="checkbox" name="radio" value="Интернет-магазин">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="service__form-radio-item service__form-radio-item2">
-                                    <label class="checkbox-item">Индивидуальный проект
-                                        <input type="checkbox" name="radio" value="Индивидуальный проект">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-item">Корпоративные системы
-                                        <input type="checkbox" name="radio" value="Корпоративные системы">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="service__form-radio-item service__form-radio-item3">
-                                    <label class="checkbox-item">Landing page
-                                        <input type="checkbox" name="radio" value="Landing page">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-item">UI/UX Design
-                                        <input type="checkbox" name="radio" value="UI/UX Design">
-                                        <span class="checkmark"></span>
-                                    </label>
-                            </div>
-                            </div>
-                            <div class="service__form-radio-itemR">
-                                <div class="service__form-radio-item service__form-radio-item4">
-                                    <label class="checkbox-item">Поддержка
-                                        <input type="checkbox" name="radio" value="Поддержка">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-item">Логотип
-                                        <input type="checkbox" name="radio" value="Логотип">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="service__form-radio-item service__form-radio-item5">
-                                    <label class="checkbox-item">Репутационный маркетинг
-                                        <input type="checkbox" name="radio" value="Репутационный маркетинг">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-item">Полиграфическая продукция
-                                        <input type="checkbox" name="radio" value="Полиграфическая продукция">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="service__form-radio-item service__form-radio-item6">
-                                    <label class="checkbox-item">Брендинг и айдентика
-                                        <input type="checkbox" name="radio" value="Брендинг и айдентика">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-item">Digital Design
-                                        <input type="checkbox" name="radio" value="Digital Design">
-                                        <span class="checkmark"></span>
-                                    </label>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="service__form-message" lang="ru">
-                        <div class="service__form-textarea">
-                            <label for="message">Сообщение</label>
-                            <textarea id="message" placeholder="Напишите, что считаете нужным"></textarea>
-                        </div>
-                        <div class="service__form-file">
-                            <div class="btn-file__wrap">
-                                <input type="file" class="input-file">
-                                <div class="btn-input-file">
-                                    <img src="img/clip-black.png" alt="" width="25" height="25">
-                                    <span>Прикрепить файл</span>
-                                </div>
-                            </div>
-                            <span class="service__form-files">jpg, jpeg, png. gif, zip, rar, pdf, doc, xls</span>
-                        </div>
-                    </div>
-                    <div class="service__form-desc">
-                        <span class="service__form-desc_span">Нажимая кнопку «Отправить» я даю свое <span class="service__form-desc_red">согласие на обработку персональных данных</span></span>
-                        <input class="service__form-submit" id="submit" type="submit" value="Отправить бриф">
-                    </div>
-                </form>
-            </div>
-
         </div>
+        <div class="brief__content">
+            <form id="form" class="service__form" enctype="multipart/form-data">
+                <div class="service__form-head">
+                    <div class="service__form-head_item">
+                        <label for="name">Ваше имя, фамилия *</label>
+                        <input class="service__form_input" id="name" type="text" placeholder="Ваше имя" required >
+                        <div class="help-block">
+                            Неверно заполненное поле
+                        </div>
+                    </div>
 
-    </section>
+                    <div class="service__form-head_item">
+                        <label for="phone">Ваш номер телефона *</label>
+                        <input class="service__form_input js_phone-mask" id="phone" type="tel" placeholder="Номер телефона" autocomplete="off" required>
+                        <div class="help-block">
+                            Неверно заполненное поле
+                        </div>
+                    </div>
+
+                    <div class="service__form-head_item">
+                        <label for="mail">Ваш e-mail *</label>
+                        <input class="service__form_input" id="mail" type="email" placeholder="Ваш e-mail" autocomplete="off" required>
+                        <div class="help-block">
+                            Неверно заполненное поле
+                        </div>
+                    </div>
+
+                    <div class="service__form-head_item">
+                        <label for="skype">Ваш skype</label>
+                        <input class="service__form_input" id="skype" type="text" placeholder="Ваш Skype" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="service__form-radio">
+                    <div class="service__form-radio_text">
+                        <p>Какие услуги Вас интересуют?</p>
+                    </div>
+                    <div class="service__form-radio-button">
+                        <div class="service__form-radio-itemL">
+                            <div class="service__form-radio-item service__form-radio-item1">
+                                <label class="checkbox-item">Готовое решение
+                                    <input type="checkbox" name="radio" value="Готовое решение">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-item">Интернет-магазин
+                                    <input type="checkbox" name="radio" value="Интернет-магазин">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="service__form-radio-item service__form-radio-item2">
+                                <label class="checkbox-item">Индивидуальный проект
+                                    <input type="checkbox" name="radio" value="Индивидуальный проект">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-item">Корпоративные системы
+                                    <input type="checkbox" name="radio" value="Корпоративные системы">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="service__form-radio-item service__form-radio-item3">
+                                <label class="checkbox-item">Landing page
+                                    <input type="checkbox" name="radio" value="Landing page">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-item">UI/UX Design
+                                    <input type="checkbox" name="radio" value="UI/UX Design">
+                                    <span class="checkmark"></span>
+                                </label>
+                        </div>
+                        </div>
+                        <div class="service__form-radio-itemR">
+                            <div class="service__form-radio-item service__form-radio-item4">
+                                <label class="checkbox-item">Поддержка
+                                    <input type="checkbox" name="radio" value="Поддержка">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-item">Логотип
+                                    <input type="checkbox" name="radio" value="Логотип">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="service__form-radio-item service__form-radio-item5">
+                                <label class="checkbox-item">Репутационный маркетинг
+                                    <input type="checkbox" name="radio" value="Репутационный маркетинг">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-item">Полиграфическая продукция
+                                    <input type="checkbox" name="radio" value="Полиграфическая продукция">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="service__form-radio-item service__form-radio-item6">
+                                <label class="checkbox-item">Брендинг и айдентика
+                                    <input type="checkbox" name="radio" value="Брендинг и айдентика">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-item">Digital Design
+                                    <input type="checkbox" name="radio" value="Digital Design">
+                                    <span class="checkmark"></span>
+                                </label>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service__form-message" lang="ru">
+                    <div class="service__form-textarea">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" placeholder="Напишите, что считаете нужным"></textarea>
+                    </div>
+                    <div class="service__form-file">
+                        <div class="btn-file__wrap">
+                            <input type="file" class="input-file">
+                            <div class="btn-input-file">
+                                <img src="img/clip-black.png" alt="" width="25" height="25">
+                                <span>Прикрепить файл</span>
+                            </div>
+                        </div>
+                        <span class="service__form-files">jpg, jpeg, png. gif, zip, rar, pdf, doc, xls</span>
+                    </div>
+                </div>
+                <div class="service__form-desc">
+                    <span class="service__form-desc_span">Нажимая кнопку «Отправить» я даю свое <span class="service__form-desc_red">согласие на обработку персональных данных</span></span>
+                    <input class="service__form-submit" id="submit" type="submit" value="Отправить бриф">
+                </div>
+            </form>
+            <div class="brief-massage">
+                <button class="brief-massage-close">
+                    <span></span>
+                    <span></span>
+                </button>
+                <img src="img/massage_success.png">
+                <h2>Бриф отправлен!</h2>
+                <p>Ожидайте, скоро мы с вами свяжемся.</p>
+                <p>А пока вы можете посмотреть <a href="portfolio.html">наши работы</a></p>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- end brief.html-->
 
 <!-- start blog.html-->
