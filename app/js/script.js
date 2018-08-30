@@ -423,8 +423,8 @@ $('.btn_services-mob').click(function(){
 //   },2000);
 // });
 
-$(document).on('click', '.brief-massage-close', function () {
-  setTimeout(function() {
-    $('.brief-massage').removeClass('brief-massage-active');
-  },500);
-});
+// $(document).on('click', '.brief-massage-close', function () {
+//   setTimeout(function() {
+//     $('.brief-massage').removeClass('brief-massage-active');
+//   },500);
+// });
