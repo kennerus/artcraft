@@ -227,7 +227,7 @@ svg {
   transform: scale(0.8);
 }
 
-.grid-item:hover img {
+.grid-item:hover .grid-item__img {
   @include breakpoint(min-width 992px) {
     background-color: #222222;
     transform: scale(.95);

@@ -379,3 +379,50 @@
 #cboxClose:hover {
   background:url(jquery-colorbox/images/controls1.png) no-repeat 50% 50%;
 }
+
+.photoGrid {
+  max-height: 450px;
+  overflow: hidden;
+}
+
+.grid-item__links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.grid-item__links a:first-child {
+  margin-right: 10px;
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+}
+
+.grid-item__links a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+.full-size {
+  position: absolute;
+  top: 44%;
+  left: 44%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0,0,0,.7);
+  border-radius: 50%;
+}
+
+.grid-item:hover .full-size {
+  -webkit-transform: scale(.95);
+  -ms-transform: scale(.95);
+  transform: scale(.95);
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  opacity: .8;
+}

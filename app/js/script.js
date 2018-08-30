@@ -11,7 +11,7 @@ $(function () {
     $('.cloud2').css('background-position', pos);
   }, 70);
 
-  $('.grid-item').photoSwipe();
+  $('.photoGrid').photoSwipe();
 
   if ($('.js_phone-mask').length > 0) {
     $('.js_phone-mask').inputmask({alias: "phoneru"});
@@ -92,6 +92,11 @@ $(function () {
       height: 70 * 2
     });
   }
+
+  $(".dotportfolio").dotdotdot({
+    ellipsis: "\u2026 ",
+    height: 50,
+  });
 
   $('.brief__form-head input').unbind().blur(function () {
 

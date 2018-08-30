@@ -1116,6 +1116,7 @@
     position: absolute;
     top: 100%;
 		width: 100%;
+		margin-left: 8px;
   }
   .vacancies-p__vacancy-more_novelty {
     position: absolute;
@@ -1161,7 +1162,7 @@
   }
   .novelty__title_bold {
     margin-bottom: 0;
-		margin: 0 10px;
+		margin: 0 10px 0 0;
   }
   .vacancies-p__vacancy-more_novelty {
     position: absolute;
@@ -1198,6 +1199,9 @@
 	.novelty__img {
 		width: auto;
 		height: 300px;
+	}
+	.novelty__text {
+		margin-left: 0;
 	}
 }
 
