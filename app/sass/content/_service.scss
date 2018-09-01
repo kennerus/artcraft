@@ -931,7 +931,7 @@
 		cursor: pointer;
 		transition: all .2s;
 		&:hover {
-			transform: scale(.9);
+			//transform: scale(.9);
 			transition: all .2s;
 		}
 	}
@@ -1082,9 +1082,6 @@
 }
 
 @media (max-width: 800px) {
-	.service__form-radio-button {
-		flex-direction: row;
-	}
   .novelty__big-title {
     left: -100px;
     position: relative;
@@ -1133,9 +1130,6 @@
 @media (max-width: 590px) {
 	.service__form-head {
 		justify-content: center;
-	}
-	.service__form-radio-button {
-		flex-direction: column;
 	}
   .novelty {
     flex-direction: column;

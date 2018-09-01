@@ -20,7 +20,7 @@
                         <li><a href="vacancies.html">Вакансии</a></li>
                     </ul>
                 </li>
-                <li class="header__nav-li"><a class="scroll" href="#brief">Контакты</a></li>
+                <li class="header__nav-li"><a class="portfolio-scroll" href="#brief">Контакты</a></li>
             </ul>
             <li class="header__callback header__callback_mobile">
                 <svg class="header-phone" version="1.1" id="phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -65,5 +65,33 @@
             <span class="header__callback_top">+7 (918) 888-22-33</span>
             <button class="header__callback_bottom">Заказать обратный звонок</button>
         </div>
+    </div>
+    <div class="phone-massage">
+        <button class="phone-massage-close">
+            <span></span>
+            <span></span>
+        </button>
+        <h2>Укажите контактные данные для звонка</h2>
+        <p>Наш менеджер по проектам свяжется с вами в течении 10 минут</p>
+        <form id="formPhone" class="phone-massage-form">
+          <div class="service__form-head_item phone-massage_item">
+            <input class="service__form_input js_phone-mask phone-massage_input" id="phone" type="tel" placeholder="Номер телефона" autocomplete="off" required>
+            <div class="help-block">
+              Неверно заполненное поле
+            </div>
+          </div>
+          <input class="service__form-submit phone-massage-btn js_phoneMassage" id="submit" type="submit" value="Отправить">
+        </form>
+        <p class="service__form-desc_span">Нажимая кнопку «Отправить» я даю свое <br><span class="service__form-desc_red">согласие на обработку персональных данных</span></p>
+    </div>
+    <div class="brief-massage js_phoneMassage">
+      <button class="brief-massage-close">
+        <span></span>
+        <span></span>
+      </button>
+      <img src="img/massage_success.png">
+      <h2>Ваш номер отправлен!</h2>
+      <p>Ожидайте, скоро мы с вами свяжемся.</p>
+      <p>А пока вы можете посмотреть <a href="portfolio.html">наши работы</a></p>
     </div>
 </header>

@@ -134,6 +134,10 @@ svg {
 }
 
 .grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 22%;
   max-height: 500px;

@@ -69,6 +69,8 @@
 .feedback-down-img {
   width: 103px;
   height: 105px;
+  border-radius: 50%;
+  object-fit: cover;
   transform: scale(0.6);
   transition: transform 0.2s;
 }
@@ -76,7 +78,7 @@
 .slick-center .feedback-down-img {
   transform: scale(1);
   transition: transform 0.2s;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .feedback-down-wrap {

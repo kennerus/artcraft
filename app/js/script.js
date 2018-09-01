@@ -417,14 +417,36 @@ $('.btn_services-mob').click(function(){
   }
 });
 
-// $(document).on('click', '.service__form-submit', function () {
-//   setTimeout(function() {
-//     $('.brief-massage').addClass('brief-massage-active');
-//   },2000);
-// });
 
-// $(document).on('click', '.brief-massage-close', function () {
-//   setTimeout(function() {
-//     $('.brief-massage').removeClass('brief-massage-active');
-//   },500);
-// });
+//brief massage
+$(document).on('click', '.service__form-submit', function () {
+    $('.sk-fading-circle').addClass('sk-fading-circle-active');
+});
+
+$(document).on('click', '.service__form-submit', function () {
+  setTimeout(function() {
+    $('.brief-massage').addClass('brief-massage-active');
+    $('.sk-fading-circle').removeClass('sk-fading-circle-active');
+  },2000);
+});
+
+$(document).on('click', '.brief-massage-close', function () {
+  setTimeout(function() {
+    $('.brief-massage').removeClass('brief-massage-active');
+  },500);
+});
+
+
+//phone massage
+$(document).on('click', '.header__callback_bottom', function () {
+  $('.phone-massage').addClass('phone-massage-active');
+});
+
+$(document).on('click', '.phone-massage-close', function () {
+  $('.phone-massage').removeClass('phone-massage-active');
+});
+
+$(document).on('click', '.js_phoneMassage', function () {
+  $('.brief-massage').addClass('brief-massage-active');
+  $('.phone-massage').removeClass('phone-massage-active');
+});

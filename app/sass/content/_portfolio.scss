@@ -388,6 +388,7 @@
 .grid-item__links {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   margin-top: 5px;
 }
 
@@ -401,22 +402,23 @@
 .grid-item__links a:hover {
   color: #000000;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .full-size {
   position: absolute;
-  top: 44%;
-  left: 44%;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
   background-color: rgba(0,0,0,.7);
   border-radius: 50%;
+  pointer-events: none;
 }
 
 .grid-item:hover .full-size {
+  display: flex;
   -webkit-transform: scale(.95);
   -ms-transform: scale(.95);
   transform: scale(.95);
@@ -425,4 +427,8 @@
   transition: all .5s;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   opacity: .8;
+}
+
+.grid-item_hidden {
+  visibility: hidden;
 }

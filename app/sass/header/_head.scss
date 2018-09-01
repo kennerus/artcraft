@@ -6,6 +6,7 @@
   position: relative;
   z-index: 5;
   display: flex;
+  justify-content: center;
   width: 100%;
   height: 100%;
   background-color: white;
@@ -103,6 +104,7 @@
       letter-spacing: 0.5px;
       padding: 0;
       white-space: nowrap;
+      outline: none;
       @include breakpoint(max-width 1200px) {
         font-size: 11px;
 
@@ -601,6 +603,116 @@
   margin-right: 10px;
   border-radius: 25px;
   box-shadow: 3px 3px 18px -4px red;
+}
+
+.phone-massage-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-massage-form .phone-massage-btn {
+  margin: 10px 0 20px;
+  width: 75%;
+}
+
+.phone-massage-form .phone-massage-btn:hover {
+  transition: all .2s;
+  transform: scale(.9);
+}
+
+.phone-massage {
+  padding: 30px;
+  position: absolute;
+  top: 100%;
+  width: 24%;
+  height: max-content;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  z-index: 999;
+  box-shadow: 0 10px 80px rgba(0,0,0,.13);
+}
+
+.phone-massage-active {
+  display: flex;
+}
+
+
+.phone-massage h2 {
+  font-family: GilroyBold,sans-serif;
+  font-size: 36px;
+  text-align: center;
+}
+
+.phone-massage p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: GilroyMedium,sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.phone-massage p a {
+  color: #ff7f6d;
+  text-decoration: none;
+}
+
+.phone-massage p a:hover {
+  color: #ff7f6d;
+  text-decoration: none;
+}
+
+.phone-massage .service__form-desc_span {
+  font-size: 13px;
+}
+
+.phone-massage .phone-massage_input {
+  width: 82%;
+}
+
+.phone-massage .phone-massage_item {
+  width: 75%;
+}
+
+.phone-massage-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 20px;
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.phone-massage-close span {
+  width: 20px;
+  height: 3px;
+  display: block;
+  background-color: #acacac;
+}
+
+.phone-massage-close span:first-child {
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.phone-massage-close span:last-child {
+  position: relative;
+  top: -3px;
+  transform: rotate(-45deg);
+}
+
+.header .brief-massage {
+  top: 100%;
+  width: 400px;
 }
 
 @media (max-width: 1200px) {
