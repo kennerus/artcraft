@@ -112,6 +112,20 @@
     }
   }
 
+.header__callback_text .header__callback_bottom {
+  font-weight: bold;
+  font-size: 12px;
+  font-family: GilroyBold, sans-serif;
+  color: #ff4834;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  padding: 0;
+  white-space: nowrap;
+  outline: none;
+}
+
   &__wrapper {
     position: relative;
     display: flex;
@@ -616,9 +630,19 @@
 .phone-massage-form .phone-massage-btn {
   margin: 10px 0 20px;
   width: 75%;
+  color: #ffffff;
+  font-family: GilroySemibold,sans-serif;
+  font-size: 16px;
+  text-align: center;
+  background-color: #ff5038;
+  border-radius: 25px;
+  padding: 13px 0;
+  border: 0;
+  cursor: pointer;
 }
 
 .phone-massage-form .phone-massage-btn:hover {
+  color: #ffffff;
   transition: all .2s;
   transform: scale(.9);
 }
@@ -627,7 +651,11 @@
   display: none;
 }
 
-#phoneMassage.fancybox-content {
+#phoneBrief {
+  display: none;
+}
+
+#phoneMassage.fancybox-content, #phoneBrief.fancybox-content {
   margin: 0;
   padding: 0;
   background: none;
@@ -639,7 +667,7 @@
   //top: 100%;
   width: 450px;
   height: max-content;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -647,6 +675,30 @@
   border-radius: 10px;
   z-index: 999;
   box-shadow: 0 10px 80px rgba(0,0,0,.13);
+}
+
+.phone-brief-massage {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  z-index: 999;
+  box-shadow: 0 10px 80px rgba(0,0,0,.13);
+}
+
+.phone-massage-submite {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.phone-massage-submite .sk-fading-circle {
+  top: 22px;
+  right: 75px;
 }
 
 .phone-massage-active {
@@ -742,6 +794,31 @@
   }
   .header-wrapper-down:before {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .phone-massage {
+    width: 100%;
+  }
+  .phone-massage h2 {
+    font-size: 27px;
+  }
+  .phone-massage p {
+    font-size: 14px;
+  }
+  .phone-massage .phone-massage_item {
+    width: 100%;
+  }
+  .phone-massage-form .phone-massage-btn {
+    width: 100%;
+  }
+  .phone-massage_item .help-block {
+    width: 90%;
+  }
+  .phone-brief-massage {
+    text-align: center;
+    padding: 30px 5px;
   }
 }
 

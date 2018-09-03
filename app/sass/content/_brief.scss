@@ -469,23 +469,23 @@ textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s 
 }
 
 
-.brief-massage h2 {
+.brief-massage h2, .phone-brief-massage h2 {
   font-family: GilroyBold,sans-serif;
   font-size: 36px;
 }
 
-.brief-massage p {
+.brief-massage p, .phone-brief-massage p {
   margin: 0;
   font-family: GilroyMedium,sans-serif;
   font-size: 16px;
 }
 
-.brief-massage p a {
+.brief-massage p a, .phone-brief-massage p a {
   color: #ff7f6d;
   text-decoration: none;
 }
 
-.brief-massage p a:hover {
+.brief-massage p a:hover, .phone-brief-massage p a:hover {
   color: #ff7f6d;
   text-decoration: none;
 }

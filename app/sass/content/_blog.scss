@@ -87,6 +87,7 @@
       margin-right: 38px;
 
       @include breakpoint(max-width 988px) {
+        width: 300px;
         height: 200px;
       }
 
