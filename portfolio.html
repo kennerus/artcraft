@@ -8,8 +8,8 @@
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/libs.min.css" rel="stylesheet" type="text/css">
-    <link href="css/photoswipe.css" rel="stylesheet" type="text/css">
-    <link href="css/default-skin/default-skin.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css">
     <link href="css/styles.min.css" rel="stylesheet" type="text/css">
     <link href="css/fine-uploader-gallery.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -108,34 +108,39 @@
 
 <!-- start header-portfolio.html-->
 <header class="header">
-    <div class="header__logo logo"><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a></div>
-    <div class="container">
-        <div class="header__mobile-btn"><span></span></div>
+  <div class="header__logo logo"><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a>
+  </div>
+  <div class="container">
+    <div class="header__mobile-btn"><span></span></div>
 
-        <ul class="header__nav">
-            <li class="header__logo header__logo_mobile logo"><a href="index.html"><img src="img/logo_header_red.svg" width="160" height="35" alt=""></a></li>
-            <ul class="header__nav-container">
-                <li class="header__nav-li"><a href="services.html">Услуги</a></li>
-                <li class="active-page header__nav-li"><a href="portfolio.html">Портфолио</a></li>
-                <li class="header__nav-li"><a href="#">Горячие предложения</a></li>
-                <li class="header__nav-li"><a href="blog.html">Блог</a></li>
-                <li class="header__nav-li"><a href="myths.html">Развеивание мифов</a></li>
-                <li class="header__nav-li dropdown">
-                    <a href="about.html">О нас</a>
-                    <button class="dropdown_mob"></button>
-                    <ul class="header__submenu header__submenu_mob">
-                        <li><a href="feedback.html">Отзывы</a></li>
-                        <li><a href="#">Клиенты</a></li>
-                        <li><a href="vacancies.html">Вакансии</a></li>
-                    </ul>
-                </li>
-                <li class="header__nav-li"><a class="scroll" href="#brief">Контакты</a></li>
-            </ul>
-            <li class="header__callback header__callback_mobile">
-                <svg class="header-phone" version="1.1" id="phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <ul class="header__nav">
+      <li class="header__logo header__logo_mobile logo"><a href="index.html"><img src="img/logo_header_red.svg"
+                                                                                  width="160" height="35" alt=""></a>
+      </li>
+      <ul class="header__nav-container">
+        <li class="header__nav-li"><a href="services.html">Услуги</a></li>
+        <li class="active-page header__nav-li"><a href="portfolio.html">Портфолио</a></li>
+        <li class="header__nav-li"><a href="#">Горячие предложения</a></li>
+        <li class="header__nav-li"><a href="blog.html">Блог</a></li>
+        <li class="header__nav-li"><a href="myths.html">Развеивание мифов</a></li>
+        <li class="header__nav-li dropdown">
+          <a href="about.html">О нас</a>
+          <button class="dropdown_mob"></button>
+          <ul class="header__submenu header__submenu_mob">
+            <li><a href="feedback.html">Отзывы</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="vacancies.html">Вакансии</a></li>
+          </ul>
+        </li>
+        <li class="header__nav-li"><a class="scroll" href="#brief">Контакты</a></li>
+      </ul>
+      <li class="header__callback header__callback_mobile">
+        <svg class="header-phone" version="1.1" id="phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                    viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
                 <style type="text/css">
-                  .st0{fill:#FF4834;}
+                  .st0 {
+                    fill: #FF4834;
+                  }
                 </style>
                 <path class="st0" d="M20,0C9,0,0,8.9,0,20c0,11,9,20,20,20s20-9,20-20C40,8.9,31,0,20,0z M29.6,26.5l-2.8,2.8
                   c-0.1,0.1-0.3,0.3-0.5,0.4c-0.2,0.1-0.4,0.2-0.6,0.2c0,0-0.1,0-0.1,0c-0.1,0-0.2,0-0.3,0c-0.3,0-0.7,0-1.3-0.1
@@ -147,18 +152,20 @@
                   c0,0,0.1,0,0.1,0s0.1,0,0.1-0.1l1.2-1.2c0.3-0.2,0.5-0.3,0.9-0.3c0.2,0,0.4,0,0.6,0.1h0l4.1,2.4c0.3,0.2,0.5,0.4,0.5,0.7
                   C29.9,26,29.9,26.3,29.6,26.5z"/>
                 </svg>
-                <div class="header__callback_text">
-                    <span class="header__callback_top">+7 (918) 888-22-33</span>
-                    <button class="header__callback_bottom">Заказать обратный звонок</button>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="header__callback">
-        <svg class="header-phone" version="1.1" id="phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <div class="header__callback_text">
+          <span class="header__callback_top">+7 (918) 888-22-33</span>
+          <button class="header__callback_bottom">Заказать обратный звонок</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="header__callback">
+    <svg class="header-phone" version="1.1" id="phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
         <style type="text/css">
-          .st0{fill:#FF4834;}
+          .st0 {
+            fill: #FF4834;
+          }
         </style>
         <path class="st0" d="M20,0C9,0,0,8.9,0,20c0,11,9,20,20,20s20-9,20-20C40,8.9,31,0,20,0z M29.6,26.5l-2.8,2.8
           c-0.1,0.1-0.3,0.3-0.5,0.4c-0.2,0.1-0.4,0.2-0.6,0.2c0,0-0.1,0-0.1,0c-0.1,0-0.2,0-0.3,0c-0.3,0-0.7,0-1.3-0.1
@@ -170,11 +177,41 @@
           c0,0,0.1,0,0.1,0s0.1,0,0.1-0.1l1.2-1.2c0.3-0.2,0.5-0.3,0.9-0.3c0.2,0,0.4,0,0.6,0.1h0l4.1,2.4c0.3,0.2,0.5,0.4,0.5,0.7
           C29.9,26,29.9,26.3,29.6,26.5z"/>
         </svg>
-        <div class="header__callback_text">
-            <span class="header__callback_top">+7 (918) 888-22-33</span>
-            <button class="header__callback_bottom">Заказать обратный звонок</button>
-        </div>
+    <div class="header__callback_text">
+      <span class="header__callback_top">+7 (918) 888-22-33</span>
+      <button class="header__callback_bottom">Заказать обратный звонок</button>
     </div>
+  </div>
+  <div class="phone-massage">
+    <button class="phone-massage-close">
+      <span></span>
+      <span></span>
+    </button>
+    <h2>Укажите контактные данные для звонка</h2>
+    <p>Наш менеджер по проектам свяжется с вами в течении 10 минут</p>
+    <form id="formPhone" class="phone-massage-form">
+      <div class="service__form-head_item phone-massage_item">
+        <input class="service__form_input js_phone-mask phone-massage_input" id="phone" type="tel"
+               placeholder="Номер телефона" autocomplete="off" required>
+        <div class="help-block">
+          Неверно заполненное поле
+        </div>
+      </div>
+      <input class="service__form-submit phone-massage-btn js_phoneMassage" id="submit" type="submit" value="Отправить">
+    </form>
+    <p class="service__form-desc_span">Нажимая кнопку «Отправить» я даю свое <br><span class="service__form-desc_red">согласие на обработку персональных данных</span>
+    </p>
+  </div>
+  <div class="brief-massage js_phoneMassage">
+    <button class="brief-massage-close">
+      <span></span>
+      <span></span>
+    </button>
+    <img src="img/massage_success.png">
+    <h2>Ваш номер отправлен!</h2>
+    <p>Ожидайте, скоро мы с вами свяжемся.</p>
+    <p>А пока вы можете посмотреть <a href="portfolio.html">наши работы</a></p>
+  </div>
 </header>
 <!-- end header-portfolio.html-->
 
@@ -220,9 +257,37 @@
 
 					<div class="grid">
 						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/landing-page-deign.jpg" alt="Баннер">
+              <figure class="photoGrid">
+							  <a href="img/port-item-1.png" data-size="1400x5471"><img src="img/port-item-1-s.png" alt="Image description" ></a>
+              </figure>
+              <span class="full-size">
+                <img src="img/full-size.svg" width="20" height="20" alt="">
+              </span>
+              <div class="grid-item__links">
+                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы Заголовок работы Заголовок работы Заголовок работы</a>
+                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
+                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
+                </a>
               </div>
+						</div>
+<div class="grid-item">
+              <figure class="photoGrid">
+							  <a href="img/balloon.png" data-size="280x342"><img src="img/balloon.png" alt="Image description" ></a>
+              </figure>
+              <span class="full-size">
+                <img src="img/full-size.svg" width="20" height="20" alt="">
+              </span>
+              <div class="grid-item__links">
+                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы Заголовок работы Заголовок работы Заголовок работы</a>
+                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
+                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
+                </a>
+              </div>
+						</div>
+<div class="grid-item">
+              <figure class="photoGrid">
+							  <a href="img/port-item-1.png" data-size="1400x5471"><img src="img/port-item-1-s.png" alt="Image description" ></a>
+              </figure>
               <span class="full-size">
                 <img src="img/full-size.svg" width="20" height="20" alt="">
               </span>
@@ -234,248 +299,248 @@
               </div>
 						</div>
 
-						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/balloon.png" alt="Шарик">
-              </div>
-              <span class="full-size">
-                <img src="img/full-size.svg" width="20" height="20" alt="">
-              </span>
-              <div class="grid-item__links">
-                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
-                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
-                </a>
-              </div>
-						</div>
+						<!--<div class="grid-item">-->
+              <!--<div class="photoGrid">-->
+							  <!--<img class="grid-item__img" src="img/balloon.png" alt="Шарик">-->
+              <!--</div>-->
+              <!--<span class="full-size">-->
+                <!--<img src="img/full-size.svg" width="20" height="20" alt="">-->
+              <!--</span>-->
+              <!--<div class="grid-item__links">-->
+                <!--<a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>-->
+                <!--<a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">-->
+                  <!--<img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">-->
+                <!--</a>-->
+              <!--</div>-->
+						<!--</div>-->
 
-						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/balloon.png" alt="Шарик">
-              </div>
-              <span class="full-size">
-                <img src="img/full-size.svg" width="20" height="20" alt="">
-              </span>
-              <div class="grid-item__links">
-                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
-                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
-                </a>
-              </div>
-						</div>
+						<!--<div class="grid-item">-->
+              <!--<div class="photoGrid">-->
+							  <!--<img class="grid-item__img" src="img/balloon.png" alt="Шарик">-->
+              <!--</div>-->
+              <!--<span class="full-size">-->
+                <!--<img src="img/full-size.svg" width="20" height="20" alt="">-->
+              <!--</span>-->
+              <!--<div class="grid-item__links">-->
+                <!--<a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>-->
+                <!--<a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">-->
+                  <!--<img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">-->
+                <!--</a>-->
+              <!--</div>-->
+						<!--</div>-->
 
-						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/portfolio.jpg" alt="">
-              </div>
-              <span class="full-size">
-                <img src="img/full-size.svg" width="20" height="20" alt="">
-              </span>
-              <div class="grid-item__links">
-                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
-                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
-                </a>
-              </div>
-						</div>
-
-
+						<!--<div class="grid-item">-->
+              <!--<div class="photoGrid">-->
+							  <!--<img class="grid-item__img" src="img/portfolio.jpg" alt="">-->
+              <!--</div>-->
+              <!--<span class="full-size">-->
+                <!--<img src="img/full-size.svg" width="20" height="20" alt="">-->
+              <!--</span>-->
+              <!--<div class="grid-item__links">-->
+                <!--<a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>-->
+                <!--<a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">-->
+                  <!--<img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">-->
+                <!--</a>-->
+              <!--</div>-->
+						<!--</div>-->
 
 
-						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/portfolio1.png" alt="">
-              </div>
-              <span class="full-size">
-                <img src="img/full-size.svg" width="20" height="20" alt="">
-              </span>
-              <div class="grid-item__links">
-                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
-                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
-                </a>
-              </div>
-						</div>
 
-						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/portfolio3.png" alt="">
-              </div>
-              <span class="full-size">
-                <img src="img/full-size.svg" width="20" height="20" alt="">
-              </span>
-              <div class="grid-item__links">
-                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
-                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
-                </a>
-              </div>
-						</div>
 
-						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/raccoon.JPG" alt="">
-              </div>
-              <span class="full-size">
-                <img src="img/full-size.svg" width="20" height="20" alt="">
-              </span>
-              <div class="grid-item__links">
-                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
-                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
-                </a>
-              </div>
-						</div>
+						<!--<div class="grid-item">-->
+              <!--<div class="photoGrid">-->
+							  <!--<img class="grid-item__img" src="img/portfolio1.png" alt="">-->
+              <!--</div>-->
+              <!--<span class="full-size">-->
+                <!--<img src="img/full-size.svg" width="20" height="20" alt="">-->
+              <!--</span>-->
+              <!--<div class="grid-item__links">-->
+                <!--<a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>-->
+                <!--<a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">-->
+                  <!--<img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">-->
+                <!--</a>-->
+              <!--</div>-->
+						<!--</div>-->
 
-						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/portfolio-chair.jpg" alt="">
-              </div>
-              <span class="full-size">
-                <img src="img/full-size.svg" width="20" height="20" alt="">
-              </span>
-              <div class="grid-item__links">
-                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
-                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
-                </a>
-              </div>
-						</div>
+						<!--<div class="grid-item">-->
+              <!--<div class="photoGrid">-->
+							  <!--<img class="grid-item__img" src="img/portfolio3.png" alt="">-->
+              <!--</div>-->
+              <!--<span class="full-size">-->
+                <!--<img src="img/full-size.svg" width="20" height="20" alt="">-->
+              <!--</span>-->
+              <!--<div class="grid-item__links">-->
+                <!--<a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>-->
+                <!--<a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">-->
+                  <!--<img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">-->
+                <!--</a>-->
+              <!--</div>-->
+						<!--</div>-->
 
-						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/go-to-brief.jpg" alt="">
-              </div>
-              <span class="full-size">
-                <img src="img/full-size.svg" width="20" height="20" alt="">
-              </span>
-              <div class="grid-item__links">
-                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
-                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
-                </a>
-              </div>
-						</div>
+						<!--<div class="grid-item">-->
+              <!--<div class="photoGrid">-->
+							  <!--<img class="grid-item__img" src="img/raccoon.JPG" alt="">-->
+              <!--</div>-->
+              <!--<span class="full-size">-->
+                <!--<img src="img/full-size.svg" width="20" height="20" alt="">-->
+              <!--</span>-->
+              <!--<div class="grid-item__links">-->
+                <!--<a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>-->
+                <!--<a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">-->
+                  <!--<img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">-->
+                <!--</a>-->
+              <!--</div>-->
+						<!--</div>-->
 
-						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/portfolio5.png" alt="">
-              </div>
-              <span class="full-size">
-                <img src="img/full-size.svg" width="20" height="20" alt="">
-              </span>
-              <div class="grid-item__links">
-                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
-                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
-                </a>
-              </div>
-						</div>
+						<!--<div class="grid-item">-->
+              <!--<div class="photoGrid">-->
+							  <!--<img class="grid-item__img" src="img/portfolio-chair.jpg" alt="">-->
+              <!--</div>-->
+              <!--<span class="full-size">-->
+                <!--<img src="img/full-size.svg" width="20" height="20" alt="">-->
+              <!--</span>-->
+              <!--<div class="grid-item__links">-->
+                <!--<a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>-->
+                <!--<a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">-->
+                  <!--<img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">-->
+                <!--</a>-->
+              <!--</div>-->
+						<!--</div>-->
 
-						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/portfolio-scrubb.jpg" alt="">
-              </div>
-              <span class="full-size">
-                <img src="img/full-size.svg" width="20" height="20" alt="">
-              </span>
-              <div class="grid-item__links">
-                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
-                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
-                </a>
-              </div>
-						</div>
+						<!--<div class="grid-item">-->
+              <!--<div class="photoGrid">-->
+							  <!--<img class="grid-item__img" src="img/go-to-brief.jpg" alt="">-->
+              <!--</div>-->
+              <!--<span class="full-size">-->
+                <!--<img src="img/full-size.svg" width="20" height="20" alt="">-->
+              <!--</span>-->
+              <!--<div class="grid-item__links">-->
+                <!--<a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>-->
+                <!--<a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">-->
+                  <!--<img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">-->
+                <!--</a>-->
+              <!--</div>-->
+						<!--</div>-->
 
-						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/portfolio-soc.jpg" alt="">
-              </div>
-              <span class="full-size">
-                <img src="img/full-size.svg" width="20" height="20" alt="">
-              </span>
-              <div class="grid-item__links">
-                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
-                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
-                </a>
-              </div>
-						</div>
+						<!--<div class="grid-item">-->
+              <!--<div class="photoGrid">-->
+							  <!--<img class="grid-item__img" src="img/portfolio5.png" alt="">-->
+              <!--</div>-->
+              <!--<span class="full-size">-->
+                <!--<img src="img/full-size.svg" width="20" height="20" alt="">-->
+              <!--</span>-->
+              <!--<div class="grid-item__links">-->
+                <!--<a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>-->
+                <!--<a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">-->
+                  <!--<img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">-->
+                <!--</a>-->
+              <!--</div>-->
+						<!--</div>-->
 
-						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/header-bg.jpg" alt="">
-              </div>
-              <span class="full-size">
-                <img src="img/full-size.svg" width="20" height="20" alt="">
-              </span>
-              <div class="grid-item__links">
-                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
-                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
-                </a>
-              </div>
-						</div>
+						<!--<div class="grid-item">-->
+              <!--<div class="photoGrid">-->
+							  <!--<img class="grid-item__img" src="img/portfolio-scrubb.jpg" alt="">-->
+              <!--</div>-->
+              <!--<span class="full-size">-->
+                <!--<img src="img/full-size.svg" width="20" height="20" alt="">-->
+              <!--</span>-->
+              <!--<div class="grid-item__links">-->
+                <!--<a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>-->
+                <!--<a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">-->
+                  <!--<img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">-->
+                <!--</a>-->
+              <!--</div>-->
+						<!--</div>-->
 
-						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/blog3.png" alt="">
-              </div>
-              <span class="full-size">
-                <img src="img/full-size.svg" width="20" height="20" alt="">
-              </span>
-              <div class="grid-item__links">
-                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
-                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
-                </a>
-              </div>
-						</div>
+						<!--<div class="grid-item">-->
+              <!--<div class="photoGrid">-->
+							  <!--<img class="grid-item__img" src="img/portfolio-soc.jpg" alt="">-->
+              <!--</div>-->
+              <!--<span class="full-size">-->
+                <!--<img src="img/full-size.svg" width="20" height="20" alt="">-->
+              <!--</span>-->
+              <!--<div class="grid-item__links">-->
+                <!--<a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>-->
+                <!--<a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">-->
+                  <!--<img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">-->
+                <!--</a>-->
+              <!--</div>-->
+						<!--</div>-->
 
-						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/footer-bg.jpg" alt="">
-              </div>
-              <span class="full-size">
-                <img src="img/full-size.svg" width="20" height="20" alt="">
-              </span>
-              <div class="grid-item__links">
-                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
-                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
-                </a>
-              </div>
-						</div>
+						<!--<div class="grid-item">-->
+              <!--<div class="photoGrid">-->
+							  <!--<img class="grid-item__img" src="img/header-bg.jpg" alt="">-->
+              <!--</div>-->
+              <!--<span class="full-size">-->
+                <!--<img src="img/full-size.svg" width="20" height="20" alt="">-->
+              <!--</span>-->
+              <!--<div class="grid-item__links">-->
+                <!--<a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>-->
+                <!--<a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">-->
+                  <!--<img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">-->
+                <!--</a>-->
+              <!--</div>-->
+						<!--</div>-->
 
-						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/portfolio4.png" alt="">
-              </div>
-              <span class="full-size">
-                <img src="img/full-size.svg" width="20" height="20" alt="">
-              </span>
-              <div class="grid-item__links">
-                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
-                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
-                </a>
-              </div>
-						</div>
+						<!--<div class="grid-item">-->
+              <!--<div class="photoGrid">-->
+							  <!--<img class="grid-item__img" src="img/blog3.png" alt="">-->
+              <!--</div>-->
+              <!--<span class="full-size">-->
+                <!--<img src="img/full-size.svg" width="20" height="20" alt="">-->
+              <!--</span>-->
+              <!--<div class="grid-item__links">-->
+                <!--<a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>-->
+                <!--<a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">-->
+                  <!--<img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">-->
+                <!--</a>-->
+              <!--</div>-->
+						<!--</div>-->
 
-						<div class="grid-item">
-              <div class="photoGrid">
-							  <img class="grid-item__img" src="img/portfolio2.png" alt="">
-              </div>
-              <span class="full-size">
-                <img src="img/full-size.svg" width="20" height="20" alt="">
-              </span>
-              <div class="grid-item__links">
-                <a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>
-                <a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">
-                  <img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">
-                </a>
-              </div>
-						</div>
+						<!--<div class="grid-item">-->
+              <!--<div class="photoGrid">-->
+							  <!--<img class="grid-item__img" src="img/footer-bg.jpg" alt="">-->
+              <!--</div>-->
+              <!--<span class="full-size">-->
+                <!--<img src="img/full-size.svg" width="20" height="20" alt="">-->
+              <!--</span>-->
+              <!--<div class="grid-item__links">-->
+                <!--<a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>-->
+                <!--<a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">-->
+                  <!--<img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">-->
+                <!--</a>-->
+              <!--</div>-->
+						<!--</div>-->
+
+						<!--<div class="grid-item">-->
+              <!--<div class="photoGrid">-->
+							  <!--<img class="grid-item__img" src="img/portfolio4.png" alt="">-->
+              <!--</div>-->
+              <!--<span class="full-size">-->
+                <!--<img src="img/full-size.svg" width="20" height="20" alt="">-->
+              <!--</span>-->
+              <!--<div class="grid-item__links">-->
+                <!--<a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>-->
+                <!--<a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">-->
+                  <!--<img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">-->
+                <!--</a>-->
+              <!--</div>-->
+						<!--</div>-->
+
+						<!--<div class="grid-item">-->
+              <!--<div class="photoGrid">-->
+							  <!--<img class="grid-item__img" src="img/portfolio2.png" alt="">-->
+              <!--</div>-->
+              <!--<span class="full-size">-->
+                <!--<img src="img/full-size.svg" width="20" height="20" alt="">-->
+              <!--</span>-->
+              <!--<div class="grid-item__links">-->
+                <!--<a href="single-portfolio.html" class="dotportfolio">Заголовок работы</a>-->
+                <!--<a data-pin-do="buttonPin" data-pin-custom="true" data-pin-log="button_pinit" data-pin-href="https://ru.pinterest.com/pin/create/button?guid=zm1Vh8DTZiLD-1&amp;url=https%3A%2F%2Fweb-artcraft.com%2Fportfolio&amp;media=undefined&amp;description=%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%20%D0%B2%D0%B5%D0%B1-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20Craft%20Group%3A%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%20%D0%B8%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%20%D0%B8%20%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-%D0%BF%D0%B5%D0%B9%D0%B4%D0%B6.">-->
+                  <!--<img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" style="width: 25px; height: 25px; border-radius: 50%">-->
+                <!--</a>-->
+              <!--</div>-->
+						<!--</div>-->
 
 					</div>
 				</div>
@@ -842,9 +907,10 @@
 <script src='js/jquery-3.2.1.min.js' type="text/javascript"></script>
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>-->
 <script src="js/slick.min.js"></script>
-<script src="js/jquery.photoswipe.js"></script>
-<script src="js/jquery.photoswipe-global.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script>
 <script src="js/jquery.dotdotdot.js"></script>
+<script src="js/jquery.fancybox.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>
 <script src="js/masonry.pkgd.min.js"></script>
 <script src="js/fine-uploader.min.js"></script>
@@ -852,6 +918,7 @@
 <script src="js/phone.js"></script>
 <script src="js/phone-ru.js"></script>
 <script src="js/script.min.js"></script>
+<script src="js/PhotoSw.js"></script>
 <script>
 	$('.grid').imagesLoaded( function() {
 		$('.grid-preloader').css('display', 'none');
@@ -865,6 +932,71 @@
     });
 </script>
 <a href="#" class="scrollup"></a>
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+  <!-- Background of PhotoSwipe.
+       It's a separate element, as animating opacity is faster than rgba(). -->
+  <div class="pswp__bg"></div>
+
+  <!-- Slides wrapper with overflow:hidden. -->
+  <div class="pswp__scroll-wrap">
+
+    <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+    <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+
+    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+    <div class="pswp__ui pswp__ui--hidden">
+
+      <div class="pswp__top-bar">
+
+        <!--  Controls are self-explanatory. Order can be changed. -->
+
+        <div class="pswp__counter"></div>
+
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+        <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+        <!-- element will get class pswp__preloader--active when preloader is running -->
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+      </button>
+
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+      </button>
+
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 </body>
 </html>
 <!-- end html_close-portfolio.html-->

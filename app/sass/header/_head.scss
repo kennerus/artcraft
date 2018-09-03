@@ -623,11 +623,21 @@
   transform: scale(.9);
 }
 
+#phoneMassage {
+  display: none;
+}
+
+#phoneMassage.fancybox-content {
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
 .phone-massage {
   padding: 30px;
-  position: absolute;
-  top: 100%;
-  width: 24%;
+  //position: absolute;
+  //top: 100%;
+  width: 450px;
   height: max-content;
   display: none;
   flex-direction: column;
@@ -673,7 +683,7 @@
 }
 
 .phone-massage .phone-massage_input {
-  width: 82%;
+  width: 100%;
 }
 
 .phone-massage .phone-massage_item {

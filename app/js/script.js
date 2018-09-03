@@ -11,8 +11,6 @@ $(function () {
     $('.cloud2').css('background-position', pos);
   }, 70);
 
-  $('.photoGrid').photoSwipe();
-
   if ($('.js_phone-mask').length > 0) {
     $('.js_phone-mask').inputmask({alias: "phoneru"});
   }
@@ -437,16 +435,22 @@ $(document).on('click', '.brief-massage-close', function () {
 });
 
 
-//phone massage
-$(document).on('click', '.header__callback_bottom', function () {
-  $('.phone-massage').addClass('phone-massage-active');
+// phone massage
+// $(document).on('click', '.header__callback_bottom', function () {
+//   $('.phone-massage').addClass('phone-massage-active');
+// });
+//
+// $(document).on('click', '.phone-massage-close', function () {
+//   $('.phone-massage').removeClass('phone-massage-active');
+// });
+//
+// $(document).on('click', '.js_phoneMassage', function () {
+//   $('.brief-massage').addClass('brief-massage-active');
+//   $('.phone-massage').removeClass('phone-massage-active');
+// });
+
+$('.header__callback_bottom').fancybox({
+  // Options will go here
 });
 
-$(document).on('click', '.phone-massage-close', function () {
-  $('.phone-massage').removeClass('phone-massage-active');
-});
 
-$(document).on('click', '.js_phoneMassage', function () {
-  $('.brief-massage').addClass('brief-massage-active');
-  $('.phone-massage').removeClass('phone-massage-active');
-});
