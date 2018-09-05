@@ -164,6 +164,14 @@ svg {
     transition: opacity 0.2s ease-in-out;
   }
 
+  &:nth-child(odd) {
+    @include breakpoint(max-width 768px) {
+      margin-right: 1%;
+    }
+    @include breakpoint(max-width 450px) {
+      margin-right: 0;
+    }
+  }
 
   @include breakpoint(max-width 1200px) {
     width: 30%;
@@ -174,9 +182,13 @@ svg {
   }
 
   @include breakpoint(max-width 576px) {
-    width: 100%;
+    //width: 100%;
     margin: 0;
     margin-bottom: 10px;
+  }
+  @include breakpoint(max-width 450px) {
+    width: 100%;
+
   }
 }
 

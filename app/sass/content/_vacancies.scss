@@ -33,12 +33,14 @@
 
 .vacancies-text {
   position: relative;
-  left: -16%;
-  font-weight: 600;
+  left: -6%;
+  max-width: 600px;
+  //font-weight: 600;
   color: #818080
 }
 
 .vacancies-novelty-more {
+  margin-left: -35px;
   border-radius: 25px;
 }
 
@@ -50,10 +52,9 @@
 }
 
 .vacancies-novelty-img {
-  position: absolute;
   z-index: 2;
   margin-right: 70px;
-  left: -32px;
+  left: 107px;
   top: -130px;
 }
 
@@ -104,31 +105,34 @@
 }
 
 @media (max-width: 1200px) {
-  .vacancies-novelty-img {
-    left: -120px;
-  }
+  //.vacancies-novelty-img {
+  //  left: -120px;
+  //}
   .vacancies-novelty-title {
-    left: -90px;
+    position: relative;
+    text-align: center;
   }
 }
 
 @media (max-width: 1000px) {
-  .vacancies-title {
-    right: 20px;
-  }
+  //.vacancies-title {
+  //  right: 20px;
+  //}
 }
 
-@media (max-width: 650px) {
+@media (max-width: 888px) {
   .vacancies-novelty-desc {
     width: 100%;
     margin-top: 160px;
     align-items: center;
   }
   .vacancies-novelty-img {
+    top: -35px;
     left: 0;
+    margin-right: 0;
   }
   .vacancies-novelty {
-    margin-bottom: 325px;
+    margin-bottom: 0;
   }
   .vacancies-text {
     top: 135%;
@@ -142,6 +146,50 @@
   }
   .vacancies-section {
     margin-top: 40px;
+  }
+  .vacancies-novelty {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .novelty__desce {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .novelty__head {
+    text-align: center;
+  }
+  .novelty__big-title {
+    left: 0;
+  }
+  .novelty__body {
+    text-align: center;
+  }
+  .novelty__title {
+    margin-left: 0;
+    right: 0;
+    justify-content: center;
+  }
+  .novelty__title_bold {
+    margin-bottom: 0;
+    margin: 0 10px 0 0;
+  }
+  .vacancies-p__vacancy-more_novelty {
+    position: relative;
+    top: 18px;
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
+  .vacancies-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .novelty__img {
+    left: 0;
   }
 }
 
@@ -167,7 +215,6 @@
 @media (max-width: 426px) {
   .vacancies-novelty-img {
     left: 0;
-    top: -200px;
     width: 380px;
     height: auto;
   }
@@ -181,7 +228,6 @@
     font-size: 52px;
   }
   .vacancies-novelty-img {
-    top: -175px;
     left: 0;
     width: 340px;
     height: auto;
@@ -190,7 +236,6 @@
 
 @media (max-width: 320px) {
   .vacancies-novelty-img {
-    top: -175px;
     left: -15px;
     width: 340px;
     height: auto;
