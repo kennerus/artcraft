@@ -708,3 +708,69 @@ textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s 
     opacity: 1;
   }
 }
+
+.service-brief #wrapperCont {
+  width: 100%;
+}
+
+.service-brief .itemWrapper {
+  width: 80%;
+  align-items: center;
+  justify-content: flex-start;
+  margin: -6px 5px -6px 18px;
+  font-size: 13px;
+  background: none;
+  border: none;
+}
+
+.service-brief .itemWrapper img {
+  width: 100%;
+}
+
+.service-brief #dropArea {
+  width: 200px;
+  height: 100px;
+  border-radius: 5px;
+  margin: 5px;
+  border: 2px dashed gray;
+  background-color: ghostwhite;
+}
+
+.service-brief .delItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: background-color ease .5s;
+}
+
+.service-brief .delItem:hover span {
+  background-color: #ff5038;
+  transition: background-color ease .5s;
+}
+
+.service-brief .delItem span {
+  width: 12px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.service-brief .delItem span:first-child {
+  transform: rotate(45deg);
+}
+
+.service-brief .delItem span:last-child {
+  position: relative;
+  top: -2px;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 992px) {
+  .service-brief #wrapperCont {
+    width: min-content;
+  }
+}
