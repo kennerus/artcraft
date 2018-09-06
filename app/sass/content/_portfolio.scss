@@ -430,6 +430,10 @@
   opacity: .8;
 }
 
+.pswp__counter, .pswp__button--arrow--left, .pswp__button--arrow--right {
+  display: none!important;
+}
+
 .grid-item_hidden {
   visibility: hidden;
 }

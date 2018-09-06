@@ -237,13 +237,14 @@ svg {
   }
 }
 
-.grid-item__fancybox:hover,
-.grid-item__fancybox:active,
-.grid-item__fancybox:focus {
-  transform: scale(0.8);
-}
+//.grid-item:hover .photoGrid,
+//.grid-item:active .photoGrid,
+//.grid-item:focus .photoGrid{
+//  transform: scale(0.8);
+//  transition: all 0.2s;
+//}
 
-.grid-item:hover .grid-item__img {
+.grid-item:hover .photoGrid {
   @include breakpoint(min-width 992px) {
     background-color: #222222;
     transform: scale(.95);
