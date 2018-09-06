@@ -448,3 +448,7 @@ $('.header__callback_bottom').fancybox({
 $(document).on('click', '.js_phoneMassage', function () {
   $('.phone-massage-submite .sk-fading-circle').addClass('sk-fading-circle-active');
 });
+
+$(document).on('click', '.more_btn', function () {
+  $('.more_btn .sk-fading-circle').addClass('sk-fading-circle-active');
+});
