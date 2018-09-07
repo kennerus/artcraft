@@ -136,8 +136,6 @@ svg {
 .grid-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: relative;
   width: 22%;
   max-height: 500px;
@@ -396,6 +394,7 @@ svg {
 
   @include breakpoint(max-width 992px) {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
@@ -417,7 +416,7 @@ svg {
     padding-top: 30px;
     @include breakpoint(max-width 1200px) {
       margin-left: 0;
-      width: 100%;
+      //width: 100%;
     }
     @include breakpoint(max-width 500px) {
       font-size: 24px;
@@ -963,6 +962,12 @@ svg {
   font-size: 50px;
   color: #e4e5e5;
   text-transform: uppercase;
+}
+
+@media (max-width: 1200px) and (min-width: 993px) {
+  .tittle h2 {
+    margin-right: 230px;
+  }
 }
 
 @media (max-width: 992px) {

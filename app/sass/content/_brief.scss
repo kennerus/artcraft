@@ -544,7 +544,7 @@ textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s 
 
 @media (max-width: 480px) {
   .service__form-radio-button {
-    height: 415px;
+    height: auto;
   }
 }
 
@@ -568,10 +568,10 @@ textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s 
   display: flex;
 }
 
-.service__submit-block:hover {
-  transition: all .2s;
-  transform: scale(.9);
-}
+//.service__submit-block:hover {
+//  transition: all .2s;
+//  transform: scale(.9);
+//}
 
 .sk-fading-circle {
   position: absolute;

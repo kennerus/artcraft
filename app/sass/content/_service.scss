@@ -948,7 +948,7 @@
     cursor: pointer;
     transition: all .2s;
     &:hover {
-      //transform: scale(.9);
+      transform: scale(.9);
       transition: all .2s;
     }
   }
@@ -1182,7 +1182,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .service__form-file {
     margin-left: 20px;
   }
@@ -1227,7 +1227,7 @@
   }
 }
 
-@media (max-width: 992px) and (min-width: 600px) {
+@media (max-width: 1200px) and (min-width: 600px) {
   .service__form-head_item {
     width: 48%;
   }

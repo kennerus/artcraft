@@ -46,7 +46,7 @@ $(function () {
         {
           breakpoint: 768,
           settings: {
-            variableWidth: false,
+            variableWidth: true,
             slidesToShow: 2
           }
         },
@@ -54,7 +54,7 @@ $(function () {
         {
           breakpoint: 576,
           settings: {
-            variableWidth: true,
+            variableWidth: false,
             slidesToShow: 1
           }
         }
@@ -383,6 +383,7 @@ $(function () {
   });
 });
 
+
 var viewportWidth = document.body.clientWidth;
 var gallery = document.querySelector('.portfolio__gallery');
 var portfolioBrief = document.querySelector('.portfolio__brief');
@@ -441,9 +442,17 @@ $('.btn_services-mob').click(function () {
 $('.header__callback_bottom').fancybox({
   // Options will go here
 });
-// $('js_phoneMassage').fancybox({
-//   // Options will go here
-// });
+
+$(document).ready(function() {
+  $(".js_phoneMassage").fancybox();
+  $(".js_phoneMassage").click(function(){
+    $(this).closest('form').submit(function (e) {
+      e.preventDefault();
+      return false;
+    });
+    return false;
+  });
+});
 
 $(document).on('click', '.js_phoneMassage', function () {
   $('.phone-massage-submite .sk-fading-circle').addClass('sk-fading-circle-active');

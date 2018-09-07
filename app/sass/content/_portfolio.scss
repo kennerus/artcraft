@@ -408,6 +408,8 @@
 
 .full-size {
   position: absolute;
+  top: 15px;
+  right: 15px;
   display: none;
   align-items: center;
   justify-content: center;
@@ -416,6 +418,27 @@
   background-color: rgba(0,0,0,.7);
   border-radius: 50%;
   pointer-events: none;
+  @include breakpoint(max-width 1024px) {
+    display: flex;
+  }
+}
+
+.portfolio-open-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.grid-item:hover .portfolio-open-image {
+  -webkit-transform: scale(.95);
+  -ms-transform: scale(.95);
+  transform: scale(.95);
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  opacity: .8;
 }
 
 .grid-item:hover .full-size {
@@ -430,7 +453,7 @@
   opacity: .8;
 }
 
-.pswp__counter, .pswp__button--arrow--left, .pswp__button--arrow--right {
+.pswp__counter, .pswp__button--arrow--left, .pswp__button--arrow--right, .pswp__button--share {
   display: none!important;
 }
 
