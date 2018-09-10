@@ -273,9 +273,6 @@
 
     @include breakpoint(max-width 576px) {
       width: 100%;
-    }
-
-    @include breakpoint(max-width 576px) {
       height: 500px;
     }
 

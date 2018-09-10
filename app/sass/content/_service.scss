@@ -972,7 +972,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 25%;
     @include breakpoint(max-width 992px) {
       width: 100%;
@@ -991,7 +990,7 @@
   .btn-file__wrap {
     position: relative;
     width: 180px;
-    margin-top: 20px;
+    margin-top: 45px;
     transition: all .2s;
     cursor: pointer;
     @include breakpoint(max-width 992px) {

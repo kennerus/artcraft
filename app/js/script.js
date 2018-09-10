@@ -443,15 +443,35 @@ $('.header__callback_bottom').fancybox({
   // Options will go here
 });
 
-$(document).ready(function() {
-  $(".js_phoneMassage").fancybox();
-  $(".js_phoneMassage").click(function(){
-    $(this).closest('form').submit(function (e) {
-      e.preventDefault();
-      return false;
-    });
-    return false;
-  });
+// $(document).ready(function() {
+//
+//   $(document).on('click', ".js_phoneMassage", function(){
+//     $(".js_phoneMassage").fancybox();
+//
+//     $(this).closest('form').submit(function (e) {
+//       e.preventDefault();
+//       setTimeout(function() {
+//         $('.js_phoneMessage').click()
+//         }
+//         , 2000);
+//     });
+//     return false;
+//   });
+// });
+
+$(document).on('click', '.js_phoneMassage', function () {
+  $('.phone-brief-overlay').addClass('phone-massage-active');
+  $('body').css('overflow', 'hidden')
+});
+
+$(document).on('click', '.phone-massage-close', function () {
+  $('.phone-brief-overlay').removeClass('phone-massage-active');
+  $('body').css('overflow', 'visible')
+});
+
+$(document).on('click', '.phone-brief-overlay', function () {
+  $('.phone-brief-overlay').removeClass('phone-massage-active');
+  $('body').css('overflow', 'visible')
 });
 
 $(document).on('click', '.js_phoneMassage', function () {
