@@ -462,16 +462,16 @@ svg {
   h2 {
     font-family: $GilroySemibold;
     font-size: 36px;
-    color: $black;
+    color: $black !important;
   }
   span {
     font-family: $GilroyExtrabold;
-    color: $grey;
+    color: $grey !important;
   }
   p {
     font-family: $GilroyRegular;
     font-size: 16px;
-    color: $darkGrey;
+    color: $darkGrey !important;
     font-style: italic;
   }
 
@@ -966,7 +966,7 @@ svg {
     }
 
 .flex {
-  display: flex !important;
+  display: flex;
 }
 
 .black-text {
