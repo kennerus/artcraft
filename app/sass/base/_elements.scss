@@ -462,7 +462,7 @@ svg {
   h2 {
     font-family: $GilroySemibold;
     font-size: 36px;
-    color: $black !important;
+    color: $black;
   }
   span {
     font-family: $GilroyExtrabold;
@@ -473,6 +473,10 @@ svg {
     font-size: 16px;
     color: $darkGrey !important;
     font-style: italic;
+    span {
+      font-family: inherit!important;
+      color: inherit !important;
+    }
   }
 
 }

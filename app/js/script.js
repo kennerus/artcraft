@@ -308,7 +308,6 @@ $(function () {
   });
 
   // scroll to top
-
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('.scrollup').fadeIn();
@@ -381,6 +380,16 @@ $(function () {
     overlay.fadeOut("slow");
     $('.header__mobile-btn').removeClass('header__mobile-btn--active');
   });
+
+  //sticky sidebar
+  if(window.innerWidth > 992 && document.getElementById('#sidebar')) {
+    var stickySidebar = new StickySidebar('#sidebar', {
+      topSpacing: 20,
+      bottomSpacing: 20,
+      containerSelector: '.main',
+      innerWrapperSelector: '.sidebar__inner'
+    });
+  };
 });
 
 
