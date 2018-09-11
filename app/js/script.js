@@ -69,32 +69,35 @@ $(function () {
     })
   }
 
-  if ($('.dotdot').length > 0 || $('.dotdot-title').length > 0) {
-    $('.dotdot').dotdotdot({
-      height: 80
-    });
+  if (typeof dotdotdot !== "undefined") {
+    if ($('.dotdot').length > 0 || $('.dotdot-title').length > 0) {
+      $('.dotdot').dotdotdot({
+        height: 80
+      });
 
-    $('.dotdot-title').dotdotdot({
-      ellipsis: '...',
-      height: 23 * 2
+      $('.dotdot-title').dotdotdot({
+        ellipsis: '...',
+        height: 23 * 2
+      });
+    }
+
+
+    if ($('.dottext').length > 0 || $('.blog__block-text').length > 0) {
+      $('.dottext').dotdotdot({
+        height: 160
+      });
+
+      $('.blog__block-text').dotdotdot({
+        ellipsis: '...',
+        height: 70 * 2
+      });
+    }
+
+    $(".dotportfolio").dotdotdot({
+      ellipsis: "\u2026 ",
+      height: 50,
     });
   }
-
-  if ($('.dottext').length > 0 || $('.blog__block-text').length > 0) {
-    $('.dottext').dotdotdot({
-      height: 160
-    });
-
-    $('.blog__block-text').dotdotdot({
-      ellipsis: '...',
-      height: 70 * 2
-    });
-  }
-
-  $(".dotportfolio").dotdotdot({
-    ellipsis: "\u2026 ",
-    height: 50,
-  });
 
   $('.brief__form-head input').unbind().blur(function () {
 
@@ -382,7 +385,7 @@ $(function () {
   });
 
   //sticky sidebar
-  if(window.innerWidth > 992 && document.getElementById('#sidebar')) {
+  if(window.innerWidth > 992 && document.getElementById('sidebar')) {
     var stickySidebar = new StickySidebar('#sidebar', {
       topSpacing: 20,
       bottomSpacing: 20,
@@ -452,22 +455,6 @@ $('.header__callback_bottom').fancybox({
   // Options will go here
 });
 
-// $(document).ready(function() {
-//
-//   $(document).on('click', ".js_phoneMassage", function(){
-//     $(".js_phoneMassage").fancybox();
-//
-//     $(this).closest('form').submit(function (e) {
-//       e.preventDefault();
-//       setTimeout(function() {
-//         $('.js_phoneMessage').click()
-//         }
-//         , 2000);
-//     });
-//     return false;
-//   });
-// });
-
 $(document).on('click', '.js_phoneMassage', function () {
   $('.phone-brief-overlay').addClass('phone-massage-active');
   $('body').css('overflow', 'hidden');
@@ -493,7 +480,7 @@ $(document).on('click', '.more_btn', function () {
 });
 
 
-
+//upload files
 document.addEventListener('DOMContentLoaded', function(){
   var up = new Uploader();
   up.init({
