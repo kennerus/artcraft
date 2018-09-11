@@ -461,17 +461,18 @@ $('.header__callback_bottom').fancybox({
 
 $(document).on('click', '.js_phoneMassage', function () {
   $('.phone-brief-overlay').addClass('phone-massage-active');
-  $('body').css('overflow', 'hidden')
+  $('body').css('overflow', 'hidden');
+  $.fancybox.close();
 });
 
 $(document).on('click', '.phone-massage-close', function () {
   $('.phone-brief-overlay').removeClass('phone-massage-active');
-  $('body').css('overflow', 'visible')
+  $('body').css('overflow', 'visible');
 });
 
 $(document).on('click', '.phone-brief-overlay', function () {
   $('.phone-brief-overlay').removeClass('phone-massage-active');
-  $('body').css('overflow', 'visible')
+  $('body').css('overflow', 'visible');
 });
 
 $(document).on('click', '.js_phoneMassage', function () {

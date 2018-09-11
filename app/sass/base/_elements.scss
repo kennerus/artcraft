@@ -458,6 +458,24 @@ svg {
     }
   }
 }
+.title-element {
+  h2 {
+    font-family: $GilroySemibold;
+    font-size: 36px;
+    color: $black;
+  }
+  span {
+    font-family: $GilroyExtrabold;
+    color: $grey;
+  }
+  p {
+    font-family: $GilroyRegular;
+    font-size: 16px;
+    color: $darkGrey;
+    font-style: italic;
+  }
+
+}
 .animate-circle {
   position: absolute;
   height: 600px;
