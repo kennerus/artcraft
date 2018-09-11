@@ -184,7 +184,7 @@ $sans: 'Titillium Web', sans-serif;
   letter-spacing: 1px;
   position: relative;
   overflow: hidden;
-  max-height: 915px;
+  max-height: max-content;
   opacity: 1;
   transform: translate(0, 0);
   margin-top: 14px;
@@ -236,6 +236,9 @@ $sans: 'Titillium Web', sans-serif;
     margin-left: 0;
     margin-right: 50%;
     margin-top: 15px;
+  }
+  .services_item-mob .services_item-more {
+    margin-right: 0;
   }
 }
 
