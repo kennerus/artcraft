@@ -382,7 +382,7 @@ $(function () {
   });
 
   //sticky sidebar
-  if(window.innerWidth > 992 && document.getElementById('#sidebar')) {
+  if(window.innerWidth > 992 && document.getElementById('sidebar')) {
     var stickySidebar = new StickySidebar('#sidebar', {
       topSpacing: 20,
       bottomSpacing: 20,
