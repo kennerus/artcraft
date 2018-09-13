@@ -298,7 +298,6 @@ svg {
 .more_btn {
   position: relative;
   bottom: 0;
-  display: none;
   max-width: 215px;
   width: 100%;
   margin-top: 50px;
@@ -319,11 +318,6 @@ svg {
     margin-top: 0;
   }
 }
-
-//.more_btn:active, .more_btn:focus, .more_btn:hover {
-//  background-color: red;
-//  color: white;
-//}
 
 .grid-item__watch:hover,
 .grid-item__watch:active,
