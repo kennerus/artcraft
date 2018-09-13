@@ -297,11 +297,11 @@ svg {
 
 .more_btn {
   position: relative;
+  bottom: 0;
   display: none;
   max-width: 215px;
   width: 100%;
-  margin-top: -100px;
-  border: none;
+  margin-top: 50px;
   cursor: pointer;
   letter-spacing: 1px;
   color: #ff5038;
