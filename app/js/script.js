@@ -20,8 +20,6 @@ $(function () {
       dots: false,
       variableWidth: true,
       infinite: true,
-      // autoplay: true,
-      // autoplaySpeed: 2000,
       prevArrow: '<button class="prevArrow-blog" type="button" ><svg class="prevArrow-blogsvg" version="1.1" id="arrow-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\n' +
         '\t viewBox="0 0 38 28" style="enable-background:new 0 0 38 28;" xml:space="preserve">\n' +
         '<path  class="prevArrow-blogfill" d="M0.5,12.7c-0.7,0.7-0.7,1.9,0,2.7l11.3,12.1c0.3,0.4,0.8,0.6,1.2,0.6c0.5,0,0.9-0.2,1.2-0.6c0.7-0.7,0.7-1.9,0-2.7L6,15.9\n' +
@@ -190,6 +188,16 @@ $(function () {
   if (window.innerWidth > 992) {
     $('.tittle .block_span_title').addClass('animated').css('opacity', '0');
     $('.tittle .block_title').addClass('animated').css('opacity', '0');
+
+    // hover menu elements
+    $('.header__nav-container li a').hover(
+      function () {
+        $(this).parent().addClass('menu-item_hovered');
+      },
+      function () {
+        $(this).parent().removeClass('menu-item_hovered');
+      }
+    );
   }
 
   if (window.innerWidth > 800) {
@@ -501,7 +509,7 @@ document.addEventListener('DOMContentLoaded', function(){
     filesExt: ['psd', 'jpg', 'jpeg', 'png', 'gif', 'zip', 'rar', 'pdf', 'doc', 'xls'],
     // maxCountBox: '#maxCountBox',
     // itemsCountBox: '#itemsCountBox',
-    // maxSize: 2,
+    maxSize: 2,
     itemsCount: 1,
     uploadOnprogress: function (progress, item) {
       //console.log(progress);

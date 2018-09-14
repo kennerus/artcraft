@@ -731,6 +731,14 @@
   }
 }
 
+.service__form-radio {
+  margin-top: 20px;
+
+  @include breakpoint(max-width 1200px) {
+    margin-top: 0;
+  }
+}
+
 .main-service-smm .service__form-radio {
   display: none;
 }
@@ -922,9 +930,14 @@
     justify-content: space-between;
     flex-wrap: wrap;
     &_item {
+      position: relative;
       display: flex;
       flex-direction: column;
-      margin-bottom: 10px;
+      padding-bottom: 20px;
+
+      @include breakpoint(max-width 1200px) {
+        margin-bottom: 20px;
+      }
     }
   }
   &_input {
@@ -969,10 +982,13 @@
     }
   }
   &-file {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 25%;
+    padding-top: 23px;
+
     @include breakpoint(max-width 992px) {
       width: 100%;
     }
@@ -990,9 +1006,10 @@
   .btn-file__wrap {
     position: relative;
     width: 180px;
-    margin-top: 45px;
+    text-align: center;
     transition: all .2s;
     cursor: pointer;
+
     @include breakpoint(max-width 992px) {
       margin-top: 10px;
     }
@@ -1000,6 +1017,7 @@
   .btn-input-file {
     display: flex;
     align-items: center;
+    transition: transform 0.2s;
     img {
       padding-right: 5px;
     }
@@ -1047,9 +1065,9 @@
   }
 }
 
-.service__form .btn-file__wrap:hover {
+.service__form .btn-file__wrap:hover .btn-input-file {
   transform: scale(.9);
-  transition: all .2s;
+  transition: transform 0.2s;
 }
 
 .main-service .myths-section .paragraph {
@@ -1180,6 +1198,8 @@
     right: 20%;
   }
 }
+
+
 
 @media (max-width: 1200px) {
   .service__form-file {

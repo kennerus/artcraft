@@ -656,13 +656,24 @@
           </div>
           <div class="service__form-file">
             <div class="btn-file__wrap">
-              <input type="file" multiple class="input-file">
               <div class="btn-input-file">
                 <img src="img/clip-black.png" alt="" width="25" height="25">
                 <span>Прикрепить файл</span>
               </div>
+
+              <span class="service__form-files">jpg, jpeg, png. gif, zip, rar, pdf, doc, xls</span>
+
+              <div class="form-group field-sendform-files has-error">
+
+                <input type="hidden" name="SendForm[files][]" value="">
+                <input type="file" id="sendform-files"
+                       class="input-file"
+                       name="SendForm[files][]" multiple=""
+                       aria-invalid="true">
+                <div class="help-block">Максимальный размер файла 2 мб</div>
+              </div>
             </div>
-            <span class="service__form-files">jpg, jpeg, png. gif, zip, rar, pdf, doc, xls</span>
+
             <div id="wrapperCont">
               <div class="itemWrapper" style="display: inline-flex;">
                 <div class="delItem">

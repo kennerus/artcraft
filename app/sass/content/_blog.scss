@@ -271,6 +271,14 @@
       margin-right: 0;
     }
 
+    @include breakpoint(max-width 992px) {
+      padding: 15px;
+    }
+
+    @include breakpoint(max-width 768px) {
+      padding: 10px;
+    }
+
     @include breakpoint(max-width 576px) {
       width: 100%;
       height: 500px;
@@ -278,6 +286,7 @@
 
     @include breakpoint(max-width 400px) {
       height: 530px;
+      padding: 10px 0;
     }
   }
 

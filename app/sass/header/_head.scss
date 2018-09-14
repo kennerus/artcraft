@@ -511,19 +511,14 @@
         display: none;
       }
     }
-
-    //&:hover {
-    //  &:before {
-    //    transform: scaleX(1);
-    //    transform-origin: bottom left;
-    //  }
-    //}
   }
-}
 
-.header__nav-container li::before a:hover {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  .menu-item_hovered {
+    &:before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
 }
 
 .dropdown a {

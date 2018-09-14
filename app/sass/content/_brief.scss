@@ -338,6 +338,12 @@
   color: #282828;
   font-family: GilroySemibold,sans-serif;
   font-weight: 400;
+
+  @include breakpoint(max-width 768px) {
+    p {
+      margin-top: 0;
+    }
+  }
 }
 
 .service__form-radio-button {
@@ -448,10 +454,24 @@ textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s 
 textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
 
 .help-block {
-  padding: 10px 0;
-  position: relative;
-  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 22px;
+  font-size: 13px;
   color: rgba(255,5,0,0.99);
+}
+
+.service__form-file .help-block {
+  position: static;
+  text-align: center;
+
+  @include breakpoint(max-width 1200px) {
+    bottom: -2px;
+  }
+
+  @include breakpoint(max-width 992px) {
+    bottom: -20px;
+  }
 }
 
 .brief-massage {
@@ -532,9 +552,6 @@ textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s 
 }
 
 @media (max-width: 992px) {
-  .help-block {
-    width: 90%;
-  }
   .service__form-radio-button {
     height: 220px;
   }
