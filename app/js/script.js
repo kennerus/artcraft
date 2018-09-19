@@ -496,42 +496,19 @@ document.addEventListener('DOMContentLoaded', function(){
     itemContainer: '#wrapperCont',
     fileInput: '.input-file',
     itemWrapper: '.itemWrapper',
-    // itemImg: '.itemImg',
-    // itemSize: '.itemSize',
     itemTitle: '.itemTitle',
-    // uploadUrl: 'upload.php',
     btnLoad: '#submit',
     delItem: '.delItem',
-    // uploadItem: '.uploadItem',
-    // dragNDrop: true,
-    // dropArea: '#dropArea',
-    maxCount: 11,
+    maxCount: 10,
     filesExt: ['psd', 'jpg', 'jpeg', 'png', 'gif', 'zip', 'rar', 'pdf', 'doc', 'xls'],
-    // maxCountBox: '#maxCountBox',
-    // itemsCountBox: '#itemsCountBox',
-    maxSize: 2,
-    itemsCount: 1,
-    uploadOnprogress: function (progress, item) {
-      //console.log(progress);
-      //console.log(item);
-    },
-    uploadSuccess: function (response, e, item) {
-      console.log(response);
-    },
-    dragenter: function (dropArea, e) {
-      dropArea.style.borderColor = 'red';
-    },
-    dragleave: function (dropArea, e) {
-      dropArea.style.borderColor = 'grey';
-    },
-    drop: function (dropArea, e) {
-      dropArea.style.borderColor = 'grey';
-    },
-    beforeUpload: function (item, formData) {
-      formData.append('test', 'test');
-    },
+    maxSize: 5,
+    itemsCount: 0,
     maxSizeError: function (name, size) {
+      document.querySelector('.service__form-files').style.color = 'red';
       console.log('Файл слишком большой', name, Math.round((size / 1024 / 1024)*100)/100 + ' мб.' );
+    },
+    fileAdded: function (e) {
+      document.querySelector('.service__form-files').style.color = 'black';
     }
   });
   up.indexItems();
