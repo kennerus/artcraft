@@ -67,7 +67,7 @@ $(function () {
     })
   }
 
-  if (typeof dotdotdot !== "undefined") {
+  // if (typeof dotdotdot !== "undefined") {
     if ($('.dotdot').length > 0 || $('.dotdot-title').length > 0) {
       $('.dotdot').dotdotdot({
         height: 80
@@ -95,7 +95,7 @@ $(function () {
       ellipsis: "\u2026 ",
       height: 50,
     });
-  }
+  // }
 
   $('.brief__form-head input').unbind().blur(function () {
 
@@ -393,6 +393,17 @@ $(function () {
   });
 
   //sticky sidebar
+  // if(window.innerWidth > 992 && document.getElementById('sidebar')) {
+  //   var stickySidebar = new StickySidebar('#sidebar', {
+  //     topSpacing: 20,
+  //     bottomSpacing: 20,
+  //     containerSelector: '.main',
+  //     innerWrapperSelector: '.sidebar__inner'
+  //   });
+  // }
+});
+
+window.onload = function () {
   if(window.innerWidth > 992 && document.getElementById('sidebar')) {
     var stickySidebar = new StickySidebar('#sidebar', {
       topSpacing: 20,
@@ -400,9 +411,8 @@ $(function () {
       containerSelector: '.main',
       innerWrapperSelector: '.sidebar__inner'
     });
-  };
-});
-
+  }
+};
 
 var viewportWidth = document.body.clientWidth;
 var gallery = document.querySelector('.portfolio__gallery');
