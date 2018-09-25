@@ -391,18 +391,9 @@ $(function () {
     overlay.fadeOut("slow");
     $('.header__mobile-btn').removeClass('header__mobile-btn--active');
   });
-
-  //sticky sidebar
-  // if(window.innerWidth > 992 && document.getElementById('sidebar')) {
-  //   var stickySidebar = new StickySidebar('#sidebar', {
-  //     topSpacing: 20,
-  //     bottomSpacing: 20,
-  //     containerSelector: '.main',
-  //     innerWrapperSelector: '.sidebar__inner'
-  //   });
-  // }
 });
 
+//sidebar for portfolio and single blog
 window.onload = function () {
   if(window.innerWidth > 992 && document.getElementById('sidebar')) {
     var stickySidebar = new StickySidebar('#sidebar', {
@@ -495,4 +486,52 @@ $(document).on('click', '.js_phoneMassage', function () {
 
 $(document).on('click', '.more_btn', function () {
   $('.more_btn .sk-fading-circle').addClass('sk-fading-circle-active');
+});
+
+document.addEventListener('DOMContentLoaded', function(){
+  var up = new Uploader();
+  up.init({
+    btnSelect: '.btn-input-file',
+    itemContainer: '#wrapperCont',
+    fileInput: '.input-file',
+    itemWrapper: '.itemWrapper',
+// itemImg: '.itemImg',
+// itemSize: '.itemSize',
+    itemTitle: '.itemTitle',
+// uploadUrl: 'upload.php',
+    btnLoad: '#submit',
+    delItem: '.delItem',
+// uploadItem: '.uploadItem',
+// dragNDrop: true,
+// dropArea: '#dropArea',
+    maxCount: 11,
+    filesExt: ['psd', 'jpg', 'jpeg', 'png', 'gif', 'zip', 'rar', 'pdf', 'doc', 'xls'],
+// maxCountBox: '#maxCountBox',
+// itemsCountBox: '#itemsCountBox',
+    maxSize: 2,
+    itemsCount: 1,
+    uploadOnprogress: function (progress, item) {
+//console.log(progress);
+//console.log(item);
+    },
+    uploadSuccess: function (response, e, item) {
+      console.log(response);
+    },
+    dragenter: function (dropArea, e) {
+      dropArea.style.borderColor = 'red';
+    },
+    dragleave: function (dropArea, e) {
+      dropArea.style.borderColor = 'grey';
+    },
+    drop: function (dropArea, e) {
+      dropArea.style.borderColor = 'grey';
+    },
+    beforeUpload: function (item, formData) {
+      formData.append('test', 'test');
+    },
+    maxSizeError: function (name, size) {
+      console.log('Файл слишком большой', name, Math.round((size / 1024 / 1024)*100)/100 + ' мб.' );
+    }
+  });
+  up.indexItems();
 });
