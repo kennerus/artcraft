@@ -5,11 +5,6 @@ var gulp = require('gulp'), // Подключаем Gulp
     uglify = require('gulp-uglifyjs'), // Подключаем gulp-uglifyjs (для сжатия JS)
     rename = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
     del = require('del'), // Подключаем библиотеку для удаления файлов и папок
-    imagemin = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
-    pngquant = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
-    spritesmith = require('gulp.spritesmith'), // Подключаем библиотеку для создания png-спрайтов
-    svgstore = require('gulp-svgstore'),//// Подключаем библиотеку для объединения SVG в один файл
-    svgmin = require('gulp-svgmin'),//Подключаем библиотеку для минификации SVG
     cache = require('gulp-cache'), // Подключаем библиотеку кеширования
     extender = require('gulp-html-extend'),//Подключаем бибилиотеку для склейки html-файлов
     sourcemaps = require('gulp-sourcemaps'),//Подключаем плагин, записывающий карту источника в исходный файл
@@ -41,24 +36,6 @@ gulp.task('css-libs', function () { // Создаем таск css-libs
         .pipe(concat('libs.min.css'))// объеденяем в файл
         .pipe(gulp.dest('css')) // Выгружаем результата в папку app/css
         .pipe(browserSync.stream({})); // Обновляем CSS на странице при изменении
-});
-
-gulp.task('png-sprite', function () {// PNG Sprites
-    var spriteData =
-        gulp.src('app/img/sprites/*.*')// путь, откуда берем картинки для спрайта
-            .pipe(spritesmith({
-                imgName: 'sprite.png',//имя генерируемой картинки
-                cssName: '_png-sprite.sass',//имя css файла, который получится на выходе
-                cssFormat: 'sass',//формат css файла
-                algorithm: 'binary-tree',//способ сортировки изображений
-                cssTemplate: 'sass.template.mustache',//функция или путь до mustache шаблона, дающие возможность настроить CSS-файл на выходе
-                cssVarMap: function (sprite) {//цикл, настраивающий названия CSS переменных
-                    sprite.name = 's-' + sprite.name
-                }
-            }));
-
-    spriteData.img.pipe(gulp.dest('img/sprites/'));// путь, куда сохраняем картинку
-    spriteData.css.pipe(gulp.dest('app/sass/libs/'));// путь, куда сохраняем стили
 });
 
 gulp.task('sass', function () { // Создаем таск Sass
@@ -136,29 +113,11 @@ gulp.task('extend-blocks', function () {
         .pipe(browserSync.stream({}));
 });
 
-gulp.task('watch', ['compress', 'extend-pages', 'css-libs', 'img', 'sass'], function () {
+gulp.task('watch', ['compress', 'extend-pages', 'css-libs', 'sass'], function () {
     gulp.watch('app/libs/**/*', ['css-libs']); // Наблюдение за папкой libs
-    gulp.watch('app/img/**/*', ['img']);// Наблюдение за папкой img
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch(['app/html/**/*.html'], ['extend-pages']);// Наблюдение за HTML-файлами в папке html
     gulp.watch('app/js/**/*.js', ['compress']); // Наблюдение за js-файлами
-});
-
-
-gulp.task('img', function () {
-    return gulp.src('app/img/**/*')
-        .pipe(cache(imagemin({
-            interlaced: true,
-            progressive: true,
-            svgoPlugins: [{
-                removeViewBox: false
-            }],
-            use: [pngquant()]
-        })))
-        .pipe(gulp.dest('img'))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
 });
 
 gulp.task('clear', function (callback) {
@@ -168,4 +127,4 @@ gulp.task('clear', function (callback) {
 gulp.task('default', ['watch', 'browser-sync']);
 
 /*
- npm i gulp gulp-sass browser-sync gulp-concat gulp-uglifyjs gulp-rename del gulp-imagemin imagemin-pngquant calipers-png calipers-jpeg calipers-gif gulp.spritesmith gulp-svgstore gulp-svgmin gulp-cache gulp-html-extend gulp-sourcemaps rimraf gulp-plumber gulp-postcss autoprefixer cssnano postcss-pxtorem postcss-px-to-em postcss-short stylefmt postcss-assets postcss-short-spacing postcss-focus postcss-sorting postcss-font-magician postcss-fixes stylelint-config-standard --save-dev*/
+ npm i gulp gulp-sass browser-sync gulp-concat gulp-uglifyjs gulp-rename del gulp-cache gulp-html-extend gulp-sourcemaps rimraf gulp-plumber gulp-postcss autoprefixer cssnano postcss-pxtorem postcss-px-to-em postcss-short stylefmt postcss-assets postcss-short-spacing postcss-focus postcss-sorting postcss-font-magician postcss-fixes stylelint-config-standard --save-dev*/

@@ -487,3 +487,26 @@ $(document).on('click', '.js_phoneMassage', function () {
 $(document).on('click', '.more_btn', function () {
   $('.more_btn .sk-fading-circle').addClass('sk-fading-circle-active');
 });
+
+$(document).ready(function() {
+    if (document.querySelector('.js-tab')) {
+        var tabs = document.querySelectorAll('.js-tab');
+        for (var i = 0; i < tabs.length; i++) {
+            var tab = tabs[i];
+            var parent = tab.closest('.tabs');
+            tab.onclick = function(e) {
+              e.preventDefault();
+                var active = parent.querySelector('.tab-active');
+                if (this !== active) {
+                    var href= this.getAttribute('href');
+                    var content = document.querySelector(href);
+                    var activeContent = document.querySelector('.tab-content-active');
+                    activeContent.classList.remove('tab-content-active');
+                    content.classList.add('tab-content-active');
+                    active.classList.remove('tab-active');
+                    this.classList.add('tab-active');
+                }
+            }
+        }
+    }
+});

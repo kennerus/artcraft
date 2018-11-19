@@ -1,7 +1,7 @@
 $black: #282828;
 $grey: #e4e5e5;
-$darkGrey: #818080;
-$red: #ff5038;
+$darkGrey: #828181;
+$red: #ff4834;
 
 $colors: #F2385A, #B22815, #ff5038;
 $max: length($colors);
@@ -971,6 +971,10 @@ svg {
   color: #282828;
 }
 
+.fw-bold {
+  font-weight: 700;
+}
+
 .tittle .title {
   position: absolute;
   top: 0;
@@ -990,4 +994,16 @@ svg {
   .tittle .title {
     width: 100%;
   }
+}
+
+.js-tab-content {
+  max-height: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease, max-height 0s ease 0.3s;
+}
+
+.tab-content-active {
+  max-height: 100000px;
+  opacity: 1;
+  transition: opacity 0.3s ease 0.3s, max-height 0s ease 0.3s;
 }
