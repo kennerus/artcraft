@@ -1,5 +1,8 @@
 .all-sections {
+  position: relative;
+  z-index: 1;
   padding: 20px 0;
+  overflow: hidden;
   &__tabs {
     display: flex;
     flex-wrap: wrap;
