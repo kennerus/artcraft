@@ -1,0 +1,126 @@
+.steps {
+  padding-bottom: 50px;
+  .tittle h2 {
+    margin-left: 40px;
+    font-size: 31px;
+  }
+  .tittle span {
+    font-size: 45px;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+  }
+  $firstWidth: 72%;
+  $secondWidth: 100% - $firstWidth;
+  &__main {
+    display: flex;
+    width: $firstWidth;
+  }
+  &__aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $secondWidth;
+    padding-top: 40px;
+    &-text {
+      font-size: 14px;
+    }
+    &-title {
+      margin: 30px 0 10px;
+      color: $red;
+      font-size: 20px;
+      font-family: $GilroyExtrabold;
+    }
+    &-link {
+      margin: 20px 0 40px;
+      font-family: $GilroySemibold;
+      font-size: 15px;
+      text-decoration: underline;
+      color: inherit;
+    }
+    &-btn {
+      position: unset;
+    }
+  }
+  &__scale {
+    position: relative;
+    min-width: 70px;
+    max-width: 70px;
+    &-line {
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      width: 4px;
+      background-color: #d4e4f1;
+    }
+    &-number {
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 1;
+      font-family: $GilroySemibold;
+      background-color: $red;
+      border-radius: 50%;
+      transform: translateX(-50%);
+      box-shadow: 12px 12px 20px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+  }
+  &__items {
+    position: relative;
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 30px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &-img {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-width: 70px;
+      max-width: 70px;
+      padding-right: 10px;
+      img {
+        max-width: 100%;
+      }
+    }
+    &-title {
+      font-size: 22px;
+      font-family: $GilroySemibold;
+    }
+    &-text {
+      max-width: 490px;
+      margin-top: 5px;
+      font-size: 13px;
+      font-family: $GilroySemibold;
+      color: #02192b;
+      p {
+        margin: 0;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: $GilroySemibold;
+    color: #02192b;
+    &-main {
+      margin-right: 20px;
+      font-size: 28px;
+      text-transform: uppercase;
+      color: $red;
+    }
+  }
+}

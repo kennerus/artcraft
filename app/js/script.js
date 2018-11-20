@@ -15,6 +15,15 @@ $(function () {
     $('.js_phone-mask').inputmask({alias: "phoneru"});
   }
 
+  if($('.portfolio__slider-design').length > 0) {
+      $('.portfolio__slider-design').slick({
+          arrows: false,
+          dots: true,
+          slidesToShow: 4,
+          slidesToScroll: 4
+      });
+  }
+
   if ($('.cases__slider').length > 0) {
       $('.cases__slider').slick({
           prevArrow: '<button class="cases__prev" type="button" ><svg class="prevArrow-blogsvg" version="1.1" id="arrow-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\n' +
@@ -514,18 +523,51 @@ $(document).ready(function() {
             var tab = tabs[i];
             var parent = tab.closest('.tabs');
             tab.onclick = function(e) {
-              e.preventDefault();
-                var active = parent.querySelector('.tab-active');
-                if (this !== active) {
-                    var href= this.getAttribute('href');
-                    var content = document.querySelector(href);
-                    var activeContent = document.querySelector('.tab-content-active');
-                    activeContent.classList.remove('tab-content-active');
-                    content.classList.add('tab-content-active');
-                    active.classList.remove('tab-active');
-                    this.classList.add('tab-active');
-                }
-            }
+                e.preventDefault();
+                    var active = parent.querySelector('.tab-active');
+                    if (this !== active) {
+                        var href= this.getAttribute('href');
+                        var content = document.querySelector(href);
+                        var activeContent = document.querySelector('.tab-content-active');
+                        activeContent.classList.remove('tab-content-active');
+                        content.classList.add('tab-content-active');
+                        active.classList.remove('tab-active');
+                        this.classList.add('tab-active');
+                    }
+              }
         }
     }
+
+  if (document.querySelector('.steps__scale')) {
+      var count = true;
+      var scale = document.querySelector('.steps__scale');
+      var stepsItems = document.querySelectorAll('.steps__item');
+      var scaleNumber = document.querySelector('.steps__scale-number');
+      var scaleLine = document.querySelector('.steps__scale-line');
+      var stepsWrap = document.querySelector('.steps__items');
+      scaleLine.style.height =  stepsWrap.clientHeight - stepsItems[stepsItems.length - 1].clientHeight + 15 + 'px';
+      document.onscroll = function() {
+          var scalePos = scale.getBoundingClientRect();
+          if (scalePos.top < scalePos.height && scalePos.bottom > 0) {
+              if (count) {
+                  var i = 1;
+                  var stepsInterval = setInterval(function() {
+                      var stepsItem = stepsItems[i];
+                      scaleNumber.style.top = stepsItem.offsetTop + 15 + 'px';
+                      if (i < 9) {
+                          scaleNumber.innerHTML = '0' + (i + 1);
+                      }
+                      else {
+                          scaleNumber.innerHTML = i + 1;
+                      }
+                      i++;
+                      if (i >= stepsItems.length) {
+                          clearInterval(stepsInterval);
+                      }
+                  }, 3000);
+                  count = false;
+              }
+          }
+      };
+  }
 });

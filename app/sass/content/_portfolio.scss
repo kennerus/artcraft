@@ -84,7 +84,7 @@
   }
   .paragraph {
     top: 62px;
-    left: -46px;
+    left: -75px;
     letter-spacing: 0.6px;
     &:before {
       top: 0;
@@ -106,6 +106,68 @@
 
     @include breakpoint(max-width 992px) {
       min-width: 100%;
+    }
+  }
+}
+
+.portfolio__slider {
+  &-design {
+    width: 700px;
+    margin-right: -100px;
+    margin-top: 20px;
+    .slick-dots {
+      left: calc(100% + 10px);
+    }
+  }
+  &-item {
+    display: flex !important;
+    justify-content: center;
+    padding: 5px;
+    font-size: 16px;
+    font-family: $GilroyMediumItalic;
+    color: #828181;
+    cursor: pointer;
+    span {
+      position: unset;
+      font-size: inherit;
+      font-family: inherit;
+      text-transform: none;
+      color: inherit;
+    }
+    a {
+      color: inherit;
+    }
+    &:hover {
+      color: $red;
+    }
+  }
+  &-active {
+    color: $red;
+    text-decoration: underline;
+  }
+  .slick-dots {
+    top: 10px;
+    display: flex;
+    width: unset;
+    li {
+      width: 6px;
+      height: 6px;
+      margin: 0 4px;
+      button {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #d4e4f1;
+        border-radius: 50%;
+        &:before {
+          display: none;
+        }
+      }
+    }
+    .slick-active {
+      button {
+        background-color: $red;
+      }
     }
   }
 }
