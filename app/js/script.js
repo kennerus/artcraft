@@ -15,12 +15,50 @@ $(function () {
     $('.js_phone-mask').inputmask({alias: "phoneru"});
   }
 
-  if($('.portfolio__slider-design').length > 0) {
-      $('.portfolio__slider-design').slick({
+  if($('.portfolio__slider').length > 0) {
+      $('.portfolio__slider').slick({
           arrows: false,
           dots: true,
           slidesToShow: 4,
-          slidesToScroll: 4
+          slidesToScroll: 4,
+          responsive: [
+              {
+                  breakpoint: 1400,
+                  settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 3
+                  }
+              },
+              {
+                  breakpoint: 1200,
+                  settings: {
+                      slidesToShow: 4,
+                      slidesToScroll: 4
+                  }
+              },
+              {
+                  breakpoint: 992,
+                  settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 3
+                  }
+              },
+              {
+                  breakpoint: 660,
+                  settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                  }
+              },
+              {
+                  breakpoint: 400,
+                  settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                  }
+              }
+          ]
+
       });
   }
 
