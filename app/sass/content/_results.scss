@@ -149,13 +149,6 @@
       }
     }
   }
-  .animate-circle {
-    right: -308px;
-    top: 40px;
-    @include breakpoint(max-width 1650px) {
-      display: none;
-    }
-  }
 
 }
 

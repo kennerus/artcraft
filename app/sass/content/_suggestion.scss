@@ -1,0 +1,11 @@
+.suggestion {
+  &__title {
+    &--red {
+      font-family: $GilroyBold;
+      color: $red;
+    }
+    &--black {
+      font-family: $GilroyBold;
+    }
+  }
+}

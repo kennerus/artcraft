@@ -500,6 +500,76 @@
     .portfolio__count {
       grid-column: 5;
     }
+    @media (max-width: 1280px) {
+      grid-template-columns: 265px 196px 69px 392px;
+      grid-template-rows: 265px 265px 265px;
+      .portfolio-soc {
+        grid-column: 3/5;
+        grid-row: 1;
+      }
+      .portfolio-angel {
+        grid-column: 2/4;
+        grid-row: 2/3;
+      }
+      .portfolio-scrubb {
+        grid-column: 1/2;
+        grid-row: 3/4;
+      }
+      .portfolio-loft {
+        grid-column: 2/4;
+        grid-row: 3/4;
+      }
+      .portfolio__brief {
+        grid-column: 1/3;
+        grid-row: 1;
+      }
+      .portfolio-chair {
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+      .portfolio__count {
+        grid-column: 4;
+        grid-row: 2/4;
+      }
+    }
+    @media (max-width: 1070px) {
+      grid-template-columns: 40% calc(60% - 10px);
+      grid-template-rows: 265px 265px 265px;
+      margin-left: 0;
+      width: 100%;
+      .portfolio-scrubb {
+        grid-column: 1;
+        grid-row: 2;
+      }
+      .portfolio-loft {
+        grid-column: 1;
+        grid-row: 3;
+      }
+      .portfolio__brief {
+        grid-column: 1/3;
+        grid-row: 1;
+      }
+      .portfolio__count {
+        grid-column: 2;
+        grid-row: 2/4;
+      }
+    }
+    @media (max-width: 576px) {
+      grid-template-columns: 100%;
+      grid-template-rows: 265px auto auto;
+      .portfolio-loft {
+        grid-column: 1;
+        grid-row: 2;
+      }
+      .portfolio__brief {
+        grid-column: 1;
+        grid-row: 1;
+      }
+      .portfolio__count {
+        grid-column: 1;
+        grid-row: 3;
+      }
+    }
   }
 }
 
@@ -511,6 +581,7 @@
 .portfolio__gallery .portfolio-link:first-child img:hover {
   transform: none;
 }
+
 
 #cboxClose {
   background:url(jquery-colorbox/images/controls1.png) no-repeat 50% 50%;
@@ -623,5 +694,13 @@
   }
   .wrap {
     margin-left: 0;
+  }
+  .animate-circle {
+    right: -308px;
+    left: unset;
+    top: 40px;
+    @include breakpoint(max-width 1650px) {
+      display: none;
+    }
   }
 }
