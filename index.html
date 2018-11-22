@@ -12,10 +12,11 @@
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css">
   <link href="css/uploader.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.min.css" rel="stylesheet" type="text/css">
   <link href="css/fine-uploader-gallery.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/flipclock.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="css/styles.min.css" rel="stylesheet" type="text/css">
   <script type="text/template" id="qq-template">
     <div class="qq-uploader-selector qq-uploader qq-gallery" qq-drop-area-text="Drop files here">
       <div class="qq-total-progress-bar-container-selector qq-total-progress-bar-container">
@@ -946,7 +947,9 @@
 <!-- end steps.html-->
 <!-- start suggestion.html-->
 <section class="suggestion">
+    <div class="animate-circle"></div>
     <div class="container">
+        <p class="paragraph">предложения</p>
         <div class="wrap">
             <div class="tittle">
                 <span class="block_span_title">горячие</span>
@@ -961,187 +964,95 @@
                 <span>Горячие предложения к дню работников рекламы</span>
                 <img src="img/index/fire.png" alt="">
             </div>
+            <div class="suggestion__main">
+                <div class="suggestion__item">
+                    <h3 class="suggestion__title">время продавать больше!</h3>
+                    <div class="suggestion__img">
+                        <img src="img/index/suggestion1.png" alt="">
+                    </div>
+                    <div class="suggestion__desc">
+                        <p>Полнофункциональный Интернет магазин <br> на 1000 товаров <span class="c-red">за 14 дней</span> со скидкой 40%</p>
+                    </div>
+                    <div class="suggestion__advantages">
+                        <span>- Легко администрировать</span>
+                        <span>- Хостинг в подарок!</span>
+                    </div>
+                    <div class="suggestion__clock" data-time='December 01, 2018 03:24:00'></div>
+                    <div class="suggestion__action-end">
+                        <span>до конца акции осталось</span>
+                    </div>
+                </div>
+                <div class="suggestion__item">
+                    <h3 class="suggestion__title c-red">отличайтесь от конкурентов!</h3>
+                    <div class="suggestion__img">
+                        <img src="img/index/suggestion2.png" alt="">
+                    </div>
+                    <div class="suggestion__desc">
+                        <p>Полное брендирование вашей <br> компании с выгодой более 5000 руб</p>
+                    </div>
+                    <div class="suggestion__advantages">
+                        <span>Профессиональный маркетинг-кит на 24 страницы в подарок!</span>
+                    </div>
+                    <div class="suggestion__clock" data-time='December 06, 2018 03:24:00'></div>
+                    <div class="suggestion__action-end">
+                        <span>до конца акции осталось</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 <!-- end suggestion.html-->
-<!-- start brief.html-->
-<section class="service-brief" id="brief">
-  <div class="container">
-    <div class="brief__head">
-      <p class="paragraph">наш бриф</p>
-      <div class="wrap">
-        <div class="tittle">
-          <span class="block_span_title">закажите</span>
-          <h2 class="block_title">услугу</h2>
-          <p>
-            Перестаньте платить деньги за процесс. Получите гарантированный результат.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="brief__content">
-      <form id="form" class="service__form" enctype="multipart/form-data">
-        <div class="service__form-head">
-          <div class="service__form-head_item">
-            <label for="name">Ваше имя, фамилия *</label>
-            <input class="service__form_input" id="name" type="text" placeholder="Ваше имя" required>
-            <div class="help-block">
-              Неверно заполненное поле
+<!-- start customers.html-->
+<section class="customers">
+    <div class="container">
+        <p class="paragraph">клиенты</p>
+        <div class="wrap">
+            <div class="tittle">
+                <span class="block_span_title">нам доверяют</span>
+                <h2 class="block_title">клиенты</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
             </div>
-          </div>
-
-          <div class="service__form-head_item">
-            <label for="phone">Ваш номер телефона *</label>
-            <input class="service__form_input js_phone-mask" id="phone" type="tel" placeholder="Номер телефона"
-                   autocomplete="off" required>
-            <div class="help-block">
-              Неверно заполненное поле
-            </div>
-          </div>
-
-          <div class="service__form-head_item">
-            <label for="mail">Ваш e-mail *</label>
-            <input class="service__form_input" id="mail" type="email" placeholder="Ваш e-mail" autocomplete="off"
-                   required>
-            <div class="help-block">
-              Неверно заполненное поле
-            </div>
-          </div>
-
-          <div class="service__form-head_item">
-            <label for="skype">Ваш skype</label>
-            <input class="service__form_input" id="skype" type="text" placeholder="Ваш Skype" autocomplete="off">
-          </div>
-        </div>
-
-        <div class="service__form-radio">
-          <div class="service__form-radio_text">
-            <p>Какие услуги Вас интересуют?</p>
-          </div>
-          <div class="service__form-radio-button">
-            <label class="checkbox-item">Готовое решение
-              <input type="checkbox" name="radio" value="Готовое решение">
-              <span class="checkmark"></span>
-            </label>
-            <label class="checkbox-item">Интернет-магазин
-              <input type="checkbox" name="radio" value="Интернет-магазин">
-              <span class="checkmark"></span>
-            </label>
-            <label class="checkbox-item">Индивидуальный проект
-              <input type="checkbox" name="radio" value="Индивидуальный проект">
-              <span class="checkmark"></span>
-            </label>
-            <label class="checkbox-item">Корпоративные системы
-              <input type="checkbox" name="radio" value="Корпоративные системы">
-              <span class="checkmark"></span>
-            </label>
-            <label class="checkbox-item">Landing page
-              <input type="checkbox" name="radio" value="Landing page">
-              <span class="checkmark"></span>
-            </label>
-            <label class="checkbox-item">UI/UX Design
-              <input type="checkbox" name="radio" value="UI/UX Design">
-              <span class="checkmark"></span>
-            </label>
-            <label class="checkbox-item">Поддержка
-              <input type="checkbox" name="radio" value="Поддержка">
-              <span class="checkmark"></span>
-            </label>
-            <label class="checkbox-item">Логотип
-              <input type="checkbox" name="radio" value="Логотип">
-              <span class="checkmark"></span>
-            </label>
-            <label class="checkbox-item">Репутационный маркетинг
-              <input type="checkbox" name="radio" value="Репутационный маркетинг">
-              <span class="checkmark"></span>
-            </label>
-            <label class="checkbox-item">Полиграфическая продукция
-              <input type="checkbox" name="radio" value="Полиграфическая продукция">
-              <span class="checkmark"></span>
-            </label>
-            <label class="checkbox-item">Брендинг и айдентика
-              <input type="checkbox" name="radio" value="Брендинг и айдентика">
-              <span class="checkmark"></span>
-            </label>
-            <label class="checkbox-item">Digital Design
-              <input type="checkbox" name="radio" value="Digital Design">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-        </div>
-
-        <div class="service__form-message" lang="ru">
-          <div class="service__form-textarea">
-            <label for="message">Сообщение</label>
-            <textarea id="message" placeholder="Напишите, что считаете нужным"></textarea>
-          </div>
-          <div class="service__form-file">
-            <div class="btn-file__wrap">
-              <div class="btn-input-file">
-                <img src="img/clip-black.png" alt="" width="25" height="25">
-                <span>Прикрепить файл</span>
-              </div>
-
-              <span class="service__form-files">Максимальный размер - 2 мб</span>
-
-              <div class="form-group field-sendform-files has-error">
-
-                <input type="hidden" name="SendForm[files][]" value="">
-                <input type="file" id="sendform-files"
-                       class="input-file"
-                       name="SendForm[files][]" multiple=""
-                       aria-invalid="true">
-              </div>
-            </div>
-
-            <div id="wrapperCont">
-              <div class="itemWrapper" style="display: inline-flex;">
-                <div class="delItem">
-                  <span></span>
-                  <span></span>
+            <div class="customers__items">
+                <div class="customers__item">
+                    <div class="customers__img">
+                        <img src="img/index/partners1.png" alt="">
+                    </div>
+                    <div class="customers__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid</p>
+                    </div>
                 </div>
-                <div class="itemTitle"></div>
-              </div>
+                <div class="customers__item">
+                    <div class="customers__img">
+                        <img src="img/index/partners2.png" alt="">
+                    </div>
+                    <div class="customers__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid</p>
+                    </div>
+                </div>
+                <div class="customers__item">
+                    <div class="customers__img">
+                        <img src="img/index/partners3.png" alt="">
+                    </div>
+                    <div class="customers__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid</p>
+                    </div>
+                </div>
+                <div class="customers__item">
+                    <div class="customers__img">
+                        <img src="img/index/partners1.png" alt="">
+                    </div>
+                    <div class="customers__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid</p>
+                    </div>
+                </div>
             </div>
-          </div>
+            <p class="customers__title">Партнерская программа CraftGroup</p>
+            <p class="customers__second-text">Приглашаем к сотрудничеству специалистов, а так же компании, работающих в сфере веб-технологий.</p>
         </div>
-        <div class="service__form-desc">
-          <span class="service__form-desc_span">Нажимая кнопку «Отправить» я даю свое <span
-            class="service__form-desc_red">согласие на обработку персональных данных</span></span>
-          <div class="service__submit-block">
-            <input class="service__form-submit" id="submit" type="submit" value="Отправить бриф">
-            <div class='sk-fading-circle'>
-              <div class='sk-circle sk-circle-1'></div>
-              <div class='sk-circle sk-circle-2'></div>
-              <div class='sk-circle sk-circle-3'></div>
-              <div class='sk-circle sk-circle-4'></div>
-              <div class='sk-circle sk-circle-5'></div>
-              <div class='sk-circle sk-circle-6'></div>
-              <div class='sk-circle sk-circle-7'></div>
-              <div class='sk-circle sk-circle-8'></div>
-              <div class='sk-circle sk-circle-9'></div>
-              <div class='sk-circle sk-circle-10'></div>
-              <div class='sk-circle sk-circle-11'></div>
-              <div class='sk-circle sk-circle-12'></div>
-            </div>
-          </div>
-        </div>
-      </form>
-      <div class="brief-massage">
-        <button class="brief-massage-close">
-          <span></span>
-          <span></span>
-        </button>
-        <img src="img/massage_success.png">
-        <h2>Бриф отправлен!</h2>
-        <p>Ожидайте, скоро мы с вами свяжемся.</p>
-        <p>А пока вы можете посмотреть <a href="portfolio.html">наши работы</a></p>
-      </div>
     </div>
-  </div>
 </section>
-<!-- end brief.html-->
+<!-- end customers.html-->
 <!-- start blog.html-->
 <section class="brief brief_footer blog" id="blog">
 
@@ -1347,6 +1258,7 @@
 <script src="js/phone-ru.js"></script>
 <script src="js/Uploader.js"></script>
 <script src="js/slick-feedback.js"></script>
+<script src="js/flipclock.js"></script>
 <script src="js/script.min.js"></script>
 <a href="#" class="scrollup"></a>
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">

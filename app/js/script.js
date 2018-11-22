@@ -576,36 +576,50 @@ $(document).ready(function() {
         }
     }
 
-  if (document.querySelector('.steps__scale')) {
-      var count = true;
-      var scale = document.querySelector('.steps__scale');
-      var stepsItems = document.querySelectorAll('.steps__item');
-      var scaleNumber = document.querySelector('.steps__scale-number');
-      var scaleLine = document.querySelector('.steps__scale-line');
-      var stepsWrap = document.querySelector('.steps__items');
-      scaleLine.style.height =  stepsWrap.clientHeight - stepsItems[stepsItems.length - 1].clientHeight + 15 + 'px';
-      document.onscroll = function() {
-          var scalePos = scale.getBoundingClientRect();
-          if (scalePos.top < scalePos.height && scalePos.bottom > 0) {
-              if (count) {
-                  var i = 1;
-                  var stepsInterval = setInterval(function() {
-                      var stepsItem = stepsItems[i];
-                      scaleNumber.style.top = stepsItem.offsetTop + 15 + 'px';
-                      if (i < 9) {
-                          scaleNumber.innerHTML = '0' + (i + 1);
-                      }
-                      else {
-                          scaleNumber.innerHTML = i + 1;
-                      }
-                      i++;
-                      if (i >= stepsItems.length) {
-                          clearInterval(stepsInterval);
-                      }
-                  }, 3000);
-                  count = false;
-              }
-          }
-      };
-  }
+    if (document.querySelector('.steps__scale')) {
+        var count = true;
+        var scale = document.querySelector('.steps__scale');
+        var stepsItems = document.querySelectorAll('.steps__item');
+        var scaleNumber = document.querySelector('.steps__scale-number');
+        var scaleLine = document.querySelector('.steps__scale-line');
+        var stepsWrap = document.querySelector('.steps__items');
+        scaleLine.style.height =  stepsWrap.clientHeight - stepsItems[stepsItems.length - 1].clientHeight + 15 + 'px';
+        document.onscroll = function() {
+            var scalePos = scale.getBoundingClientRect();
+            if (scalePos.top < scalePos.height && scalePos.bottom > 0) {
+                if (count) {
+                    var i = 1;
+                    var stepsInterval = setInterval(function() {
+                        var stepsItem = stepsItems[i];
+                        scaleNumber.style.top = stepsItem.offsetTop + 15 + 'px';
+                        if (i < 9) {
+                            scaleNumber.innerHTML = '0' + (i + 1);
+                        }
+                        else {
+                            scaleNumber.innerHTML = i + 1;
+                        }
+                        i++;
+                        if (i >= stepsItems.length) {
+                            clearInterval(stepsInterval);
+                        }
+                    }, 3000);
+                    count = false;
+                }
+            }
+        };
+    }
+    if (document.querySelector('.suggestion__clock')) {
+        var timers = document.querySelectorAll('.suggestion__clock');
+        for (var i = 0; i < timers.length; i++) {
+            var timer = timers[i];
+            var time = timer.dataset.time;
+            var now = new Date();
+            var date = new Date(time);
+            var rest = (date.getTime() - now.getTime()) / 1000;
+            $(timer).FlipClock(rest, {
+                countdown: true,
+                clockFace: 'DailyCounter'
+            });
+        }
+    }
 });
