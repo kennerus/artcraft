@@ -21,6 +21,10 @@
       max-width: 600px;
     }
   }
+  &-one {
+    padding-bottom: 0 !important;
+    background-image: none !important;
+  }
   &__slider-content {
     display: flex;
     justify-content: space-between;

@@ -622,4 +622,15 @@ $(document).ready(function() {
             });
         }
     }
+    if ($('.accordion').length > 0) {
+        $('.accordion__title').on('click', function() {
+          var parent = $(this).parents('.accordion');
+          var item = $(this).parents('.accordion__item');
+          var content = item.children('.accordion__content');
+          item.toggleClass('accordion-active');
+          parent.find('.accordion__item').not(item).removeClass('accordion-active');
+          parent.find('.accordion__content').not(content).slideUp();
+          content.slideToggle();
+        });
+    }
 });

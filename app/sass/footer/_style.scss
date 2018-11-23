@@ -1,3 +1,89 @@
+.footer {
+  &-section {
+    background-color: #1a2226;
+  }
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 50px;
+    color: #fff;
+    font-size: 14px;
+    @media (max-width: 991px) {
+      padding: 30px 40px;
+    }
+    @media (max-width: 767px) {
+      padding: 30px 30px;
+    }
+    @media (max-width: 575px) {
+      padding: 30px 10px;
+    }
+    a,
+    button {
+      transition: all.5s ease;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    &-main {
+      width: 100%;
+    }
+  }
+  &__link {
+    margin-bottom: 10px;
+    color: inherit;
+    font-family: $GilroyMedium;
+    &:hover {
+      color: $red;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &-contacts {
+      margin: 5px;
+      color: inherit;
+      font-family: $GilroySemibold;
+      font-size: 15px;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+  &__p {
+    margin: 0 0 19px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &__last {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__btn {
+    margin-right: 25px;
+    margin-bottom: 5px;
+    padding: 4px 25px;
+    font-size: 16px;
+    font-family: $GilroySemibold;
+    color: inherit;
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 18px;
+    &:hover {
+      background-color: $red;
+      border: 1px solid $red;
+    }
+  }
+}
+
 .brief_footer {
 	padding-bottom: 100vh;
 	//background-image: url(../img/bgfooter2.png);
@@ -27,29 +113,29 @@
 
 @media (max-width: 2000px) {
 	.brief_footer {
-		padding-bottom: 700px;
-      background-size: contain;
+		padding-bottom: 850px;
+      background-size: cover;
 	}
 }
 
 @media (max-width: 1500px) {
 	.brief_footer {
-		padding-bottom: 620px;
-      background-size: contain;
+		padding-bottom: 640px;
+      background-size: cover;
 	}
 }
 
 @media (max-width: 1200px) {
 	.brief_footer {
-		padding-bottom: 480px;
-      background-size: contain;
+		padding-bottom: 520px;
+      background-size: cover;
 	}
 }
 
 @media (max-width: 1000px) {
 	.brief_footer {
 		padding-bottom: 600px;
-      background-size: contain;
+      background-size: cover;
 	}
 }
 
@@ -182,7 +268,7 @@
 	flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-right: 40px;
+  margin-bottom: 5px;
 }
 
 .footer-phone {
@@ -204,9 +290,6 @@
 @media (max-width: 800px) {
   .footer-copyri {
     position: static;
-  }
-  .footer-socmenu {
-    margin-top: 15px;
   }
   .fab {
     width: 35px;
@@ -251,10 +334,6 @@
 		flex-direction: row;
     margin-left: 0;
     margin-right: 0;
-	}
-	.footer-socmenu {
-		flex-direction: row;
-    margin-bottom: 15px;
 	}
 	.fab {
 		margin: 2px 10px;
