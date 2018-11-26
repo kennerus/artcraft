@@ -3,6 +3,9 @@
   z-index: 1;
   padding: 20px 0;
   overflow: hidden;
+  &__title {
+    margin: 0;
+  }
   &__tabs {
     display: flex;
     flex-wrap: wrap;
