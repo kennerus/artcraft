@@ -1,4 +1,7 @@
 .answers {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -200px;
   .paragraph {
     top: 80px;
     left: -70px;
@@ -24,13 +27,26 @@
     }
     &-content {
       display: none;
-      padding: 10px 0 30px 100px;
+      padding: 30px 40px;
+      margin-left: 60px;
+      margin-bottom: 40px;
       color: #787878;
       letter-spacing: 0.45px;
       font-size: 18px;
+      border-radius: 50px 0;
+      box-shadow: 0 0 38px rgba(127, 127, 127, 0.15);
       @media (max-width: 575px) {
-        padding-left: 20px;
+        padding: 30px 20px;
+        margin-left: 0;
         font-size: 16px;
+      }
+      p {
+        &:first-child {
+          margin-top: 0;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
