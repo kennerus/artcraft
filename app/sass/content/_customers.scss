@@ -27,6 +27,13 @@
     @media (max-width: 575px) {
       width: 100%;
     }
+    img {
+      filter: grayscale(1);
+      transition: filter 0.8s ease;
+      &:hover {
+        filter: none;
+      }
+    }
   }
   &__img {
     display: flex;
