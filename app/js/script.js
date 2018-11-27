@@ -602,7 +602,7 @@ $(document).ready(function() {
                         if (i >= stepsItems.length) {
                             clearInterval(stepsInterval);
                         }
-                    }, 3000);
+                    }, 1500);
                     count = false;
                 }
             }

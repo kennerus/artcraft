@@ -1,7 +1,7 @@
 .all-sections {
   position: relative;
   z-index: 1;
-  padding: 20px 0;
+  padding: 0 0 20px;
   overflow: hidden;
   &__title {
     margin: 0;
@@ -31,7 +31,7 @@
     font-size: 15px;
     font-weight: 700;
     border-radius: 22px;
-    border: 1px solid $red;
+    border: 1px dotted $red;
     box-sizing: border-box;
     &:focus {
       color: $red;
