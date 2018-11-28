@@ -11,6 +11,20 @@
       max-width: 580px;
     }
   }
+  &__circle {
+    position: relative;
+    height: 600px;
+    margin-bottom: -600px;
+    width: 100%;
+    overflow: hidden;
+    @media (max-width: 1400px) {
+      display: none;
+    }
+    .animate-circle {
+      right: 0;
+      transform: translateX(50%);
+    }
+  }
   &__accordion {
     &-title {
       display: flex;

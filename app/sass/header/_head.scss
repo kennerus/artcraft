@@ -443,9 +443,9 @@
   padding-bottom: 60px;
   z-index: 999;
 
-  .header__nav {
-    display: none;
-  }
+  //.header__nav {
+  //  display: none;
+  //}
 
   .header__wrapper {
     position: fixed;
@@ -801,7 +801,7 @@
     font-size: 18px;
   }
   .header-index .header__wrapper.header-wrapper-active {
-    transform: translate(0, -110px);
+    transform: none;
   }
   .header-index .header__wrapper {
     transform: none;
