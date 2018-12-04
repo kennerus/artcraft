@@ -586,7 +586,7 @@ $(document).ready(function() {
         scaleLine.style.height =  stepsWrap.clientHeight - stepsItems[stepsItems.length - 1].clientHeight + 15 + 'px';
         document.onscroll = function() {
             var scalePos = scale.getBoundingClientRect();
-            if (scalePos.top < scalePos.height && scalePos.bottom > 0) {
+            if (scalePos.top > 0 && scalePos.bottom > 0) {
                 if (count) {
                     var i = 1;
                     var stepsInterval = setInterval(function() {
@@ -616,6 +616,7 @@ $(document).ready(function() {
             var now = new Date();
             var date = new Date(time);
             var rest = (date.getTime() - now.getTime()) / 1000;
+            rest = rest > 0 ? rest : 0;
             $(timer).FlipClock(rest, {
                 countdown: true,
                 clockFace: 'DailyCounter'
@@ -633,4 +634,89 @@ $(document).ready(function() {
           content.slideToggle();
         });
     }
+
+    // if (document.querySelector('.svg-lines')) {
+    //     var svgs = document.querySelectorAll('.svg-lines');
+    //     var countSvg = true;
+    //     for (var i = 0; i < svgs.length; i++) {
+    //         var svg = svgs[i];
+    //         document.onscroll = function() {
+    //             var svgPos = svg.getBoundingClientRect();
+    //             if (svgPos.top > 0 && svgPos.bottom > 0) {
+    //                 if (countSvg) {
+    //                     svgLinesMove();
+    //                     countSvg = false;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    //
+    // function svgLinesMove() {
+    //     var allCircles = document.getElementsByTagName('circle');
+    //     var allLines = document.getElementsByTagName('line');
+    //
+    //     var destArray = [15,115,77,220,185,313,288, 356];
+    //
+    //     TweenMax.set(allCircles, {
+    //         attr:{fill:'#954CE9', r:5},
+    //         transformOrigin:'50% 50%',
+    //         scale:0
+    //     })
+    //     TweenMax.set([allLines], {
+    //         attr:{stroke:'#18B5DD'},
+    //         drawSVG:'100% 100%',
+    //         strokeWidth:2
+    //     })
+    //
+    //     TweenMax.set([allCircles, allLines], {
+    //         y:'+=400'
+    //     })
+    //
+    //     TweenMax.set('svg', {
+    //         alpha:1
+    //     })
+    //     for(var i = 0; i < allCircles.length; i++){
+    //         TweenMax.to(allCircles[i], 2, {
+    //             attr:{cy:'-=' + destArray[i]},
+    //             onUpdate:moveLines,
+    //             onUpdateParams:[i],
+    //             delay:i/5,
+    //             ease:Power4.easeInOut
+    //         })
+    //         if(allLines[i]){
+    //
+    //             TweenMax.to(allLines[i], 1, {
+    //                 drawSVG:'400',
+    //                 delay:i/5,
+    //                 ease:Power4.easeInOut
+    //             })
+    //         }
+    //
+    //         TweenMax.to(allCircles[i], 1, {
+    //             scale:1,
+    //             delay:i/5,
+    //             ease:Power4.easeInOut
+    //         })
+    //
+    //     }
+    // }
+    // function moveLines(i){
+    //
+    //     if(allLines[i]){
+    //
+    //         TweenMax.set(allLines[i], {
+    //             attr:{
+    //                 'x2':allCircles[i].getAttribute('cx'), 'y2':allCircles[i].getAttribute('cy')
+    //             }
+    //         })
+    //         TweenMax.set(allLines[i], {
+    //             attr:{
+    //                 'x1':allCircles[i+1].getAttribute('cx'), 'y1':allCircles[i+1].getAttribute('cy')
+    //             }
+    //         })
+    //
+    //
+    //     }
+    // }
 });

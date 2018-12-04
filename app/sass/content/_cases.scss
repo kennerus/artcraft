@@ -62,6 +62,11 @@
     display: flex !important;
     flex-wrap: wrap;
     margin: 0 60px;
+    &.slick-current {
+      .cases__left {
+        opacity: 1;
+      }
+    }
   }
   &__left {
     position: relative;
@@ -69,6 +74,8 @@
     display: flex;
     flex-direction: column;
     width: 50%;
+    opacity: 0;
+    transition: all 0.5s ease 0.5s;
     @media (max-width: 1400px) {
       width: 52%;
     }
@@ -166,6 +173,8 @@
     }
   }
   &__technology {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-wrap: wrap;
     margin: 20px 10px;
@@ -177,13 +186,27 @@
       font-size: 15px;
       border: 1px solid $red;
       border-radius: 22px;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: $red;
+        color: #fff;
+      }
     }
   }
   &__service {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     font-family: $GilroySemibold;
     font-size: 22px;
+    a {
+      color: inherit;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $red;
+      }
+    }
   }
   &__line {
     position: relative;
@@ -199,6 +222,7 @@
     }
     @media (max-width: 991px) {
       margin-left: auto;
+      width: 100%;
     }
     @media (max-width: 575px) {
       width: 100%;
@@ -215,7 +239,7 @@
       font-family: $GilroySemibold;
       font-size: 18px;
       @media (max-width: 450px) {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
     &-item {
@@ -246,12 +270,18 @@
         @media (max-width: 991px) {
           left: 55%;
         }
+        @media (max-width: 450px) {
+          left: 60%;
+        }
       }
       &4 {
         left: 54%;
         top: 62%;
         @media (max-width: 991px) {
           left: 49%;
+        }
+        @media (max-width: 450px) {
+          left: 55%;
         }
       }
       &5 {
@@ -262,7 +292,7 @@
         }
         @media (max-width: 450px) {
           top: 29%;
-          left: 70%;
+          left: 75%;
         }
       }
       &6 {
@@ -272,7 +302,7 @@
           left: 74%;
         }
         @media (max-width: 450px) {
-          left: 72%;
+          left: 78%;
         }
       }
     }
@@ -282,7 +312,7 @@
     font-size: 28px;
     font-family: $GilroyBold;
     @media (max-width: 450px) {
-      font-size: 24px;
+      font-size: 18px;
     }
     img {
       position: absolute;
