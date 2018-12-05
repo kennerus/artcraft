@@ -44,3 +44,7 @@ textarea{
 strong {
     font-family: $GilroyBold;
 }
+
+*:focus {
+    outline: none;
+}

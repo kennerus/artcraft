@@ -62,23 +62,6 @@ $(function () {
       });
   }
 
-  if ($('.cases__slider').length > 0) {
-      $('.cases__slider').slick({
-          prevArrow: '<button class="cases__prev" type="button" ><svg class="prevArrow-blogsvg" version="1.1" id="arrow-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\n' +
-              '\t viewBox="0 0 38 28" style="enable-background:new 0 0 38 28;" xml:space="preserve">\n' +
-              '<path  class="prevArrow-blogfill" d="M0.5,12.7c-0.7,0.7-0.7,1.9,0,2.7l11.3,12.1c0.3,0.4,0.8,0.6,1.2,0.6c0.5,0,0.9-0.2,1.2-0.6c0.7-0.7,0.7-1.9,0-2.7L6,15.9\n' +
-              '\th30.2c1,0,1.8-0.8,1.8-1.9c0-1-0.8-1.9-1.8-1.9H6l8.3-8.9c0.7-0.7,0.7-1.9,0-2.7c-0.7-0.7-1.8-0.7-2.5,0L0.5,12.7L0.5,12.7z\n' +
-              '\t M0.5,12.7"/>\n' +
-              '</svg></button>',
-          nextArrow: '<button class="cases__next" type="button" ><svg class="nextArrow-blogsvg" version="1.1" id="arrow-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\n' +
-              '\t viewBox="0 0 38 28" style="enable-background:new 0 0 38 28;" xml:space="preserve">\n' +
-              '<path  class="nextArrow-blogfill" d="M37.5,12.7L26.2,0.6c-0.7-0.7-1.8-0.7-2.5,0c-0.7,0.7-0.7,1.9,0,2.7l8.3,8.9H1.8C0.8,12.1,0,13,0,14c0,1,0.8,1.9,1.8,1.9H32\n' +
-              '\tl-8.3,8.9c-0.7,0.7-0.7,1.9,0,2.7c0.3,0.4,0.8,0.6,1.2,0.6c0.5,0,0.9-0.2,1.2-0.6l11.3-12.1C38.2,14.6,38.2,13.4,37.5,12.7\n' +
-              '\tL37.5,12.7z M37.5,12.7"/>\n' +
-              '</svg></button>',
-      });
-  }
-
   if ($('.blog__slider--wrap').length > 0 || $('.feedback__slider').length > 0) {
     $('.blog__slider--wrap').slick({
       dots: false,
@@ -576,6 +559,10 @@ $(document).ready(function() {
         }
     }
 
+    var height = window.innerHeight
+        || document.documentElement.clientHeight
+        || document.body.clientHeight;
+
     if (document.querySelector('.steps__scale')) {
         var count = true;
         var scale = document.querySelector('.steps__scale');
@@ -584,9 +571,9 @@ $(document).ready(function() {
         var scaleLine = document.querySelector('.steps__scale-line');
         var stepsWrap = document.querySelector('.steps__items');
         scaleLine.style.height =  stepsWrap.clientHeight - stepsItems[stepsItems.length - 1].clientHeight + 15 + 'px';
-        document.onscroll = function() {
+        document.addEventListener('scroll', function() {
             var scalePos = scale.getBoundingClientRect();
-            if (scalePos.top > 0 && scalePos.bottom > 0) {
+            if (height - scalePos.top > 0 && scalePos.bottom > 0) {
                 if (count) {
                     var i = 1;
                     var stepsInterval = setInterval(function() {
@@ -606,7 +593,7 @@ $(document).ready(function() {
                     count = false;
                 }
             }
-        };
+        });
     }
     if (document.querySelector('.suggestion__clock')) {
         var timers = document.querySelectorAll('.suggestion__clock');
@@ -635,88 +622,126 @@ $(document).ready(function() {
         });
     }
 
-    // if (document.querySelector('.svg-lines')) {
-    //     var svgs = document.querySelectorAll('.svg-lines');
-    //     var countSvg = true;
-    //     for (var i = 0; i < svgs.length; i++) {
-    //         var svg = svgs[i];
-    //         document.onscroll = function() {
-    //             var svgPos = svg.getBoundingClientRect();
-    //             if (svgPos.top > 0 && svgPos.bottom > 0) {
-    //                 if (countSvg) {
-    //                     svgLinesMove();
-    //                     countSvg = false;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-    //
-    // function svgLinesMove() {
-    //     var allCircles = document.getElementsByTagName('circle');
-    //     var allLines = document.getElementsByTagName('line');
-    //
-    //     var destArray = [15,115,77,220,185,313,288, 356];
-    //
-    //     TweenMax.set(allCircles, {
-    //         attr:{fill:'#954CE9', r:5},
-    //         transformOrigin:'50% 50%',
-    //         scale:0
-    //     })
-    //     TweenMax.set([allLines], {
-    //         attr:{stroke:'#18B5DD'},
-    //         drawSVG:'100% 100%',
-    //         strokeWidth:2
-    //     })
-    //
-    //     TweenMax.set([allCircles, allLines], {
-    //         y:'+=400'
-    //     })
-    //
-    //     TweenMax.set('svg', {
-    //         alpha:1
-    //     })
-    //     for(var i = 0; i < allCircles.length; i++){
-    //         TweenMax.to(allCircles[i], 2, {
-    //             attr:{cy:'-=' + destArray[i]},
-    //             onUpdate:moveLines,
-    //             onUpdateParams:[i],
-    //             delay:i/5,
-    //             ease:Power4.easeInOut
-    //         })
-    //         if(allLines[i]){
-    //
-    //             TweenMax.to(allLines[i], 1, {
-    //                 drawSVG:'400',
-    //                 delay:i/5,
-    //                 ease:Power4.easeInOut
-    //             })
-    //         }
-    //
-    //         TweenMax.to(allCircles[i], 1, {
-    //             scale:1,
-    //             delay:i/5,
-    //             ease:Power4.easeInOut
-    //         })
-    //
-    //     }
-    // }
-    // function moveLines(i){
-    //
-    //     if(allLines[i]){
-    //
-    //         TweenMax.set(allLines[i], {
-    //             attr:{
-    //                 'x2':allCircles[i].getAttribute('cx'), 'y2':allCircles[i].getAttribute('cy')
-    //             }
-    //         })
-    //         TweenMax.set(allLines[i], {
-    //             attr:{
-    //                 'x1':allCircles[i+1].getAttribute('cx'), 'y1':allCircles[i+1].getAttribute('cy')
-    //             }
-    //         })
-    //
-    //
-    //     }
-    // }
+    if ($('.cases__slider').length > 0) {
+        var svgDo = true;
+        $('.cases__slider').on('init', function() {
+            if (this.querySelector('.slick-current .svg-lines')) {
+                var slider = this;
+                document.addEventListener('scroll', function() {
+                    var svg = slider.querySelector('.slick-current .svg-lines');
+                    var svgPos = svg.getBoundingClientRect();
+                    if (height - svgPos.top > 0 && svgPos.bottom > 0) {
+                        if (svgDo) {
+                            var allCircles = svg.getElementsByTagName('circle');
+                            var allLines = svg.getElementsByTagName('line');
+                            svgLinesMove(allCircles, allLines);
+                            svgDo = false;
+                        }
+                    }
+                });
+            }
+        }).on('afterChange', function() {
+            if (this.querySelector('.slick-current .svg-lines')) {
+                var svg = this.querySelector('.slick-current .svg-lines');
+                var allCircles = svg.getElementsByTagName('circle');
+                var allLines = svg.getElementsByTagName('line');
+                svgLinesMove(allCircles, allLines);
+                var slides = this.querySelectorAll('.slick-slide');
+                for (var i = 0; i < slides.length; i++) {
+                    var slide = slides[i];
+                    if (!slide.classList.contains('slick-current') && slide.querySelector('.svg-lines')) {
+                        var secondSvg = slide.querySelector('.svg-lines');
+                        var secondAllCircles = secondSvg.getElementsByTagName('circle');
+                        var secondAllLines = secondSvg.getElementsByTagName('line');
+                        for (var j = 0; j < secondAllCircles.length; j++) {
+                            var item = secondAllCircles[j];
+                            item.setAttribute('cy', 10.5);
+                        }
+                        for (var j = 0; j < secondAllLines.length; j++) {
+                            var item = secondAllLines[j];
+                            item.setAttribute('y1', 11);
+                            item.setAttribute('y2', 11);
+                        }
+                    }
+                }
+            }
+        }).slick({
+            prevArrow: '<button class="cases__prev" type="button" ><svg class="prevArrow-blogsvg" version="1.1" id="arrow-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\n' +
+                '\t viewBox="0 0 38 28" style="enable-background:new 0 0 38 28;" xml:space="preserve">\n' +
+                '<path  class="prevArrow-blogfill" d="M0.5,12.7c-0.7,0.7-0.7,1.9,0,2.7l11.3,12.1c0.3,0.4,0.8,0.6,1.2,0.6c0.5,0,0.9-0.2,1.2-0.6c0.7-0.7,0.7-1.9,0-2.7L6,15.9\n' +
+                '\th30.2c1,0,1.8-0.8,1.8-1.9c0-1-0.8-1.9-1.8-1.9H6l8.3-8.9c0.7-0.7,0.7-1.9,0-2.7c-0.7-0.7-1.8-0.7-2.5,0L0.5,12.7L0.5,12.7z\n' +
+                '\t M0.5,12.7"/>\n' +
+                '</svg></button>',
+            nextArrow: '<button class="cases__next" type="button" ><svg class="nextArrow-blogsvg" version="1.1" id="arrow-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\n' +
+                '\t viewBox="0 0 38 28" style="enable-background:new 0 0 38 28;" xml:space="preserve">\n' +
+                '<path  class="nextArrow-blogfill" d="M37.5,12.7L26.2,0.6c-0.7-0.7-1.8-0.7-2.5,0c-0.7,0.7-0.7,1.9,0,2.7l8.3,8.9H1.8C0.8,12.1,0,13,0,14c0,1,0.8,1.9,1.8,1.9H32\n' +
+                '\tl-8.3,8.9c-0.7,0.7-0.7,1.9,0,2.7c0.3,0.4,0.8,0.6,1.2,0.6c0.5,0,0.9-0.2,1.2-0.6l11.3-12.1C38.2,14.6,38.2,13.4,37.5,12.7\n' +
+                '\tL37.5,12.7z M37.5,12.7"/>\n' +
+                '</svg></button>',
+        });
+    }
+
+    var destArray = [15,115,77,220,185,313,288, 356];
+
+    function svgLinesMove(allCircles, allLines) {
+
+        TweenMax.set(allCircles, {
+            attr:{fill:'#954CE9', r:5},
+            transformOrigin:'50% 50%',
+            scale:0
+        });
+        TweenMax.set([allLines], {
+            attr:{stroke:'#18B5DD'},
+            drawSVG:'100% 100%',
+            strokeWidth:2
+        });
+
+        TweenMax.set([allCircles, allLines], {
+            y:'400'
+        });
+
+        TweenMax.set('svg', {
+            alpha:1
+        });
+        for(var i = 0; i < allCircles.length; i++){
+            TweenMax.to(allCircles[i], 2, {
+                attr:{cy:'-=' + destArray[i]},
+                onUpdate:moveLines,
+                onUpdateParams:[i, allCircles, allLines],
+                delay:i/5,
+                ease:Power4.easeInOut
+            });
+            if(allLines[i]){
+
+                TweenMax.to(allLines[i], 1, {
+                    drawSVG:'400',
+                    delay:i/5,
+                    ease:Power4.easeInOut
+                })
+            }
+
+            TweenMax.to(allCircles[i], 1, {
+                scale:1,
+                delay:i/5,
+                ease:Power4.easeInOut
+            })
+
+        }
+    }
+    function moveLines(i, allCircles, allLines){
+
+        if(allLines[i]){
+
+            TweenMax.set(allLines[i], {
+                attr:{
+                    'x2':allCircles[i].getAttribute('cx'), 'y2':allCircles[i].getAttribute('cy')
+                }
+            });
+            TweenMax.set(allLines[i], {
+                attr:{
+                    'x1':allCircles[i+1].getAttribute('cx'), 'y1':allCircles[i+1].getAttribute('cy')
+                }
+            });
+        }
+    }
 });
