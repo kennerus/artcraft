@@ -64,7 +64,7 @@ $(function () {
 
   if ($('.blog__slider--wrap').length > 0 || $('.feedback__slider').length > 0) {
     $('.blog__slider--wrap').slick({
-      dots: false,
+      dots: true,
       variableWidth: true,
       infinite: true,
       prevArrow: '<button class="prevArrow-blog" type="button" ><svg class="prevArrow-blogsvg" version="1.1" id="arrow-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\n' +
