@@ -38,6 +38,12 @@
     color: #fff;
     font-family: 'BebasNeueBold';
     letter-spacing: 1.66px;
+    @media (max-width: 988px) {
+      font-size: 48px;
+    }
+    @include breakpoint(max-width 576px) {
+      margin-bottom: 20px;
+    }
   }
   &__link {
     margin-top: auto;
@@ -66,11 +72,13 @@
     @include breakpoint(max-width 988px) {
       height: 200px;
       width: 300px;
+      padding: 30px;
     }
     @include breakpoint(max-width 576px) {
       position: relative;
       margin-left: 0;
-      width: fit-content;
+      width: 395px;
+      max-width: calc(100% - 20px);
       height: unset;
     }
     img {
@@ -676,8 +684,15 @@
 
 .prevArrow-blog {
   left: 207px !important;
+  @media (max-width: 988px) {
+    left: 137px !important;
+  }
+  @media (max-width: 800px) {
+    left: 95px !important;
+  }
   @media (max-width: 576px) {
-    left: 13% !important;
+    left: unset !important;
+    right: 150px;
   }
 }
 
@@ -694,6 +709,12 @@
   width: 18px;
   height: 14px;
   padding: 0;
+  @media (max-width: 988px) {
+    bottom: 62px;
+  }
+  @include breakpoint(max-width 576px) {
+    bottom: 362px;
+  }
   path {
     fill: #fff;
   }
@@ -706,8 +727,15 @@
 
 .nextArrow-blog {
   left: 330px !important;
+  @media (max-width: 988px) {
+    left: 260px !important;
+  }
+  @media (max-width: 800px) {
+    left: 218px !important;
+  }
   @media (max-width: 576px) {
-    left: 73% !important;
+    left: unset !important;
+    right: 40px;
   }
 }
 
@@ -717,6 +745,18 @@
     bottom: 67px;
     left: 240px;
     width: unset;
+    @media (max-width: 988px) {
+      bottom: 58px;
+      left: 170px;
+    }
+    @media (max-width: 800px) {
+      left: 128px;
+    }
+    @include breakpoint(max-width 576px) {
+      bottom: 359px;
+      left: unset;
+      right: 65px;
+    }
     li {
       height: 7px;
       width: 7px;
@@ -725,6 +765,9 @@
       button {
         display: none;
       }
+    }
+    .slick-active {
+      background-color: #fff;
     }
   }
 }
