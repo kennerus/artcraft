@@ -391,11 +391,19 @@ $(function () {
     $(window).scroll(function () {
         if ($('.header__overlay').css('display') == 'none'
             && window.innerWidth > 1200
-            && themeBody.hasClass('header-wrapper-active')) {
-            if ($(this).scrollTop() > $(window).height()) {
+            && !themeBody.hasClass('done')) {
+            $(document).on('click', '.js-header-close', function () {
+                themeBody.addClass('done');
+            });
+            if ($(this).scrollTop() > $(window).height() && themeBody.hasClass('header-wrapper-active')) {
                 headNav.slideUp().css('display', 'none');
                 themeBody.removeClass('header-wrapper-up header-wrapper-active');
                 $('.js-header-close').addClass('header-open');
+            }
+            else if (!themeBody.hasClass('header-wrapper-active') && $(this).scrollTop() < $(window).height()) {
+                headNav.slideUp().css('display', 'flex');
+                themeBody.addClass('header-wrapper-up header-wrapper-active');
+                $('.js-header-close').removeClass('header-open');
             }
         }
     });
