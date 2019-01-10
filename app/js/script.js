@@ -384,10 +384,11 @@ $(function () {
   });
 
   // menu toggle
-  $(document).on('click', '.js_header', function () {
+  $(document).on('click', '.js-header-close', function () {
     var themeBody = $('.js_header');
     var overlay = $('.header__overlay');
     var headNav = $('.header__nav');
+    $(this).toggleClass('header-open');
     if ($(".header__mobile-btn").hasClass("header__mobile-btn--active")) {
       overlay.fadeIn("slow");
     } else if ($(".header__mobile-btn").hasClass("header__mobile-btn--submenu")) {
