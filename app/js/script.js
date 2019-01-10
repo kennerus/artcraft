@@ -384,33 +384,45 @@ $(function () {
   });
 
   // menu toggle
-  $(document).on('click', '.js-header-close', function () {
     var themeBody = $('.js_header');
     var overlay = $('.header__overlay');
     var headNav = $('.header__nav');
-    $(this).toggleClass('header-open');
-    if ($(".header__mobile-btn").hasClass("header__mobile-btn--active")) {
-      overlay.fadeIn("slow");
-    } else if ($(".header__mobile-btn").hasClass("header__mobile-btn--submenu")) {
 
-    } else {
-      overlay.fadeOut("slow");
-    }
-    if (window.innerWidth > 1200) {
-      headNav.slideToggle().css('display', 'flex');
-      themeBody.toggleClass(' header-wrapper-active');
-      // overlay.fadeIn("slow");
-      if ($(".js_header").hasClass("header-wrapper-active")) {
-        themeBody.toggleClass('header-wrapper-down');
-        themeBody.toggleClass('header-wrapper-up');
-        overlay.fadeIn("slow");
-      } else {
-        themeBody.toggleClass('header-wrapper-down');
-        themeBody.toggleClass('header-wrapper-up');
-        overlay.fadeOut("slow");
-      }
-    }
+    $(window).scroll(function () {
+        if ($('.header__overlay').css('display') == 'none'
+            && window.innerWidth > 1200
+            && themeBody.hasClass('header-wrapper-active')) {
+            if ($(this).scrollTop() > $(window).height()) {
+                headNav.slideUp().css('display', 'none');
+                themeBody.removeClass('header-wrapper-up header-wrapper-active');
+                $('.js-header-close').addClass('header-open');
+            }
+        }
+    });
+
+  $(document).on('click', '.js-header-close', function () {
+    headerToggle();
   });
+
+  function headerToggle() {
+      $('.js-header-close').toggleClass('header-open');
+      if ($(".header__mobile-btn").hasClass("header__mobile-btn--active")) {
+          overlay.fadeIn("slow");
+      } else if ($(".header__mobile-btn").hasClass("header__mobile-btn--submenu")) {
+
+      } else {
+          overlay.fadeOut("slow");
+      }
+      if (window.innerWidth > 1200) {
+          headNav.slideToggle().css('display', 'flex');
+          themeBody.toggleClass(' header-wrapper-active');
+          if ($(".js_header").hasClass("header-wrapper-active")) {
+              themeBody.toggleClass('header-wrapper-down');
+              themeBody.toggleClass('header-wrapper-up');
+              overlay.fadeIn("slow");
+          }
+      }
+  }
 
   $(document).on('click', function (e) {
     if ($('.header__overlay').is(e.target)) {
