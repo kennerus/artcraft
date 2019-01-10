@@ -585,6 +585,9 @@
   border-radius: 35px;
   box-shadow: 0 0 0 10px rgba(255,255,255,.4);
   cursor: pointer;
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .header-open:before {
