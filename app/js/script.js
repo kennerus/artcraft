@@ -1,3 +1,20 @@
+// Проверка того, что наш браузер поддерживает Service Worker API.
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../sw.js')
+            .then(function(reg) {
+                console.log('Service Worker registration successful with scope: ', reg.scope);
+            })
+            .catch(function (err) {
+                console.log(err)
+            });
+    });
+}
+
+window.addEventListener('beforeinstallprompt', function (e) {
+    console.log(e)
+});
+
 $(function () {
   /*clouds animation*/
   var x = 0;

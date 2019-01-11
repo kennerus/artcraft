@@ -76,7 +76,9 @@ gulp.task('browser-sync', function () { // Создаем таск browser-sync
             forms: true,
             scroll: true
         },
-        notify: false // Отключаем уведомления
+        notify: false, // Отключаем уведомления
+        // https: true
+        open: false
     });
 });
 

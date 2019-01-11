@@ -1,0 +1,25 @@
+{
+  "name": "Web Artcraft PWA app",
+  "short_name": "Web Artcraft",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#fff",
+  "description": "Craft Group's site",
+  "icons": [
+    {
+      "src": "./img/balloon.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/balloon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/balloon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
